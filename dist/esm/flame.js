@@ -1,0 +1,1 @@
+export default {"name":"flame","tags":["feu","tendance","populaire","chaud","flamme"],"p":"M12 20a6 6 0 0 0 6-6c0-3.5-2.5-5.5-3.5-8.5-1 1.5-1.5 2.5-1.5 4-1-1-1.5-3-1.5-5.5C8.5 6 6 9 6 14a6 6 0 0 0 6 6z","pf":"="};

@@ -1,0 +1,1 @@
+export default {"name":"bell.badge","tags":["nouvelle notification","non lu","pastille"],"e":"M6 16V10.5a6 6 0 0 1 12 0V16l1.5 1.5H4.5zM10 17.5a2 2 0 0 0 4 0z","f":"M16.5 5.5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0z"};

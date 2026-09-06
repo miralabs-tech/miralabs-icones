@@ -1,0 +1,1 @@
+export default {"name":"scissors","tags":["couper","ciseaux","découper"],"e":"M4 6.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM4 17.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0z","p":"M8.3 8.3 20 19.5M8.3 15.7 20 4.5","cut":false};

@@ -1,0 +1,1 @@
+export default {"name":"tablecells","tags":["tableau","grille","cellules","feuille de calcul"],"e":"M5.5 4.5h13a2 2 0 0 1 2 2v11a2 2 0 0 1 -2 2h-13a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2z","c":"M3.5 9.5h17M3.5 14.5h17M9.5 4.5v15M15 4.5v15"};

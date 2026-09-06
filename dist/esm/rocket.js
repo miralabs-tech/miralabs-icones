@@ -1,0 +1,1 @@
+export default {"name":"rocket","tags":["fusée","lancer","démarrage","déploiement","startup","publier"],"e":"M12 3c3 2 4.5 6 4.5 10v3.5l-4.5 3-4.5-3V13C7.5 9 9 5 12 3z","c":"M10.25 10a1.75 1.75 0 1 0 3.5 0a1.75 1.75 0 1 0 -3.5 0z","p":"M7.5 13.5 4.5 17l3-.5M16.5 13.5l3 3.5-3-.5M12 19.5v2","cut":false};

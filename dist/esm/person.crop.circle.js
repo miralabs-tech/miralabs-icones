@@ -1,0 +1,1 @@
+export default {"name":"person.crop.circle","tags":["profil","compte","utilisateur","avatar","personne"],"e":"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0z","p":"M9 9.5a3 3 0 1 0 6 0a3 3 0 1 0 -6 0zM6.2 18.2a6.4 6.4 0 0 1 11.6 0"};

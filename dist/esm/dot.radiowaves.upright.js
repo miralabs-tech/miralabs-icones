@@ -1,0 +1,1 @@
+export default {"name":"dot.radiowaves.upright","tags":["rss","flux","abonnement","podcast","fil"],"p":"M6.5 6.5A11 11 0 0 1 17.5 17.5M6.5 11a6.5 6.5 0 0 1 6.5 6.5","f":"M6 16.25a1.75 1.75 0 1 0 3.5 0a1.75 1.75 0 1 0 -3.5 0z"};

@@ -1,0 +1,1 @@
+export default {"name":"graduationcap","tags":["diplôme","formation","apprentissage","école","tutoriel","cours"],"e":"M2.5 9.5 12 5l9.5 4.5L12 14z","p":"M6 11.5v5c1.5 1.5 3.5 2.5 6 2.5s4.5-1 6-2.5v-5M21.5 9.5v6","cut":false,"fade":"p"};

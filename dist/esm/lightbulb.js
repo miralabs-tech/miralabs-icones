@@ -1,0 +1,1 @@
+export default {"name":"lightbulb","tags":["idée","astuce","conseil","inspiration"],"e":"M12 3a6 6 0 0 1 3.5 10.9c-.8.6-1.5 1.5-1.5 2.6H10c0-1.1-.7-2-1.5-2.6A6 6 0 0 1 12 3z","p":"M10 19.5h4M10.5 21.5h3","cut":false,"fade":"p"};

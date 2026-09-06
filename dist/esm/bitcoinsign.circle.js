@@ -1,0 +1,1 @@
+export default {"name":"bitcoinsign.circle","tags":["bitcoin","crypto","cryptomonnaie","BTC"],"e":"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0z","p":"M9.5 7.5v9M9.5 7.5h3.5a2 2 0 0 1 0 4H9.5M9.5 11.5h4a2.25 2.25 0 0 1 0 4.5H9.5M11 6v1.5M13 6v1.5M11 16.5V18M13 16.5V18"};

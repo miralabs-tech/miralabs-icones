@@ -1,0 +1,1 @@
+export default {"name":"r2.rectangle.roundedtop","tags":["R2","gâchette","bouton d'épaule","manette"],"e":"M4 18.5h16V10a5 5 0 0 0-5-5H9a5 5 0 0 0-5 5z","c":"M7.3 14.75V8.75H9.7A1.5 1.5 0 0 1 9.7 11.75H7.3M9.5 11.75L11.3 14.75M13 10.25A1.7 1.7 0 1 1 16.2 11.25L13 14.75H16.7"};

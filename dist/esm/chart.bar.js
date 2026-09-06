@@ -1,0 +1,1 @@
+export default {"name":"chart.bar","tags":["graphique","barres","statistiques","histogramme"],"e":"M6 11h1a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1zM11.5 5h1a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-12a1 1 0 0 1 1 -1zM17 13h1a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z"};

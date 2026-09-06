@@ -1,0 +1,1 @@
+export default {"name":"zr.rectangle.roundedtop","tags":["ZR","gâchette","switch","manette"],"e":"M4 18.5h16V10a5 5 0 0 0-5-5H9a5 5 0 0 0-5 5z","c":"M7.3 8.75H11.3L7.3 14.75H11.3M12.7 14.75V8.75H15.1A1.5 1.5 0 0 1 15.1 11.75H12.7M14.9 11.75L16.7 14.75"};

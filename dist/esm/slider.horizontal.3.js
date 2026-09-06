@@ -1,0 +1,1 @@
+export default {"name":"slider.horizontal.3","tags":["réglages","filtres","ajuster","curseurs"],"e":"M7 7a2 2 0 1 0 4 0a2 2 0 1 0 -4 0zM13 12a2 2 0 1 0 4 0a2 2 0 1 0 -4 0zM6 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0z","p":"M4 7h16M4 12h16M4 17h16","keep":true};

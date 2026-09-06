@@ -1,0 +1,1 @@
+export default {"name":"cloud.rain","tags":["pluie","averse","météo"],"e":"M7 16h10.5a4 4 0 0 0 .7-7.94A6 6 0 0 0 6.6 7.4 4.4 4.4 0 0 0 7 16z","p":"M8.5 18.5v2.5M12 18.5v2.5M15.5 18.5v2.5","cut":false,"fade":"p"};

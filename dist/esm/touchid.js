@@ -1,0 +1,1 @@
+export default {"name":"touchid","tags":["empreinte","biométrie","authentification","doigt"],"p":"M4.5 8.5A8.5 8.5 0 0 1 12 4a8.5 8.5 0 0 1 7.5 4.5M6.5 20a11 11 0 0 1-1-5v-2a6.5 6.5 0 0 1 13 0v.5M9.5 20.5a8 8 0 0 1-1-3.5v-4a3.5 3.5 0 0 1 7 0v4.5M12 13v7.5M15.5 16.5a6 6 0 0 0 .5 3"};

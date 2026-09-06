@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miralabs Icônes — explorateur</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f4f4f6; --fg: #17171a; --mute: #6b6b72; --line: #d9d9de; --card: #fff; --acc: #1d6bf3; --tile: 36px; --mira-icon-size-sm: 12px; --mira-icon-size-md: 16px; --mira-icon-size-lg: 20px; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #131316; --fg: #f2f2f5; --mute: #9a9aa3; --line: #303036; --card: #1c1c21; --acc: #5b95ff; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Helvetica, sans-serif; background: var(--bg); color: var(--fg); }
+  a { color: var(--acc); }
+  header { position: sticky; top: 0; z-index: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 12px 20px; background: var(--bg); border-bottom: 1px solid var(--line); }
+  h1 { font-size: 15px; margin: 0 8px 0 0; font-weight: 600; }
+  h1 small { color: var(--mute); font-weight: 400; margin-left: 6px; }
+  input[type=search] { flex: 1 1 200px; min-width: 160px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: inherit; font: inherit; }
+  select, button { font: inherit; color: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 5px 9px; cursor: pointer; }
+  button[aria-pressed=true] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+  .seg { display: inline-flex; }
+  .seg button { border-radius: 0; margin-left: -1px; }
+  .seg button:first-child { border-radius: 8px 0 0 8px; margin-left: 0; }
+  .seg button:last-child { border-radius: 0 8px 8px 0; }
+  main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 20px; }
+  main.has-detail { grid-template-columns: minmax(0, 1fr) 340px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; }
+  .chips button { border-radius: 999px; padding: 4px 10px; font-size: 13px; }
+  .chips button span { opacity: .6; margin-left: 4px; }
+  h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--mute); margin: 20px 0 8px; font-weight: 600; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 6px; }
+  .tile { display: grid; place-items: center; gap: 4px; padding: 10px 4px 8px; border: 1px solid transparent; border-radius: 10px; background: var(--card); color: inherit; min-width: 0; }
+  .tile:hover { border-color: var(--line); }
+  .tile[aria-pressed=true] { background: var(--card); color: inherit; border-color: var(--acc); box-shadow: inset 0 0 0 1px var(--acc); }
+  .tile svg { inline-size: var(--tile); block-size: var(--tile); }
+  .tile small { font-size: 10px; color: var(--mute); max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  aside { position: sticky; top: 72px; align-self: start; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; max-height: calc(100vh - 92px); overflow: auto; }
+  .hero { display: grid; place-items: center; padding: 20px; background: var(--bg); border-radius: 10px; }
+  .hero svg { inline-size: 96px; block-size: 96px; }
+  aside h3 { margin: 12px 0 2px; font-size: 16px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 600; word-break: break-all; }
+  .meta { color: var(--mute); font-size: 12px; margin: 0 0 8px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 0 0 14px; }
+  .tags span { font-size: 11px; padding: 2px 7px; border-radius: 999px; background: var(--bg); color: var(--mute); }
+  .matrix { display: grid; grid-template-columns: auto repeat(6, 1fr); gap: 4px 6px; align-items: center; font-size: 11px; color: var(--mute); margin: 0 0 14px; }
+  .matrix svg { inline-size: 24px; block-size: 24px; display: block; margin: auto; color: var(--fg); }
+  .row { display: flex; gap: 6px; align-items: center; justify-content: space-between; margin: 0 0 6px; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 4px; }
+  .tabs button, .row > button { padding: 3px 8px; font-size: 12px; }
+  pre { margin: 0; padding: 10px; background: var(--bg); border-radius: 8px; font: 11.5px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; word-break: break-all; max-height: 260px; overflow: auto; }
+  .empty { color: var(--mute); padding: 40px 0; text-align: center; }
+  @media (max-width: 860px) { main.has-detail { grid-template-columns: minmax(0, 1fr); } aside { position: static; max-height: none; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Miralabs Icônes <small id="count"></small></h1>
+  <input id="q" type="search" placeholder="Rechercher un symbole, un synonyme…  ( / )" autocomplete="off">
+  <select id="weight" aria-label="Graisse"></select>
+  <div class="seg" role="group" aria-label="Forme"><button data-shape="outline" aria-pressed="true">Contour</button><button data-shape="fill" aria-pressed="false">Plein</button></div>
+  <div class="seg" role="group" aria-label="Rendu"><button data-tone="mono" aria-pressed="true">Mono</button><button data-tone="hier" aria-pressed="false">Hiérarchique</button></div>
+  <div class="seg" role="group" aria-label="Taille d'aperçu"><button data-tile="24" aria-pressed="false">24</button><button data-tile="36" aria-pressed="true">36</button><button data-tile="48" aria-pressed="false">48</button></div>
+</header>
+<main id="main">
+  <section>
+    <div class="chips" id="chips"></div>
+    <div id="sections"></div>
+  </section>
+  <aside id="detail" hidden></aside>
+</main>
+<script type="module">
+import { SYMBOLS, WEIGHTS, CATEGORIES } from "../dist/data.js";
+import { symbolToString, identifier } from "../dist/render.js";
+
+const $ = (s, r = document) => r.querySelector(s);
+const st = { q: "", cat: "", weight: "regular", shape: "outline", tone: "mono", tile: 36, sel: decodeURIComponent(location.hash.slice(1)) || null, tab: "wc" };
+const norm = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const svg = (s, o) => symbolToString(s, { weight: st.weight, shape: st.shape, tone: st.tone, ...o });
+const uid = (n) => n.replace(/\./g, "-");
+const byName = (n) => SYMBOLS.find((s) => s.name === n);
+if (st.sel && !byName(st.sel)) st.sel = null;
+
+$("#count").textContent = `${SYMBOLS.length} symboles · ${CATEGORIES.length} collections`;
+$("#weight").innerHTML = WEIGHTS.map((w) => `<option value="${w.id}"${w.id === st.weight ? " selected" : ""}>${esc(w.label)} · ${w.sw}</option>`).join("");
+
+const filtered = () => {
+  const q = norm(st.q.trim());
+  return SYMBOLS.filter((s) => (!st.cat || s.cat === st.cat) && (!q || norm(s.name).includes(q) || norm(identifier(s.name)).includes(q) || s.tags.some((t) => norm(t).includes(q))));
+};
+
+function renderChips() {
+  const all = `<button data-cat="" aria-pressed="${!st.cat}">Tout<span>${SYMBOLS.length}</span></button>`;
+  $("#chips").innerHTML = all + CATEGORIES.map((c) => `<button data-cat="${c.id}" aria-pressed="${st.cat === c.id}">${esc(c.label)}<span>${SYMBOLS.filter((s) => s.cat === c.id).length}</span></button>`).join("");
+}
+
+function renderGrid() {
+  const list = filtered();
+  document.documentElement.style.setProperty("--tile", `${st.tile}px`);
+  if (!list.length) { $("#sections").innerHTML = `<p class="empty">Aucun symbole pour « ${esc(st.q)} ».</p>`; return; }
+  const groups = CATEGORIES.map((c) => [c, list.filter((s) => s.cat === c.id)]).filter(([, l]) => l.length);
+  $("#sections").innerHTML = groups.map(([c, l]) => `<h2>${esc(c.label)} · ${l.length}</h2><div class="grid">${l.map((s) =>
+    `<button class="tile" data-name="${s.name}" aria-pressed="${st.sel === s.name}" title="${s.name}">${svg(s, { size: "var(--tile)", id: `g-${uid(s.name)}` })}<small>${s.name}</small></button>`).join("")}</div>`).join("");
+}
+
+function snippets(s) {
+  const id = identifier(s.name), attrs = `weight="${st.weight}" shape="${st.shape}"${st.tone === "hier" ? ' tone="hier"' : ""}`;
+  return {
+    wc: `<script type="module">\n  import { MiraSymbol } from "@miralabs/icones/mira-symbol";\n  import { ${id} } from "@miralabs/icones";\n  MiraSymbol.register(${id});\n<\/script>\n\n<mira-symbol name="${s.name}" ${attrs} size="md" label="…"></mira-symbol>`,
+    react: `import { Symbol } from "@miralabs-ui/react/symbol";\nimport { ${id} } from "@miralabs/icones";\n\n<Symbol symbol={${id}} ${attrs} size="md" label="…" />`,
+    sprite: `<svg style="inline-size:var(--mira-icon-size-md);block-size:var(--mira-icon-size-md)" aria-hidden="true">\n  <use href="/icones/sprite/${st.weight}-${st.shape}.svg#${s.name}"/>\n</svg>`,
+    svg: symbolToString(s, { weight: st.weight, shape: st.shape, tone: st.tone, size: "24px", pretty: true, id: "m" }),
+    c: `int id = mira_symbol_find("${s.name}");\nunsigned char cov[24 * 24];\nmira_symbol_raster(id, MIRA_${st.weight.toUpperCase()}, MIRA_${st.shape.toUpperCase()}, 24, cov, 24);`,
+  };
+}
+
+function renderDetail() {
+  const s = st.sel ? byName(st.sel) : null, el = $("#detail");
+  $("#main").classList.toggle("has-detail", !!s);
+  el.hidden = !s;
+  history.replaceState(null, "", s ? `#${encodeURIComponent(s.name)}` : location.pathname);
+  if (!s) return;
+  const code = snippets(s), cat = CATEGORIES.find((c) => c.id === s.cat);
+  const tabs = [["wc", "Web component"], ["react", "React"], ["sprite", "Sprite"], ["svg", "SVG"], ["c", "C"]];
+  const layers = ["p", "e", "c", "f", "h", "pf"].filter((k) => s[k]).join(" · ");
+  el.innerHTML = `<div class="row"><span class="meta">${esc(cat ? cat.label : s.cat)}</span><button data-close aria-label="Fermer">✕</button></div>
+<div class="hero">${svg(s, { size: "96px", id: "hero" })}</div>
+<h3>${s.name}</h3>
+<p class="meta">${identifier(s.name)}${s.rtl ? " · miroir RTL" : ""} · couches ${layers}</p>
+<div class="tags">${s.tags.map((t) => `<span>${esc(t)}</span>`).join("")}</div>
+<div class="matrix"><span></span>${WEIGHTS.map((w) => `<span style="text-align:center">${w.sw}</span>`).join("")}${["outline", "fill"].map((sh) =>
+  `<span>${sh === "fill" ? "Plein" : "Contour"}</span>${WEIGHTS.map((w) => symbolToString(s, { weight: w.id, shape: sh, size: "24px", id: `m-${sh}-${w.id}` })).join("")}`).join("")}</div>
+<div class="row"><div class="tabs">${tabs.map(([k, l]) => `<button data-tab="${k}" aria-pressed="${st.tab === k}">${l}</button>`).join("")}</div><button data-copy>Copier</button></div>
+<pre id="code">${esc(code[st.tab])}</pre>`;
+}
+
+const press = (attr) => document.querySelectorAll(`header [data-${attr}]`).forEach((b) => b.setAttribute("aria-pressed", String(b.dataset[attr] == st[attr])));
+
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("button");
+  if (!b) return;
+  const d = b.dataset;
+  if (d.cat !== undefined) { st.cat = d.cat; renderChips(); renderGrid(); }
+  else if (d.shape) { st.shape = d.shape; press("shape"); renderGrid(); renderDetail(); }
+  else if (d.tone) { st.tone = d.tone; press("tone"); renderGrid(); renderDetail(); }
+  else if (d.tile) { st.tile = +d.tile; press("tile"); renderGrid(); }
+  else if (d.name) { st.sel = st.sel === d.name ? null : d.name; renderGrid(); renderDetail(); }
+  else if (d.tab) { st.tab = d.tab; renderDetail(); }
+  else if ("copy" in d) { navigator.clipboard?.writeText($("#code").textContent); b.textContent = "Copié"; setTimeout(() => { b.textContent = "Copier"; }, 1200); }
+  else if ("close" in d) { st.sel = null; renderGrid(); renderDetail(); }
+});
+$("#q").addEventListener("input", (e) => { st.q = e.target.value; renderGrid(); });
+$("#weight").addEventListener("change", (e) => { st.weight = e.target.value; renderGrid(); renderDetail(); });
+document.addEventListener("keydown", (e) => {
+  if (e.key === "/" && e.target !== $("#q")) { e.preventDefault(); $("#q").focus(); }
+  if (e.key === "Escape" && st.sel) { st.sel = null; renderGrid(); renderDetail(); }
+});
+renderChips(); renderGrid(); renderDetail();
+</script>
+</body>
+</html>

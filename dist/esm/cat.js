@@ -1,0 +1,1 @@
+export default {"name":"cat","tags":["chat","github","mascotte","open source","dépôt","animal"],"e":"M5 4.5 8.5 8h7L19 4.5v8.5a7 7 0 0 1-14 0z","c":"M9.5 12h.01M14.5 12h.01M11 15.5 12 14.5l1 1","p":"M2.5 14.5h3M18.5 14.5h3","keep":true};

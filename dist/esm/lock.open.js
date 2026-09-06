@@ -1,0 +1,1 @@
+export default {"name":"lock.open","tags":["déverrouillé","ouvert","accès","cadenas ouvert"],"e":"M6.5 10.5h11A1.5 1.5 0 0 1 19 12v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19v-7a1.5 1.5 0 0 1 1.5-1.5z","p":"M7.5 10.5V8a4.5 4.5 0 0 1 8.7-1.6","cut":false,"fade":"p"};

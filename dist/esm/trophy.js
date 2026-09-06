@@ -1,0 +1,1 @@
+export default {"name":"trophy","tags":["trophée","victoire","récompense","classement","succès","achievement"],"e":"M7.5 3.5h9V9a4.5 4.5 0 0 1-9 0z","p":"M7.5 5.5h-3V7a3 3 0 0 0 3 3M16.5 5.5h3V7a3 3 0 0 1-3 3M12 13.5v3M8.5 20.5h7M9.5 16.5h5v4h-5z","cut":false};

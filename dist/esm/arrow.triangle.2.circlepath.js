@@ -1,0 +1,1 @@
+export default {"name":"arrow.triangle.2.circlepath","tags":["synchroniser","sync","boucle","mettre à jour"],"p":"M4 12a8 8 0 0 1 13.66-5.66M17.66 6.34V2.5M17.66 6.34h-3.84M20 12a8 8 0 0 1-13.66 5.66M6.34 17.66V21.5M6.34 17.66h3.84"};

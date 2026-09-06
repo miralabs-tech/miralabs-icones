@@ -1,0 +1,1 @@
+export default {"name":"archivebox","tags":["archiver","boîte","ranger"],"e":"M3.5 8.5v-3A1.5 1.5 0 0 1 5 4h14a1.5 1.5 0 0 1 1.5 1.5v3zM4.5 8.5h15V19a1.5 1.5 0 0 1-1.5 1.5H6A1.5 1.5 0 0 1 4.5 19z","c":"M10 12.5h4"};

@@ -1,0 +1,1 @@
+export default {"name":"arrow.triangle.branch","tags":["git","branche","fork","version"],"e":"M3.5 4.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM3.5 19.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM15.5 8a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0z","p":"M6 7v10M18 10.5a6 6 0 0 1-6 6H6","cut":false};

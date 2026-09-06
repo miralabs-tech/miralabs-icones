@@ -1,0 +1,1 @@
+export default {"name":"shuffle","tags":["aléatoire","mélanger","lecture aléatoire"],"p":"M4 7h2.5a5 5 0 0 1 4 2l3 6a5 5 0 0 0 4 2H20M17.5 14.5 20 17l-2.5 2.5M4 17h2.5a5 5 0 0 0 4-2l.5-1M13.5 10l.5-1a5 5 0 0 1 4-2H20M17.5 4.5 20 7l-2.5 2.5"};

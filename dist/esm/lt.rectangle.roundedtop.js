@@ -1,0 +1,1 @@
+export default {"name":"lt.rectangle.roundedtop","tags":["LT","gâchette","xbox","manette"],"e":"M4 18.5h16V10a5 5 0 0 0-5-5H9a5 5 0 0 0-5 5z","c":"M7.3 8.75V14.75H11.3M12.7 8.75H16.7M14.7 8.75V14.75"};

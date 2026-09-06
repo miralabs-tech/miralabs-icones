@@ -1,0 +1,1 @@
+export default {"name":"mappin.and.ellipse","tags":["lieu","position actuelle","destination"],"e":"M12 17s-5-5-5-9a5 5 0 0 1 10 0c0 4-5 9-5 9z","c":"M10 8a2 2 0 1 0 4 0a2 2 0 1 0 -4 0z","p":"M6.5 17.5C5 18.2 4 19.1 4 20c0 1.7 3.6 2.5 8 2.5s8-.8 8-2.5c0-.9-1-1.8-2.5-2.5","cut":false,"fade":"p"};

@@ -1,0 +1,1 @@
+export default {"name":"bus","tags":["bus","transport en commun","trajet"],"e":"M6.5 3.5h11a2.5 2.5 0 0 1 2.5 2.5v10a2.5 2.5 0 0 1 -2.5 2.5h-11a2.5 2.5 0 0 1 -2.5 -2.5v-10a2.5 2.5 0 0 1 2.5 -2.5z","c":"M4 9h16M4 14h16M8 16.5h1M15 16.5h1","p":"M7 18.5v2M17 18.5v2","cut":false};

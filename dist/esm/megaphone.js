@@ -1,0 +1,1 @@
+export default {"name":"megaphone","tags":["annonce","promotion","haut-parleur","campagne"],"e":"M4 10v4a1.5 1.5 0 0 0 1.5 1.5H8l9 4.5V4L8 8.5H5.5A1.5 1.5 0 0 0 4 10z","p":"M8 15.5v3.5a1.5 1.5 0 0 0 3 0v-2.5M17 9.5a3 3 0 0 1 0 5","cut":false,"fade":"p"};

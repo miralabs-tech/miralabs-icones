@@ -1,0 +1,1 @@
+export default {"name":"airplane","tags":["mode avion","voyage","vol"],"p":"M12 3c.8 0 1.5.7 1.5 1.5V9l7.5 4.5v2l-7.5-2.5v4l2 1.5V20l-3.5-1-3.5 1v-1.5l2-1.5v-4L3 15.5v-2L10.5 9V4.5C10.5 3.7 11.2 3 12 3z","pf":"="};

@@ -1,0 +1,1 @@
+export default {"name":"hand.point.up","tags":["pointer","index","curseur","toucher","cliquer"],"p":"M9 14.5V5a1.5 1.5 0 0 1 3 0v6h5.5a2.5 2.5 0 0 1 2.5 2.5V15a6 6 0 0 1-6 6h-2a6 6 0 0 1-4.7-2.3l-2.9-3.7a1.5 1.5 0 0 1 2.4-1.9z","pf":"="};

@@ -1,0 +1,1 @@
+export default {"name":"ticket","tags":["billet","ticket","événement","entrée","coupon","réservation"],"e":"M3.5 8A1.5 1.5 0 0 1 5 6.5h14A1.5 1.5 0 0 1 20.5 8v2a2 2 0 0 0 0 4v2a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 16v-2a2 2 0 0 0 0-4z","c":"M9 6.5v11"};

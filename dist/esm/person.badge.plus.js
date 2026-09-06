@@ -1,0 +1,1 @@
+export default {"name":"person.badge.plus","tags":["ajouter un contact","inviter","nouvel utilisateur"],"e":"M6 7.5a4 4 0 1 0 8 0a4 4 0 1 0 -8 0zM2.5 20.5a7.5 7.5 0 0 1 15 0z","p":"M19.5 12v6M16.5 15h6","cut":false};

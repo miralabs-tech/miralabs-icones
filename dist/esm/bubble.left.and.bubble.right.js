@@ -1,0 +1,1 @@
+export default {"name":"bubble.left.and.bubble.right","tags":["conversation","discussion","chat","messagerie","discord"],"e":"M6.5 5h6a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3H8.5L5 16.5v-2.9A3 3 0 0 1 3.5 11V8a3 3 0 0 1 3-3z","p":"M17.5 9.5a3 3 0 0 1 3 3v3a3 3 0 0 1-1.5 2.6v2.4l-3-2.5H12a3 3 0 0 1-2.5-1.5","cut":false,"fade":"p"};

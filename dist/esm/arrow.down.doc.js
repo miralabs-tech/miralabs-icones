@@ -1,0 +1,1 @@
+export default {"name":"arrow.down.doc","tags":["télécharger le fichier","document reçu"],"e":"M6.5 3h7L19 8.5v11a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19.5v-15A1.5 1.5 0 0 1 6.5 3z","c":"M13.5 3v5.5H19M12 10.5v6.5M9.5 14.5l2.5 2.5 2.5-2.5"};

@@ -1,0 +1,1 @@
+export default {"name":"alarm","tags":["réveil","alarme","rappel","sonnerie"],"e":"M4.5 13a7.5 7.5 0 1 0 15 0a7.5 7.5 0 1 0 -15 0z","c":"M12 9v4l2.5 1.5","p":"M5 5.5 7.5 3M19 5.5 16.5 3","cut":false};

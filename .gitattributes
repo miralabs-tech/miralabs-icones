@@ -1,0 +1,11 @@
+* text=auto eol=lf
+
+*.png binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+dist/** linguist-generated=true
+src/names.ts linguist-generated=true
+native/mira_symbols_data.h linguist-generated=true
+native/vendor/** linguist-vendored=true
+bun.lock linguist-generated=true

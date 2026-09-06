@@ -1,0 +1,1 @@
+export default {"name":"memorychip","tags":["mémoire","RAM","composant"],"e":"M5.5 6h13a1.5 1.5 0 0 1 1.5 1.5v7a1.5 1.5 0 0 1 -1.5 1.5h-13a1.5 1.5 0 0 1 -1.5 -1.5v-7a1.5 1.5 0 0 1 1.5 -1.5z","c":"M8 9v4M12 9v4M16 9v4","p":"M6.5 16v3M10 16v3M14 16v3M17.5 16v3","cut":false};

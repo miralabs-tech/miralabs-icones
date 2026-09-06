@@ -1,0 +1,1 @@
+export default {"name":"calendar.badge.clock","tags":["échéance","rendez-vous","horaire","deadline"],"e":"M3.5 7A2.5 2.5 0 0 1 6 4.5h12A2.5 2.5 0 0 1 20.5 7v11a2.5 2.5 0 0 1-2.5 2.5H6A2.5 2.5 0 0 1 3.5 18z","p":"M8 3v3M16 3v3","c":"M3.5 9.5h17M8.75 15a3.25 3.25 0 1 0 6.5 0a3.25 3.25 0 1 0 -6.5 0zM12 13.25V15l1.25.75","cut":false};

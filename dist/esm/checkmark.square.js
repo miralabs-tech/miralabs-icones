@@ -1,0 +1,1 @@
+export default {"name":"checkmark.square","tags":["case à cocher","coché","sélectionné","checkbox"],"e":"M6.5 3.5h11a3 3 0 0 1 3 3v11a3 3 0 0 1 -3 3h-11a3 3 0 0 1 -3 -3v-11a3 3 0 0 1 3 -3z","p":"M8 12.5l2.8 2.8 5.5-5.8"};

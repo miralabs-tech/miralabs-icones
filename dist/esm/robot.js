@@ -1,0 +1,1 @@
+export default {"name":"robot","tags":["android","bot","IA","automate","assistant"],"e":"M7.5 8.5h9a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3zM2.5 13h2v4h-2zM19.5 13h2v4h-2z","c":"M9 14h.01M15 14h.01M9.5 17.5h5","p":"M12 8.5V6.25M10.75 5a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0 -2.5 0z","cut":false};

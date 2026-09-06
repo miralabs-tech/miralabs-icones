@@ -1,0 +1,1 @@
+export default {"name":"list.number","tags":["liste numérotée","numéros","ordonnée"],"rtl":true,"p":"M10 6h10M10 12h10M10 18h10M3.84 5.01L4.61 4.3V7.6M3.57 11.13A0.94 0.94 0 1 1 5.33 11.68L3.57 13.6H5.6M3.68 16.74A0.88 0.88 0 1 1 4.83 17.95H4.39M4.83 17.95A0.88 0.88 0 1 1 3.68 19.16"};

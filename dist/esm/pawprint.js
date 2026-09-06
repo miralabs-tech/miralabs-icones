@@ -1,0 +1,1 @@
+export default {"name":"pawprint","tags":["animal","patte","chien","chat","vétérinaire"],"e":"M12 11.5c-3 0-5.5 2.5-5.5 5s2 4 5.5 4 5.5-1.5 5.5-4-2.5-5-5.5-5zM3.5 10a2 2 0 1 0 4 0a2 2 0 1 0 -4 0zM16.5 10a2 2 0 1 0 4 0a2 2 0 1 0 -4 0zM7 5.5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0zM13 5.5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0z"};

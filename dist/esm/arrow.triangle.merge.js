@@ -1,0 +1,1 @@
+export default {"name":"arrow.triangle.merge","tags":["git","fusionner","merge","version"],"e":"M3.5 4.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM15.5 4.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM9.5 19.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0z","p":"M6 7v2.5a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V7M12 13.5V17","cut":false};

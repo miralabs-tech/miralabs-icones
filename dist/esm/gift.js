@@ -1,0 +1,1 @@
+export default {"name":"gift","tags":["cadeau","offrir","récompense","bonus"],"e":"M3.5 11h17v8a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19z","p":"M3 7.5h18V11H3zM12 7.5v13M12 7.5C10.5 4.5 7 4 7 6s3.5 1.5 5 1.5S17 8 17 6s-3.5-1.5-5 1.5","cut":false,"fade":"e"};

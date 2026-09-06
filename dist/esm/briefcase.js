@@ -1,0 +1,1 @@
+export default {"name":"briefcase","tags":["linkedin","mallette","travail","emploi","professionnel","portfolio"],"e":"M5 7.5h14a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2z","c":"M3 12.5h18M10.5 12v2.5h3V12","p":"M8.5 7.5V6a1.5 1.5 0 0 1 1.5-1.5h4A1.5 1.5 0 0 1 15.5 6v1.5","cut":false};

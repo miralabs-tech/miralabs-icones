@@ -1,0 +1,1 @@
+export default {"name":"gamecontroller","tags":["manette","jeu","gamepad","console"],"e":"M7 7h10a5 5 0 0 1 5 5.5l-.7 3.6a2.3 2.3 0 0 1-4 1.1L15.6 15H8.4l-1.7 2.2a2.3 2.3 0 0 1-4-1.1L2 12.5A5 5 0 0 1 7 7z","c":"M7.5 11h3M9 9.5v3M15 10.75v.01M17.25 12.5v.01"};

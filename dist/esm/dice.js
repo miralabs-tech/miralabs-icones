@@ -1,0 +1,1 @@
+export default {"name":"dice","tags":["dé","hasard","aléatoire","jeu de société","chance"],"e":"M7 3.5h10a3.5 3.5 0 0 1 3.5 3.5v10a3.5 3.5 0 0 1 -3.5 3.5h-10a3.5 3.5 0 0 1 -3.5 -3.5v-10a3.5 3.5 0 0 1 3.5 -3.5z","c":"M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01"};

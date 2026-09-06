@@ -1,0 +1,1 @@
+export default {"name":"rectangle","tags":["rectangle","cadre","paysage"],"p":"M5.5 5.5h13a2.5 2.5 0 0 1 2.5 2.5v8a2.5 2.5 0 0 1 -2.5 2.5h-13a2.5 2.5 0 0 1 -2.5 -2.5v-8a2.5 2.5 0 0 1 2.5 -2.5z","pf":"="};

@@ -1,0 +1,1 @@
+export default {"name":"car","tags":["voiture","trajet","transport","route"],"e":"M4 10.5 5.6 6.4A2 2 0 0 1 7.5 5h9a2 2 0 0 1 1.9 1.4L20 10.5v5a1.5 1.5 0 0 1-1.5 1.5H5.5A1.5 1.5 0 0 1 4 15.5z","c":"M4 10.5h16M7.5 13.5h1.5M15 13.5h1.5","p":"M6.5 17v2.5M17.5 17v2.5","cut":false};

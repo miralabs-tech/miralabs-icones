@@ -1,0 +1,1 @@
+export default {"name":"sidebar.right","tags":["inspecteur","panneau droit","afficher","masquer"],"rtl":true,"e":"M3.5 7A2.5 2.5 0 0 1 6 4.5h12A2.5 2.5 0 0 1 20.5 7v10a2.5 2.5 0 0 1-2.5 2.5H6A2.5 2.5 0 0 1 3.5 17z","p":"M14.5 4.5v15"};

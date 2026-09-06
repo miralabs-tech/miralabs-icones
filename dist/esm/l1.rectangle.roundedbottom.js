@@ -1,0 +1,1 @@
+export default {"name":"l1.rectangle.roundedbottom","tags":["L1","gâchette","bouton d'épaule","manette"],"e":"M4 5.5h16v8.5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z","c":"M7.3 9.25V15.25H11.3M13.5 10.55L14.9 9.25V15.25"};

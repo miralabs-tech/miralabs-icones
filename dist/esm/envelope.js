@@ -1,0 +1,1 @@
+export default {"name":"envelope","tags":["mail","courrier","e-mail","message","enveloppe"],"e":"M3.5 6.5A1.5 1.5 0 0 1 5 5h14a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5z","c":"M3.5 7.5l8.5 6 8.5-6"};

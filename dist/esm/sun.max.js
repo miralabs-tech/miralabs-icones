@@ -1,0 +1,1 @@
+export default {"name":"sun.max","tags":["soleil","mode clair","luminosité","jour"],"e":"M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0z","p":"M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8","cut":false,"fade":"p"};

@@ -1,0 +1,1 @@
+export default {"name":"cart","tags":["panier","acheter","boutique","commande"],"p":"M3.5 4.5h2l2.4 10.5h10.6l2-7.5H7","f":"M8.1 19.5a1.4 1.4 0 1 0 2.8 0a1.4 1.4 0 1 0 -2.8 0zM15.6 19.5a1.4 1.4 0 1 0 2.8 0a1.4 1.4 0 1 0 -2.8 0z"};

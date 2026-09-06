@@ -1,0 +1,4309 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`geometrie chevron.left 1`] = `
+{
+  "cx": -0.5,
+  "cy": 0,
+  "n": 534,
+  "x0": 29,
+  "x1": 62,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie chevron.right 1`] = `
+{
+  "cx": 0.5,
+  "cy": 0,
+  "n": 534,
+  "x0": 33,
+  "x1": 66,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie chevron.up 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 534,
+  "x0": 17,
+  "x1": 78,
+  "y0": 29,
+  "y1": 62,
+}
+`;
+
+exports[`geometrie chevron.down 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 534,
+  "x0": 17,
+  "x1": 78,
+  "y0": 33,
+  "y1": 66,
+}
+`;
+
+exports[`geometrie chevron.up.chevron.down 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 636,
+  "x0": 29,
+  "x1": 66,
+  "y0": 19,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie chevron.left.2 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1068,
+  "x0": 13,
+  "x1": 82,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie chevron.right.2 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1068,
+  "x0": 13,
+  "x1": 82,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie house 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1694,
+  "x0": 15,
+  "x1": 80,
+  "y0": 13,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie sidebar.left 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1796,
+  "x0": 11,
+  "x1": 84,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie sidebar.right 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1796,
+  "x0": 11,
+  "x1": 84,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie line.3.horizontal 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1248,
+  "x0": 13,
+  "x1": 82,
+  "y0": 25,
+  "y1": 70,
+}
+`;
+
+exports[`geometrie magnifyingglass 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0.25,
+  "n": 1271,
+  "x0": 13,
+  "x1": 84,
+  "y0": 13,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie ellipsis 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 96,
+  "x0": 21,
+  "x1": 74,
+  "y0": 45,
+  "y1": 50,
+}
+`;
+
+exports[`geometrie square.grid.2x2 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2512,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie rectangle.portrait.and.arrow.right 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0,
+  "n": 1522,
+  "x0": 13,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie rectangle.portrait.and.arrow.left 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0,
+  "n": 1522,
+  "x0": 13,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie arrow.left 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 778,
+  "x0": 17,
+  "x1": 78,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie arrow.right 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 778,
+  "x0": 17,
+  "x1": 78,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie arrow.up 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 778,
+  "x0": 21,
+  "x1": 74,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie arrow.down 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 778,
+  "x0": 21,
+  "x1": 74,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie arrow.up.right 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1090,
+  "x0": 17,
+  "x1": 78,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie arrow.up.left 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1090,
+  "x0": 17,
+  "x1": 78,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie arrow.down.right 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1090,
+  "x0": 17,
+  "x1": 78,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie arrow.down.left 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1090,
+  "x0": 17,
+  "x1": 78,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie arrow.left.arrow.right 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1148,
+  "x0": 13,
+  "x1": 82,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie arrow.up.arrow.down 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1292,
+  "x0": 15,
+  "x1": 80,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie arrow.turn.up.left 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 869,
+  "x0": 15,
+  "x1": 80,
+  "y0": 21,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie arrow.uturn.backward 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 876,
+  "x0": 25,
+  "x1": 70,
+  "y0": 20,
+  "y1": 75,
+}
+`;
+
+exports[`geometrie arrow.uturn.forward 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 874,
+  "x0": 25,
+  "x1": 70,
+  "y0": 20,
+  "y1": 75,
+}
+`;
+
+exports[`geometrie arrow.clockwise 1`] = `
+{
+  "cx": 0,
+  "cy": -0.75,
+  "n": 1378,
+  "x0": 13,
+  "x1": 82,
+  "y0": 7,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie arrow.counterclockwise 1`] = `
+{
+  "cx": 0,
+  "cy": -0.75,
+  "n": 1378,
+  "x0": 13,
+  "x1": 82,
+  "y0": 7,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie arrow.triangle.2.circlepath 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1430,
+  "x0": 13,
+  "x1": 82,
+  "y0": 7,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie arrow.down.to.line 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1062,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie arrow.up.to.line 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1062,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie arrow.up.and.down.and.arrow.left.and.right 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1668,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie arrow.up.left.and.arrow.down.right 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1028,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie arrow.down.right.and.arrow.up.left 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1028,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie arrow.right.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1981,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie arrow.left.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1981,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie arrow.up.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1969,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie arrow.down.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1969,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie arrowshape.right 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1340,
+  "x0": 9,
+  "x1": 86,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie arrowshape.left 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1340,
+  "x0": 9,
+  "x1": 86,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie plus 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 700,
+  "x0": 17,
+  "x1": 78,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie minus 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 368,
+  "x0": 17,
+  "x1": 78,
+  "y0": 45,
+  "y1": 50,
+}
+`;
+
+exports[`geometrie xmark 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 888,
+  "x0": 21,
+  "x1": 74,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie checkmark 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 610,
+  "x0": 15,
+  "x1": 80,
+  "y0": 23,
+  "y1": 72,
+}
+`;
+
+exports[`geometrie plus.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1927,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie minus.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1739,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie xmark.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1971,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie checkmark.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1871,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie plus.square 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1968,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie xmark.square 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2012,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie checkmark.square 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1899,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie square.and.arrow.up 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1594,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie square.and.arrow.down 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1574,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie doc.on.doc 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 1807,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie trash 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 2112,
+  "x0": 13,
+  "x1": 82,
+  "y0": 15,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie star 1`] = `
+{
+  "cx": 0,
+  "cy": -0.37,
+  "n": 1534,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 81,
+}
+`;
+
+exports[`geometrie heart 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1262,
+  "x0": 15,
+  "x1": 80,
+  "y0": 16,
+  "y1": 79,
+}
+`;
+
+exports[`geometrie bookmark 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1464,
+  "x0": 23,
+  "x1": 72,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie paperplane 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1699,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie sparkles 1`] = `
+{
+  "cx": 0.5,
+  "cy": 0,
+  "n": 1360,
+  "x0": 13,
+  "x1": 86,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie scissors 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1648,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie crop 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1394,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie plus.magnifyingglass 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0.25,
+  "n": 1587,
+  "x0": 13,
+  "x1": 84,
+  "y0": 13,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie minus.magnifyingglass 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0.25,
+  "n": 1447,
+  "x0": 13,
+  "x1": 84,
+  "y0": 13,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie bold 1`] = `
+{
+  "cx": 0.13,
+  "cy": -0.75,
+  "n": 1319,
+  "x0": 25,
+  "x1": 71,
+  "y0": 13,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie italic 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 744,
+  "x0": 31,
+  "x1": 64,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie underline 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1195,
+  "x0": 17,
+  "x1": 78,
+  "y0": 13,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie strikethrough 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1037,
+  "x0": 17,
+  "x1": 78,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie pencil 1`] = `
+{
+  "cx": -0.37,
+  "cy": 0.13,
+  "n": 1228,
+  "x0": 13,
+  "x1": 79,
+  "y0": 14,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie link 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1424,
+  "x0": 14,
+  "x1": 81,
+  "y0": 14,
+  "y1": 81,
+}
+`;
+
+exports[`geometrie text.alignleft 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1376,
+  "x0": 13,
+  "x1": 82,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie text.aligncenter 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1376,
+  "x0": 13,
+  "x1": 82,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie text.alignright 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1376,
+  "x0": 13,
+  "x1": 82,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie text.justify 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1664,
+  "x0": 13,
+  "x1": 82,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie list.bullet 1`] = `
+{
+  "cx": 0.13,
+  "cy": 0,
+  "n": 1176,
+  "x0": 14,
+  "x1": 82,
+  "y0": 18,
+  "y1": 77,
+}
+`;
+
+exports[`geometrie list.number 1`] = `
+{
+  "cx": -0.25,
+  "cy": 0,
+  "n": 1416,
+  "x0": 11,
+  "x1": 82,
+  "y0": 14,
+  "y1": 81,
+}
+`;
+
+exports[`geometrie increase.indent 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1538,
+  "x0": 13,
+  "x1": 82,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie decrease.indent 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1538,
+  "x0": 13,
+  "x1": 82,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie textformat 1`] = `
+{
+  "cx": -0.37,
+  "cy": -0.5,
+  "n": 1265,
+  "x0": 9,
+  "x1": 83,
+  "y0": 21,
+  "y1": 70,
+}
+`;
+
+exports[`geometrie textformat.size 1`] = `
+{
+  "cx": 0.25,
+  "cy": -0.5,
+  "n": 1266,
+  "x0": 11,
+  "x1": 86,
+  "y0": 21,
+  "y1": 70,
+}
+`;
+
+exports[`geometrie character 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 1060,
+  "x0": 17,
+  "x1": 78,
+  "y0": 13,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie text.quote 1`] = `
+{
+  "cx": 0.25,
+  "cy": -0.5,
+  "n": 948,
+  "x0": 21,
+  "x1": 76,
+  "y0": 29,
+  "y1": 62,
+}
+`;
+
+exports[`geometrie paragraphsign 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1243,
+  "x0": 23,
+  "x1": 72,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie doc 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1644,
+  "x0": 17,
+  "x1": 78,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie doc.text 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2044,
+  "x0": 17,
+  "x1": 78,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie doc.zipper 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1964,
+  "x0": 17,
+  "x1": 78,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie arrow.down.doc 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1990,
+  "x0": 17,
+  "x1": 78,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie folder 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1768,
+  "x0": 11,
+  "x1": 84,
+  "y0": 19,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie folder.badge.plus 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1712,
+  "x0": 11,
+  "x1": 84,
+  "y0": 19,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie clipboard 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1984,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie archivebox 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 2014,
+  "x0": 11,
+  "x1": 84,
+  "y0": 13,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie tray.and.arrow.down 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 1642,
+  "x0": 13,
+  "x1": 82,
+  "y0": 11,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie tray.and.arrow.up 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 1642,
+  "x0": 13,
+  "x1": 82,
+  "y0": 11,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie externaldrive 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1164,
+  "x0": 11,
+  "x1": 84,
+  "y0": 31,
+  "y1": 64,
+}
+`;
+
+exports[`geometrie cylinder.split.1x2 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2088,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie server.rack 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2232,
+  "x0": 13,
+  "x1": 82,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie tablecells 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2724,
+  "x0": 11,
+  "x1": 84,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie chart.bar 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1692,
+  "x0": 17,
+  "x1": 78,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie chart.pie 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2082,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie chart.line.uptrend.xyaxis 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1470,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie paperclip 1`] = `
+{
+  "cx": 0.5,
+  "cy": 0.13,
+  "n": 2116,
+  "x0": 13,
+  "x1": 86,
+  "y0": 6,
+  "y1": 90,
+}
+`;
+
+exports[`geometrie printer 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2086,
+  "x0": 11,
+  "x1": 84,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie qrcode 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 3068,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie barcode 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1920,
+  "x0": 11,
+  "x1": 84,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie envelope 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1946,
+  "x0": 11,
+  "x1": 84,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie envelope.open 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1896,
+  "x0": 11,
+  "x1": 84,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie bubble.left 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 1392,
+  "x0": 11,
+  "x1": 84,
+  "y0": 13,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie bubble.left.and.bubble.right 1`] = `
+{
+  "cx": 0,
+  "cy": 0.75,
+  "n": 1661,
+  "x0": 11,
+  "x1": 84,
+  "y0": 17,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie phone 1`] = `
+{
+  "cx": 0.5,
+  "cy": -0.5,
+  "n": 1467,
+  "x0": 15,
+  "x1": 84,
+  "y0": 11,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie video 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1480,
+  "x0": 11,
+  "x1": 84,
+  "y0": 23,
+  "y1": 72,
+}
+`;
+
+exports[`geometrie at 1`] = `
+{
+  "cx": 0,
+  "cy": -0.12,
+  "n": 2236,
+  "x0": 9,
+  "x1": 86,
+  "y0": 8,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie number 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1592,
+  "x0": 11,
+  "x1": 84,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie bell 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1339,
+  "x0": 15,
+  "x1": 80,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie bell.badge 1`] = `
+{
+  "cx": 0.13,
+  "cy": -0.12,
+  "n": 1527,
+  "x0": 15,
+  "x1": 81,
+  "y0": 14,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie bell.slash 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1847,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie megaphone 1`] = `
+{
+  "cx": -0.75,
+  "cy": 0.25,
+  "n": 1529,
+  "x0": 13,
+  "x1": 76,
+  "y0": 13,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie antenna.radiowaves.left.and.right 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1476,
+  "x0": 14,
+  "x1": 81,
+  "y0": 17,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie headset 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1823,
+  "x0": 13,
+  "x1": 82,
+  "y0": 9,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie headphones 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1675,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie face.smiling 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2099,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie face.neutral 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1987,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie face.frowning 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2099,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie hand.thumbsup 1`] = `
+{
+  "cx": -0.25,
+  "cy": -0.37,
+  "n": 1735,
+  "x0": 9,
+  "x1": 84,
+  "y0": 10,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie hand.thumbsdown 1`] = `
+{
+  "cx": -0.25,
+  "cy": 0.38,
+  "n": 1735,
+  "x0": 9,
+  "x1": 84,
+  "y0": 13,
+  "y1": 85,
+}
+`;
+
+exports[`geometrie hand.raised 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1992,
+  "x0": 13,
+  "x1": 82,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie hand.point.up 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1527,
+  "x0": 13,
+  "x1": 82,
+  "y0": 11,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie hand.wave 1`] = `
+{
+  "cx": -0.75,
+  "cy": -0.25,
+  "n": 2278,
+  "x0": 3,
+  "x1": 86,
+  "y0": 7,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie person 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1636,
+  "x0": 15,
+  "x1": 80,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie person.2 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1943,
+  "x0": 7,
+  "x1": 88,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie person.badge.plus 1`] = `
+{
+  "cx": 0.5,
+  "cy": 0,
+  "n": 1942,
+  "x0": 7,
+  "x1": 92,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie person.crop.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2382,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie person.crop.square 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2400,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie person.wave.2 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0,
+  "n": 2178,
+  "x0": 9,
+  "x1": 88,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie creditcard 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2068,
+  "x0": 7,
+  "x1": 88,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie banknote 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2040,
+  "x0": 7,
+  "x1": 88,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie cart 1`] = `
+{
+  "cx": 0,
+  "cy": 0.38,
+  "n": 1354,
+  "x0": 11,
+  "x1": 84,
+  "y0": 15,
+  "y1": 83,
+}
+`;
+
+exports[`geometrie bag 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 1650,
+  "x0": 17,
+  "x1": 78,
+  "y0": 13,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie tag 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0.25,
+  "n": 1396,
+  "x0": 11,
+  "x1": 86,
+  "y0": 11,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie percent 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1296,
+  "x0": 17,
+  "x1": 78,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie gift 1`] = `
+{
+  "cx": 0,
+  "cy": 0.63,
+  "n": 2440,
+  "x0": 9,
+  "x1": 86,
+  "y0": 16,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie receipt 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1980,
+  "x0": 19,
+  "x1": 76,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie wallet.pass 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1936,
+  "x0": 11,
+  "x1": 84,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie storefront 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2460,
+  "x0": 9,
+  "x1": 86,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie dollarsign.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2320,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie eurosign.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2437,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie bitcoinsign.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2455,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie chart.candlestick 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 1776,
+  "x0": 17,
+  "x1": 78,
+  "y0": 9,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie chart.line.downtrend.xyaxis 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1470,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie iphone 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1552,
+  "x0": 21,
+  "x1": 74,
+  "y0": 7,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie ipad 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1696,
+  "x0": 11,
+  "x1": 84,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie laptopcomputer 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1764,
+  "x0": 5,
+  "x1": 90,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie desktopcomputer 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1664,
+  "x0": 9,
+  "x1": 86,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie watch 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1440,
+  "x0": 25,
+  "x1": 70,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie keyboard 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2052,
+  "x0": 7,
+  "x1": 88,
+  "y0": 23,
+  "y1": 72,
+}
+`;
+
+exports[`geometrie computermouse 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1223,
+  "x0": 25,
+  "x1": 70,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie battery.100 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2320,
+  "x0": 7,
+  "x1": 88,
+  "y0": 27,
+  "y1": 68,
+}
+`;
+
+exports[`geometrie battery.50 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1800,
+  "x0": 7,
+  "x1": 88,
+  "y0": 27,
+  "y1": 68,
+}
+`;
+
+exports[`geometrie battery.25 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1560,
+  "x0": 7,
+  "x1": 88,
+  "y0": 27,
+  "y1": 68,
+}
+`;
+
+exports[`geometrie battery.100.bolt 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2253,
+  "x0": 7,
+  "x1": 88,
+  "y0": 27,
+  "y1": 68,
+}
+`;
+
+exports[`geometrie bolt 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1344,
+  "x0": 19,
+  "x1": 76,
+  "y0": 7,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie power 1`] = `
+{
+  "cx": 0,
+  "cy": -0.75,
+  "n": 1153,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie wifi 1`] = `
+{
+  "cx": 0,
+  "cy": 0.38,
+  "n": 1267,
+  "x0": 7,
+  "x1": 88,
+  "y0": 18,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie wifi.slash 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1718,
+  "x0": 7,
+  "x1": 88,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie bluetooth 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1312,
+  "x0": 25,
+  "x1": 70,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie cellularbars 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 2400,
+  "x0": 9,
+  "x1": 86,
+  "y0": 15,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie edge 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 844,
+  "x0": 29,
+  "x1": 66,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie 2g 1`] = `
+{
+  "cx": 0.38,
+  "cy": 0,
+  "n": 1390,
+  "x0": 17,
+  "x1": 81,
+  "y0": 25,
+  "y1": 70,
+}
+`;
+
+exports[`geometrie 3g 1`] = `
+{
+  "cx": 0.5,
+  "cy": 0,
+  "n": 1320,
+  "x0": 18,
+  "x1": 81,
+  "y0": 25,
+  "y1": 70,
+}
+`;
+
+exports[`geometrie 4g 1`] = `
+{
+  "cx": 0.13,
+  "cy": 0,
+  "n": 1374,
+  "x0": 15,
+  "x1": 81,
+  "y0": 25,
+  "y1": 70,
+}
+`;
+
+exports[`geometrie 5g 1`] = `
+{
+  "cx": 0.5,
+  "cy": 0,
+  "n": 1369,
+  "x0": 18,
+  "x1": 81,
+  "y0": 25,
+  "y1": 70,
+}
+`;
+
+exports[`geometrie lte 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1291,
+  "x0": 9,
+  "x1": 86,
+  "y0": 30,
+  "y1": 65,
+}
+`;
+
+exports[`geometrie cpu 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2384,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie memorychip 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 1868,
+  "x0": 13,
+  "x1": 82,
+  "y0": 21,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie sdcard 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1639,
+  "x0": 21,
+  "x1": 74,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie airplane 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 1890,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie tv 1`] = `
+{
+  "cx": 0,
+  "cy": 0.75,
+  "n": 1604,
+  "x0": 9,
+  "x1": 86,
+  "y0": 17,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie map 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2177,
+  "x0": 11,
+  "x1": 84,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie mappin 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 1678,
+  "x0": 19,
+  "x1": 76,
+  "y0": 11,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie mappin.and.ellipse 1`] = `
+{
+  "cx": 0,
+  "cy": 0.75,
+  "n": 1994,
+  "x0": 13,
+  "x1": 82,
+  "y0": 9,
+  "y1": 92,
+}
+`;
+
+exports[`geometrie location 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1279,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie location.north 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1148,
+  "x0": 25,
+  "x1": 70,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie compass 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2061,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie globe 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2747,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie signpost.right 1`] = `
+{
+  "cx": 0.5,
+  "cy": 0,
+  "n": 1322,
+  "x0": 19,
+  "x1": 80,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie car 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1845,
+  "x0": 13,
+  "x1": 82,
+  "y0": 17,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie bus 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2324,
+  "x0": 13,
+  "x1": 82,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie flag 1`] = `
+{
+  "cx": 0,
+  "cy": 0.13,
+  "n": 1424,
+  "x0": 17,
+  "x1": 78,
+  "y0": 10,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie building.2 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2415,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie clock 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1775,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie alarm 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 1684,
+  "x0": 15,
+  "x1": 80,
+  "y0": 9,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie timer 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1538,
+  "x0": 15,
+  "x1": 80,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie hourglass 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1540,
+  "x0": 23,
+  "x1": 72,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie calendar 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 2028,
+  "x0": 11,
+  "x1": 84,
+  "y0": 9,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie calendar.badge.plus 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 2296,
+  "x0": 11,
+  "x1": 84,
+  "y0": 9,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie calendar.badge.clock 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 2679,
+  "x0": 11,
+  "x1": 84,
+  "y0": 9,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie terminal 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2014,
+  "x0": 7,
+  "x1": 88,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie chevron.left.forwardslash.chevron.right 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1260,
+  "x0": 9,
+  "x1": 86,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie curlybraces 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1108,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie arrow.triangle.branch 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1795,
+  "x0": 11,
+  "x1": 84,
+  "y0": 5,
+  "y1": 90,
+}
+`;
+
+exports[`geometrie arrow.triangle.merge 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1809,
+  "x0": 11,
+  "x1": 84,
+  "y0": 5,
+  "y1": 90,
+}
+`;
+
+exports[`geometrie arrow.triangle.pull 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1976,
+  "x0": 11,
+  "x1": 84,
+  "y0": 5,
+  "y1": 90,
+}
+`;
+
+exports[`geometrie point.3.connected.trianglepath.dotted 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 1888,
+  "x0": 7,
+  "x1": 88,
+  "y0": 7,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie ladybug 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 1952,
+  "x0": 9,
+  "x1": 86,
+  "y0": 13,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie hammer 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 1352,
+  "x0": 11,
+  "x1": 84,
+  "y0": 9,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie wrench 1`] = `
+{
+  "cx": -0.25,
+  "cy": 0.25,
+  "n": 1557,
+  "x0": 9,
+  "x1": 84,
+  "y0": 11,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie puzzlepiece 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 1364,
+  "x0": 13,
+  "x1": 82,
+  "y0": 11,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie cube 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1988,
+  "x0": 13,
+  "x1": 82,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie shippingbox 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2179,
+  "x0": 13,
+  "x1": 82,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie command 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2160,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie option 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 796,
+  "x0": 11,
+  "x1": 84,
+  "y0": 23,
+  "y1": 72,
+}
+`;
+
+exports[`geometrie control 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 462,
+  "x0": 21,
+  "x1": 74,
+  "y0": 31,
+  "y1": 60,
+}
+`;
+
+exports[`geometrie shift 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1340,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie delete.left 1`] = `
+{
+  "cx": -0.25,
+  "cy": 0,
+  "n": 1792,
+  "x0": 7,
+  "x1": 86,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie return 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 858,
+  "x0": 13,
+  "x1": 82,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie macwindow 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2052,
+  "x0": 9,
+  "x1": 86,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie cat 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1687,
+  "x0": 7,
+  "x1": 88,
+  "y0": 15,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie function 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 704,
+  "x0": 31,
+  "x1": 64,
+  "y0": 15,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie lock 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1563,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie lock.open 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1491,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie key 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1268,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie shield 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1375,
+  "x0": 15,
+  "x1": 80,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie checkmark.shield 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1675,
+  "x0": 15,
+  "x1": 80,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie exclamationmark.shield 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1547,
+  "x0": 15,
+  "x1": 80,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie checkmark.seal 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1856,
+  "x0": 7,
+  "x1": 88,
+  "y0": 7,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie xmark.seal 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1940,
+  "x0": 7,
+  "x1": 88,
+  "y0": 7,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie touchid 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 2174,
+  "x0": 15,
+  "x1": 80,
+  "y0": 13,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie faceid 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1463,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie eye 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1780,
+  "x0": 7,
+  "x1": 88,
+  "y0": 19,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie eye.slash 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2218,
+  "x0": 7,
+  "x1": 88,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie accessibility 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2163,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie ear 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 1380,
+  "x0": 21,
+  "x1": 74,
+  "y0": 13,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie figure.roll 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0.25,
+  "n": 1388,
+  "x0": 15,
+  "x1": 82,
+  "y0": 11,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie gearshape 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2472,
+  "x0": 7,
+  "x1": 88,
+  "y0": 7,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie slider.horizontal.3 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1980,
+  "x0": 13,
+  "x1": 82,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie switch.2 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1456,
+  "x0": 15,
+  "x1": 80,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie line.3.horizontal.decrease 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 816,
+  "x0": 13,
+  "x1": 82,
+  "y0": 25,
+  "y1": 70,
+}
+`;
+
+exports[`geometrie pin 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1144,
+  "x0": 27,
+  "x1": 68,
+  "y0": 12,
+  "y1": 83,
+}
+`;
+
+exports[`geometrie moon 1`] = `
+{
+  "cx": 0.25,
+  "cy": -0.25,
+  "n": 1300,
+  "x0": 15,
+  "x1": 82,
+  "y0": 13,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie paintbrush 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1058,
+  "x0": 11,
+  "x1": 84,
+  "y0": 13,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie info.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1711,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie questionmark.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1923,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie exclamationmark.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1699,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie exclamationmark.triangle 1`] = `
+{
+  "cx": 0.5,
+  "cy": -0.12,
+  "n": 1520,
+  "x0": 12,
+  "x1": 87,
+  "y0": 12,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie ellipsis.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1611,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie nosign 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1929,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie lightbulb 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1287,
+  "x0": 20,
+  "x1": 75,
+  "y0": 9,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie gauge 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1094,
+  "x0": 13,
+  "x1": 82,
+  "y0": 22,
+  "y1": 73,
+}
+`;
+
+exports[`geometrie hourglass.bottomhalf.filled 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1874,
+  "x0": 23,
+  "x1": 72,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie play 1`] = `
+{
+  "cx": 0.5,
+  "cy": 0,
+  "n": 1084,
+  "x0": 23,
+  "x1": 76,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie pause 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1672,
+  "x0": 25,
+  "x1": 70,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie stop 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1284,
+  "x0": 17,
+  "x1": 78,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie backward 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1530,
+  "x0": 13,
+  "x1": 82,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie forward 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1530,
+  "x0": 13,
+  "x1": 82,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie backward.end 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1162,
+  "x0": 21,
+  "x1": 74,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie forward.end 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1162,
+  "x0": 21,
+  "x1": 74,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie play.rectangle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1906,
+  "x0": 9,
+  "x1": 86,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie record.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2339,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie shuffle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1352,
+  "x0": 13,
+  "x1": 82,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie repeat 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1212,
+  "x0": 17,
+  "x1": 78,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie speaker.wave.2 1`] = `
+{
+  "cx": 0.38,
+  "cy": 0,
+  "n": 1454,
+  "x0": 13,
+  "x1": 85,
+  "y0": 19,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie speaker.slash 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0,
+  "n": 1276,
+  "x0": 13,
+  "x1": 84,
+  "y0": 19,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie mic 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 1551,
+  "x0": 21,
+  "x1": 74,
+  "y0": 5,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie mic.slash 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 2018,
+  "x0": 13,
+  "x1": 82,
+  "y0": 5,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie camera 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1990,
+  "x0": 11,
+  "x1": 84,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie photo 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2058,
+  "x0": 11,
+  "x1": 84,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie music.note 1`] = `
+{
+  "cx": -0.12,
+  "cy": -0.37,
+  "n": 1545,
+  "x0": 16,
+  "x1": 78,
+  "y0": 9,
+  "y1": 83,
+}
+`;
+
+exports[`geometrie waveform 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1264,
+  "x0": 13,
+  "x1": 82,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie film 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2628,
+  "x0": 9,
+  "x1": 86,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie sun.max 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1438,
+  "x0": 7,
+  "x1": 88,
+  "y0": 7,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie cloud 1`] = `
+{
+  "cx": 0.38,
+  "cy": 0.13,
+  "n": 1306,
+  "x0": 10,
+  "x1": 88,
+  "y0": 20,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie cloud.arrow.up 1`] = `
+{
+  "cx": 0.38,
+  "cy": 0.13,
+  "n": 1640,
+  "x0": 10,
+  "x1": 88,
+  "y0": 20,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie cloud.arrow.down 1`] = `
+{
+  "cx": 0.38,
+  "cy": 0.13,
+  "n": 1640,
+  "x0": 10,
+  "x1": 88,
+  "y0": 20,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie cloud.rain 1`] = `
+{
+  "cx": 0.38,
+  "cy": 0.13,
+  "n": 1582,
+  "x0": 10,
+  "x1": 88,
+  "y0": 10,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie cloud.bolt 1`] = `
+{
+  "cx": 0.38,
+  "cy": 0.63,
+  "n": 1546,
+  "x0": 10,
+  "x1": 88,
+  "y0": 10,
+  "y1": 90,
+}
+`;
+
+exports[`geometrie snowflake 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1652,
+  "x0": 14,
+  "x1": 81,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie wind 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 1950,
+  "x0": 9,
+  "x1": 86,
+  "y0": 5,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie thermometer 1`] = `
+{
+  "cx": 0,
+  "cy": 0.13,
+  "n": 1418,
+  "x0": 29,
+  "x1": 66,
+  "y0": 7,
+  "y1": 89,
+}
+`;
+
+exports[`geometrie umbrella 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 1500,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie drop 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 1152,
+  "x0": 21,
+  "x1": 74,
+  "y0": 11,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie flame 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1308,
+  "x0": 21,
+  "x1": 74,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1515,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie square 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1556,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie triangle 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 1270,
+  "x0": 11,
+  "x1": 84,
+  "y0": 15,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie diamond 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1288,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie hexagon 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1448,
+  "x0": 13,
+  "x1": 82,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie capsule 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1217,
+  "x0": 9,
+  "x1": 86,
+  "y0": 25,
+  "y1": 70,
+}
+`;
+
+exports[`geometrie rectangle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1424,
+  "x0": 9,
+  "x1": 86,
+  "y0": 19,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie seal 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1556,
+  "x0": 7,
+  "x1": 88,
+  "y0": 7,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie circle.lefthalf.filled 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 3182,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie circle.grid.3x3 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2592,
+  "x0": 12,
+  "x1": 83,
+  "y0": 12,
+  "y1": 83,
+}
+`;
+
+exports[`geometrie rectangle.3.group 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2460,
+  "x0": 9,
+  "x1": 86,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie rectangle.split.2x1 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1772,
+  "x0": 9,
+  "x1": 86,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie square.3.layers.3d 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 1973,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie square.on.square 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1827,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie gamecontroller 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 1705,
+  "x0": 5,
+  "x1": 90,
+  "y0": 25,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie gamecontroller.grips 1`] = `
+{
+  "cx": 0,
+  "cy": 0.13,
+  "n": 2219,
+  "x0": 7,
+  "x1": 88,
+  "y0": 19,
+  "y1": 77,
+}
+`;
+
+exports[`geometrie gamecontroller.touchpad 1`] = `
+{
+  "cx": -0.12,
+  "cy": 0.25,
+  "n": 2572,
+  "x0": 5,
+  "x1": 89,
+  "y0": 18,
+  "y1": 79,
+}
+`;
+
+exports[`geometrie dpad 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2228,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie dpad.up 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2370,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie dpad.down 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2370,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie dpad.left 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2370,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie dpad.right 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2370,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie a.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1971,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie b.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2152,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie x.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2007,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie y.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1861,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie triangle.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2117,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie square.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2159,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie circle.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2133,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie l.joystick 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1786,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie r.joystick 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1979,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie l1.rectangle.roundedbottom 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1881,
+  "x0": 13,
+  "x1": 82,
+  "y0": 19,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie r1.rectangle.roundedbottom 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 2070,
+  "x0": 13,
+  "x1": 82,
+  "y0": 19,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie l2.rectangle.roundedtop 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 2038,
+  "x0": 13,
+  "x1": 82,
+  "y0": 17,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie r2.rectangle.roundedtop 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 2227,
+  "x0": 13,
+  "x1": 82,
+  "y0": 17,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie lb.rectangle.roundedbottom 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 2168,
+  "x0": 13,
+  "x1": 82,
+  "y0": 19,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie rb.rectangle.roundedbottom 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 2350,
+  "x0": 13,
+  "x1": 82,
+  "y0": 19,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie lt.rectangle.roundedtop 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 1933,
+  "x0": 13,
+  "x1": 82,
+  "y0": 17,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie rt.rectangle.roundedtop 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 2122,
+  "x0": 13,
+  "x1": 82,
+  "y0": 17,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie zl.rectangle.roundedtop 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 2041,
+  "x0": 13,
+  "x1": 82,
+  "y0": 17,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie zr.rectangle.roundedtop 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 2233,
+  "x0": 13,
+  "x1": 82,
+  "y0": 17,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie line.3.horizontal.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2187,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie house.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2215,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie trophy 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1751,
+  "x0": 15,
+  "x1": 80,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie dice 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1700,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie gamecontroller.split 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2527,
+  "x0": 7,
+  "x1": 88,
+  "y0": 23,
+  "y1": 72,
+}
+`;
+
+exports[`geometrie crown 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 2046,
+  "x0": 9,
+  "x1": 86,
+  "y0": 15,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie rocket 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1663,
+  "x0": 15,
+  "x1": 80,
+  "y0": 9,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie scope 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2333,
+  "x0": 5,
+  "x1": 90,
+  "y0": 5,
+  "y1": 90,
+}
+`;
+
+exports[`geometrie wand.and.stars 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0,
+  "n": 1338,
+  "x0": 11,
+  "x1": 86,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie cursorarrow 1`] = `
+{
+  "cx": 0.25,
+  "cy": -0.75,
+  "n": 1060,
+  "x0": 19,
+  "x1": 78,
+  "y0": 15,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie leaf 1`] = `
+{
+  "cx": 0.25,
+  "cy": -0.25,
+  "n": 1588,
+  "x0": 15,
+  "x1": 82,
+  "y0": 13,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie graduationcap 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1797,
+  "x0": 7,
+  "x1": 88,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie book 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1832,
+  "x0": 11,
+  "x1": 84,
+  "y0": 13,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie ticket 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1656,
+  "x0": 11,
+  "x1": 84,
+  "y0": 23,
+  "y1": 72,
+}
+`;
+
+exports[`geometrie fork.knife 1`] = `
+{
+  "cx": -0.25,
+  "cy": 0,
+  "n": 1501,
+  "x0": 21,
+  "x1": 72,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie mug 1`] = `
+{
+  "cx": -0.5,
+  "cy": 0,
+  "n": 1615,
+  "x0": 11,
+  "x1": 80,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie cross.case 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1926,
+  "x0": 9,
+  "x1": 86,
+  "y0": 15,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie pawprint 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2122,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie moon.stars 1`] = `
+{
+  "cx": 0.63,
+  "cy": 0.5,
+  "n": 1643,
+  "x0": 10,
+  "x1": 90,
+  "y0": 13,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie equal 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 736,
+  "x0": 17,
+  "x1": 78,
+  "y0": 35,
+  "y1": 60,
+}
+`;
+
+exports[`geometrie face.bubble 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1892,
+  "x0": 7,
+  "x1": 88,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie cat.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2554,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie arrow.branch.diamond 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2120,
+  "x0": 7,
+  "x1": 88,
+  "y0": 7,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie fox 1`] = `
+{
+  "cx": 0,
+  "cy": 0.75,
+  "n": 1673,
+  "x0": 13,
+  "x1": 82,
+  "y0": 17,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie bird 1`] = `
+{
+  "cx": 0.75,
+  "cy": 0.25,
+  "n": 1535,
+  "x0": 15,
+  "x1": 86,
+  "y0": 19,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie butterfly 1`] = `
+{
+  "cx": 0,
+  "cy": -0.62,
+  "n": 2413,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 79,
+}
+`;
+
+exports[`geometrie penguin 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2203,
+  "x0": 13,
+  "x1": 82,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie robot 1`] = `
+{
+  "cx": 0,
+  "cy": 0.13,
+  "n": 1970,
+  "x0": 7,
+  "x1": 88,
+  "y0": 12,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie apple 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 1361,
+  "x0": 18,
+  "x1": 77,
+  "y0": 11,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie briefcase 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2180,
+  "x0": 9,
+  "x1": 86,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie cube.stack 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2326,
+  "x0": 9,
+  "x1": 86,
+  "y0": 16,
+  "y1": 79,
+}
+`;
+
+exports[`geometrie phone.bubble.left 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 2234,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie dot.radiowaves.upright 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 963,
+  "x0": 23,
+  "x1": 72,
+  "y0": 23,
+  "y1": 72,
+}
+`;
+
+exports[`geometrie pen.nib 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1524,
+  "x0": 21,
+  "x1": 74,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie music.note.circle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2326,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;

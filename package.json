@@ -1,0 +1,53 @@
+{
+  "name": "@miralabs/icones",
+  "version": "0.3.0",
+  "description": "Miralabs Icônes — symboles dessinés à la main sur grille 24, source en couches ; six graisses et la forme Pleine sont dérivées au rendu. Web (SVG) ou natif (masque de couverture).",
+  "license": "MIT",
+  "repository": "github:miralabs-tech/miralabs-icones",
+  "homepage": "https://miralabs-tech.github.io/miralabs-icones/docs/",
+  "type": "module",
+  "sideEffects": ["./dist/mira-symbol.js", "./dist/mira-symbol.all.js"],
+  "files": ["src", "dist", "!dist/font", "adapters", "native", "LICENSE-BRANDS"],
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "default": "./dist/esm/index.js" },
+    "./data": { "types": "./dist/data.d.ts", "default": "./dist/data.js" },
+    "./ir": { "types": "./dist/ir.d.ts", "default": "./dist/ir.js" },
+    "./render": { "types": "./dist/render.d.ts", "default": "./dist/render.js" },
+    "./mira-symbol": { "types": "./dist/mira-symbol.d.ts", "default": "./dist/mira-symbol.js" },
+    "./mira-symbol.all": { "types": "./dist/mira-symbol.all.d.ts", "default": "./dist/mira-symbol.all.js" },
+    "./metadata.json": "./dist/metadata.json",
+    "./symbols.json": "./dist/symbols.json",
+    "./ir.json": "./dist/ir.json",
+    "./sprite/*": "./dist/sprite/*",
+    "./esm/*": "./dist/esm/*",
+    "./adapters/*": "./adapters/*"
+  },
+  "scripts": {
+    "codegen": "bun scripts/codegen.ts",
+    "codegen:check": "bun scripts/codegen.ts --check",
+    "build": "bun scripts/build.ts",
+    "build:static": "bun scripts/build.ts --static",
+    "build:font": "bun scripts/build.ts --static --font",
+    "build:check": "bun scripts/build.ts --check",
+    "typecheck": "bun x tsc -p tsconfig.json --noEmit && bun x tsc -p tsconfig.tools.json --noEmit",
+    "typecheck:dist": "bun x tsc -p tsconfig.dts.json --noEmit",
+    "test": "bun test",
+    "test:browser": "bun x vitest run -c vitest.config.ts",
+    "dev": "bun scripts/dev.ts",
+    "docs": "bun x serve . -l 4173"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/bun": "^1.4.1",
+    "@vitest/browser-playwright": "^4.1.11",
+    "happy-dom": "^20.14.0",
+    "oslllo-svg-fixer": "^6.0.1",
+    "playwright": "^1.62.1",
+    "svg2ttf": "^6.1.0",
+    "svgicons2svgfont": "^16.0.0",
+    "ttf2woff2": "^8.0.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11"
+  },
+  "publishConfig": { "access": "public" }
+}

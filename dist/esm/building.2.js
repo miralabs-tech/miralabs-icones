@@ -1,0 +1,1 @@
+export default {"name":"building.2","tags":["bâtiment","bureau","entreprise","ville","immeuble"],"e":"M3.5 9.5h8v11h-8zM11.5 3.5h9v17h-9z","c":"M6 13h1M8.5 13h1M6 16.5h1M8.5 16.5h1M14 7h1M17 7h1M14 10.5h1M17 10.5h1M14 14h1M17 14h1"};

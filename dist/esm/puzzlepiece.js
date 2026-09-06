@@ -1,0 +1,1 @@
+export default {"name":"puzzlepiece","tags":["extension","module","plugin","intégration"],"p":"M10 5.5a2 2 0 1 1 4 0h2.5A1.5 1.5 0 0 1 18 7v2.5a2 2 0 1 1 0 4V16a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H7.5A1.5 1.5 0 0 1 6 16v-2.5a2 2 0 1 1 0-4V7a1.5 1.5 0 0 1 1.5-1.5z","pf":"="};

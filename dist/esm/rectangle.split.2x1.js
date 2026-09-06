@@ -1,0 +1,1 @@
+export default {"name":"rectangle.split.2x1","tags":["colonnes","séparer","vue divisée","côte à côte"],"e":"M5.5 5h13a2.5 2.5 0 0 1 2.5 2.5v9a2.5 2.5 0 0 1 -2.5 2.5h-13a2.5 2.5 0 0 1 -2.5 -2.5v-9a2.5 2.5 0 0 1 2.5 -2.5z","c":"M12 5v14"};

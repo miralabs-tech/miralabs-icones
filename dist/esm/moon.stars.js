@@ -1,0 +1,1 @@
+export default {"name":"moon.stars","tags":["nuit","sommeil","mode nuit","étoiles","coucher"],"p":"M17 15.5A7 7 0 0 1 8.5 7a7 7 0 1 0 8.5 8.5zM18 4l.7 1.6 1.6.7-1.6.7L18 8.6l-.7-1.6-1.6-.7 1.6-.7zM20.5 10.5l.4 1 1 .4-1 .4-.4 1-.4-1-1-.4 1-.4z","pf":"="};

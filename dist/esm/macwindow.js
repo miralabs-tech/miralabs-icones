@@ -1,0 +1,1 @@
+export default {"name":"macwindow","tags":["fenêtre","application","bureau","interface"],"e":"M5.5 4h13a2.5 2.5 0 0 1 2.5 2.5v11a2.5 2.5 0 0 1 -2.5 2.5h-13a2.5 2.5 0 0 1 -2.5 -2.5v-11a2.5 2.5 0 0 1 2.5 -2.5z","c":"M3 8.5h18M6.5 6.25h.5M9.5 6.25h.5"};

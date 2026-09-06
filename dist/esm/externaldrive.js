@@ -1,0 +1,1 @@
+export default {"name":"externaldrive","tags":["disque externe","stockage","volume"],"e":"M3.5 10A1.5 1.5 0 0 1 5 8.5h14a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 14z","c":"M16.5 12h1"};

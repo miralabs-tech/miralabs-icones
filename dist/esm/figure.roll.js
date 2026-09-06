@@ -1,0 +1,1 @@
+export default {"name":"figure.roll","tags":["fauteuil roulant","mobilité réduite","accessibilité","PMR"],"e":"M4.5 16.5a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0z","p":"M9 12V6.5h4l1.5 5.5h4l1.5 5M13 3.5v.01","cut":false};

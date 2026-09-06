@@ -1,0 +1,1 @@
+export default {"name":"rectangle.portrait.and.arrow.right","tags":["déconnexion","quitter","sortir","logout"],"rtl":true,"p":"M14 6V5a1.5 1.5 0 0 0-1.5-1.5h-7A1.5 1.5 0 0 0 4 5v14a1.5 1.5 0 0 0 1.5 1.5h7A1.5 1.5 0 0 0 14 19v-1M9.5 12h11M17 8.5l3.5 3.5-3.5 3.5"};

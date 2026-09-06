@@ -1,0 +1,1 @@
+export default {"name":"film","tags":["film","cinéma","vidéo","pellicule"],"e":"M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2z","c":"M7 4v16M17 4v16M3 8h4M3 12h4M3 16h4M17 8h4M17 12h4M17 16h4"};

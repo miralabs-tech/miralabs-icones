@@ -1,0 +1,1 @@
+export default {"name":"watch","tags":["montre","montre connectée","poignet"],"e":"M10 6h4a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-4a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3z","p":"M9 6V3.5h6V6M9 18v2.5h6V18","cut":false};

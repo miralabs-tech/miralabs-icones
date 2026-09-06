@@ -1,0 +1,1 @@
+export default {"name":"music.note","tags":["musique","note","audio","chanson"],"p":"M9 18.5V5l10-2v12.5","f":"M4 18.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM14 15.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0z"};

@@ -1,0 +1,1 @@
+export default {"name":"hand.raised","tags":["main levée","stop","bonjour","attendre","question"],"p":"M8 15V6a1.5 1.5 0 0 1 3 0v5M11 11V4.5a1.5 1.5 0 0 1 3 0V11M14 11V6a1.5 1.5 0 0 1 3 0v6M17 12V8.5a1.5 1.5 0 0 1 3 0V15a6 6 0 0 1-6 6h-2a6 6 0 0 1-4.7-2.3l-3-3.8a1.6 1.6 0 0 1 2.5-2L8 15"};

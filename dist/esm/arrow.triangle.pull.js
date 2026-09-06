@@ -1,0 +1,1 @@
+export default {"name":"arrow.triangle.pull","tags":["git","pull request","demande de fusion","revue"],"e":"M3.5 4.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM3.5 19.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM15.5 19.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0z","p":"M6 7v10M13 4.5h2.5A2.5 2.5 0 0 1 18 7v10M13 4.5 15 2.5M13 4.5 15 6.5","cut":false};

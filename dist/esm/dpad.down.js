@@ -1,0 +1,1 @@
+export default {"name":"dpad.down","tags":["d-pad bas","direction bas","appuyé"],"e":"M9.5 3.5h5v6h6v5h-6v6h-5v-6h-6v-5h6z","c":"M12 6l1.5 1.75h-3zM12 18l1.5-1.75h-3zM6 12l1.75-1.5v3zM18 12l-1.75-1.5v3z","f":"M9.5 14.5h5v6h-5z"};

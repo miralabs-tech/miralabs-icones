@@ -1,0 +1,1 @@
+export default {"name":"bag","tags":["sac","achats","boutique","shopping"],"e":"M6 8.5h12l1 11a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19.5z","p":"M9 10.5V7a3 3 0 0 1 6 0v3.5","cut":false,"fade":"p"};

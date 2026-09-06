@@ -1,0 +1,1 @@
+export default {"name":"book","tags":["livre","documentation","lecture","guide","manuel","docs"],"e":"M3.5 5.5A1.5 1.5 0 0 1 5 4h4.5A2.5 2.5 0 0 1 12 6.5v14A2.5 2.5 0 0 0 9.5 18H5a1.5 1.5 0 0 1-1.5-1.5zM20.5 5.5A1.5 1.5 0 0 0 19 4h-4.5A2.5 2.5 0 0 0 12 6.5v14A2.5 2.5 0 0 1 14.5 18H19a1.5 1.5 0 0 0 1.5-1.5z"};

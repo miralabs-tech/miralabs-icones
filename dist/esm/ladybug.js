@@ -1,0 +1,1 @@
+export default {"name":"ladybug","tags":["bug","bogue","insecte","erreur","débogage"],"e":"M12 8c3.5 0 6 2.7 6 6.5S15.5 21 12 21s-6-2.7-6-6.5S8.5 8 12 8z","c":"M12 8v13M9.5 12h.01M14.5 12h.01M10 16h.01M14 16h.01","p":"M9 4l1.5 2.5M15 4l-1.5 2.5M6 12.5H3M18 12.5h3M6.5 17l-2.5 1.5M17.5 17l2.5 1.5","cut":false};

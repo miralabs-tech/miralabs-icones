@@ -1,0 +1,1 @@
+export default {"name":"point.3.connected.trianglepath.dotted","tags":["graphe","nœuds","réseau","commits","relations"],"e":"M9.5 5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM2.5 18.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM16.5 18.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0z","p":"M10.8 7.2 6.3 16.3M13.2 7.2l4.5 9.1M7.5 18.5h9","cut":false};

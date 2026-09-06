@@ -1,0 +1,1 @@
+export default {"name":"hand.thumbsup","tags":["pouce levé","j'aime","approuver","like","bravo","facebook"],"p":"M3 12A1.5 1.5 0 0 1 4.5 10.5H7V20H4.5A1.5 1.5 0 0 1 3 18.5zM7 10.5 10.3 4.3A1.9 1.9 0 0 1 13.9 5.2L13.3 9.5h5.2a2 2 0 0 1 2 2.3l-1.2 6.5A2 2 0 0 1 17.3 20H7z","pf":"="};

@@ -1,0 +1,1 @@
+export default {"name":"dollarsign.circle","tags":["dollar","prix","monnaie","coût"],"e":"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0z","p":"M12 6v12M14.5 9.25A2.25 2.25 0 0 0 12.25 7.5h-.5a2.25 2.25 0 0 0 0 4.5h.5a2.25 2.25 0 0 1 0 4.5h-.5A2.25 2.25 0 0 1 9.5 14.75"};

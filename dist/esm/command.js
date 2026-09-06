@@ -1,0 +1,1 @@
+export default {"name":"command","tags":["commande","raccourci","cmd","touche"],"p":"M9 9V6.5a2.5 2.5 0 1 0-2.5 2.5H9zM15 9h2.5A2.5 2.5 0 1 0 15 6.5V9zM9 15v2.5A2.5 2.5 0 1 1 6.5 15H9zM15 15v2.5a2.5 2.5 0 1 0 2.5-2.5H15zM9 9h6v6H9z"};

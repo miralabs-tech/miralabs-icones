@@ -1,0 +1,1 @@
+export default {"name":"curlybraces","tags":["accolades","JSON","objet","code"],"p":"M8.5 4H8a2 2 0 0 0-2 2v3.5a2 2 0 0 1-2 2 2 2 0 0 1 2 2V18a2 2 0 0 0 2 2h.5M15.5 4h.5a2 2 0 0 1 2 2v3.5a2 2 0 0 0 2 2 2 2 0 0 0-2 2V18a2 2 0 0 1-2 2h-.5"};

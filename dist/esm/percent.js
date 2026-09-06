@@ -1,0 +1,1 @@
+export default {"name":"percent","tags":["pourcentage","remise","promotion","taux"],"e":"M5 7.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM14 16.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0z","p":"M18 6 6 18","cut":false};

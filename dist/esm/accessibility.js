@@ -1,0 +1,1 @@
+export default {"name":"accessibility","tags":["accessibilité","handicap","a11y","inclusif"],"e":"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0z","c":"M12 6.75v.01M7 10.5l5 1 5-1M12 11.5v3.5l-2.5 3.5M12 15l2.5 3.5"};

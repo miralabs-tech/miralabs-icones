@@ -1,0 +1,1 @@
+export default {"name":"switch.2","tags":["interrupteurs","options","activer","bascules"],"e":"M6.5 7a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM12.5 17a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0z","p":"M4.5 7h15M4.5 17h15","keep":true};

@@ -1,0 +1,1 @@
+export default {"name":"bird","tags":["twitter","oiseau","tweet","gazouillis","animal"],"e":"M4.5 19c0-5 3-8.5 7-8.5h1V8.5a3 3 0 0 1 6 0v1.2l2.5 1.3-2.5.5V14a5 5 0 0 1-5 5z","c":"M16.5 8.5v.01M8 16.5c2.5 0 4.5-1.5 5.5-4"};

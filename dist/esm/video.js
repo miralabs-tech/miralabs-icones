@@ -1,0 +1,1 @@
+export default {"name":"video","tags":["visio","caméra","appel vidéo","enregistrer"],"e":"M3.5 8A1.5 1.5 0 0 1 5 6.5h9A1.5 1.5 0 0 1 15.5 8v8a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 16zM15.5 10.5 20.5 8v8l-5-2.5z"};

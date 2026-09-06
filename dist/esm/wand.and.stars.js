@@ -1,0 +1,1 @@
+export default {"name":"wand.and.stars","tags":["baguette","magie","IA","retouche automatique","améliorer","auto"],"p":"M3.5 20.5 14 10M15.5 3.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9zM19 12l.6 1.4L21 14l-1.4.6L19 16l-.6-1.4L17 14l1.4-.6zM6 4l.5 1.2 1.2.5-1.2.5L6 7.4l-.5-1.2-1.2-.5 1.2-.5z"};

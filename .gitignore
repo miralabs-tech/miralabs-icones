@@ -1,0 +1,15 @@
+node_modules/
+dist/svg/
+dist/font/*.ttf
+dist/font/*.woff2
+dist/font/_*/
+release/
+native/build*/
+native/out.pgm
+*.log
+*.tgz
+.DS_Store
+Thumbs.db
+.standarflow
+.claude
+*.tsbuildinfo

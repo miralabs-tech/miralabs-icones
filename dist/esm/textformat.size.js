@@ -1,0 +1,1 @@
+export default {"name":"textformat.size","tags":["taille du texte","corps","accessibilité","zoom texte"],"p":"M3.5 14.25a2.75 2.75 0 1 0 5.5 0a2.75 2.75 0 1 0 -5.5 0zM9 11.5V17M12 17l4.5-11L21 17M13.6 13h5.8"};

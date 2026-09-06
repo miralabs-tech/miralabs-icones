@@ -1,0 +1,1 @@
+export default {"name":"faceid","tags":["reconnaissance faciale","biométrie","visage","authentification"],"p":"M3.5 8V5.5A2 2 0 0 1 5.5 3.5H8M16 3.5h2.5a2 2 0 0 1 2 2V8M20.5 16v2.5a2 2 0 0 1-2 2H16M8 20.5H5.5a2 2 0 0 1-2-2V16M8.5 9v1.5M15.5 9v1.5M12 9v4h-1.2M8.5 15a5 5 0 0 0 7 0"};

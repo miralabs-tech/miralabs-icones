@@ -1,0 +1,1 @@
+export default {"name":"cylinder.split.1x2","tags":["base de données","database","stockage","table"],"e":"M5 6.5c0-1.7 3.1-3 7-3s7 1.3 7 3v11c0 1.7-3.1 3-7 3s-7-1.3-7-3z","c":"M5 6.5c0 1.7 3.1 3 7 3s7-1.3 7-3M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"};

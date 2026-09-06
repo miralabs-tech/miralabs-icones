@@ -1,0 +1,1 @@
+export default {"name":"cloud.arrow.up","tags":["téléverser","sauvegarde cloud","upload","envoyer vers le cloud"],"e":"M7 18.5h10.5a4 4 0 0 0 .7-7.94A6 6 0 0 0 6.6 9.9 4.4 4.4 0 0 0 7 18.5z","c":"M12 16v-6M9.5 12.5 12 10l2.5 2.5"};

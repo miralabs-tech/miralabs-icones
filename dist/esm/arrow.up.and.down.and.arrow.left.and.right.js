@@ -1,0 +1,1 @@
+export default {"name":"arrow.up.and.down.and.arrow.left.and.right","tags":["déplacer","glisser","quatre directions","move"],"p":"M12 3v18M3 12h18M9 6l3-3 3 3M9 18l3 3 3-3M6 9l-3 3 3 3M18 9l3 3-3 3"};

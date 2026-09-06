@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.0"
+      - run: bun install --frozen-lockfile
+
+      # dist/ est committé et consommé tel quel (dépendance github:, GitHub Pages) : sans ces deux
+      # étapes, rien n'empêche un dist/ périmé d'être taggé puis installé par les consommateurs.
+      - name: dist/ correspond aux sources
+        run: |
+          bun run codegen:check
+          bun run build:check
+
+      - run: bun run typecheck
+      - run: bun run typecheck:dist
+      - run: bun test
+
+      - name: Audit géométrique sous Chromium
+        run: |
+          bun x playwright install --with-deps chromium
+          bun run test:browser

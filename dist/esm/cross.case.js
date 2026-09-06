@@ -1,0 +1,1 @@
+export default {"name":"cross.case","tags":["santé","médical","premiers secours","trousse","pharmacie","urgence"],"e":"M5 7.5h14a2 2 0 0 1 2 2v8.5a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-8.5a2 2 0 0 1 2 -2z","c":"M12 11v5M9.5 13.5h5","p":"M8.5 7.5V6a1.5 1.5 0 0 1 1.5-1.5h4A1.5 1.5 0 0 1 15.5 6v1.5","cut":false};

@@ -1,0 +1,6559 @@
+{
+  "name": "@miralabs/icones",
+  "version": "0.3.0",
+  "grid": 24,
+  "strokeRegular": 1.5,
+  "weights": [
+    {
+      "id": "thin",
+      "label": "Fin",
+      "stroke": 1,
+      "fontWeight": 200
+    },
+    {
+      "id": "light",
+      "label": "Léger",
+      "stroke": 1.25,
+      "fontWeight": 300
+    },
+    {
+      "id": "regular",
+      "label": "Régulier",
+      "stroke": 1.5,
+      "fontWeight": 400
+    },
+    {
+      "id": "medium",
+      "label": "Moyen",
+      "stroke": 1.75,
+      "fontWeight": 500
+    },
+    {
+      "id": "semibold",
+      "label": "Demi-gras",
+      "stroke": 2,
+      "fontWeight": 600
+    },
+    {
+      "id": "bold",
+      "label": "Gras",
+      "stroke": 2.4,
+      "fontWeight": 700
+    }
+  ],
+  "shapes": [
+    "outline",
+    "fill"
+  ],
+  "tones": [
+    "mono",
+    "hier"
+  ],
+  "collections": [
+    {
+      "id": "navigation",
+      "label": "Navigation",
+      "glyph": "sidebar.left",
+      "count": 16
+    },
+    {
+      "id": "fleches",
+      "label": "Flèches",
+      "glyph": "arrow.right",
+      "count": 27
+    },
+    {
+      "id": "actions",
+      "label": "Actions",
+      "glyph": "plus",
+      "count": 24
+    },
+    {
+      "id": "texte",
+      "label": "Texte & mise en page",
+      "glyph": "textformat",
+      "count": 19
+    },
+    {
+      "id": "fichiers",
+      "label": "Fichiers & données",
+      "glyph": "folder",
+      "count": 21
+    },
+    {
+      "id": "communication",
+      "label": "Communication",
+      "glyph": "bubble.left",
+      "count": 15
+    },
+    {
+      "id": "gestes",
+      "label": "Gestes & émotions",
+      "glyph": "hand.thumbsup",
+      "count": 8
+    },
+    {
+      "id": "personnes",
+      "label": "Personnes & comptes",
+      "glyph": "person",
+      "count": 6
+    },
+    {
+      "id": "commerce",
+      "label": "Commerce & paiement",
+      "glyph": "creditcard",
+      "count": 15
+    },
+    {
+      "id": "appareils",
+      "label": "Appareils & système",
+      "glyph": "iphone",
+      "count": 28
+    },
+    {
+      "id": "cartes",
+      "label": "Cartes & lieux",
+      "glyph": "mappin",
+      "count": 12
+    },
+    {
+      "id": "temps",
+      "label": "Temps & agenda",
+      "glyph": "clock",
+      "count": 7
+    },
+    {
+      "id": "dev",
+      "label": "Développement",
+      "glyph": "terminal",
+      "count": 22
+    },
+    {
+      "id": "securite",
+      "label": "Sécurité & accessibilité",
+      "glyph": "lock",
+      "count": 15
+    },
+    {
+      "id": "reglages",
+      "label": "Réglages",
+      "glyph": "gearshape",
+      "count": 7
+    },
+    {
+      "id": "statut",
+      "label": "Statut",
+      "glyph": "info.circle",
+      "count": 9
+    },
+    {
+      "id": "media",
+      "label": "Média",
+      "glyph": "play",
+      "count": 20
+    },
+    {
+      "id": "meteo",
+      "label": "Météo",
+      "glyph": "sun.max",
+      "count": 12
+    },
+    {
+      "id": "objets",
+      "label": "Objets",
+      "glyph": "book",
+      "count": 15
+    },
+    {
+      "id": "formes",
+      "label": "Formes",
+      "glyph": "circle",
+      "count": 14
+    },
+    {
+      "id": "manette",
+      "label": "Manette",
+      "glyph": "gamecontroller",
+      "count": 32
+    },
+    {
+      "id": "marques",
+      "label": "Évocations de marques",
+      "glyph": "cat.circle",
+      "count": 15
+    }
+  ],
+  "symbols": [
+    {
+      "name": "chevron.left",
+      "id": "chevronLeft",
+      "collection": "navigation",
+      "tags": [
+        "retour",
+        "précédent",
+        "gauche",
+        "flèche"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E000"
+    },
+    {
+      "name": "chevron.right",
+      "id": "chevronRight",
+      "collection": "navigation",
+      "tags": [
+        "suivant",
+        "droite",
+        "flèche",
+        "disclosure"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E001"
+    },
+    {
+      "name": "chevron.up",
+      "id": "chevronUp",
+      "collection": "navigation",
+      "tags": [
+        "haut",
+        "replier",
+        "monter"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E002"
+    },
+    {
+      "name": "chevron.down",
+      "id": "chevronDown",
+      "collection": "navigation",
+      "tags": [
+        "bas",
+        "déplier",
+        "descendre",
+        "menu"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E003"
+    },
+    {
+      "name": "chevron.up.chevron.down",
+      "id": "chevronUpChevronDown",
+      "collection": "navigation",
+      "tags": [
+        "sélecteur",
+        "select",
+        "popup",
+        "trier"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E004"
+    },
+    {
+      "name": "chevron.left.2",
+      "id": "chevronLeft2",
+      "collection": "navigation",
+      "tags": [
+        "début",
+        "reculer vite",
+        "double"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E005"
+    },
+    {
+      "name": "chevron.right.2",
+      "id": "chevronRight2",
+      "collection": "navigation",
+      "tags": [
+        "fin",
+        "avancer vite",
+        "double"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E006"
+    },
+    {
+      "name": "house",
+      "id": "house",
+      "collection": "navigation",
+      "tags": [
+        "accueil",
+        "maison",
+        "home"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E007"
+    },
+    {
+      "name": "sidebar.left",
+      "id": "sidebarLeft",
+      "collection": "navigation",
+      "tags": [
+        "barre latérale",
+        "panneau",
+        "afficher",
+        "masquer"
+      ],
+      "rtl": true,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E008"
+    },
+    {
+      "name": "sidebar.right",
+      "id": "sidebarRight",
+      "collection": "navigation",
+      "tags": [
+        "inspecteur",
+        "panneau droit",
+        "afficher",
+        "masquer"
+      ],
+      "rtl": true,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E009"
+    },
+    {
+      "name": "line.3.horizontal",
+      "id": "line3Horizontal",
+      "collection": "navigation",
+      "tags": [
+        "menu",
+        "hamburger",
+        "liste",
+        "options"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E00A"
+    },
+    {
+      "name": "magnifyingglass",
+      "id": "magnifyingglass",
+      "collection": "navigation",
+      "tags": [
+        "rechercher",
+        "loupe",
+        "chercher",
+        "filtrer"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E00B"
+    },
+    {
+      "name": "ellipsis",
+      "id": "ellipsis",
+      "collection": "navigation",
+      "tags": [
+        "plus",
+        "options",
+        "davantage",
+        "menu"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E00C"
+    },
+    {
+      "name": "square.grid.2x2",
+      "id": "squareGrid2x2",
+      "collection": "navigation",
+      "tags": [
+        "grille",
+        "galerie",
+        "vue",
+        "applications",
+        "tous",
+        "windows",
+        "microsoft"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E00D"
+    },
+    {
+      "name": "rectangle.portrait.and.arrow.right",
+      "id": "rectanglePortraitAndArrowRight",
+      "collection": "navigation",
+      "tags": [
+        "déconnexion",
+        "quitter",
+        "sortir",
+        "logout"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E00E"
+    },
+    {
+      "name": "rectangle.portrait.and.arrow.left",
+      "id": "rectanglePortraitAndArrowLeft",
+      "collection": "navigation",
+      "tags": [
+        "connexion",
+        "se connecter",
+        "entrer",
+        "login"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E00F"
+    },
+    {
+      "name": "arrow.left",
+      "id": "arrowLeft",
+      "collection": "fleches",
+      "tags": [
+        "retour",
+        "précédent",
+        "gauche"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E010"
+    },
+    {
+      "name": "arrow.right",
+      "id": "arrowRight",
+      "collection": "fleches",
+      "tags": [
+        "suivant",
+        "continuer",
+        "droite"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E011"
+    },
+    {
+      "name": "arrow.up",
+      "id": "arrowUp",
+      "collection": "fleches",
+      "tags": [
+        "haut",
+        "monter",
+        "envoyer"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E012"
+    },
+    {
+      "name": "arrow.down",
+      "id": "arrowDown",
+      "collection": "fleches",
+      "tags": [
+        "bas",
+        "descendre",
+        "télécharger"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E013"
+    },
+    {
+      "name": "arrow.up.right",
+      "id": "arrowUpRight",
+      "collection": "fleches",
+      "tags": [
+        "lien externe",
+        "ouvrir",
+        "sortant",
+        "nouvelle fenêtre"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E014"
+    },
+    {
+      "name": "arrow.up.left",
+      "id": "arrowUpLeft",
+      "collection": "fleches",
+      "tags": [
+        "coin",
+        "haut gauche"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E015"
+    },
+    {
+      "name": "arrow.down.right",
+      "id": "arrowDownRight",
+      "collection": "fleches",
+      "tags": [
+        "coin",
+        "bas droite"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E016"
+    },
+    {
+      "name": "arrow.down.left",
+      "id": "arrowDownLeft",
+      "collection": "fleches",
+      "tags": [
+        "coin",
+        "bas gauche"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E017"
+    },
+    {
+      "name": "arrow.left.arrow.right",
+      "id": "arrowLeftArrowRight",
+      "collection": "fleches",
+      "tags": [
+        "échanger",
+        "permuter",
+        "transfert",
+        "aller-retour"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E018"
+    },
+    {
+      "name": "arrow.up.arrow.down",
+      "id": "arrowUpArrowDown",
+      "collection": "fleches",
+      "tags": [
+        "trier",
+        "ordre",
+        "croissant",
+        "décroissant"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E019"
+    },
+    {
+      "name": "arrow.turn.up.left",
+      "id": "arrowTurnUpLeft",
+      "collection": "fleches",
+      "tags": [
+        "répondre",
+        "reply",
+        "retour"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E01A"
+    },
+    {
+      "name": "arrow.uturn.backward",
+      "id": "arrowUturnBackward",
+      "collection": "fleches",
+      "tags": [
+        "annuler",
+        "undo",
+        "défaire",
+        "retour"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E01B"
+    },
+    {
+      "name": "arrow.uturn.forward",
+      "id": "arrowUturnForward",
+      "collection": "fleches",
+      "tags": [
+        "rétablir",
+        "redo",
+        "refaire"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E01C"
+    },
+    {
+      "name": "arrow.clockwise",
+      "id": "arrowClockwise",
+      "collection": "fleches",
+      "tags": [
+        "actualiser",
+        "recharger",
+        "rafraîchir",
+        "refresh"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E01D"
+    },
+    {
+      "name": "arrow.counterclockwise",
+      "id": "arrowCounterclockwise",
+      "collection": "fleches",
+      "tags": [
+        "historique",
+        "restaurer",
+        "rembobiner",
+        "réinitialiser"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E01E"
+    },
+    {
+      "name": "arrow.triangle.2.circlepath",
+      "id": "arrowTriangle2Circlepath",
+      "collection": "fleches",
+      "tags": [
+        "synchroniser",
+        "sync",
+        "boucle",
+        "mettre à jour"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E01F"
+    },
+    {
+      "name": "arrow.down.to.line",
+      "id": "arrowDownToLine",
+      "collection": "fleches",
+      "tags": [
+        "télécharger",
+        "enregistrer",
+        "download",
+        "importer"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E020"
+    },
+    {
+      "name": "arrow.up.to.line",
+      "id": "arrowUpToLine",
+      "collection": "fleches",
+      "tags": [
+        "téléverser",
+        "upload",
+        "haut de page",
+        "premier"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E021"
+    },
+    {
+      "name": "arrow.up.and.down.and.arrow.left.and.right",
+      "id": "arrowUpAndDownAndArrowLeftAndRight",
+      "collection": "fleches",
+      "tags": [
+        "déplacer",
+        "glisser",
+        "quatre directions",
+        "move"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E022"
+    },
+    {
+      "name": "arrow.up.left.and.arrow.down.right",
+      "id": "arrowUpLeftAndArrowDownRight",
+      "collection": "fleches",
+      "tags": [
+        "agrandir",
+        "plein écran",
+        "étendre",
+        "maximiser"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E023"
+    },
+    {
+      "name": "arrow.down.right.and.arrow.up.left",
+      "id": "arrowDownRightAndArrowUpLeft",
+      "collection": "fleches",
+      "tags": [
+        "réduire",
+        "quitter le plein écran",
+        "minimiser"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E024"
+    },
+    {
+      "name": "arrow.right.circle",
+      "id": "arrowRightCircle",
+      "collection": "fleches",
+      "tags": [
+        "suivant",
+        "continuer",
+        "aller"
+      ],
+      "rtl": true,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E025"
+    },
+    {
+      "name": "arrow.left.circle",
+      "id": "arrowLeftCircle",
+      "collection": "fleches",
+      "tags": [
+        "retour",
+        "précédent"
+      ],
+      "rtl": true,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E026"
+    },
+    {
+      "name": "arrow.up.circle",
+      "id": "arrowUpCircle",
+      "collection": "fleches",
+      "tags": [
+        "envoyer",
+        "monter",
+        "publier"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E027"
+    },
+    {
+      "name": "arrow.down.circle",
+      "id": "arrowDownCircle",
+      "collection": "fleches",
+      "tags": [
+        "télécharger",
+        "descendre",
+        "recevoir"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E028"
+    },
+    {
+      "name": "arrowshape.right",
+      "id": "arrowshapeRight",
+      "collection": "fleches",
+      "tags": [
+        "flèche pleine",
+        "suivant",
+        "direction"
+      ],
+      "rtl": true,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E029"
+    },
+    {
+      "name": "arrowshape.left",
+      "id": "arrowshapeLeft",
+      "collection": "fleches",
+      "tags": [
+        "flèche pleine",
+        "retour",
+        "direction"
+      ],
+      "rtl": true,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E02A"
+    },
+    {
+      "name": "plus",
+      "id": "plus",
+      "collection": "actions",
+      "tags": [
+        "ajouter",
+        "nouveau",
+        "créer"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E02B"
+    },
+    {
+      "name": "minus",
+      "id": "minus",
+      "collection": "actions",
+      "tags": [
+        "retirer",
+        "supprimer",
+        "moins",
+        "réduire"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E02C"
+    },
+    {
+      "name": "xmark",
+      "id": "xmark",
+      "collection": "actions",
+      "tags": [
+        "fermer",
+        "annuler",
+        "effacer",
+        "croix"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E02D"
+    },
+    {
+      "name": "checkmark",
+      "id": "checkmark",
+      "collection": "actions",
+      "tags": [
+        "valider",
+        "coche",
+        "ok",
+        "terminé",
+        "sélectionné"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E02E"
+    },
+    {
+      "name": "plus.circle",
+      "id": "plusCircle",
+      "collection": "actions",
+      "tags": [
+        "ajouter",
+        "nouveau",
+        "insérer"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E02F"
+    },
+    {
+      "name": "minus.circle",
+      "id": "minusCircle",
+      "collection": "actions",
+      "tags": [
+        "retirer",
+        "supprimer",
+        "réduire",
+        "bouton moins"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E030"
+    },
+    {
+      "name": "xmark.circle",
+      "id": "xmarkCircle",
+      "collection": "actions",
+      "tags": [
+        "effacer",
+        "fermer",
+        "clear",
+        "champ de recherche",
+        "croix"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E031"
+    },
+    {
+      "name": "checkmark.circle",
+      "id": "checkmarkCircle",
+      "collection": "actions",
+      "tags": [
+        "succès",
+        "validé",
+        "terminé",
+        "réussi"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E032"
+    },
+    {
+      "name": "plus.square",
+      "id": "plusSquare",
+      "collection": "actions",
+      "tags": [
+        "ajouter",
+        "nouveau",
+        "case"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E033"
+    },
+    {
+      "name": "xmark.square",
+      "id": "xmarkSquare",
+      "collection": "actions",
+      "tags": [
+        "fermer",
+        "supprimer",
+        "case"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E034"
+    },
+    {
+      "name": "checkmark.square",
+      "id": "checkmarkSquare",
+      "collection": "actions",
+      "tags": [
+        "case à cocher",
+        "coché",
+        "sélectionné",
+        "checkbox"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E035"
+    },
+    {
+      "name": "square.and.arrow.up",
+      "id": "squareAndArrowUp",
+      "collection": "actions",
+      "tags": [
+        "partager",
+        "exporter",
+        "envoyer"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E036"
+    },
+    {
+      "name": "square.and.arrow.down",
+      "id": "squareAndArrowDown",
+      "collection": "actions",
+      "tags": [
+        "importer",
+        "enregistrer dans",
+        "télécharger"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E037"
+    },
+    {
+      "name": "doc.on.doc",
+      "id": "docOnDoc",
+      "collection": "actions",
+      "tags": [
+        "copier",
+        "dupliquer",
+        "presse-papiers",
+        "clipboard"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E038"
+    },
+    {
+      "name": "trash",
+      "id": "trash",
+      "collection": "actions",
+      "tags": [
+        "supprimer",
+        "corbeille",
+        "effacer",
+        "jeter"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E039"
+    },
+    {
+      "name": "star",
+      "id": "star",
+      "collection": "actions",
+      "tags": [
+        "favori",
+        "étoile",
+        "noter",
+        "préféré"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E03A"
+    },
+    {
+      "name": "heart",
+      "id": "heart",
+      "collection": "actions",
+      "tags": [
+        "aimer",
+        "favori",
+        "cœur",
+        "like"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E03B"
+    },
+    {
+      "name": "bookmark",
+      "id": "bookmark",
+      "collection": "actions",
+      "tags": [
+        "marque-page",
+        "enregistrer",
+        "signet",
+        "lire plus tard"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E03C"
+    },
+    {
+      "name": "paperplane",
+      "id": "paperplane",
+      "collection": "actions",
+      "tags": [
+        "envoyer",
+        "message",
+        "soumettre",
+        "avion",
+        "telegram"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E03D"
+    },
+    {
+      "name": "sparkles",
+      "id": "sparkles",
+      "collection": "actions",
+      "tags": [
+        "magie",
+        "IA",
+        "suggestion",
+        "nouveau",
+        "générer",
+        "chatgpt",
+        "openai"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E03E"
+    },
+    {
+      "name": "scissors",
+      "id": "scissors",
+      "collection": "actions",
+      "tags": [
+        "couper",
+        "ciseaux",
+        "découper"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E03F"
+    },
+    {
+      "name": "crop",
+      "id": "crop",
+      "collection": "actions",
+      "tags": [
+        "recadrer",
+        "rogner",
+        "cadre"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E040"
+    },
+    {
+      "name": "plus.magnifyingglass",
+      "id": "plusMagnifyingglass",
+      "collection": "actions",
+      "tags": [
+        "zoom avant",
+        "agrandir",
+        "loupe"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E041"
+    },
+    {
+      "name": "minus.magnifyingglass",
+      "id": "minusMagnifyingglass",
+      "collection": "actions",
+      "tags": [
+        "zoom arrière",
+        "réduire",
+        "loupe"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E042"
+    },
+    {
+      "name": "bold",
+      "id": "bold",
+      "collection": "texte",
+      "tags": [
+        "gras",
+        "texte",
+        "format",
+        "graisse"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E043"
+    },
+    {
+      "name": "italic",
+      "id": "italic",
+      "collection": "texte",
+      "tags": [
+        "italique",
+        "texte",
+        "format",
+        "oblique"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E044"
+    },
+    {
+      "name": "underline",
+      "id": "underline",
+      "collection": "texte",
+      "tags": [
+        "souligné",
+        "texte",
+        "format"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E045"
+    },
+    {
+      "name": "strikethrough",
+      "id": "strikethrough",
+      "collection": "texte",
+      "tags": [
+        "barré",
+        "texte",
+        "format",
+        "rayer"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E046"
+    },
+    {
+      "name": "pencil",
+      "id": "pencil",
+      "collection": "texte",
+      "tags": [
+        "modifier",
+        "éditer",
+        "crayon",
+        "écrire",
+        "renommer"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E047"
+    },
+    {
+      "name": "link",
+      "id": "link",
+      "collection": "texte",
+      "tags": [
+        "lien",
+        "url",
+        "hyperlien",
+        "attacher"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E048"
+    },
+    {
+      "name": "text.alignleft",
+      "id": "textAlignleft",
+      "collection": "texte",
+      "tags": [
+        "aligner à gauche",
+        "paragraphe",
+        "alignement"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E049"
+    },
+    {
+      "name": "text.aligncenter",
+      "id": "textAligncenter",
+      "collection": "texte",
+      "tags": [
+        "centrer",
+        "paragraphe",
+        "alignement"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E04A"
+    },
+    {
+      "name": "text.alignright",
+      "id": "textAlignright",
+      "collection": "texte",
+      "tags": [
+        "aligner à droite",
+        "paragraphe",
+        "alignement"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E04B"
+    },
+    {
+      "name": "text.justify",
+      "id": "textJustify",
+      "collection": "texte",
+      "tags": [
+        "justifier",
+        "paragraphe",
+        "alignement"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E04C"
+    },
+    {
+      "name": "list.bullet",
+      "id": "listBullet",
+      "collection": "texte",
+      "tags": [
+        "liste à puces",
+        "puces",
+        "énumération"
+      ],
+      "rtl": true,
+      "layers": [
+        "p",
+        "f"
+      ],
+      "fill": false,
+      "codepoint": "U+E04D"
+    },
+    {
+      "name": "list.number",
+      "id": "listNumber",
+      "collection": "texte",
+      "tags": [
+        "liste numérotée",
+        "numéros",
+        "ordonnée"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E04E"
+    },
+    {
+      "name": "increase.indent",
+      "id": "increaseIndent",
+      "collection": "texte",
+      "tags": [
+        "augmenter le retrait",
+        "indenter",
+        "décaler"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E04F"
+    },
+    {
+      "name": "decrease.indent",
+      "id": "decreaseIndent",
+      "collection": "texte",
+      "tags": [
+        "diminuer le retrait",
+        "désindenter"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E050"
+    },
+    {
+      "name": "textformat",
+      "id": "textformat",
+      "collection": "texte",
+      "tags": [
+        "police",
+        "style de texte",
+        "Aa",
+        "typographie"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E051"
+    },
+    {
+      "name": "textformat.size",
+      "id": "textformatSize",
+      "collection": "texte",
+      "tags": [
+        "taille du texte",
+        "corps",
+        "accessibilité",
+        "zoom texte"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E052"
+    },
+    {
+      "name": "character",
+      "id": "character",
+      "collection": "texte",
+      "tags": [
+        "caractère",
+        "lettre",
+        "glyphe",
+        "A"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E053"
+    },
+    {
+      "name": "text.quote",
+      "id": "textQuote",
+      "collection": "texte",
+      "tags": [
+        "citation",
+        "guillemets",
+        "bloc de citation"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E054"
+    },
+    {
+      "name": "paragraphsign",
+      "id": "paragraphsign",
+      "collection": "texte",
+      "tags": [
+        "pied-de-mouche",
+        "paragraphe",
+        "caractères invisibles"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E055"
+    },
+    {
+      "name": "doc",
+      "id": "doc",
+      "collection": "fichiers",
+      "tags": [
+        "document",
+        "fichier",
+        "page",
+        "vierge"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E056"
+    },
+    {
+      "name": "doc.text",
+      "id": "docText",
+      "collection": "fichiers",
+      "tags": [
+        "document",
+        "fichier",
+        "page",
+        "texte",
+        "note"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E057"
+    },
+    {
+      "name": "doc.zipper",
+      "id": "docZipper",
+      "collection": "fichiers",
+      "tags": [
+        "archive",
+        "zip",
+        "compressé"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E058"
+    },
+    {
+      "name": "arrow.down.doc",
+      "id": "arrowDownDoc",
+      "collection": "fichiers",
+      "tags": [
+        "télécharger le fichier",
+        "document reçu"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E059"
+    },
+    {
+      "name": "folder",
+      "id": "folder",
+      "collection": "fichiers",
+      "tags": [
+        "dossier",
+        "fichiers",
+        "répertoire",
+        "classer"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E05A"
+    },
+    {
+      "name": "folder.badge.plus",
+      "id": "folderBadgePlus",
+      "collection": "fichiers",
+      "tags": [
+        "nouveau dossier",
+        "ajouter un dossier"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E05B"
+    },
+    {
+      "name": "clipboard",
+      "id": "clipboard",
+      "collection": "fichiers",
+      "tags": [
+        "presse-papiers",
+        "coller",
+        "bloc-notes"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E05C"
+    },
+    {
+      "name": "archivebox",
+      "id": "archivebox",
+      "collection": "fichiers",
+      "tags": [
+        "archiver",
+        "boîte",
+        "ranger"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E05D"
+    },
+    {
+      "name": "tray.and.arrow.down",
+      "id": "trayAndArrowDown",
+      "collection": "fichiers",
+      "tags": [
+        "boîte de réception",
+        "recevoir",
+        "inbox"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E05E"
+    },
+    {
+      "name": "tray.and.arrow.up",
+      "id": "trayAndArrowUp",
+      "collection": "fichiers",
+      "tags": [
+        "boîte d'envoi",
+        "envoyer",
+        "outbox"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E05F"
+    },
+    {
+      "name": "externaldrive",
+      "id": "externaldrive",
+      "collection": "fichiers",
+      "tags": [
+        "disque externe",
+        "stockage",
+        "volume"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E060"
+    },
+    {
+      "name": "cylinder.split.1x2",
+      "id": "cylinderSplit1x2",
+      "collection": "fichiers",
+      "tags": [
+        "base de données",
+        "database",
+        "stockage",
+        "table"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E061"
+    },
+    {
+      "name": "server.rack",
+      "id": "serverRack",
+      "collection": "fichiers",
+      "tags": [
+        "serveur",
+        "hébergement",
+        "infrastructure",
+        "cloud"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E062"
+    },
+    {
+      "name": "tablecells",
+      "id": "tablecells",
+      "collection": "fichiers",
+      "tags": [
+        "tableau",
+        "grille",
+        "cellules",
+        "feuille de calcul"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E063"
+    },
+    {
+      "name": "chart.bar",
+      "id": "chartBar",
+      "collection": "fichiers",
+      "tags": [
+        "graphique",
+        "barres",
+        "statistiques",
+        "histogramme"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E064"
+    },
+    {
+      "name": "chart.pie",
+      "id": "chartPie",
+      "collection": "fichiers",
+      "tags": [
+        "graphique",
+        "camembert",
+        "répartition",
+        "secteurs"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E065"
+    },
+    {
+      "name": "chart.line.uptrend.xyaxis",
+      "id": "chartLineUptrendXyaxis",
+      "collection": "fichiers",
+      "tags": [
+        "graphique",
+        "courbe",
+        "hausse",
+        "tendance",
+        "croissance"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E066"
+    },
+    {
+      "name": "paperclip",
+      "id": "paperclip",
+      "collection": "fichiers",
+      "tags": [
+        "pièce jointe",
+        "trombone",
+        "joindre"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E067"
+    },
+    {
+      "name": "printer",
+      "id": "printer",
+      "collection": "fichiers",
+      "tags": [
+        "imprimer",
+        "imprimante"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E068"
+    },
+    {
+      "name": "qrcode",
+      "id": "qrcode",
+      "collection": "fichiers",
+      "tags": [
+        "QR code",
+        "scanner",
+        "code"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E069"
+    },
+    {
+      "name": "barcode",
+      "id": "barcode",
+      "collection": "fichiers",
+      "tags": [
+        "code-barres",
+        "scanner",
+        "produit"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E06A"
+    },
+    {
+      "name": "envelope",
+      "id": "envelope",
+      "collection": "communication",
+      "tags": [
+        "mail",
+        "courrier",
+        "e-mail",
+        "message",
+        "enveloppe"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E06B"
+    },
+    {
+      "name": "envelope.open",
+      "id": "envelopeOpen",
+      "collection": "communication",
+      "tags": [
+        "mail lu",
+        "ouvrir",
+        "courrier"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E06C"
+    },
+    {
+      "name": "bubble.left",
+      "id": "bubbleLeft",
+      "collection": "communication",
+      "tags": [
+        "message",
+        "discussion",
+        "chat",
+        "commentaire",
+        "bulle"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E06D"
+    },
+    {
+      "name": "bubble.left.and.bubble.right",
+      "id": "bubbleLeftAndBubbleRight",
+      "collection": "communication",
+      "tags": [
+        "conversation",
+        "discussion",
+        "chat",
+        "messagerie",
+        "discord"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E06E"
+    },
+    {
+      "name": "phone",
+      "id": "phone",
+      "collection": "communication",
+      "tags": [
+        "téléphone",
+        "appeler",
+        "appel"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E06F"
+    },
+    {
+      "name": "video",
+      "id": "video",
+      "collection": "communication",
+      "tags": [
+        "visio",
+        "caméra",
+        "appel vidéo",
+        "enregistrer"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E070"
+    },
+    {
+      "name": "at",
+      "id": "at",
+      "collection": "communication",
+      "tags": [
+        "arobase",
+        "mention",
+        "adresse e-mail"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E071"
+    },
+    {
+      "name": "number",
+      "id": "number",
+      "collection": "communication",
+      "tags": [
+        "dièse",
+        "hashtag",
+        "canal",
+        "numéro",
+        "slack"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E072"
+    },
+    {
+      "name": "bell",
+      "id": "bell",
+      "collection": "communication",
+      "tags": [
+        "notifications",
+        "alerte",
+        "cloche",
+        "rappel"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E073"
+    },
+    {
+      "name": "bell.badge",
+      "id": "bellBadge",
+      "collection": "communication",
+      "tags": [
+        "nouvelle notification",
+        "non lu",
+        "pastille"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E074"
+    },
+    {
+      "name": "bell.slash",
+      "id": "bellSlash",
+      "collection": "communication",
+      "tags": [
+        "notifications coupées",
+        "silencieux",
+        "ne pas déranger"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E075"
+    },
+    {
+      "name": "megaphone",
+      "id": "megaphone",
+      "collection": "communication",
+      "tags": [
+        "annonce",
+        "promotion",
+        "haut-parleur",
+        "campagne"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E076"
+    },
+    {
+      "name": "antenna.radiowaves.left.and.right",
+      "id": "antennaRadiowavesLeftAndRight",
+      "collection": "communication",
+      "tags": [
+        "diffusion",
+        "réseau cellulaire",
+        "antenne",
+        "signal",
+        "live"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "f"
+      ],
+      "fill": false,
+      "codepoint": "U+E077"
+    },
+    {
+      "name": "headset",
+      "id": "headset",
+      "collection": "communication",
+      "tags": [
+        "casque micro",
+        "vocal",
+        "discord",
+        "twitch",
+        "gaming",
+        "support",
+        "chat vocal"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E078"
+    },
+    {
+      "name": "headphones",
+      "id": "headphones",
+      "collection": "communication",
+      "tags": [
+        "casque",
+        "écouter",
+        "support",
+        "audio"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E079"
+    },
+    {
+      "name": "face.smiling",
+      "id": "faceSmiling",
+      "collection": "gestes",
+      "tags": [
+        "sourire",
+        "content",
+        "emoji",
+        "réaction",
+        "heureux"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E07A"
+    },
+    {
+      "name": "face.neutral",
+      "id": "faceNeutral",
+      "collection": "gestes",
+      "tags": [
+        "neutre",
+        "bof",
+        "emoji",
+        "réaction"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E07B"
+    },
+    {
+      "name": "face.frowning",
+      "id": "faceFrowning",
+      "collection": "gestes",
+      "tags": [
+        "triste",
+        "mécontent",
+        "emoji",
+        "réaction"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E07C"
+    },
+    {
+      "name": "hand.thumbsup",
+      "id": "handThumbsup",
+      "collection": "gestes",
+      "tags": [
+        "pouce levé",
+        "j'aime",
+        "approuver",
+        "like",
+        "bravo",
+        "facebook"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E07D"
+    },
+    {
+      "name": "hand.thumbsdown",
+      "id": "handThumbsdown",
+      "collection": "gestes",
+      "tags": [
+        "pouce baissé",
+        "je n'aime pas",
+        "désapprouver",
+        "dislike"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E07E"
+    },
+    {
+      "name": "hand.raised",
+      "id": "handRaised",
+      "collection": "gestes",
+      "tags": [
+        "main levée",
+        "stop",
+        "bonjour",
+        "attendre",
+        "question"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E07F"
+    },
+    {
+      "name": "hand.point.up",
+      "id": "handPointUp",
+      "collection": "gestes",
+      "tags": [
+        "pointer",
+        "index",
+        "curseur",
+        "toucher",
+        "cliquer"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E080"
+    },
+    {
+      "name": "hand.wave",
+      "id": "handWave",
+      "collection": "gestes",
+      "tags": [
+        "saluer",
+        "coucou",
+        "bonjour",
+        "au revoir",
+        "main"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E081"
+    },
+    {
+      "name": "person",
+      "id": "person",
+      "collection": "personnes",
+      "tags": [
+        "utilisateur",
+        "profil",
+        "compte",
+        "contact",
+        "personne"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E082"
+    },
+    {
+      "name": "person.2",
+      "id": "person2",
+      "collection": "personnes",
+      "tags": [
+        "groupe",
+        "équipe",
+        "contacts",
+        "partagé"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E083"
+    },
+    {
+      "name": "person.badge.plus",
+      "id": "personBadgePlus",
+      "collection": "personnes",
+      "tags": [
+        "ajouter un contact",
+        "inviter",
+        "nouvel utilisateur"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E084"
+    },
+    {
+      "name": "person.crop.circle",
+      "id": "personCropCircle",
+      "collection": "personnes",
+      "tags": [
+        "profil",
+        "compte",
+        "utilisateur",
+        "avatar",
+        "personne"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E085"
+    },
+    {
+      "name": "person.crop.square",
+      "id": "personCropSquare",
+      "collection": "personnes",
+      "tags": [
+        "portrait",
+        "photo d'identité",
+        "avatar carré"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E086"
+    },
+    {
+      "name": "person.wave.2",
+      "id": "personWave2",
+      "collection": "personnes",
+      "tags": [
+        "présentation",
+        "bienvenue",
+        "saluer",
+        "onboarding"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E087"
+    },
+    {
+      "name": "creditcard",
+      "id": "creditcard",
+      "collection": "commerce",
+      "tags": [
+        "carte bancaire",
+        "paiement",
+        "carte de crédit",
+        "payer"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E088"
+    },
+    {
+      "name": "banknote",
+      "id": "banknote",
+      "collection": "commerce",
+      "tags": [
+        "billet",
+        "argent",
+        "espèces",
+        "cash"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E089"
+    },
+    {
+      "name": "cart",
+      "id": "cart",
+      "collection": "commerce",
+      "tags": [
+        "panier",
+        "acheter",
+        "boutique",
+        "commande"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "f"
+      ],
+      "fill": false,
+      "codepoint": "U+E08A"
+    },
+    {
+      "name": "bag",
+      "id": "bag",
+      "collection": "commerce",
+      "tags": [
+        "sac",
+        "achats",
+        "boutique",
+        "shopping"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E08B"
+    },
+    {
+      "name": "tag",
+      "id": "tag",
+      "collection": "commerce",
+      "tags": [
+        "étiquette",
+        "label",
+        "catégorie",
+        "prix"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E08C"
+    },
+    {
+      "name": "percent",
+      "id": "percent",
+      "collection": "commerce",
+      "tags": [
+        "pourcentage",
+        "remise",
+        "promotion",
+        "taux"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E08D"
+    },
+    {
+      "name": "gift",
+      "id": "gift",
+      "collection": "commerce",
+      "tags": [
+        "cadeau",
+        "offrir",
+        "récompense",
+        "bonus"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E08E"
+    },
+    {
+      "name": "receipt",
+      "id": "receipt",
+      "collection": "commerce",
+      "tags": [
+        "reçu",
+        "ticket",
+        "facture",
+        "note"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E08F"
+    },
+    {
+      "name": "wallet.pass",
+      "id": "walletPass",
+      "collection": "commerce",
+      "tags": [
+        "portefeuille",
+        "carte",
+        "pass",
+        "billets"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E090"
+    },
+    {
+      "name": "storefront",
+      "id": "storefront",
+      "collection": "commerce",
+      "tags": [
+        "boutique",
+        "magasin",
+        "commerce",
+        "vitrine"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E091"
+    },
+    {
+      "name": "dollarsign.circle",
+      "id": "dollarsignCircle",
+      "collection": "commerce",
+      "tags": [
+        "dollar",
+        "prix",
+        "monnaie",
+        "coût"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E092"
+    },
+    {
+      "name": "eurosign.circle",
+      "id": "eurosignCircle",
+      "collection": "commerce",
+      "tags": [
+        "euro",
+        "prix",
+        "monnaie",
+        "coût"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E093"
+    },
+    {
+      "name": "bitcoinsign.circle",
+      "id": "bitcoinsignCircle",
+      "collection": "commerce",
+      "tags": [
+        "bitcoin",
+        "crypto",
+        "cryptomonnaie",
+        "BTC"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E094"
+    },
+    {
+      "name": "chart.candlestick",
+      "id": "chartCandlestick",
+      "collection": "commerce",
+      "tags": [
+        "bourse",
+        "trading",
+        "chandeliers",
+        "cours",
+        "marché"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E095"
+    },
+    {
+      "name": "chart.line.downtrend.xyaxis",
+      "id": "chartLineDowntrendXyaxis",
+      "collection": "commerce",
+      "tags": [
+        "baisse",
+        "perte",
+        "tendance",
+        "cours"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E096"
+    },
+    {
+      "name": "iphone",
+      "id": "iphone",
+      "collection": "appareils",
+      "tags": [
+        "téléphone",
+        "smartphone",
+        "mobile",
+        "appareil"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E097"
+    },
+    {
+      "name": "ipad",
+      "id": "ipad",
+      "collection": "appareils",
+      "tags": [
+        "tablette",
+        "appareil"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E098"
+    },
+    {
+      "name": "laptopcomputer",
+      "id": "laptopcomputer",
+      "collection": "appareils",
+      "tags": [
+        "ordinateur portable",
+        "mac",
+        "notebook"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E099"
+    },
+    {
+      "name": "desktopcomputer",
+      "id": "desktopcomputer",
+      "collection": "appareils",
+      "tags": [
+        "ordinateur",
+        "écran",
+        "bureau",
+        "moniteur"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E09A"
+    },
+    {
+      "name": "watch",
+      "id": "watch",
+      "collection": "appareils",
+      "tags": [
+        "montre",
+        "montre connectée",
+        "poignet"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E09B"
+    },
+    {
+      "name": "keyboard",
+      "id": "keyboard",
+      "collection": "appareils",
+      "tags": [
+        "clavier",
+        "saisie",
+        "touches"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E09C"
+    },
+    {
+      "name": "computermouse",
+      "id": "computermouse",
+      "collection": "appareils",
+      "tags": [
+        "souris",
+        "pointeur",
+        "clic"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E09D"
+    },
+    {
+      "name": "battery.100",
+      "id": "battery100",
+      "collection": "appareils",
+      "tags": [
+        "batterie pleine",
+        "énergie",
+        "charge"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E09E"
+    },
+    {
+      "name": "battery.50",
+      "id": "battery50",
+      "collection": "appareils",
+      "tags": [
+        "batterie moitié",
+        "énergie"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E09F"
+    },
+    {
+      "name": "battery.25",
+      "id": "battery25",
+      "collection": "appareils",
+      "tags": [
+        "batterie faible",
+        "énergie",
+        "alerte"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E0A0"
+    },
+    {
+      "name": "battery.100.bolt",
+      "id": "battery100Bolt",
+      "collection": "appareils",
+      "tags": [
+        "en charge",
+        "batterie",
+        "éclair",
+        "secteur"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "f",
+        "h"
+      ],
+      "fill": true,
+      "codepoint": "U+E0A1"
+    },
+    {
+      "name": "bolt",
+      "id": "bolt",
+      "collection": "appareils",
+      "tags": [
+        "éclair",
+        "énergie",
+        "flash",
+        "rapide",
+        "charge"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0A2"
+    },
+    {
+      "name": "power",
+      "id": "power",
+      "collection": "appareils",
+      "tags": [
+        "marche/arrêt",
+        "allumer",
+        "éteindre",
+        "alimentation"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0A3"
+    },
+    {
+      "name": "wifi",
+      "id": "wifi",
+      "collection": "appareils",
+      "tags": [
+        "réseau",
+        "connexion",
+        "sans fil",
+        "signal"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0A4"
+    },
+    {
+      "name": "wifi.slash",
+      "id": "wifiSlash",
+      "collection": "appareils",
+      "tags": [
+        "hors ligne",
+        "pas de réseau",
+        "déconnecté"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0A5"
+    },
+    {
+      "name": "bluetooth",
+      "id": "bluetooth",
+      "collection": "appareils",
+      "tags": [
+        "sans fil",
+        "appairage",
+        "casque",
+        "connexion"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0A6"
+    },
+    {
+      "name": "cellularbars",
+      "id": "cellularbars",
+      "collection": "appareils",
+      "tags": [
+        "réseau mobile",
+        "signal",
+        "barres",
+        "réception"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0A7"
+    },
+    {
+      "name": "edge",
+      "id": "edge",
+      "collection": "appareils",
+      "tags": [
+        "réseau",
+        "EDGE",
+        "2G",
+        "données mobiles"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0A8"
+    },
+    {
+      "name": "2g",
+      "id": "_2g",
+      "collection": "appareils",
+      "tags": [
+        "réseau",
+        "2G",
+        "données mobiles",
+        "GPRS"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0A9"
+    },
+    {
+      "name": "3g",
+      "id": "_3g",
+      "collection": "appareils",
+      "tags": [
+        "réseau",
+        "3G",
+        "données mobiles",
+        "UMTS"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0AA"
+    },
+    {
+      "name": "4g",
+      "id": "_4g",
+      "collection": "appareils",
+      "tags": [
+        "réseau",
+        "4G",
+        "données mobiles"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0AB"
+    },
+    {
+      "name": "5g",
+      "id": "_5g",
+      "collection": "appareils",
+      "tags": [
+        "réseau",
+        "5G",
+        "données mobiles"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0AC"
+    },
+    {
+      "name": "lte",
+      "id": "lte",
+      "collection": "appareils",
+      "tags": [
+        "réseau",
+        "LTE",
+        "4G",
+        "données mobiles"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0AD"
+    },
+    {
+      "name": "cpu",
+      "id": "cpu",
+      "collection": "appareils",
+      "tags": [
+        "processeur",
+        "puce",
+        "calcul",
+        "performances"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0AE"
+    },
+    {
+      "name": "memorychip",
+      "id": "memorychip",
+      "collection": "appareils",
+      "tags": [
+        "mémoire",
+        "RAM",
+        "composant"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0AF"
+    },
+    {
+      "name": "sdcard",
+      "id": "sdcard",
+      "collection": "appareils",
+      "tags": [
+        "carte SD",
+        "stockage",
+        "mémoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0B0"
+    },
+    {
+      "name": "airplane",
+      "id": "airplane",
+      "collection": "appareils",
+      "tags": [
+        "mode avion",
+        "voyage",
+        "vol"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0B1"
+    },
+    {
+      "name": "tv",
+      "id": "tv",
+      "collection": "appareils",
+      "tags": [
+        "télévision",
+        "écran",
+        "diffuser"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0B2"
+    },
+    {
+      "name": "map",
+      "id": "map",
+      "collection": "cartes",
+      "tags": [
+        "carte",
+        "plan",
+        "itinéraire"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0B3"
+    },
+    {
+      "name": "mappin",
+      "id": "mappin",
+      "collection": "cartes",
+      "tags": [
+        "épingle",
+        "lieu",
+        "position",
+        "adresse"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0B4"
+    },
+    {
+      "name": "mappin.and.ellipse",
+      "id": "mappinAndEllipse",
+      "collection": "cartes",
+      "tags": [
+        "lieu",
+        "position actuelle",
+        "destination"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0B5"
+    },
+    {
+      "name": "location",
+      "id": "location",
+      "collection": "cartes",
+      "tags": [
+        "localisation",
+        "position",
+        "GPS",
+        "boussole"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0B6"
+    },
+    {
+      "name": "location.north",
+      "id": "locationNorth",
+      "collection": "cartes",
+      "tags": [
+        "nord",
+        "aiguille",
+        "direction",
+        "cap"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0B7"
+    },
+    {
+      "name": "compass",
+      "id": "compass",
+      "collection": "cartes",
+      "tags": [
+        "boussole",
+        "explorer",
+        "navigateur",
+        "direction",
+        "safari"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0B8"
+    },
+    {
+      "name": "globe",
+      "id": "globe",
+      "collection": "cartes",
+      "tags": [
+        "monde",
+        "langue",
+        "international",
+        "web",
+        "planète",
+        "chrome",
+        "navigateur"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0B9"
+    },
+    {
+      "name": "signpost.right",
+      "id": "signpostRight",
+      "collection": "cartes",
+      "tags": [
+        "panneau",
+        "direction",
+        "guide",
+        "orientation"
+      ],
+      "rtl": true,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0BA"
+    },
+    {
+      "name": "car",
+      "id": "car",
+      "collection": "cartes",
+      "tags": [
+        "voiture",
+        "trajet",
+        "transport",
+        "route"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0BB"
+    },
+    {
+      "name": "bus",
+      "id": "bus",
+      "collection": "cartes",
+      "tags": [
+        "bus",
+        "transport en commun",
+        "trajet"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0BC"
+    },
+    {
+      "name": "flag",
+      "id": "flag",
+      "collection": "cartes",
+      "tags": [
+        "drapeau",
+        "signaler",
+        "marquer",
+        "jalon"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0BD"
+    },
+    {
+      "name": "building.2",
+      "id": "building2",
+      "collection": "cartes",
+      "tags": [
+        "bâtiment",
+        "bureau",
+        "entreprise",
+        "ville",
+        "immeuble"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0BE"
+    },
+    {
+      "name": "clock",
+      "id": "clock",
+      "collection": "temps",
+      "tags": [
+        "heure",
+        "récents",
+        "historique",
+        "horloge",
+        "durée"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0BF"
+    },
+    {
+      "name": "alarm",
+      "id": "alarm",
+      "collection": "temps",
+      "tags": [
+        "réveil",
+        "alarme",
+        "rappel",
+        "sonnerie"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0C0"
+    },
+    {
+      "name": "timer",
+      "id": "timer",
+      "collection": "temps",
+      "tags": [
+        "minuteur",
+        "compte à rebours",
+        "chrono"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0C1"
+    },
+    {
+      "name": "hourglass",
+      "id": "hourglass",
+      "collection": "temps",
+      "tags": [
+        "sablier",
+        "attente",
+        "chargement",
+        "délai"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0C2"
+    },
+    {
+      "name": "calendar",
+      "id": "calendar",
+      "collection": "temps",
+      "tags": [
+        "date",
+        "agenda",
+        "calendrier",
+        "événement",
+        "planning"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0C3"
+    },
+    {
+      "name": "calendar.badge.plus",
+      "id": "calendarBadgePlus",
+      "collection": "temps",
+      "tags": [
+        "nouvel événement",
+        "ajouter au calendrier",
+        "planifier"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0C4"
+    },
+    {
+      "name": "calendar.badge.clock",
+      "id": "calendarBadgeClock",
+      "collection": "temps",
+      "tags": [
+        "échéance",
+        "rendez-vous",
+        "horaire",
+        "deadline"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0C5"
+    },
+    {
+      "name": "terminal",
+      "id": "terminal",
+      "collection": "dev",
+      "tags": [
+        "terminal",
+        "console",
+        "ligne de commande",
+        "shell"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0C6"
+    },
+    {
+      "name": "chevron.left.forwardslash.chevron.right",
+      "id": "chevronLeftForwardslashChevronRight",
+      "collection": "dev",
+      "tags": [
+        "code",
+        "développeur",
+        "source",
+        "balise",
+        "html"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0C7"
+    },
+    {
+      "name": "curlybraces",
+      "id": "curlybraces",
+      "collection": "dev",
+      "tags": [
+        "accolades",
+        "JSON",
+        "objet",
+        "code"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0C8"
+    },
+    {
+      "name": "arrow.triangle.branch",
+      "id": "arrowTriangleBranch",
+      "collection": "dev",
+      "tags": [
+        "git",
+        "branche",
+        "fork",
+        "version"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0C9"
+    },
+    {
+      "name": "arrow.triangle.merge",
+      "id": "arrowTriangleMerge",
+      "collection": "dev",
+      "tags": [
+        "git",
+        "fusionner",
+        "merge",
+        "version"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0CA"
+    },
+    {
+      "name": "arrow.triangle.pull",
+      "id": "arrowTrianglePull",
+      "collection": "dev",
+      "tags": [
+        "git",
+        "pull request",
+        "demande de fusion",
+        "revue"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0CB"
+    },
+    {
+      "name": "point.3.connected.trianglepath.dotted",
+      "id": "point3ConnectedTrianglepathDotted",
+      "collection": "dev",
+      "tags": [
+        "graphe",
+        "nœuds",
+        "réseau",
+        "commits",
+        "relations"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0CC"
+    },
+    {
+      "name": "ladybug",
+      "id": "ladybug",
+      "collection": "dev",
+      "tags": [
+        "bug",
+        "bogue",
+        "insecte",
+        "erreur",
+        "débogage"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0CD"
+    },
+    {
+      "name": "hammer",
+      "id": "hammer",
+      "collection": "dev",
+      "tags": [
+        "build",
+        "construire",
+        "outil",
+        "marteau",
+        "compiler"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0CE"
+    },
+    {
+      "name": "wrench",
+      "id": "wrench",
+      "collection": "dev",
+      "tags": [
+        "outil",
+        "réparer",
+        "réglage",
+        "maintenance",
+        "clé"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0CF"
+    },
+    {
+      "name": "puzzlepiece",
+      "id": "puzzlepiece",
+      "collection": "dev",
+      "tags": [
+        "extension",
+        "module",
+        "plugin",
+        "intégration"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0D0"
+    },
+    {
+      "name": "cube",
+      "id": "cube",
+      "collection": "dev",
+      "tags": [
+        "3D",
+        "objet",
+        "paquet",
+        "volume",
+        "package"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0D1"
+    },
+    {
+      "name": "shippingbox",
+      "id": "shippingbox",
+      "collection": "dev",
+      "tags": [
+        "colis",
+        "livraison",
+        "paquet",
+        "dépendance",
+        "npm"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0D2"
+    },
+    {
+      "name": "command",
+      "id": "command",
+      "collection": "dev",
+      "tags": [
+        "commande",
+        "raccourci",
+        "cmd",
+        "touche"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0D3"
+    },
+    {
+      "name": "option",
+      "id": "option",
+      "collection": "dev",
+      "tags": [
+        "option",
+        "alt",
+        "touche",
+        "raccourci"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0D4"
+    },
+    {
+      "name": "control",
+      "id": "control",
+      "collection": "dev",
+      "tags": [
+        "contrôle",
+        "ctrl",
+        "touche",
+        "raccourci"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0D5"
+    },
+    {
+      "name": "shift",
+      "id": "shift",
+      "collection": "dev",
+      "tags": [
+        "majuscule",
+        "shift",
+        "touche"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0D6"
+    },
+    {
+      "name": "delete.left",
+      "id": "deleteLeft",
+      "collection": "dev",
+      "tags": [
+        "retour arrière",
+        "backspace",
+        "effacer",
+        "supprimer"
+      ],
+      "rtl": true,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0D7"
+    },
+    {
+      "name": "return",
+      "id": "_return",
+      "collection": "dev",
+      "tags": [
+        "entrée",
+        "retour",
+        "valider",
+        "touche"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0D8"
+    },
+    {
+      "name": "macwindow",
+      "id": "macwindow",
+      "collection": "dev",
+      "tags": [
+        "fenêtre",
+        "application",
+        "bureau",
+        "interface"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0D9"
+    },
+    {
+      "name": "cat",
+      "id": "cat",
+      "collection": "dev",
+      "tags": [
+        "chat",
+        "github",
+        "mascotte",
+        "open source",
+        "dépôt",
+        "animal"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0DA"
+    },
+    {
+      "name": "function",
+      "id": "_function",
+      "collection": "dev",
+      "tags": [
+        "fonction",
+        "formule",
+        "ƒ",
+        "expression"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0DB"
+    },
+    {
+      "name": "lock",
+      "id": "lock",
+      "collection": "securite",
+      "tags": [
+        "verrouillé",
+        "sécurité",
+        "cadenas",
+        "privé",
+        "protégé"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0DC"
+    },
+    {
+      "name": "lock.open",
+      "id": "lockOpen",
+      "collection": "securite",
+      "tags": [
+        "déverrouillé",
+        "ouvert",
+        "accès",
+        "cadenas ouvert"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0DD"
+    },
+    {
+      "name": "key",
+      "id": "key",
+      "collection": "securite",
+      "tags": [
+        "clé",
+        "mot de passe",
+        "accès",
+        "identifiant"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0DE"
+    },
+    {
+      "name": "shield",
+      "id": "shield",
+      "collection": "securite",
+      "tags": [
+        "protection",
+        "sécurité",
+        "bouclier",
+        "confidentialité"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0DF"
+    },
+    {
+      "name": "checkmark.shield",
+      "id": "checkmarkShield",
+      "collection": "securite",
+      "tags": [
+        "protégé",
+        "vérifié",
+        "sécurisé",
+        "conforme"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0E0"
+    },
+    {
+      "name": "exclamationmark.shield",
+      "id": "exclamationmarkShield",
+      "collection": "securite",
+      "tags": [
+        "risque",
+        "alerte de sécurité",
+        "vulnérabilité"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0E1"
+    },
+    {
+      "name": "checkmark.seal",
+      "id": "checkmarkSeal",
+      "collection": "securite",
+      "tags": [
+        "certifié",
+        "vérifié",
+        "badge",
+        "authentique"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0E2"
+    },
+    {
+      "name": "xmark.seal",
+      "id": "xmarkSeal",
+      "collection": "securite",
+      "tags": [
+        "révoqué",
+        "non vérifié",
+        "refusé",
+        "badge"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0E3"
+    },
+    {
+      "name": "touchid",
+      "id": "touchid",
+      "collection": "securite",
+      "tags": [
+        "empreinte",
+        "biométrie",
+        "authentification",
+        "doigt"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0E4"
+    },
+    {
+      "name": "faceid",
+      "id": "faceid",
+      "collection": "securite",
+      "tags": [
+        "reconnaissance faciale",
+        "biométrie",
+        "visage",
+        "authentification"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0E5"
+    },
+    {
+      "name": "eye",
+      "id": "eye",
+      "collection": "securite",
+      "tags": [
+        "afficher",
+        "visible",
+        "aperçu",
+        "mot de passe",
+        "œil"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0E6"
+    },
+    {
+      "name": "eye.slash",
+      "id": "eyeSlash",
+      "collection": "securite",
+      "tags": [
+        "masquer",
+        "invisible",
+        "caché",
+        "mot de passe"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0E7"
+    },
+    {
+      "name": "accessibility",
+      "id": "accessibility",
+      "collection": "securite",
+      "tags": [
+        "accessibilité",
+        "handicap",
+        "a11y",
+        "inclusif"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E0E8"
+    },
+    {
+      "name": "ear",
+      "id": "ear",
+      "collection": "securite",
+      "tags": [
+        "audition",
+        "écouter",
+        "son",
+        "malentendant"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0E9"
+    },
+    {
+      "name": "figure.roll",
+      "id": "figureRoll",
+      "collection": "securite",
+      "tags": [
+        "fauteuil roulant",
+        "mobilité réduite",
+        "accessibilité",
+        "PMR"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0EA"
+    },
+    {
+      "name": "gearshape",
+      "id": "gearshape",
+      "collection": "reglages",
+      "tags": [
+        "réglages",
+        "paramètres",
+        "préférences",
+        "engrenage",
+        "configuration"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0EB"
+    },
+    {
+      "name": "slider.horizontal.3",
+      "id": "sliderHorizontal3",
+      "collection": "reglages",
+      "tags": [
+        "réglages",
+        "filtres",
+        "ajuster",
+        "curseurs"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0EC"
+    },
+    {
+      "name": "switch.2",
+      "id": "switch2",
+      "collection": "reglages",
+      "tags": [
+        "interrupteurs",
+        "options",
+        "activer",
+        "bascules"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0ED"
+    },
+    {
+      "name": "line.3.horizontal.decrease",
+      "id": "line3HorizontalDecrease",
+      "collection": "reglages",
+      "tags": [
+        "filtrer",
+        "trier",
+        "affiner",
+        "entonnoir"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E0EE"
+    },
+    {
+      "name": "pin",
+      "id": "pin",
+      "collection": "reglages",
+      "tags": [
+        "épingler",
+        "fixer",
+        "punaise",
+        "garder en haut"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0EF"
+    },
+    {
+      "name": "moon",
+      "id": "moon",
+      "collection": "reglages",
+      "tags": [
+        "mode sombre",
+        "nuit",
+        "ne pas déranger",
+        "lune"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0F0"
+    },
+    {
+      "name": "paintbrush",
+      "id": "paintbrush",
+      "collection": "reglages",
+      "tags": [
+        "apparence",
+        "thème",
+        "pinceau",
+        "personnaliser",
+        "couleur"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0F1"
+    },
+    {
+      "name": "info.circle",
+      "id": "infoCircle",
+      "collection": "statut",
+      "tags": [
+        "information",
+        "aide",
+        "détails",
+        "à propos"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0F2"
+    },
+    {
+      "name": "questionmark.circle",
+      "id": "questionmarkCircle",
+      "collection": "statut",
+      "tags": [
+        "aide",
+        "question",
+        "support",
+        "inconnu"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0F3"
+    },
+    {
+      "name": "exclamationmark.circle",
+      "id": "exclamationmarkCircle",
+      "collection": "statut",
+      "tags": [
+        "erreur",
+        "attention",
+        "important",
+        "alerte"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0F4"
+    },
+    {
+      "name": "exclamationmark.triangle",
+      "id": "exclamationmarkTriangle",
+      "collection": "statut",
+      "tags": [
+        "attention",
+        "avertissement",
+        "erreur",
+        "danger",
+        "warning"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0F5"
+    },
+    {
+      "name": "ellipsis.circle",
+      "id": "ellipsisCircle",
+      "collection": "statut",
+      "tags": [
+        "plus d'options",
+        "menu",
+        "davantage",
+        "en cours"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0F6"
+    },
+    {
+      "name": "nosign",
+      "id": "nosign",
+      "collection": "statut",
+      "tags": [
+        "interdit",
+        "indisponible",
+        "bloqué",
+        "désactivé"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0F7"
+    },
+    {
+      "name": "lightbulb",
+      "id": "lightbulb",
+      "collection": "statut",
+      "tags": [
+        "idée",
+        "astuce",
+        "conseil",
+        "inspiration"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E0F8"
+    },
+    {
+      "name": "gauge",
+      "id": "gauge",
+      "collection": "statut",
+      "tags": [
+        "jauge",
+        "vitesse",
+        "performance",
+        "compteur",
+        "mesure"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "f"
+      ],
+      "fill": false,
+      "codepoint": "U+E0F9"
+    },
+    {
+      "name": "hourglass.bottomhalf.filled",
+      "id": "hourglassBottomhalfFilled",
+      "collection": "statut",
+      "tags": [
+        "chargement",
+        "patienter",
+        "en cours",
+        "presque fini"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E0FA"
+    },
+    {
+      "name": "play",
+      "id": "play",
+      "collection": "media",
+      "tags": [
+        "lecture",
+        "lire",
+        "démarrer",
+        "vidéo"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0FB"
+    },
+    {
+      "name": "pause",
+      "id": "pause",
+      "collection": "media",
+      "tags": [
+        "pause",
+        "suspendre",
+        "arrêter"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0FC"
+    },
+    {
+      "name": "stop",
+      "id": "stop",
+      "collection": "media",
+      "tags": [
+        "stop",
+        "arrêter",
+        "fin"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0FD"
+    },
+    {
+      "name": "backward",
+      "id": "backward",
+      "collection": "media",
+      "tags": [
+        "reculer",
+        "précédent",
+        "rembobiner",
+        "piste précédente"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0FE"
+    },
+    {
+      "name": "forward",
+      "id": "forward",
+      "collection": "media",
+      "tags": [
+        "avancer",
+        "suivant",
+        "avance rapide",
+        "piste suivante"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E0FF"
+    },
+    {
+      "name": "backward.end",
+      "id": "backwardEnd",
+      "collection": "media",
+      "tags": [
+        "début",
+        "piste précédente",
+        "revenir au début"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E100"
+    },
+    {
+      "name": "forward.end",
+      "id": "forwardEnd",
+      "collection": "media",
+      "tags": [
+        "fin",
+        "piste suivante",
+        "aller à la fin"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E101"
+    },
+    {
+      "name": "play.rectangle",
+      "id": "playRectangle",
+      "collection": "media",
+      "tags": [
+        "vidéo",
+        "lecteur",
+        "film",
+        "regarder",
+        "youtube"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E102"
+    },
+    {
+      "name": "record.circle",
+      "id": "recordCircle",
+      "collection": "media",
+      "tags": [
+        "enregistrer",
+        "rec",
+        "capture",
+        "en direct"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E103"
+    },
+    {
+      "name": "shuffle",
+      "id": "shuffle",
+      "collection": "media",
+      "tags": [
+        "aléatoire",
+        "mélanger",
+        "lecture aléatoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E104"
+    },
+    {
+      "name": "repeat",
+      "id": "repeat",
+      "collection": "media",
+      "tags": [
+        "répéter",
+        "boucle",
+        "en boucle",
+        "loop"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E105"
+    },
+    {
+      "name": "speaker.wave.2",
+      "id": "speakerWave2",
+      "collection": "media",
+      "tags": [
+        "son",
+        "volume",
+        "haut-parleur",
+        "audio"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E106"
+    },
+    {
+      "name": "speaker.slash",
+      "id": "speakerSlash",
+      "collection": "media",
+      "tags": [
+        "muet",
+        "son coupé",
+        "silence",
+        "mute"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E107"
+    },
+    {
+      "name": "mic",
+      "id": "mic",
+      "collection": "media",
+      "tags": [
+        "micro",
+        "dictée",
+        "enregistrer",
+        "voix"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E108"
+    },
+    {
+      "name": "mic.slash",
+      "id": "micSlash",
+      "collection": "media",
+      "tags": [
+        "micro coupé",
+        "muet",
+        "silence"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E109"
+    },
+    {
+      "name": "camera",
+      "id": "camera",
+      "collection": "media",
+      "tags": [
+        "appareil photo",
+        "capturer",
+        "prendre une photo"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E10A"
+    },
+    {
+      "name": "photo",
+      "id": "photo",
+      "collection": "media",
+      "tags": [
+        "image",
+        "photo",
+        "galerie",
+        "illustration"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E10B"
+    },
+    {
+      "name": "music.note",
+      "id": "musicNote",
+      "collection": "media",
+      "tags": [
+        "musique",
+        "note",
+        "audio",
+        "chanson"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "f"
+      ],
+      "fill": false,
+      "codepoint": "U+E10C"
+    },
+    {
+      "name": "waveform",
+      "id": "waveform",
+      "collection": "media",
+      "tags": [
+        "forme d'onde",
+        "audio",
+        "son",
+        "podcast",
+        "égaliseur"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E10D"
+    },
+    {
+      "name": "film",
+      "id": "film",
+      "collection": "media",
+      "tags": [
+        "film",
+        "cinéma",
+        "vidéo",
+        "pellicule"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E10E"
+    },
+    {
+      "name": "sun.max",
+      "id": "sunMax",
+      "collection": "meteo",
+      "tags": [
+        "soleil",
+        "mode clair",
+        "luminosité",
+        "jour"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E10F"
+    },
+    {
+      "name": "cloud",
+      "id": "cloud",
+      "collection": "meteo",
+      "tags": [
+        "nuage",
+        "météo",
+        "icloud",
+        "synchronisation"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E110"
+    },
+    {
+      "name": "cloud.arrow.up",
+      "id": "cloudArrowUp",
+      "collection": "meteo",
+      "tags": [
+        "téléverser",
+        "sauvegarde cloud",
+        "upload",
+        "envoyer vers le cloud"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E111"
+    },
+    {
+      "name": "cloud.arrow.down",
+      "id": "cloudArrowDown",
+      "collection": "meteo",
+      "tags": [
+        "télécharger du cloud",
+        "restaurer",
+        "download",
+        "synchroniser"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E112"
+    },
+    {
+      "name": "cloud.rain",
+      "id": "cloudRain",
+      "collection": "meteo",
+      "tags": [
+        "pluie",
+        "averse",
+        "météo"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E113"
+    },
+    {
+      "name": "cloud.bolt",
+      "id": "cloudBolt",
+      "collection": "meteo",
+      "tags": [
+        "orage",
+        "éclair",
+        "tempête",
+        "météo"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E114"
+    },
+    {
+      "name": "snowflake",
+      "id": "snowflake",
+      "collection": "meteo",
+      "tags": [
+        "neige",
+        "froid",
+        "flocon",
+        "hiver",
+        "climatisation"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E115"
+    },
+    {
+      "name": "wind",
+      "id": "wind",
+      "collection": "meteo",
+      "tags": [
+        "vent",
+        "air",
+        "brise",
+        "ventilation"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E116"
+    },
+    {
+      "name": "thermometer",
+      "id": "thermometer",
+      "collection": "meteo",
+      "tags": [
+        "température",
+        "chaleur",
+        "fièvre",
+        "degrés"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E117"
+    },
+    {
+      "name": "umbrella",
+      "id": "umbrella",
+      "collection": "meteo",
+      "tags": [
+        "parapluie",
+        "pluie",
+        "protection",
+        "assurance"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E118"
+    },
+    {
+      "name": "drop",
+      "id": "drop",
+      "collection": "meteo",
+      "tags": [
+        "goutte",
+        "eau",
+        "pluie",
+        "humidité",
+        "encre"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E119"
+    },
+    {
+      "name": "flame",
+      "id": "flame",
+      "collection": "meteo",
+      "tags": [
+        "feu",
+        "tendance",
+        "populaire",
+        "chaud",
+        "flamme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E11A"
+    },
+    {
+      "name": "circle",
+      "id": "circle",
+      "collection": "formes",
+      "tags": [
+        "cercle",
+        "rond",
+        "point",
+        "statut"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E11B"
+    },
+    {
+      "name": "square",
+      "id": "square",
+      "collection": "formes",
+      "tags": [
+        "carré",
+        "case",
+        "arrêt"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E11C"
+    },
+    {
+      "name": "triangle",
+      "id": "triangle",
+      "collection": "formes",
+      "tags": [
+        "triangle",
+        "delta",
+        "avertissement"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E11D"
+    },
+    {
+      "name": "diamond",
+      "id": "diamond",
+      "collection": "formes",
+      "tags": [
+        "losange",
+        "diamant",
+        "joyau"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E11E"
+    },
+    {
+      "name": "hexagon",
+      "id": "hexagon",
+      "collection": "formes",
+      "tags": [
+        "hexagone",
+        "polygone",
+        "badge"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E11F"
+    },
+    {
+      "name": "capsule",
+      "id": "capsule",
+      "collection": "formes",
+      "tags": [
+        "capsule",
+        "pilule",
+        "bouton",
+        "gélule"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E120"
+    },
+    {
+      "name": "rectangle",
+      "id": "rectangle",
+      "collection": "formes",
+      "tags": [
+        "rectangle",
+        "cadre",
+        "paysage"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E121"
+    },
+    {
+      "name": "seal",
+      "id": "seal",
+      "collection": "formes",
+      "tags": [
+        "sceau",
+        "badge",
+        "certifié",
+        "macaron"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E122"
+    },
+    {
+      "name": "circle.lefthalf.filled",
+      "id": "circleLefthalfFilled",
+      "collection": "formes",
+      "tags": [
+        "contraste",
+        "thème",
+        "moitié",
+        "apparence",
+        "clair sombre"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E123"
+    },
+    {
+      "name": "circle.grid.3x3",
+      "id": "circleGrid3x3",
+      "collection": "formes",
+      "tags": [
+        "applications",
+        "lanceur",
+        "grille de points",
+        "menu"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E124"
+    },
+    {
+      "name": "rectangle.3.group",
+      "id": "rectangle3Group",
+      "collection": "formes",
+      "tags": [
+        "tableau de bord",
+        "disposition",
+        "dashboard",
+        "mise en page"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E125"
+    },
+    {
+      "name": "rectangle.split.2x1",
+      "id": "rectangleSplit2x1",
+      "collection": "formes",
+      "tags": [
+        "colonnes",
+        "séparer",
+        "vue divisée",
+        "côte à côte"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E126"
+    },
+    {
+      "name": "square.3.layers.3d",
+      "id": "square3Layers3d",
+      "collection": "formes",
+      "tags": [
+        "calques",
+        "couches",
+        "empiler",
+        "niveaux"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E127"
+    },
+    {
+      "name": "square.on.square",
+      "id": "squareOnSquare",
+      "collection": "formes",
+      "tags": [
+        "superposer",
+        "dupliquer",
+        "copie",
+        "calque"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E128"
+    },
+    {
+      "name": "gamecontroller",
+      "id": "gamecontroller",
+      "collection": "manette",
+      "tags": [
+        "manette",
+        "jeu",
+        "gamepad",
+        "console"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E129"
+    },
+    {
+      "name": "gamecontroller.grips",
+      "id": "gamecontrollerGrips",
+      "collection": "manette",
+      "tags": [
+        "manette",
+        "xbox",
+        "poignées",
+        "sticks décalés",
+        "gamepad"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E12A"
+    },
+    {
+      "name": "gamecontroller.touchpad",
+      "id": "gamecontrollerTouchpad",
+      "collection": "manette",
+      "tags": [
+        "manette",
+        "playstation",
+        "ps5",
+        "dualsense",
+        "pavé tactile",
+        "gamepad"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E12B"
+    },
+    {
+      "name": "dpad",
+      "id": "dpad",
+      "collection": "manette",
+      "tags": [
+        "croix directionnelle",
+        "d-pad",
+        "directions",
+        "navigation spatiale"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E12C"
+    },
+    {
+      "name": "dpad.up",
+      "id": "dpadUp",
+      "collection": "manette",
+      "tags": [
+        "d-pad haut",
+        "direction haut",
+        "appuyé"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E12D"
+    },
+    {
+      "name": "dpad.down",
+      "id": "dpadDown",
+      "collection": "manette",
+      "tags": [
+        "d-pad bas",
+        "direction bas",
+        "appuyé"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E12E"
+    },
+    {
+      "name": "dpad.left",
+      "id": "dpadLeft",
+      "collection": "manette",
+      "tags": [
+        "d-pad gauche",
+        "direction gauche",
+        "appuyé"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E12F"
+    },
+    {
+      "name": "dpad.right",
+      "id": "dpadRight",
+      "collection": "manette",
+      "tags": [
+        "d-pad droite",
+        "direction droite",
+        "appuyé"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E130"
+    },
+    {
+      "name": "a.circle",
+      "id": "aCircle",
+      "collection": "manette",
+      "tags": [
+        "bouton a",
+        "confirmer",
+        "valider",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E131"
+    },
+    {
+      "name": "b.circle",
+      "id": "bCircle",
+      "collection": "manette",
+      "tags": [
+        "bouton b",
+        "retour",
+        "annuler",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E132"
+    },
+    {
+      "name": "x.circle",
+      "id": "xCircle",
+      "collection": "manette",
+      "tags": [
+        "bouton x",
+        "action",
+        "manette",
+        "xbox"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E133"
+    },
+    {
+      "name": "y.circle",
+      "id": "yCircle",
+      "collection": "manette",
+      "tags": [
+        "bouton y",
+        "action secondaire",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E134"
+    },
+    {
+      "name": "triangle.circle",
+      "id": "triangleCircle",
+      "collection": "manette",
+      "tags": [
+        "bouton triangle",
+        "playstation",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E135"
+    },
+    {
+      "name": "square.circle",
+      "id": "squareCircle",
+      "collection": "manette",
+      "tags": [
+        "bouton carré",
+        "playstation",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E136"
+    },
+    {
+      "name": "circle.circle",
+      "id": "circleCircle",
+      "collection": "manette",
+      "tags": [
+        "bouton rond",
+        "playstation",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E137"
+    },
+    {
+      "name": "l.joystick",
+      "id": "lJoystick",
+      "collection": "manette",
+      "tags": [
+        "stick gauche",
+        "joystick",
+        "analogique",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E138"
+    },
+    {
+      "name": "r.joystick",
+      "id": "rJoystick",
+      "collection": "manette",
+      "tags": [
+        "stick droit",
+        "joystick",
+        "analogique",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E139"
+    },
+    {
+      "name": "l1.rectangle.roundedbottom",
+      "id": "l1RectangleRoundedbottom",
+      "collection": "manette",
+      "tags": [
+        "L1",
+        "gâchette",
+        "bouton d'épaule",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E13A"
+    },
+    {
+      "name": "r1.rectangle.roundedbottom",
+      "id": "r1RectangleRoundedbottom",
+      "collection": "manette",
+      "tags": [
+        "R1",
+        "gâchette",
+        "bouton d'épaule",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E13B"
+    },
+    {
+      "name": "l2.rectangle.roundedtop",
+      "id": "l2RectangleRoundedtop",
+      "collection": "manette",
+      "tags": [
+        "L2",
+        "gâchette",
+        "bouton d'épaule",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E13C"
+    },
+    {
+      "name": "r2.rectangle.roundedtop",
+      "id": "r2RectangleRoundedtop",
+      "collection": "manette",
+      "tags": [
+        "R2",
+        "gâchette",
+        "bouton d'épaule",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E13D"
+    },
+    {
+      "name": "lb.rectangle.roundedbottom",
+      "id": "lbRectangleRoundedbottom",
+      "collection": "manette",
+      "tags": [
+        "LB",
+        "bumper",
+        "xbox",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E13E"
+    },
+    {
+      "name": "rb.rectangle.roundedbottom",
+      "id": "rbRectangleRoundedbottom",
+      "collection": "manette",
+      "tags": [
+        "RB",
+        "bumper",
+        "xbox",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E13F"
+    },
+    {
+      "name": "lt.rectangle.roundedtop",
+      "id": "ltRectangleRoundedtop",
+      "collection": "manette",
+      "tags": [
+        "LT",
+        "gâchette",
+        "xbox",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E140"
+    },
+    {
+      "name": "rt.rectangle.roundedtop",
+      "id": "rtRectangleRoundedtop",
+      "collection": "manette",
+      "tags": [
+        "RT",
+        "gâchette",
+        "xbox",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E141"
+    },
+    {
+      "name": "zl.rectangle.roundedtop",
+      "id": "zlRectangleRoundedtop",
+      "collection": "manette",
+      "tags": [
+        "ZL",
+        "gâchette",
+        "switch",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E142"
+    },
+    {
+      "name": "zr.rectangle.roundedtop",
+      "id": "zrRectangleRoundedtop",
+      "collection": "manette",
+      "tags": [
+        "ZR",
+        "gâchette",
+        "switch",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E143"
+    },
+    {
+      "name": "line.3.horizontal.circle",
+      "id": "line3HorizontalCircle",
+      "collection": "manette",
+      "tags": [
+        "bouton menu",
+        "options",
+        "start",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E144"
+    },
+    {
+      "name": "house.circle",
+      "id": "houseCircle",
+      "collection": "manette",
+      "tags": [
+        "bouton home",
+        "accueil",
+        "guide",
+        "manette"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E145"
+    },
+    {
+      "name": "trophy",
+      "id": "trophy",
+      "collection": "manette",
+      "tags": [
+        "trophée",
+        "victoire",
+        "récompense",
+        "classement",
+        "succès",
+        "achievement"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E146"
+    },
+    {
+      "name": "dice",
+      "id": "dice",
+      "collection": "manette",
+      "tags": [
+        "dé",
+        "hasard",
+        "aléatoire",
+        "jeu de société",
+        "chance"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E147"
+    },
+    {
+      "name": "gamecontroller.split",
+      "id": "gamecontrollerSplit",
+      "collection": "manette",
+      "tags": [
+        "manette",
+        "switch",
+        "nintendo",
+        "joy-con",
+        "console portable",
+        "écran"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E148"
+    },
+    {
+      "name": "crown",
+      "id": "crown",
+      "collection": "objets",
+      "tags": [
+        "couronne",
+        "premium",
+        "vip",
+        "roi",
+        "abonnement"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E149"
+    },
+    {
+      "name": "rocket",
+      "id": "rocket",
+      "collection": "objets",
+      "tags": [
+        "fusée",
+        "lancer",
+        "démarrage",
+        "déploiement",
+        "startup",
+        "publier"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E14A"
+    },
+    {
+      "name": "scope",
+      "id": "scope",
+      "collection": "objets",
+      "tags": [
+        "cible",
+        "objectif",
+        "viser",
+        "précision",
+        "focus"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E14B"
+    },
+    {
+      "name": "wand.and.stars",
+      "id": "wandAndStars",
+      "collection": "objets",
+      "tags": [
+        "baguette",
+        "magie",
+        "IA",
+        "retouche automatique",
+        "améliorer",
+        "auto"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E14C"
+    },
+    {
+      "name": "cursorarrow",
+      "id": "cursorarrow",
+      "collection": "objets",
+      "tags": [
+        "curseur",
+        "pointeur",
+        "souris",
+        "cliquer",
+        "sélectionner"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E14D"
+    },
+    {
+      "name": "leaf",
+      "id": "leaf",
+      "collection": "objets",
+      "tags": [
+        "feuille",
+        "écologie",
+        "nature",
+        "durable",
+        "bio",
+        "vert"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E14E"
+    },
+    {
+      "name": "graduationcap",
+      "id": "graduationcap",
+      "collection": "objets",
+      "tags": [
+        "diplôme",
+        "formation",
+        "apprentissage",
+        "école",
+        "tutoriel",
+        "cours"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E14F"
+    },
+    {
+      "name": "book",
+      "id": "book",
+      "collection": "objets",
+      "tags": [
+        "livre",
+        "documentation",
+        "lecture",
+        "guide",
+        "manuel",
+        "docs"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E150"
+    },
+    {
+      "name": "ticket",
+      "id": "ticket",
+      "collection": "objets",
+      "tags": [
+        "billet",
+        "ticket",
+        "événement",
+        "entrée",
+        "coupon",
+        "réservation"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E151"
+    },
+    {
+      "name": "fork.knife",
+      "id": "forkKnife",
+      "collection": "objets",
+      "tags": [
+        "restaurant",
+        "repas",
+        "manger",
+        "cuisine",
+        "couverts"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E152"
+    },
+    {
+      "name": "mug",
+      "id": "mug",
+      "collection": "objets",
+      "tags": [
+        "café",
+        "tasse",
+        "pause",
+        "boisson",
+        "thé"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E153"
+    },
+    {
+      "name": "cross.case",
+      "id": "crossCase",
+      "collection": "objets",
+      "tags": [
+        "santé",
+        "médical",
+        "premiers secours",
+        "trousse",
+        "pharmacie",
+        "urgence"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E154"
+    },
+    {
+      "name": "pawprint",
+      "id": "pawprint",
+      "collection": "objets",
+      "tags": [
+        "animal",
+        "patte",
+        "chien",
+        "chat",
+        "vétérinaire"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E155"
+    },
+    {
+      "name": "moon.stars",
+      "id": "moonStars",
+      "collection": "objets",
+      "tags": [
+        "nuit",
+        "sommeil",
+        "mode nuit",
+        "étoiles",
+        "coucher"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "pf"
+      ],
+      "fill": true,
+      "codepoint": "U+E156"
+    },
+    {
+      "name": "equal",
+      "id": "equal",
+      "collection": "objets",
+      "tags": [
+        "égal",
+        "identique",
+        "équivalent",
+        "mathématiques"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E157"
+    },
+    {
+      "name": "face.bubble",
+      "id": "faceBubble",
+      "collection": "marques",
+      "tags": [
+        "discord",
+        "bot",
+        "communauté",
+        "chat vocal",
+        "serveur",
+        "assistant"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E158"
+    },
+    {
+      "name": "cat.circle",
+      "id": "catCircle",
+      "collection": "marques",
+      "tags": [
+        "github",
+        "chat",
+        "dépôt",
+        "open source",
+        "code source"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E159"
+    },
+    {
+      "name": "arrow.branch.diamond",
+      "id": "arrowBranchDiamond",
+      "collection": "marques",
+      "tags": [
+        "git",
+        "versionnage",
+        "branche",
+        "commit",
+        "contrôle de version"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E15A"
+    },
+    {
+      "name": "fox",
+      "id": "fox",
+      "collection": "marques",
+      "tags": [
+        "gitlab",
+        "firefox",
+        "renard",
+        "navigateur",
+        "animal"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E15B"
+    },
+    {
+      "name": "bird",
+      "id": "bird",
+      "collection": "marques",
+      "tags": [
+        "twitter",
+        "oiseau",
+        "tweet",
+        "gazouillis",
+        "animal"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E15C"
+    },
+    {
+      "name": "butterfly",
+      "id": "butterfly",
+      "collection": "marques",
+      "tags": [
+        "bluesky",
+        "papillon",
+        "réseau social",
+        "animal"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E15D"
+    },
+    {
+      "name": "penguin",
+      "id": "penguin",
+      "collection": "marques",
+      "tags": [
+        "linux",
+        "manchot",
+        "pingouin",
+        "animal",
+        "système"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E15E"
+    },
+    {
+      "name": "robot",
+      "id": "robot",
+      "collection": "marques",
+      "tags": [
+        "android",
+        "bot",
+        "IA",
+        "automate",
+        "assistant"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E15F"
+    },
+    {
+      "name": "apple",
+      "id": "apple",
+      "collection": "marques",
+      "tags": [
+        "apple",
+        "pomme",
+        "fruit",
+        "santé",
+        "nutrition"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E160"
+    },
+    {
+      "name": "briefcase",
+      "id": "briefcase",
+      "collection": "marques",
+      "tags": [
+        "linkedin",
+        "mallette",
+        "travail",
+        "emploi",
+        "professionnel",
+        "portfolio"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E161"
+    },
+    {
+      "name": "cube.stack",
+      "id": "cubeStack",
+      "collection": "marques",
+      "tags": [
+        "docker",
+        "conteneurs",
+        "pile",
+        "empiler",
+        "infrastructure"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E162"
+    },
+    {
+      "name": "phone.bubble.left",
+      "id": "phoneBubbleLeft",
+      "collection": "marques",
+      "tags": [
+        "whatsapp",
+        "appel",
+        "messagerie",
+        "téléphone",
+        "contact"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E163"
+    },
+    {
+      "name": "dot.radiowaves.upright",
+      "id": "dotRadiowavesUpright",
+      "collection": "marques",
+      "tags": [
+        "rss",
+        "flux",
+        "abonnement",
+        "podcast",
+        "fil"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "f"
+      ],
+      "fill": false,
+      "codepoint": "U+E164"
+    },
+    {
+      "name": "pen.nib",
+      "id": "penNib",
+      "collection": "marques",
+      "tags": [
+        "figma",
+        "plume",
+        "stylo",
+        "design vectoriel",
+        "tracé",
+        "dessin"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E165"
+    },
+    {
+      "name": "music.note.circle",
+      "id": "musicNoteCircle",
+      "collection": "marques",
+      "tags": [
+        "spotify",
+        "musique",
+        "lecture",
+        "playlist",
+        "audio"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E166"
+    }
+  ]
+}

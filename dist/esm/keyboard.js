@@ -1,0 +1,1 @@
+export default {"name":"keyboard","tags":["clavier","saisie","touches"],"e":"M4.5 6.5h15a2 2 0 0 1 2 2v7a2 2 0 0 1 -2 2h-15a2 2 0 0 1 -2 -2v-7a2 2 0 0 1 2 -2z","c":"M6 9.5h1M9.5 9.5h1M13 9.5h1M16.5 9.5h1M6 12.5h1M9.5 12.5h1M13 12.5h1M16.5 12.5h1M8 15.5h8"};

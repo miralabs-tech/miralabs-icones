@@ -1,0 +1,1 @@
+export default {"name":"bubble.left","tags":["message","discussion","chat","commentaire","bulle"],"e":"M12 4c5 0 8.5 3 8.5 6.8S17 17.5 12 17.5c-1 0-2-.1-2.8-.4L5 19l1-3.4C4.6 14.3 3.5 12.6 3.5 10.8 3.5 7 7 4 12 4z"};

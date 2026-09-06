@@ -1,0 +1,1 @@
+export default {"name":"photo","tags":["image","photo","galerie","illustration"],"e":"M3.5 6.5A2 2 0 0 1 5.5 4.5h13a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z","c":"M3.5 16.5l4.5-4.5 4 4 3-3 5.5 5.5M16 9v.01"};

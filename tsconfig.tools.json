@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["bun"],
+    "isolatedDeclarations": false,
+    "declaration": false,
+    "noEmit": true,
+    "allowJs": true
+  },
+  "include": ["scripts", "test", "vitest.config.ts"]
+}

@@ -1,0 +1,1 @@
+export default {"name":"scope","tags":["cible","objectif","viser","précision","focus"],"p":"M3.5 12a8.5 8.5 0 1 0 17 0a8.5 8.5 0 1 0 -17 0zM8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0zM12 2v3M12 19v3M2 12h3M19 12h3"};

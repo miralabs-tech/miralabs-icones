@@ -1,0 +1,1 @@
+export default {"name":"cat.circle","tags":["github","chat","dépôt","open source","code source"],"e":"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0z","c":"M7.5 7.5V15a4.5 4.5 0 0 0 9 0V7.5L14 10h-4zM10.5 13h.01M13.5 13h.01"};

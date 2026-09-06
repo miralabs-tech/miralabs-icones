@@ -1,0 +1,1 @@
+export default {"name":"clipboard","tags":["presse-papiers","coller","bloc-notes"],"e":"M6.5 5.5H9V4.5A1 1 0 0 1 10 3.5h4a1 1 0 0 1 1 1v1h2.5A1.5 1.5 0 0 1 19 7v12a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V7a1.5 1.5 0 0 1 1.5-1.5z","c":"M9 5.5v2h6v-2M8.5 12h7M8.5 15.5h5"};

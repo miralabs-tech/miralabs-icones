@@ -1,0 +1,524 @@
+// @miralabs/ui-symbols — source du jeu de symboles (v0.2, prototype).
+// Grille 24×24, trait 1.5 en Régulier, extrémités et jointures rondes. Tout est dessiné à la main ici :
+// aucun tracé n'est repris d'un jeu existant. Les noms suivent la convention SF (objet.modificateur).
+//
+// Un symbole décrit des COUCHES ; graisses et variante Plein sont dérivées au rendu ou au build :
+//   p    — glyphe primaire, toujours au trait
+//   e    — enveloppe : au trait en Contour, pleine en Plein, atténuée en Hiérarchique
+//   c    — traits « à découper » : au trait en Contour, découpés dans `e` en Plein (yeux, lignes, lettres)
+//   f    — forme toujours pleine (puce, moitié pleine, niveau de batterie, bras de croix appuyé)
+//   h    — trou : découpe pleine dans `f` (toujours) et dans `e` (en Plein) — éclair de la batterie
+//   pf   — chemin plein du glyphe pour le mode Plein ("=" : réutiliser `p`, forme fermée)
+//   cut  — Plein : découper `p` dans `e` (défaut : true si `e` et `p`)
+//   keep — Plein : garder `p` au trait par-dessus la découpe (halo)
+//   fade — Hiérarchique : couche atténuée, "e" (défaut) ou "p"
+//   rtl  — miroir horizontal en écriture droite-à-gauche
+
+import type { CategoryDef, SymbolIndex, SymbolSource, WeightDef } from "./types.js";
+
+const R = (n: number): number => Math.round(n * 100) / 100;
+export const circle = (cx: number, cy: number, r: number): string => `M${R(cx - r)} ${cy}a${r} ${r} 0 1 0 ${R(2 * r)} 0a${r} ${r} 0 1 0 ${R(-2 * r)} 0z`;
+export const rr = (x: number, y: number, w: number, h: number, r: number): string => `M${R(x + r)} ${y}h${R(w - 2 * r)}a${r} ${r} 0 0 1 ${r} ${r}v${R(h - 2 * r)}a${r} ${r} 0 0 1 ${-r} ${r}h${R(-(w - 2 * r))}a${r} ${r} 0 0 1 ${-r} ${-r}v${R(-(h - 2 * r))}a${r} ${r} 0 0 1 ${r} ${-r}z`;
+
+function gear(teeth = 8, rOut = 9.6, rIn = 7.7): string {
+  const step = (Math.PI * 2) / teeth;
+  const pt = (a: number, r: number): string => `${R(12 + Math.cos(a) * r)} ${R(12 + Math.sin(a) * r)}`;
+  let d = "";
+  for (let i = 0; i < teeth; i++) {
+    const a = i * step - Math.PI / 2;
+    d += `${i === 0 ? "M" : "L"}${pt(a + 0.05 * step, rIn)}L${pt(a + 0.15 * step, rOut)}L${pt(a + 0.45 * step, rOut)}L${pt(a + 0.55 * step, rIn)}`;
+  }
+  return `${d}z${circle(12, 12, 3.2)}`;
+}
+function seal(n = 8, ro = 9.5, ri = 8.3): string {
+  let d = "";
+  for (let i = 0; i < 2 * n; i++) {
+    const a = (i * Math.PI) / n - Math.PI / 2, r = i % 2 ? ri : ro;
+    d += `${i ? "L" : "M"}${R(12 + Math.cos(a) * r)} ${R(12 + Math.sin(a) * r)}`;
+  }
+  return `${d}z`;
+}
+
+// Mini-fonte au trait (boîte 4×6) pour les étiquettes de boutons et de réseau : L1, R2, ZL, 5G, LTE…
+const GL: Record<string, string> = {
+  L: "M0 0V6H4", R: "M0 6V0H2.4A1.5 1.5 0 0 1 2.4 3H0M2.2 3L4 6", B: "M0 3H2.4A1.5 1.5 0 0 0 2.4 0H0V6H2.4A1.5 1.5 0 0 0 2.4 3",
+  T: "M0 0H4M2 0V6", E: "M4 0H0V6H4M0 3H3", G: "M4 1.4A2.1 2.1 0 0 0 2 0A2 2 0 0 0 0 2V4A2 2 0 0 0 2 6A2 2 0 0 0 4 4V3.2H2.2", Z: "M0 0H4L0 6H4",
+  1: "M0.8 1.3L2.2 0V6", 2: "M0.3 1.5A1.7 1.7 0 1 1 3.5 2.5L0.3 6H4", 3: "M0.5 0.8A1.6 1.6 0 1 1 2.6 3H1.8M2.6 3A1.6 1.6 0 1 1 0.5 5.2",
+  4: "M3.2 6V0L0 4.2H4", 5: "M3.6 0H0.8L0.5 2.8H2.1A1.6 1.6 0 1 1 0.5 5.1",
+};
+function tf(d: string, x: number, y: number, k: number): string {
+  return d.replace(/([MLHVA])([^MLHVA]*)/g, (_: string, c: string, a: string) => {
+    const n = a.trim().split(/[\s,]+/).map(Number);
+    if (c === "H") return `H${R(x + n[0] * k)}`;
+    if (c === "V") return `V${R(y + n[0] * k)}`;
+    if (c === "A") return `A${R(n[0] * k)} ${R(n[1] * k)} ${n[2]} ${n[3]} ${n[4]} ${R(x + n[5] * k)} ${R(y + n[6] * k)}`;
+    return `${c}${R(x + n[0] * k)} ${R(y + n[1] * k)}`;
+  });
+}
+export const txt = (s: string, x: number, y: number, k = 1, gap = 1.4): string => [...s].map((ch, i) => tf(GL[ch], x + i * (4 + gap) * k, y, k)).join("");
+
+const CIRCLE = circle(12, 12, 9);
+const SQ = rr(3.5, 3.5, 17, 17, 3);
+const DOC = "M6.5 3h7L19 8.5v11a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19.5v-15A1.5 1.5 0 0 1 6.5 3z", FOLD = "M13.5 3v5.5H19";
+const FOLDER = "M3.5 7A1.5 1.5 0 0 1 5 5.5h4.4a1.5 1.5 0 0 1 1.06.44L12 7.5h7a1.5 1.5 0 0 1 1.5 1.5v8.5A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5z";
+const TRAY = "M4 13h4.5l1.5 2.5h4l1.5-2.5H20v5.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 18.5z";
+const BELL = "M6 16V10.5a6 6 0 0 1 12 0V16l1.5 1.5H4.5zM10 17.5a2 2 0 0 0 4 0z";
+const CLOUD = "M7 18.5h10.5a4 4 0 0 0 .7-7.94A6 6 0 0 0 6.6 9.9 4.4 4.4 0 0 0 7 18.5z";
+const CLOUD_HI = "M7 16h10.5a4 4 0 0 0 .7-7.94A6 6 0 0 0 6.6 7.4 4.4 4.4 0 0 0 7 16z";
+const FRAME = "M3.5 7A2.5 2.5 0 0 1 6 4.5h12A2.5 2.5 0 0 1 20.5 7v10a2.5 2.5 0 0 1-2.5 2.5H6A2.5 2.5 0 0 1 3.5 17z";
+const SEAL = seal(), SHIELD = "M12 3 4.5 6v6c0 4.5 3 7.5 7.5 9 4.5-1.5 7.5-4.5 7.5-9V6z";
+const DPAD = "M9.5 3.5h5v6h6v5h-6v6h-5v-6h-6v-5h6z", DPAD_C = "M12 6l1.5 1.75h-3zM12 18l1.5-1.75h-3zM6 12l1.75-1.5v3zM18 12l-1.75-1.5v3z";
+const BTN_B = "M4 5.5h16v8.5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z", BTN_T = "M4 18.5h16V10a5 5 0 0 0-5-5H9a5 5 0 0 0-5 5z";
+const BATT = rr(2.5, 7.5, 17, 9, 2), BATT_T = "M21.5 10.5v3";
+const PERSON = `${circle(12, 7.5, 4)}M4.5 20.5a7.5 7.5 0 0 1 15 0z`;
+const SPK = "M4 9.5h3l5-4v13l-5-4H4z", MIC = "M9 5a3 3 0 0 1 6 0v6a3 3 0 0 1-6 0z", MIC_P = "M6 11.5a6 6 0 0 0 12 0M12 17.5V21M9 21h6";
+const SBOX = "M8.5 10H6.5A1.5 1.5 0 0 0 5 11.5v8A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5v-8a1.5 1.5 0 0 0-1.5-1.5h-2";
+const MAG = "M10.5 17a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13zM15.5 15.5l5 5";
+const WIFI = "M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.5 16a5 5 0 0 1 7 0M12 19.5v.01";
+const EYE = "M2.5 12s3.5-6.5 9.5-6.5 9.5 6.5 9.5 6.5-3.5 6.5-9.5 6.5S2.5 12 2.5 12z";
+const LOCK = "M6.5 10.5h11A1.5 1.5 0 0 1 19 12v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19v-7a1.5 1.5 0 0 1 1.5-1.5z";
+const CAL = "M3.5 7A2.5 2.5 0 0 1 6 4.5h12A2.5 2.5 0 0 1 20.5 7v11a2.5 2.5 0 0 1-2.5 2.5H6A2.5 2.5 0 0 1 3.5 18z";
+const EYES = `${circle(9.25, 9.75, 0.9)}${circle(14.75, 9.75, 0.9)}`;
+const CHECK = "M8.5 12l2.5 2.5 4.5-5";
+
+export const WEIGHTS: readonly WeightDef[] = [
+  { id: "thin", label: "Fin", sw: 1, font: 200 },
+  { id: "light", label: "Léger", sw: 1.25, font: 300 },
+  { id: "regular", label: "Régulier", sw: 1.5, font: 400 },
+  { id: "medium", label: "Moyen", sw: 1.75, font: 500 },
+  { id: "semibold", label: "Demi-gras", sw: 2, font: 600 },
+  { id: "bold", label: "Gras", sw: 2.4, font: 700 },
+];
+
+export const CATEGORIES: readonly CategoryDef[] = [
+  { id: "navigation", label: "Navigation", glyph: "sidebar.left" },
+  { id: "fleches", label: "Flèches", glyph: "arrow.right" },
+  { id: "actions", label: "Actions", glyph: "plus" },
+  { id: "texte", label: "Texte & mise en page", glyph: "textformat" },
+  { id: "fichiers", label: "Fichiers & données", glyph: "folder" },
+  { id: "communication", label: "Communication", glyph: "bubble.left" },
+  { id: "gestes", label: "Gestes & émotions", glyph: "hand.thumbsup" },
+  { id: "personnes", label: "Personnes & comptes", glyph: "person" },
+  { id: "commerce", label: "Commerce & paiement", glyph: "creditcard" },
+  { id: "appareils", label: "Appareils & système", glyph: "iphone" },
+  { id: "cartes", label: "Cartes & lieux", glyph: "mappin" },
+  { id: "temps", label: "Temps & agenda", glyph: "clock" },
+  { id: "dev", label: "Développement", glyph: "terminal" },
+  { id: "securite", label: "Sécurité & accessibilité", glyph: "lock" },
+  { id: "reglages", label: "Réglages", glyph: "gearshape" },
+  { id: "statut", label: "Statut", glyph: "info.circle" },
+  { id: "media", label: "Média", glyph: "play" },
+  { id: "meteo", label: "Météo", glyph: "sun.max" },
+  { id: "objets", label: "Objets", glyph: "book" },
+  { id: "formes", label: "Formes", glyph: "circle" },
+  { id: "manette", label: "Manette", glyph: "gamecontroller" },
+  { id: "marques", label: "Évocations de marques", glyph: "cat.circle" },
+];
+
+export const SYMBOLS: readonly SymbolSource[] = [
+  // ——— Navigation
+  { name: "chevron.left", cat: "navigation", tags: ["retour", "précédent", "gauche", "flèche"], rtl: true, p: "M15 5 8 12l7 7" },
+  { name: "chevron.right", cat: "navigation", tags: ["suivant", "droite", "flèche", "disclosure"], rtl: true, p: "M9 5l7 7-7 7" },
+  { name: "chevron.up", cat: "navigation", tags: ["haut", "replier", "monter"], p: "M5 15l7-7 7 7" },
+  { name: "chevron.down", cat: "navigation", tags: ["bas", "déplier", "descendre", "menu"], p: "M5 9l7 7 7-7" },
+  { name: "chevron.up.chevron.down", cat: "navigation", tags: ["sélecteur", "select", "popup", "trier"], p: "M8 9.5l4-4 4 4M8 14.5l4 4 4-4" },
+  { name: "chevron.left.2", cat: "navigation", tags: ["début", "reculer vite", "double"], rtl: true, p: "M11 5 4 12l7 7M20 5l-7 7 7 7" },
+  { name: "chevron.right.2", cat: "navigation", tags: ["fin", "avancer vite", "double"], rtl: true, p: "M4 5l7 7-7 7M13 5l7 7-7 7" },
+  { name: "house", cat: "navigation", tags: ["accueil", "maison", "home"], e: "M4.5 10.5 12 4l7.5 6.5V19a1.5 1.5 0 0 1-1.5 1.5H6A1.5 1.5 0 0 1 4.5 19z", p: "M10 20.5v-6h4v6", fade: "p" },
+  { name: "sidebar.left", cat: "navigation", tags: ["barre latérale", "panneau", "afficher", "masquer"], rtl: true, e: FRAME, p: "M9.5 4.5v15" },
+  { name: "sidebar.right", cat: "navigation", tags: ["inspecteur", "panneau droit", "afficher", "masquer"], rtl: true, e: FRAME, p: "M14.5 4.5v15" },
+  { name: "line.3.horizontal", cat: "navigation", tags: ["menu", "hamburger", "liste", "options"], p: "M4 7h16M4 12h16M4 17h16" },
+  { name: "magnifyingglass", cat: "navigation", tags: ["rechercher", "loupe", "chercher", "filtrer"], p: MAG },
+  { name: "ellipsis", cat: "navigation", tags: ["plus", "options", "davantage", "menu"], p: "M6 12h.01M12 12h.01M18 12h.01" },
+  { name: "square.grid.2x2", cat: "navigation", tags: ["grille", "galerie", "vue", "applications", "tous", "windows", "microsoft"], e: `${rr(4, 4, 7, 7, 1.5)}${rr(13, 4, 7, 7, 1.5)}${rr(4, 13, 7, 7, 1.5)}${rr(13, 13, 7, 7, 1.5)}` },
+  { name: "rectangle.portrait.and.arrow.right", cat: "navigation", tags: ["déconnexion", "quitter", "sortir", "logout"], rtl: true, p: "M14 6V5a1.5 1.5 0 0 0-1.5-1.5h-7A1.5 1.5 0 0 0 4 5v14a1.5 1.5 0 0 0 1.5 1.5h7A1.5 1.5 0 0 0 14 19v-1M9.5 12h11M17 8.5l3.5 3.5-3.5 3.5" },
+  { name: "rectangle.portrait.and.arrow.left", cat: "navigation", tags: ["connexion", "se connecter", "entrer", "login"], rtl: true, p: "M14 6V5a1.5 1.5 0 0 0-1.5-1.5h-7A1.5 1.5 0 0 0 4 5v14a1.5 1.5 0 0 0 1.5 1.5h7A1.5 1.5 0 0 0 14 19v-1M20.5 12h-11M13 8.5 9.5 12l3.5 3.5" },
+
+  // ——— Flèches
+  { name: "arrow.left", cat: "fleches", tags: ["retour", "précédent", "gauche"], rtl: true, p: "M19 12H5M11 6l-6 6 6 6" },
+  { name: "arrow.right", cat: "fleches", tags: ["suivant", "continuer", "droite"], rtl: true, p: "M5 12h14M13 6l6 6-6 6" },
+  { name: "arrow.up", cat: "fleches", tags: ["haut", "monter", "envoyer"], p: "M12 19V5M6 11l6-6 6 6" },
+  { name: "arrow.down", cat: "fleches", tags: ["bas", "descendre", "télécharger"], p: "M12 5v14M6 13l6 6 6-6" },
+  { name: "arrow.up.right", cat: "fleches", tags: ["lien externe", "ouvrir", "sortant", "nouvelle fenêtre"], rtl: true, p: "M5 19 19 5M7 5h12v12" },
+  { name: "arrow.up.left", cat: "fleches", tags: ["coin", "haut gauche"], rtl: true, p: "M19 19 5 5M5 17V5h12" },
+  { name: "arrow.down.right", cat: "fleches", tags: ["coin", "bas droite"], rtl: true, p: "M5 5l14 14M19 7v12H7" },
+  { name: "arrow.down.left", cat: "fleches", tags: ["coin", "bas gauche"], rtl: true, p: "M19 5 5 19M17 19H5V7" },
+  { name: "arrow.left.arrow.right", cat: "fleches", tags: ["échanger", "permuter", "transfert", "aller-retour"], p: "M4 8h13M13.5 4.5 17 8l-3.5 3.5M20 16H7M10.5 12.5 7 16l3.5 3.5" },
+  { name: "arrow.up.arrow.down", cat: "fleches", tags: ["trier", "ordre", "croissant", "décroissant"], p: "M8 20V4M4.5 7.5 8 4l3.5 3.5M16 4v16M12.5 16.5 16 20l3.5-3.5" },
+  { name: "arrow.turn.up.left", cat: "fleches", tags: ["répondre", "reply", "retour"], rtl: true, p: "M9 6 4.5 10.5 9 15M4.5 10.5H15a4.5 4.5 0 0 1 4.5 4.5V19" },
+  { name: "arrow.uturn.backward", cat: "fleches", tags: ["annuler", "undo", "défaire", "retour"], rtl: true, p: "M7 9.25h5.5a4.5 4.5 0 0 1 0 9H8M7 9.25l3.5-3.5M7 9.25l3.5 3.5" },
+  { name: "arrow.uturn.forward", cat: "fleches", tags: ["rétablir", "redo", "refaire"], rtl: true, p: "M17 9.25h-5.5a4.5 4.5 0 0 0 0 9H16M17 9.25l-3.5-3.5M17 9.25l-3.5 3.5" },
+  { name: "arrow.clockwise", cat: "fleches", tags: ["actualiser", "recharger", "rafraîchir", "refresh"], p: "M20 12a8 8 0 1 1-2.34-5.66M17.66 6.34V2.5M17.66 6.34h-3.84" },
+  { name: "arrow.counterclockwise", cat: "fleches", tags: ["historique", "restaurer", "rembobiner", "réinitialiser"], p: "M4 12a8 8 0 1 0 2.34-5.66M6.34 6.34V2.5M6.34 6.34h3.84" },
+  { name: "arrow.triangle.2.circlepath", cat: "fleches", tags: ["synchroniser", "sync", "boucle", "mettre à jour"], p: "M4 12a8 8 0 0 1 13.66-5.66M17.66 6.34V2.5M17.66 6.34h-3.84M20 12a8 8 0 0 1-13.66 5.66M6.34 17.66V21.5M6.34 17.66h3.84" },
+  { name: "arrow.down.to.line", cat: "fleches", tags: ["télécharger", "enregistrer", "download", "importer"], p: "M12 3.5v12M6.5 10l5.5 5.5 5.5-5.5M5 20.5h14" },
+  { name: "arrow.up.to.line", cat: "fleches", tags: ["téléverser", "upload", "haut de page", "premier"], p: "M12 20.5V8.5M6.5 14l5.5-5.5 5.5 5.5M5 3.5h14" },
+  { name: "arrow.up.and.down.and.arrow.left.and.right", cat: "fleches", tags: ["déplacer", "glisser", "quatre directions", "move"], p: "M12 3v18M3 12h18M9 6l3-3 3 3M9 18l3 3 3-3M6 9l-3 3 3 3M18 9l3 3-3 3" },
+  { name: "arrow.up.left.and.arrow.down.right", cat: "fleches", tags: ["agrandir", "plein écran", "étendre", "maximiser"], rtl: true, p: "M4 10V4h6M4 4l6 6M20 14v6h-6M20 20l-6-6" },
+  { name: "arrow.down.right.and.arrow.up.left", cat: "fleches", tags: ["réduire", "quitter le plein écran", "minimiser"], rtl: true, p: "M10 4v6H4M10 10 4 4M14 20v-6h6M14 14l6 6" },
+  { name: "arrow.right.circle", cat: "fleches", tags: ["suivant", "continuer", "aller"], rtl: true, e: CIRCLE, p: "M8 12h8M13 8.5l3.5 3.5-3.5 3.5" },
+  { name: "arrow.left.circle", cat: "fleches", tags: ["retour", "précédent"], rtl: true, e: CIRCLE, p: "M16 12H8M11 8.5 7.5 12l3.5 3.5" },
+  { name: "arrow.up.circle", cat: "fleches", tags: ["envoyer", "monter", "publier"], e: CIRCLE, p: "M12 16V8M8.5 11.5 12 8l3.5 3.5" },
+  { name: "arrow.down.circle", cat: "fleches", tags: ["télécharger", "descendre", "recevoir"], e: CIRCLE, p: "M12 8v8M8.5 12.5l3.5 3.5 3.5-3.5" },
+  { name: "arrowshape.right", cat: "fleches", tags: ["flèche pleine", "suivant", "direction"], rtl: true, p: "M14 5l7 7-7 7v-4H3V9h11z", pf: "=" },
+  { name: "arrowshape.left", cat: "fleches", tags: ["flèche pleine", "retour", "direction"], rtl: true, p: "M10 5 3 12l7 7v-4h11V9H10z", pf: "=" },
+
+  // ——— Actions
+  { name: "plus", cat: "actions", tags: ["ajouter", "nouveau", "créer"], p: "M12 5v14M5 12h14" },
+  { name: "minus", cat: "actions", tags: ["retirer", "supprimer", "moins", "réduire"], p: "M5 12h14" },
+  { name: "xmark", cat: "actions", tags: ["fermer", "annuler", "effacer", "croix"], p: "M6 6l12 12M18 6 6 18" },
+  { name: "checkmark", cat: "actions", tags: ["valider", "coche", "ok", "terminé", "sélectionné"], p: "M4.5 12.5l5 5 10-11" },
+  { name: "plus.circle", cat: "actions", tags: ["ajouter", "nouveau", "insérer"], e: CIRCLE, p: "M12 8v8M8 12h8" },
+  { name: "minus.circle", cat: "actions", tags: ["retirer", "supprimer", "réduire", "bouton moins"], e: CIRCLE, p: "M8 12h8" },
+  { name: "xmark.circle", cat: "actions", tags: ["effacer", "fermer", "clear", "champ de recherche", "croix"], e: CIRCLE, p: "M9 9l6 6M15 9l-6 6" },
+  { name: "checkmark.circle", cat: "actions", tags: ["succès", "validé", "terminé", "réussi"], e: CIRCLE, p: "M8 12.5l2.8 2.8L16.5 9" },
+  { name: "plus.square", cat: "actions", tags: ["ajouter", "nouveau", "case"], e: SQ, p: "M12 8v8M8 12h8" },
+  { name: "xmark.square", cat: "actions", tags: ["fermer", "supprimer", "case"], e: SQ, p: "M9 9l6 6M15 9l-6 6" },
+  { name: "checkmark.square", cat: "actions", tags: ["case à cocher", "coché", "sélectionné", "checkbox"], e: SQ, p: "M8 12.5l2.8 2.8 5.5-5.8" },
+  { name: "square.and.arrow.up", cat: "actions", tags: ["partager", "exporter", "envoyer"], e: SBOX, p: "M12 15V3.5M8 7.5l4-4 4 4", keep: true, fade: "e" },
+  { name: "square.and.arrow.down", cat: "actions", tags: ["importer", "enregistrer dans", "télécharger"], e: SBOX, p: "M12 3.5V15M8 11l4 4 4-4", keep: true, fade: "e" },
+  { name: "doc.on.doc", cat: "actions", tags: ["copier", "dupliquer", "presse-papiers", "clipboard"], e: "M9.5 10A1.5 1.5 0 0 1 11 8.5h7.5A1.5 1.5 0 0 1 20 10v9.5a1.5 1.5 0 0 1-1.5 1.5H11a1.5 1.5 0 0 1-1.5-1.5z", p: "M15 8.5V5.5A1.5 1.5 0 0 0 13.5 4h-8A1.5 1.5 0 0 0 4 5.5v10A1.5 1.5 0 0 0 5.5 17h4", pf: "M15 8.5V5.5A1.5 1.5 0 0 0 13.5 4h-8A1.5 1.5 0 0 0 4 5.5v10A1.5 1.5 0 0 0 5.5 17h4v-7A1.5 1.5 0 0 1 11 8.5z", fade: "p" },
+  { name: "trash", cat: "actions", tags: ["supprimer", "corbeille", "effacer", "jeter"], e: "M5.5 8.5h13l-.9 10.6a1.6 1.6 0 0 1-1.6 1.4H8a1.6 1.6 0 0 1-1.6-1.4z", p: "M4 6h16M9.5 6V4.5h5V6", c: "M10 11.5v6M14 11.5v6", cut: false, fade: "p" },
+  { name: "star", cat: "actions", tags: ["favori", "étoile", "noter", "préféré"], p: "M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.9l-5.3 2.8 1.1-5.9-4.3-4.1 5.9-.8z", pf: "=" },
+  { name: "heart", cat: "actions", tags: ["aimer", "favori", "cœur", "like"], p: "M12 19.2S4.5 14.8 4.5 9.2A4.1 4.1 0 0 1 12 6.6a4.1 4.1 0 0 1 7.5 2.6c0 5.6-7.5 10-7.5 10z", pf: "=" },
+  { name: "bookmark", cat: "actions", tags: ["marque-page", "enregistrer", "signet", "lire plus tard"], p: "M6.5 4.5A1.5 1.5 0 0 1 8 3h8a1.5 1.5 0 0 1 1.5 1.5V21L12 16.5 6.5 21z", pf: "=" },
+  { name: "paperplane", cat: "actions", tags: ["envoyer", "message", "soumettre", "avion", "telegram"], e: "M21 3 3 10.5l7.5 3 3 7.5z", p: "M10.5 13.5 21 3", fade: "p" },
+  { name: "sparkles", cat: "actions", tags: ["magie", "IA", "suggestion", "nouveau", "générer", "chatgpt", "openai"], p: "M10 4l1.6 4.4L16 10l-4.4 1.6L10 16l-1.6-4.4L4 10l4.4-1.6zM18 14l.9 2.1L21 17l-2.1.9L18 20l-.9-2.1L15 17l2.1-.9z", pf: "=" },
+  { name: "scissors", cat: "actions", tags: ["couper", "ciseaux", "découper"], e: `${circle(6.5, 6.5, 2.5)}${circle(6.5, 17.5, 2.5)}`, p: "M8.3 8.3 20 19.5M8.3 15.7 20 4.5", cut: false },
+  { name: "crop", cat: "actions", tags: ["recadrer", "rogner", "cadre"], p: "M6 3v12a3 3 0 0 0 3 3h12M3 6h12a3 3 0 0 1 3 3v12" },
+  { name: "plus.magnifyingglass", cat: "actions", tags: ["zoom avant", "agrandir", "loupe"], p: `${MAG}M10.5 7.5v6M7.5 10.5h6` },
+  { name: "minus.magnifyingglass", cat: "actions", tags: ["zoom arrière", "réduire", "loupe"], p: `${MAG}M7.5 10.5h6` },
+
+  // ——— Texte & mise en page
+  { name: "bold", cat: "texte", tags: ["gras", "texte", "format", "graisse"], p: "M7 4h5.5a3.5 3.5 0 0 1 0 7H7zM7 11h6.5a3.75 3.75 0 0 1 0 7.5H7z" },
+  { name: "italic", cat: "texte", tags: ["italique", "texte", "format", "oblique"], p: "M9.5 4h6M8.5 20h6M13.5 4l-3 16" },
+  { name: "underline", cat: "texte", tags: ["souligné", "texte", "format"], p: "M6 4v6a6 6 0 0 0 12 0V4M5 20.5h14" },
+  { name: "strikethrough", cat: "texte", tags: ["barré", "texte", "format", "rayer"], p: "M15.5 8A3.5 3.5 0 0 0 12 6h-.5a3 3 0 0 0 0 6M12.5 12a3 3 0 0 1 0 6H12a3.5 3.5 0 0 1-3.5-2M5 12h14" },
+  { name: "pencil", cat: "texte", tags: ["modifier", "éditer", "crayon", "écrire", "renommer"], p: "M4 20l1.2-4.7L15.5 5a2.1 2.1 0 0 1 3 3L8.2 18.3zM13.5 7l3 3" },
+  { name: "link", cat: "texte", tags: ["lien", "url", "hyperlien", "attacher"], p: "M10 14a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 0 0-5.66-5.66L11.4 6.9M14 10a4 4 0 0 0-5.66 0l-2.83 2.83a4 4 0 0 0 5.66 5.66l1.43-1.4" },
+  { name: "text.alignleft", cat: "texte", tags: ["aligner à gauche", "paragraphe", "alignement"], rtl: true, p: "M4 6h16M4 10h10M4 14h16M4 18h10" },
+  { name: "text.aligncenter", cat: "texte", tags: ["centrer", "paragraphe", "alignement"], p: "M4 6h16M7 10h10M4 14h16M7 18h10" },
+  { name: "text.alignright", cat: "texte", tags: ["aligner à droite", "paragraphe", "alignement"], rtl: true, p: "M4 6h16M10 10h10M4 14h16M10 18h10" },
+  { name: "text.justify", cat: "texte", tags: ["justifier", "paragraphe", "alignement"], p: "M4 6h16M4 10h16M4 14h16M4 18h16" },
+  { name: "list.bullet", cat: "texte", tags: ["liste à puces", "puces", "énumération"], rtl: true, p: "M9 6h11M9 12h11M9 18h11", f: `${circle(5, 6, 1.3)}${circle(5, 12, 1.3)}${circle(5, 18, 1.3)}` },
+  { name: "list.number", cat: "texte", tags: ["liste numérotée", "numéros", "ordonnée"], rtl: true, p: `M10 6h10M10 12h10M10 18h10${txt("1", 3.4, 4.3, 0.55)}${txt("2", 3.4, 10.3, 0.55)}${txt("3", 3.4, 16.3, 0.55)}` },
+  { name: "increase.indent", cat: "texte", tags: ["augmenter le retrait", "indenter", "décaler"], rtl: true, p: "M4 6h16M11 10h9M11 14h9M4 18h16M4 9.5 6.5 12 4 14.5" },
+  { name: "decrease.indent", cat: "texte", tags: ["diminuer le retrait", "désindenter"], rtl: true, p: "M4 6h16M11 10h9M11 14h9M4 18h16M6.5 9.5 4 12l2.5 2.5" },
+  { name: "textformat", cat: "texte", tags: ["police", "style de texte", "Aa", "typographie"], p: `M3 17 7.5 6l4.5 11M4.6 13h5.8${circle(17.5, 14.25, 2.75)}M20.25 11.5V17` },
+  { name: "textformat.size", cat: "texte", tags: ["taille du texte", "corps", "accessibilité", "zoom texte"], p: `${circle(6.25, 14.25, 2.75)}M9 11.5V17M12 17l4.5-11L21 17M13.6 13h5.8` },
+  { name: "character", cat: "texte", tags: ["caractère", "lettre", "glyphe", "A"], p: "M5 19 12 4l7 15M7.6 13.5h8.8" },
+  { name: "text.quote", cat: "texte", tags: ["citation", "guillemets", "bloc de citation"], p: "M6 11.5V15h3.5v-3.5H6a3.5 3.5 0 0 1 3.5-3.5M15 11.5V15h3.5v-3.5H15a3.5 3.5 0 0 1 3.5-3.5" },
+  { name: "paragraphsign", cat: "texte", tags: ["pied-de-mouche", "paragraphe", "caractères invisibles"], p: "M17.5 4H10a3.5 3.5 0 0 0 0 7h.5M10.5 4v16M14.5 4v16" },
+
+  // ——— Fichiers & données
+  { name: "doc", cat: "fichiers", tags: ["document", "fichier", "page", "vierge"], e: DOC, c: FOLD },
+  { name: "doc.text", cat: "fichiers", tags: ["document", "fichier", "page", "texte", "note"], e: DOC, c: `${FOLD}M8.5 13h7M8.5 16.5h7` },
+  { name: "doc.zipper", cat: "fichiers", tags: ["archive", "zip", "compressé"], e: DOC, c: `${FOLD}M9 11h2M9 13.5h2M9 16h2M9 18.5h2` },
+  { name: "arrow.down.doc", cat: "fichiers", tags: ["télécharger le fichier", "document reçu"], e: DOC, c: `${FOLD}M12 10.5v6.5M9.5 14.5l2.5 2.5 2.5-2.5` },
+  { name: "folder", cat: "fichiers", tags: ["dossier", "fichiers", "répertoire", "classer"], e: FOLDER, c: "M3.5 10.5h17" },
+  { name: "folder.badge.plus", cat: "fichiers", tags: ["nouveau dossier", "ajouter un dossier"], e: FOLDER, c: "M12 11v6M9 14h6" },
+  { name: "clipboard", cat: "fichiers", tags: ["presse-papiers", "coller", "bloc-notes"], e: "M6.5 5.5H9V4.5A1 1 0 0 1 10 3.5h4a1 1 0 0 1 1 1v1h2.5A1.5 1.5 0 0 1 19 7v12a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19V7a1.5 1.5 0 0 1 1.5-1.5z", c: "M9 5.5v2h6v-2M8.5 12h7M8.5 15.5h5" },
+  { name: "archivebox", cat: "fichiers", tags: ["archiver", "boîte", "ranger"], e: "M3.5 8.5v-3A1.5 1.5 0 0 1 5 4h14a1.5 1.5 0 0 1 1.5 1.5v3zM4.5 8.5h15V19a1.5 1.5 0 0 1-1.5 1.5H6A1.5 1.5 0 0 1 4.5 19z", c: "M10 12.5h4" },
+  { name: "tray.and.arrow.down", cat: "fichiers", tags: ["boîte de réception", "recevoir", "inbox"], e: TRAY, p: "M12 3.5v9M8.5 9l3.5 3.5L15.5 9", cut: false },
+  { name: "tray.and.arrow.up", cat: "fichiers", tags: ["boîte d'envoi", "envoyer", "outbox"], e: TRAY, p: "M12 12.5v-9M8.5 7 12 3.5 15.5 7", cut: false },
+  { name: "externaldrive", cat: "fichiers", tags: ["disque externe", "stockage", "volume"], e: "M3.5 10A1.5 1.5 0 0 1 5 8.5h14a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 14z", c: "M16.5 12h1" },
+  { name: "cylinder.split.1x2", cat: "fichiers", tags: ["base de données", "database", "stockage", "table"], e: "M5 6.5c0-1.7 3.1-3 7-3s7 1.3 7 3v11c0 1.7-3.1 3-7 3s-7-1.3-7-3z", c: "M5 6.5c0 1.7 3.1 3 7 3s7-1.3 7-3M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3" },
+  { name: "server.rack", cat: "fichiers", tags: ["serveur", "hébergement", "infrastructure", "cloud"], e: `${rr(4, 3, 16, 7, 1.5)}${rr(4, 14, 16, 7, 1.5)}`, c: "M7 6.5h1M7 17.5h1" },
+  { name: "tablecells", cat: "fichiers", tags: ["tableau", "grille", "cellules", "feuille de calcul"], e: rr(3.5, 4.5, 17, 15, 2), c: "M3.5 9.5h17M3.5 14.5h17M9.5 4.5v15M15 4.5v15" },
+  { name: "chart.bar", cat: "fichiers", tags: ["graphique", "barres", "statistiques", "histogramme"], e: `${rr(5, 11, 3, 8, 1)}${rr(10.5, 5, 3, 14, 1)}${rr(16, 13, 3, 6, 1)}` },
+  { name: "chart.pie", cat: "fichiers", tags: ["graphique", "camembert", "répartition", "secteurs"], e: CIRCLE, c: "M12 3v9h9M12 12l6.36 6.36" },
+  { name: "chart.line.uptrend.xyaxis", cat: "fichiers", tags: ["graphique", "courbe", "hausse", "tendance", "croissance"], p: "M4 4v16h16M7 15l4-5 3 3 5-7M15.5 6H19v3.5" },
+  { name: "paperclip", cat: "fichiers", tags: ["pièce jointe", "trombone", "joindre"], p: "M16.5 6.5 9 14a2.12 2.12 0 0 0 3 3l7.5-7.5a4.24 4.24 0 0 0-6-6L6 11a6.36 6.36 0 0 0 9 9l6-6" },
+  { name: "printer", cat: "fichiers", tags: ["imprimer", "imprimante"], e: "M6 17H5a1.5 1.5 0 0 1-1.5-1.5V11A1.5 1.5 0 0 1 5 9.5h14a1.5 1.5 0 0 1 1.5 1.5v4.5A1.5 1.5 0 0 1 19 17h-1", p: "M7 9.5V4h10v5.5M7 14h10v6H7z", cut: false, fade: "p" },
+  { name: "qrcode", cat: "fichiers", tags: ["QR code", "scanner", "code"], e: `${rr(3.5, 3.5, 7, 7, 1.2)}${rr(13.5, 3.5, 7, 7, 1.2)}${rr(3.5, 13.5, 7, 7, 1.2)}${rr(13.5, 13.5, 3, 3, 0.5)}${rr(17.5, 17.5, 3, 3, 0.5)}${rr(17.5, 13.5, 3, 3, 0.5)}${rr(13.5, 17.5, 3, 3, 0.5)}`, c: "M6.5 7h1M16.5 7h1M6.5 17h1" },
+  { name: "barcode", cat: "fichiers", tags: ["code-barres", "scanner", "produit"], p: "M3.5 6v12M7 6v12M9.5 6v12M13 6v12M16.5 6v12M20.5 6v12" },
+
+  // ——— Communication
+  { name: "envelope", cat: "communication", tags: ["mail", "courrier", "e-mail", "message", "enveloppe"], e: "M3.5 6.5A1.5 1.5 0 0 1 5 5h14a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5z", c: "M3.5 7.5l8.5 6 8.5-6" },
+  { name: "envelope.open", cat: "communication", tags: ["mail lu", "ouvrir", "courrier"], e: "M3.5 10 12 4l8.5 6v8.5A1.5 1.5 0 0 1 19 20H5a1.5 1.5 0 0 1-1.5-1.5z", c: "M3.5 10.5 12 16l8.5-5.5" },
+  { name: "bubble.left", cat: "communication", tags: ["message", "discussion", "chat", "commentaire", "bulle"], e: "M12 4c5 0 8.5 3 8.5 6.8S17 17.5 12 17.5c-1 0-2-.1-2.8-.4L5 19l1-3.4C4.6 14.3 3.5 12.6 3.5 10.8 3.5 7 7 4 12 4z" },
+  { name: "bubble.left.and.bubble.right", cat: "communication", tags: ["conversation", "discussion", "chat", "messagerie", "discord"], e: "M6.5 5h6a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3H8.5L5 16.5v-2.9A3 3 0 0 1 3.5 11V8a3 3 0 0 1 3-3z", p: "M17.5 9.5a3 3 0 0 1 3 3v3a3 3 0 0 1-1.5 2.6v2.4l-3-2.5H12a3 3 0 0 1-2.5-1.5", cut: false, fade: "p" },
+  { name: "phone", cat: "communication", tags: ["téléphone", "appeler", "appel"], p: "M6.5 3.5h3l1.5 4-2 1.5a10 10 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A15 15 0 0 1 4.5 5.5a2 2 0 0 1 2-2z", pf: "=" },
+  { name: "video", cat: "communication", tags: ["visio", "caméra", "appel vidéo", "enregistrer"], e: "M3.5 8A1.5 1.5 0 0 1 5 6.5h9A1.5 1.5 0 0 1 15.5 8v8a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 16zM15.5 10.5 20.5 8v8l-5-2.5z" },
+  { name: "at", cat: "communication", tags: ["arobase", "mention", "adresse e-mail"], p: "M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM16 8v5.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-3.5 7.1" },
+  { name: "number", cat: "communication", tags: ["dièse", "hashtag", "canal", "numéro", "slack"], p: "M9.5 4 7.5 20M16.5 4l-2 16M4.5 9h16M3.5 15h16" },
+  { name: "bell", cat: "communication", tags: ["notifications", "alerte", "cloche", "rappel"], e: BELL },
+  { name: "bell.badge", cat: "communication", tags: ["nouvelle notification", "non lu", "pastille"], e: BELL, f: circle(18.5, 5.5, 2) },
+  { name: "bell.slash", cat: "communication", tags: ["notifications coupées", "silencieux", "ne pas déranger"], e: BELL, p: "M4 4l16 16", keep: true },
+  { name: "megaphone", cat: "communication", tags: ["annonce", "promotion", "haut-parleur", "campagne"], e: "M4 10v4a1.5 1.5 0 0 0 1.5 1.5H8l9 4.5V4L8 8.5H5.5A1.5 1.5 0 0 0 4 10z", p: "M8 15.5v3.5a1.5 1.5 0 0 0 3 0v-2.5M17 9.5a3 3 0 0 1 0 5", cut: false, fade: "p" },
+  { name: "antenna.radiowaves.left.and.right", cat: "communication", tags: ["diffusion", "réseau cellulaire", "antenne", "signal", "live"], p: "M12 12v7.5M6.5 5a7.8 7.8 0 0 0 0 11M17.5 5a7.8 7.8 0 0 1 0 11M9 7.5a4.3 4.3 0 0 0 0 6M15 7.5a4.3 4.3 0 0 1 0 6", f: circle(12, 10.5, 1.6) },
+  { name: "headset", cat: "communication", tags: ["casque micro", "vocal", "discord", "twitch", "gaming", "support", "chat vocal"], e: `${rr(4, 11, 4, 7, 1.5)}${rr(16, 11, 4, 7, 1.5)}`, p: "M4 13v-2a8 8 0 0 1 16 0v2M18 18v1.5a2 2 0 0 1-2 2h-3.5", cut: false, fade: "p" },
+  { name: "headphones", cat: "communication", tags: ["casque", "écouter", "support", "audio"], e: `${rr(4, 13, 4, 7, 1.5)}${rr(16, 13, 4, 7, 1.5)}`, p: "M4 15v-3a8 8 0 0 1 16 0v3", cut: false, fade: "p" },
+
+  // ——— Gestes & émotions
+  { name: "face.smiling", cat: "gestes", tags: ["sourire", "content", "emoji", "réaction", "heureux"], e: CIRCLE, c: `${EYES}M8.25 14a4 4 0 0 0 7.5 0` },
+  { name: "face.neutral", cat: "gestes", tags: ["neutre", "bof", "emoji", "réaction"], e: CIRCLE, c: `${EYES}M9 14.5h6` },
+  { name: "face.frowning", cat: "gestes", tags: ["triste", "mécontent", "emoji", "réaction"], e: CIRCLE, c: `${EYES}M8.25 16a4 4 0 0 1 7.5 0` },
+  { name: "hand.thumbsup", cat: "gestes", tags: ["pouce levé", "j'aime", "approuver", "like", "bravo", "facebook"], p: "M3 12A1.5 1.5 0 0 1 4.5 10.5H7V20H4.5A1.5 1.5 0 0 1 3 18.5zM7 10.5 10.3 4.3A1.9 1.9 0 0 1 13.9 5.2L13.3 9.5h5.2a2 2 0 0 1 2 2.3l-1.2 6.5A2 2 0 0 1 17.3 20H7z", pf: "=" },
+  { name: "hand.thumbsdown", cat: "gestes", tags: ["pouce baissé", "je n'aime pas", "désapprouver", "dislike"], p: "M3 12a1.5 1.5 0 0 0 1.5 1.5H7V4H4.5A1.5 1.5 0 0 0 3 5.5zM7 13.5l3.3 6.2a1.9 1.9 0 0 0 3.6-.9l-.6-4.3h5.2a2 2 0 0 0 2-2.3l-1.2-6.5A2 2 0 0 0 17.3 4H7z", pf: "=" },
+  { name: "hand.raised", cat: "gestes", tags: ["main levée", "stop", "bonjour", "attendre", "question"], p: "M8 15V6a1.5 1.5 0 0 1 3 0v5M11 11V4.5a1.5 1.5 0 0 1 3 0V11M14 11V6a1.5 1.5 0 0 1 3 0v6M17 12V8.5a1.5 1.5 0 0 1 3 0V15a6 6 0 0 1-6 6h-2a6 6 0 0 1-4.7-2.3l-3-3.8a1.6 1.6 0 0 1 2.5-2L8 15" },
+  { name: "hand.point.up", cat: "gestes", tags: ["pointer", "index", "curseur", "toucher", "cliquer"], p: "M9 14.5V5a1.5 1.5 0 0 1 3 0v6h5.5a2.5 2.5 0 0 1 2.5 2.5V15a6 6 0 0 1-6 6h-2a6 6 0 0 1-4.7-2.3l-2.9-3.7a1.5 1.5 0 0 1 2.4-1.9z", pf: "=" },
+  { name: "hand.wave", cat: "gestes", tags: ["saluer", "coucou", "bonjour", "au revoir", "main"], p: "M9 15V6a1.5 1.5 0 0 1 3 0v5M12 11V4.5a1.5 1.5 0 0 1 3 0V11M15 11V6a1.5 1.5 0 0 1 3 0v6M18 12V8.5a1.5 1.5 0 0 1 3 0V15a6 6 0 0 1-6 6h-2a6 6 0 0 1-4.7-2.3l-2.9-3.7a1.5 1.5 0 0 1 2.4-1.9L9 14.8M5.5 5A6 6 0 0 0 4 8.5M3 2.5A9 9 0 0 0 1.5 7" },
+
+  // ——— Personnes & comptes
+  { name: "person", cat: "personnes", tags: ["utilisateur", "profil", "compte", "contact", "personne"], e: PERSON },
+  { name: "person.2", cat: "personnes", tags: ["groupe", "équipe", "contacts", "partagé"], e: `${circle(9, 8, 3.5)}M2.5 19.5a6.5 6.5 0 0 1 13 0z`, p: "M15.5 4.6a3.5 3.5 0 0 1 0 6.8M17.5 13.5a6 6 0 0 1 4 6", keep: true, fade: "p" },
+  { name: "person.badge.plus", cat: "personnes", tags: ["ajouter un contact", "inviter", "nouvel utilisateur"], e: `${circle(10, 7.5, 4)}M2.5 20.5a7.5 7.5 0 0 1 15 0z`, p: "M19.5 12v6M16.5 15h6", cut: false },
+  { name: "person.crop.circle", cat: "personnes", tags: ["profil", "compte", "utilisateur", "avatar", "personne"], e: CIRCLE, p: `${circle(12, 9.5, 3)}M6.2 18.2a6.4 6.4 0 0 1 11.6 0` },
+  { name: "person.crop.square", cat: "personnes", tags: ["portrait", "photo d'identité", "avatar carré"], e: SQ, p: `${circle(12, 10, 3)}M6.2 20.5a6.3 6.3 0 0 1 11.6 0` },
+  { name: "person.wave.2", cat: "personnes", tags: ["présentation", "bienvenue", "saluer", "onboarding"], e: `${circle(10.5, 7.5, 4)}M3 20.5a7.5 7.5 0 0 1 15 0z`, p: "M17 8.5a4 4 0 0 1 0 5.5M19.3 6a7.5 7.5 0 0 1 0 10.5", keep: true, fade: "p" },
+
+  // ——— Commerce & paiement
+  { name: "creditcard", cat: "commerce", tags: ["carte bancaire", "paiement", "carte de crédit", "payer"], e: rr(2.5, 5, 19, 14, 2.5), c: "M2.5 9.5h19M6 15h4" },
+  { name: "banknote", cat: "commerce", tags: ["billet", "argent", "espèces", "cash"], e: rr(2.5, 6, 19, 12, 2), c: `${circle(12, 12, 3)}M6 12h1M17 12h1` },
+  { name: "cart", cat: "commerce", tags: ["panier", "acheter", "boutique", "commande"], p: "M3.5 4.5h2l2.4 10.5h10.6l2-7.5H7", f: `${circle(9.5, 19.5, 1.4)}${circle(17, 19.5, 1.4)}` },
+  { name: "bag", cat: "commerce", tags: ["sac", "achats", "boutique", "shopping"], e: "M6 8.5h12l1 11a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19.5z", p: "M9 10.5V7a3 3 0 0 1 6 0v3.5", cut: false, fade: "p" },
+  { name: "tag", cat: "commerce", tags: ["étiquette", "label", "catégorie", "prix"], e: "M3.5 5A1.5 1.5 0 0 1 5 3.5h6.4a1.5 1.5 0 0 1 1.06.44l8.1 8.1a1.5 1.5 0 0 1 0 2.12l-6.4 6.4a1.5 1.5 0 0 1-2.12 0l-8.1-8.1A1.5 1.5 0 0 1 3.5 11.4z", c: "M8 8h.01" },
+  { name: "percent", cat: "commerce", tags: ["pourcentage", "remise", "promotion", "taux"], e: `${circle(7.5, 7.5, 2.5)}${circle(16.5, 16.5, 2.5)}`, p: "M18 6 6 18", cut: false },
+  { name: "gift", cat: "commerce", tags: ["cadeau", "offrir", "récompense", "bonus"], e: "M3.5 11h17v8a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19z", p: "M3 7.5h18V11H3zM12 7.5v13M12 7.5C10.5 4.5 7 4 7 6s3.5 1.5 5 1.5S17 8 17 6s-3.5-1.5-5 1.5", cut: false, fade: "e" },
+  { name: "receipt", cat: "commerce", tags: ["reçu", "ticket", "facture", "note"], e: "M5.5 3.5h13V20.5l-2.17-1.5-2.16 1.5L12 19l-2.17 1.5-2.16-1.5L5.5 20.5z", c: "M9 8.5h6M9 12h6M9 15.5h3" },
+  { name: "wallet.pass", cat: "commerce", tags: ["portefeuille", "carte", "pass", "billets"], e: FRAME, c: "M3.5 10h17M15 14h2.5" },
+  { name: "storefront", cat: "commerce", tags: ["boutique", "magasin", "commerce", "vitrine"], e: "M4 10v9a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 20 19v-9", p: "M3 6.5 5 3.5h14l2 3M3 6.5v1.5a2.25 2.25 0 0 0 4.5 0 2.25 2.25 0 0 0 4.5 0 2.25 2.25 0 0 0 4.5 0 2.25 2.25 0 0 0 4.5 0V6.5", c: "M10 20.5v-6h4v6", cut: false, fade: "e" },
+  { name: "dollarsign.circle", cat: "commerce", tags: ["dollar", "prix", "monnaie", "coût"], e: CIRCLE, p: "M12 6v12M14.5 9.25A2.25 2.25 0 0 0 12.25 7.5h-.5a2.25 2.25 0 0 0 0 4.5h.5a2.25 2.25 0 0 1 0 4.5h-.5A2.25 2.25 0 0 1 9.5 14.75" },
+  { name: "eurosign.circle", cat: "commerce", tags: ["euro", "prix", "monnaie", "coût"], e: CIRCLE, p: "M15.5 8.7a4.6 4.6 0 1 0 0 6.6M6.5 10.75h7M6.5 13.25h7" },
+  { name: "bitcoinsign.circle", cat: "commerce", tags: ["bitcoin", "crypto", "cryptomonnaie", "BTC"], e: CIRCLE, p: "M9.5 7.5v9M9.5 7.5h3.5a2 2 0 0 1 0 4H9.5M9.5 11.5h4a2.25 2.25 0 0 1 0 4.5H9.5M11 6v1.5M13 6v1.5M11 16.5V18M13 16.5V18" },
+  { name: "chart.candlestick", cat: "commerce", tags: ["bourse", "trading", "chandeliers", "cours", "marché"], e: `${rr(5, 8, 3, 6, 0.5)}${rr(10.5, 5, 3, 7, 0.5)}${rr(16, 10, 3, 7, 0.5)}`, p: "M6.5 5v3M6.5 14v4M12 3v2M12 12v3M17.5 7v3M17.5 17v3", cut: false },
+  { name: "chart.line.downtrend.xyaxis", cat: "commerce", tags: ["baisse", "perte", "tendance", "cours"], p: "M4 4v16h16M7 8l4 5 3-3 5 7M15.5 17H19v-3.5" },
+
+  // ——— Appareils & système
+  { name: "iphone", cat: "appareils", tags: ["téléphone", "smartphone", "mobile", "appareil"], e: rr(6, 2.5, 12, 19, 2.5), c: "M10 5.5h4" },
+  { name: "ipad", cat: "appareils", tags: ["tablette", "appareil"], e: rr(3.5, 3, 17, 18, 2.5), c: "M11 18h2" },
+  { name: "laptopcomputer", cat: "appareils", tags: ["ordinateur portable", "mac", "notebook"], e: rr(4, 5, 16, 11, 1.5), p: "M2 19h20", cut: false },
+  { name: "desktopcomputer", cat: "appareils", tags: ["ordinateur", "écran", "bureau", "moniteur"], e: rr(3, 4, 18, 12, 2), p: "M12 16v4M8 20h8", cut: false },
+  { name: "watch", cat: "appareils", tags: ["montre", "montre connectée", "poignet"], e: rr(7, 6, 10, 12, 3), p: "M9 6V3.5h6V6M9 18v2.5h6V18", cut: false },
+  { name: "keyboard", cat: "appareils", tags: ["clavier", "saisie", "touches"], e: rr(2.5, 6.5, 19, 11, 2), c: "M6 9.5h1M9.5 9.5h1M13 9.5h1M16.5 9.5h1M6 12.5h1M9.5 12.5h1M13 12.5h1M16.5 12.5h1M8 15.5h8" },
+  { name: "computermouse", cat: "appareils", tags: ["souris", "pointeur", "clic"], e: "M7 9a5 5 0 0 1 10 0v6a5 5 0 0 1-10 0z", c: "M12 4v4.5" },
+  { name: "battery.100", cat: "appareils", tags: ["batterie pleine", "énergie", "charge"], e: BATT, p: BATT_T, f: rr(4.5, 9.5, 13, 5, 1), cut: false },
+  { name: "battery.50", cat: "appareils", tags: ["batterie moitié", "énergie"], e: BATT, p: BATT_T, f: rr(4.5, 9.5, 6.5, 5, 1), cut: false },
+  { name: "battery.25", cat: "appareils", tags: ["batterie faible", "énergie", "alerte"], e: BATT, p: BATT_T, f: rr(4.5, 9.5, 3.5, 5, 1), cut: false },
+  { name: "battery.100.bolt", cat: "appareils", tags: ["en charge", "batterie", "éclair", "secteur"], e: BATT, p: BATT_T, f: rr(4.5, 9.5, 13, 5, 1), h: "M12.8 9.7 9.8 12.6h2.3l-.8 1.8 3-3.1h-2.3z", cut: false },
+  { name: "bolt", cat: "appareils", tags: ["éclair", "énergie", "flash", "rapide", "charge"], p: "M13.5 2.5 5.5 13.5H11L10 21.5l8.5-11.5H13z", pf: "=" },
+  { name: "power", cat: "appareils", tags: ["marche/arrêt", "allumer", "éteindre", "alimentation"], p: "M12 3.5V12M7.05 7.05a7 7 0 1 0 9.9 0" },
+  { name: "wifi", cat: "appareils", tags: ["réseau", "connexion", "sans fil", "signal"], p: WIFI },
+  { name: "wifi.slash", cat: "appareils", tags: ["hors ligne", "pas de réseau", "déconnecté"], p: `${WIFI}M4 4l16 16` },
+  { name: "bluetooth", cat: "appareils", tags: ["sans fil", "appairage", "casque", "connexion"], p: "M7 7.5l10 8.5-5 4V4l5 4-10 8.5" },
+  { name: "cellularbars", cat: "appareils", tags: ["réseau mobile", "signal", "barres", "réception"], e: `${rr(3, 15, 3, 5, 0.75)}${rr(8, 12, 3, 8, 0.75)}${rr(13, 8.5, 3, 11.5, 0.75)}${rr(18, 4.5, 3, 15.5, 0.75)}` },
+  { name: "edge", cat: "appareils", tags: ["réseau", "EDGE", "2G", "données mobiles"], p: txt("E", 8, 6, 2) },
+  { name: "2g", cat: "appareils", tags: ["réseau", "2G", "données mobiles", "GPRS"], p: txt("2G", 4.5, 7.2, 1.6) },
+  { name: "3g", cat: "appareils", tags: ["réseau", "3G", "données mobiles", "UMTS"], p: txt("3G", 4.5, 7.2, 1.6) },
+  { name: "4g", cat: "appareils", tags: ["réseau", "4G", "données mobiles"], p: txt("4G", 4.5, 7.2, 1.6) },
+  { name: "5g", cat: "appareils", tags: ["réseau", "5G", "données mobiles"], p: txt("5G", 4.5, 7.2, 1.6) },
+  { name: "lte", cat: "appareils", tags: ["réseau", "LTE", "4G", "données mobiles"], p: txt("LTE", 3.1, 8.4, 1.2) },
+  { name: "cpu", cat: "appareils", tags: ["processeur", "puce", "calcul", "performances"], e: rr(6, 6, 12, 12, 2), c: rr(9.5, 9.5, 5, 5, 1), p: "M9 6V3M12 6V3M15 6V3M9 21v-3M12 21v-3M15 21v-3M6 9H3M6 12H3M6 15H3M21 9h-3M21 12h-3M21 15h-3", cut: false },
+  { name: "memorychip", cat: "appareils", tags: ["mémoire", "RAM", "composant"], e: rr(4, 6, 16, 10, 1.5), c: "M8 9v4M12 9v4M16 9v4", p: "M6.5 16v3M10 16v3M14 16v3M17.5 16v3", cut: false },
+  { name: "sdcard", cat: "appareils", tags: ["carte SD", "stockage", "mémoire"], e: "M7 3.5h8l3 3V19a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 19V4.5a1 1 0 0 1 1-1z", c: "M9 6v3M12 6v3M15 6v3" },
+  { name: "airplane", cat: "appareils", tags: ["mode avion", "voyage", "vol"], p: "M12 3c.8 0 1.5.7 1.5 1.5V9l7.5 4.5v2l-7.5-2.5v4l2 1.5V20l-3.5-1-3.5 1v-1.5l2-1.5v-4L3 15.5v-2L10.5 9V4.5C10.5 3.7 11.2 3 12 3z", pf: "=" },
+  { name: "tv", cat: "appareils", tags: ["télévision", "écran", "diffuser"], e: rr(3, 5, 18, 12, 2), p: "M8 20.5h8", cut: false },
+
+  // ——— Cartes & lieux
+  { name: "map", cat: "cartes", tags: ["carte", "plan", "itinéraire"], e: "M3.5 6.5 9 4l6 2.5 5.5-2.5v13.5L15 20l-6-2.5-5.5 2.5z", c: "M9 4v13.5M15 6.5V20" },
+  { name: "mappin", cat: "cartes", tags: ["épingle", "lieu", "position", "adresse"], e: "M12 21.5s-6.5-6.5-6.5-11.5a6.5 6.5 0 0 1 13 0c0 5-6.5 11.5-6.5 11.5z", c: circle(12, 10, 2.5) },
+  { name: "mappin.and.ellipse", cat: "cartes", tags: ["lieu", "position actuelle", "destination"], e: "M12 17s-5-5-5-9a5 5 0 0 1 10 0c0 4-5 9-5 9z", c: circle(12, 8, 2), p: "M6.5 17.5C5 18.2 4 19.1 4 20c0 1.7 3.6 2.5 8 2.5s8-.8 8-2.5c0-.9-1-1.8-2.5-2.5", cut: false, fade: "p" },
+  { name: "location", cat: "cartes", tags: ["localisation", "position", "GPS", "boussole"], p: "M20 4 4 10.5l8 1.5 1.5 8z", pf: "=" },
+  { name: "location.north", cat: "cartes", tags: ["nord", "aiguille", "direction", "cap"], p: "M12 4l5 16-5-3-5 3z", pf: "=" },
+  { name: "compass", cat: "cartes", tags: ["boussole", "explorer", "navigateur", "direction", "safari"], e: CIRCLE, c: "M15.5 8.5 13.5 13.5 8.5 15.5l2-5z" },
+  { name: "globe", cat: "cartes", tags: ["monde", "langue", "international", "web", "planète", "chrome", "navigateur"], e: CIRCLE, c: "M3 12h18M12 3c-2.5 2.5-3.75 5.5-3.75 9s1.25 6.5 3.75 9c2.5-2.5 3.75-5.5 3.75-9S14.5 5.5 12 3" },
+  { name: "signpost.right", cat: "cartes", tags: ["panneau", "direction", "guide", "orientation"], rtl: true, e: "M5.5 6h10.5l3.5 3.5-3.5 3.5H5.5z", p: "M10.5 3v3M10.5 13v8M7.5 21h6", cut: false },
+  { name: "car", cat: "cartes", tags: ["voiture", "trajet", "transport", "route"], e: "M4 10.5 5.6 6.4A2 2 0 0 1 7.5 5h9a2 2 0 0 1 1.9 1.4L20 10.5v5a1.5 1.5 0 0 1-1.5 1.5H5.5A1.5 1.5 0 0 1 4 15.5z", c: "M4 10.5h16M7.5 13.5h1.5M15 13.5h1.5", p: "M6.5 17v2.5M17.5 17v2.5", cut: false },
+  { name: "bus", cat: "cartes", tags: ["bus", "transport en commun", "trajet"], e: rr(4, 3.5, 16, 15, 2.5), c: "M4 9h16M4 14h16M8 16.5h1M15 16.5h1", p: "M7 18.5v2M17 18.5v2", cut: false },
+  { name: "flag", cat: "cartes", tags: ["drapeau", "signaler", "marquer", "jalon"], e: "M5 4.5c2-1.5 5-1.5 7 0s5 1.5 7 0V14c-2 1.5-5 1.5-7 0s-5-1.5-7 0z", p: "M5 21V4", cut: false },
+  { name: "building.2", cat: "cartes", tags: ["bâtiment", "bureau", "entreprise", "ville", "immeuble"], e: "M3.5 9.5h8v11h-8zM11.5 3.5h9v17h-9z", c: "M6 13h1M8.5 13h1M6 16.5h1M8.5 16.5h1M14 7h1M17 7h1M14 10.5h1M17 10.5h1M14 14h1M17 14h1" },
+
+  // ——— Temps & agenda
+  { name: "clock", cat: "temps", tags: ["heure", "récents", "historique", "horloge", "durée"], e: CIRCLE, c: "M12 7v5.2l3.3 2" },
+  { name: "alarm", cat: "temps", tags: ["réveil", "alarme", "rappel", "sonnerie"], e: circle(12, 13, 7.5), c: "M12 9v4l2.5 1.5", p: "M5 5.5 7.5 3M19 5.5 16.5 3", cut: false },
+  { name: "timer", cat: "temps", tags: ["minuteur", "compte à rebours", "chrono"], e: circle(12, 13.5, 7.5), c: "M12 9v4.5", p: "M10 3h4M12 3v3", cut: false },
+  { name: "hourglass", cat: "temps", tags: ["sablier", "attente", "chargement", "délai"], e: "M8 3.5h8V7a4 4 0 0 1-1.6 3.2L12 12l-2.4-1.8A4 4 0 0 1 8 7zM8 20.5h8V17a4 4 0 0 0-1.6-3.2L12 12l-2.4 1.8A4 4 0 0 0 8 17z", p: "M6.5 3.5h11M6.5 20.5h11", cut: false },
+  { name: "calendar", cat: "temps", tags: ["date", "agenda", "calendrier", "événement", "planning"], e: CAL, p: "M8 3v3M16 3v3", c: "M3.5 9.5h17", cut: false },
+  { name: "calendar.badge.plus", cat: "temps", tags: ["nouvel événement", "ajouter au calendrier", "planifier"], e: CAL, p: "M8 3v3M16 3v3", c: "M3.5 9.5h17M12 12.5v5M9.5 15h5", cut: false },
+  { name: "calendar.badge.clock", cat: "temps", tags: ["échéance", "rendez-vous", "horaire", "deadline"], e: CAL, p: "M8 3v3M16 3v3", c: `${"M3.5 9.5h17"}${circle(12, 15, 3.25)}M12 13.25V15l1.25.75`, cut: false },
+
+  // ——— Développement
+  { name: "terminal", cat: "dev", tags: ["terminal", "console", "ligne de commande", "shell"], e: rr(2.5, 4, 19, 16, 2.5), c: "M6.5 9l3 3-3 3M12 15h5" },
+  { name: "chevron.left.forwardslash.chevron.right", cat: "dev", tags: ["code", "développeur", "source", "balise", "html"], p: "M8 7 3 12l5 5M16 7l5 5-5 5M14 4l-4 16" },
+  { name: "curlybraces", cat: "dev", tags: ["accolades", "JSON", "objet", "code"], p: "M8.5 4H8a2 2 0 0 0-2 2v3.5a2 2 0 0 1-2 2 2 2 0 0 1 2 2V18a2 2 0 0 0 2 2h.5M15.5 4h.5a2 2 0 0 1 2 2v3.5a2 2 0 0 0 2 2 2 2 0 0 0-2 2V18a2 2 0 0 1-2 2h-.5" },
+  { name: "arrow.triangle.branch", cat: "dev", tags: ["git", "branche", "fork", "version"], e: `${circle(6, 4.5, 2.5)}${circle(6, 19.5, 2.5)}${circle(18, 8, 2.5)}`, p: "M6 7v10M18 10.5a6 6 0 0 1-6 6H6", cut: false },
+  { name: "arrow.triangle.merge", cat: "dev", tags: ["git", "fusionner", "merge", "version"], e: `${circle(6, 4.5, 2.5)}${circle(18, 4.5, 2.5)}${circle(12, 19.5, 2.5)}`, p: "M6 7v2.5a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V7M12 13.5V17", cut: false },
+  { name: "arrow.triangle.pull", cat: "dev", tags: ["git", "pull request", "demande de fusion", "revue"], e: `${circle(6, 4.5, 2.5)}${circle(6, 19.5, 2.5)}${circle(18, 19.5, 2.5)}`, p: "M6 7v10M13 4.5h2.5A2.5 2.5 0 0 1 18 7v10M13 4.5 15 2.5M13 4.5 15 6.5", cut: false },
+  { name: "point.3.connected.trianglepath.dotted", cat: "dev", tags: ["graphe", "nœuds", "réseau", "commits", "relations"], e: `${circle(12, 5, 2.5)}${circle(5, 18.5, 2.5)}${circle(19, 18.5, 2.5)}`, p: "M10.8 7.2 6.3 16.3M13.2 7.2l4.5 9.1M7.5 18.5h9", cut: false },
+  { name: "ladybug", cat: "dev", tags: ["bug", "bogue", "insecte", "erreur", "débogage"], e: "M12 8c3.5 0 6 2.7 6 6.5S15.5 21 12 21s-6-2.7-6-6.5S8.5 8 12 8z", c: "M12 8v13M9.5 12h.01M14.5 12h.01M10 16h.01M14 16h.01", p: "M9 4l1.5 2.5M15 4l-1.5 2.5M6 12.5H3M18 12.5h3M6.5 17l-2.5 1.5M17.5 17l2.5 1.5", cut: false },
+  { name: "hammer", cat: "dev", tags: ["build", "construire", "outil", "marteau", "compiler"], e: "M9.5 6l3-3 8 8-3 3z", p: "M3.5 18.5 10 12M3.5 18.5 5.5 20.5 12 14", cut: false },
+  { name: "wrench", cat: "dev", tags: ["outil", "réparer", "réglage", "maintenance", "clé"], p: "M14.5 3.5a5.5 5.5 0 0 0-5 7.7L3.5 17.2a1.6 1.6 0 0 0 0 2.3l1 1a1.6 1.6 0 0 0 2.3 0l6-6a5.5 5.5 0 0 0 7.7-5l-3.5 3.5-3-3z", pf: "=" },
+  { name: "puzzlepiece", cat: "dev", tags: ["extension", "module", "plugin", "intégration"], p: "M10 5.5a2 2 0 1 1 4 0h2.5A1.5 1.5 0 0 1 18 7v2.5a2 2 0 1 1 0 4V16a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H7.5A1.5 1.5 0 0 1 6 16v-2.5a2 2 0 1 1 0-4V7a1.5 1.5 0 0 1 1.5-1.5z", pf: "=" },
+  { name: "cube", cat: "dev", tags: ["3D", "objet", "paquet", "volume", "package"], e: "M12 3 20 7.5v9L12 21l-8-4.5v-9z", c: "M4 7.5l8 4.5 8-4.5M12 12v9" },
+  { name: "shippingbox", cat: "dev", tags: ["colis", "livraison", "paquet", "dépendance", "npm"], e: "M12 3 20 7.5v9L12 21l-8-4.5v-9z", c: "M4 7.5l8 4.5 8-4.5M12 12v9M8 5.25l8 4.5" },
+  { name: "command", cat: "dev", tags: ["commande", "raccourci", "cmd", "touche"], p: "M9 9V6.5a2.5 2.5 0 1 0-2.5 2.5H9zM15 9h2.5A2.5 2.5 0 1 0 15 6.5V9zM9 15v2.5A2.5 2.5 0 1 1 6.5 15H9zM15 15v2.5a2.5 2.5 0 1 0 2.5-2.5H15zM9 9h6v6H9z" },
+  { name: "option", cat: "dev", tags: ["option", "alt", "touche", "raccourci"], p: "M3.5 6.5h5l7 11h5M14.5 6.5h6" },
+  { name: "control", cat: "dev", tags: ["contrôle", "ctrl", "touche", "raccourci"], p: "M6 14.5 12 8.5l6 6" },
+  { name: "shift", cat: "dev", tags: ["majuscule", "shift", "touche"], p: "M12 4 4 12.5h4.5V20h7v-7.5H20z", pf: "=" },
+  { name: "delete.left", cat: "dev", tags: ["retour arrière", "backspace", "effacer", "supprimer"], rtl: true, e: "M8.5 5h11A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-11l-6-7z", c: "M11.5 9.5l5 5M16.5 9.5l-5 5" },
+  { name: "return", cat: "dev", tags: ["entrée", "retour", "valider", "touche"], rtl: true, p: "M20 6v5.5a2.5 2.5 0 0 1-2.5 2.5H4M8 10l-4 4 4 4" },
+  { name: "macwindow", cat: "dev", tags: ["fenêtre", "application", "bureau", "interface"], e: rr(3, 4, 18, 16, 2.5), c: "M3 8.5h18M6.5 6.25h.5M9.5 6.25h.5" },
+  { name: "cat", cat: "dev", tags: ["chat", "github", "mascotte", "open source", "dépôt", "animal"], e: "M5 4.5 8.5 8h7L19 4.5v8.5a7 7 0 0 1-14 0z", c: "M9.5 12h.01M14.5 12h.01M11 15.5 12 14.5l1 1", p: "M2.5 14.5h3M18.5 14.5h3", keep: true },
+  { name: "function", cat: "dev", tags: ["fonction", "formule", "ƒ", "expression"], p: "M15.5 4.5h-1a2 2 0 0 0-2 1.8L11.2 18a2 2 0 0 1-2 1.8H8.5M8.5 10.5h7" },
+
+  // ——— Sécurité & accessibilité
+  { name: "lock", cat: "securite", tags: ["verrouillé", "sécurité", "cadenas", "privé", "protégé"], e: LOCK, p: "M7.5 10.5V8a4.5 4.5 0 0 1 9 0v2.5", cut: false, fade: "p" },
+  { name: "lock.open", cat: "securite", tags: ["déverrouillé", "ouvert", "accès", "cadenas ouvert"], e: LOCK, p: "M7.5 10.5V8a4.5 4.5 0 0 1 8.7-1.6", cut: false, fade: "p" },
+  { name: "key", cat: "securite", tags: ["clé", "mot de passe", "accès", "identifiant"], e: circle(15.5, 8.5, 5), p: "M12 12 3.5 20.5M5.5 18.5l2 2M8.5 15.5l2 2", cut: false },
+  { name: "shield", cat: "securite", tags: ["protection", "sécurité", "bouclier", "confidentialité"], e: SHIELD },
+  { name: "checkmark.shield", cat: "securite", tags: ["protégé", "vérifié", "sécurisé", "conforme"], e: SHIELD, c: CHECK },
+  { name: "exclamationmark.shield", cat: "securite", tags: ["risque", "alerte de sécurité", "vulnérabilité"], e: SHIELD, c: "M12 8v4.5M12 15.75v.01" },
+  { name: "checkmark.seal", cat: "securite", tags: ["certifié", "vérifié", "badge", "authentique"], e: SEAL, c: CHECK },
+  { name: "xmark.seal", cat: "securite", tags: ["révoqué", "non vérifié", "refusé", "badge"], e: SEAL, c: "M9.5 9.5l5 5M14.5 9.5l-5 5" },
+  { name: "touchid", cat: "securite", tags: ["empreinte", "biométrie", "authentification", "doigt"], p: "M4.5 8.5A8.5 8.5 0 0 1 12 4a8.5 8.5 0 0 1 7.5 4.5M6.5 20a11 11 0 0 1-1-5v-2a6.5 6.5 0 0 1 13 0v.5M9.5 20.5a8 8 0 0 1-1-3.5v-4a3.5 3.5 0 0 1 7 0v4.5M12 13v7.5M15.5 16.5a6 6 0 0 0 .5 3" },
+  { name: "faceid", cat: "securite", tags: ["reconnaissance faciale", "biométrie", "visage", "authentification"], p: "M3.5 8V5.5A2 2 0 0 1 5.5 3.5H8M16 3.5h2.5a2 2 0 0 1 2 2V8M20.5 16v2.5a2 2 0 0 1-2 2H16M8 20.5H5.5a2 2 0 0 1-2-2V16M8.5 9v1.5M15.5 9v1.5M12 9v4h-1.2M8.5 15a5 5 0 0 0 7 0" },
+  { name: "eye", cat: "securite", tags: ["afficher", "visible", "aperçu", "mot de passe", "œil"], e: EYE, p: circle(12, 12, 3) },
+  { name: "eye.slash", cat: "securite", tags: ["masquer", "invisible", "caché", "mot de passe"], e: EYE, p: `${circle(12, 12, 3)}M4 4l16 16`, keep: true },
+  { name: "accessibility", cat: "securite", tags: ["accessibilité", "handicap", "a11y", "inclusif"], e: CIRCLE, c: "M12 6.75v.01M7 10.5l5 1 5-1M12 11.5v3.5l-2.5 3.5M12 15l2.5 3.5" },
+  { name: "ear", cat: "securite", tags: ["audition", "écouter", "son", "malentendant"], p: "M6 10a6 6 0 0 1 12 0c0 3-2 4-2.5 6.5S14 21 12 21a2.5 2.5 0 0 1-2.5-2.5M9 10a3 3 0 0 1 6 0c0 1.5-1 2-1.5 3.5" },
+  { name: "figure.roll", cat: "securite", tags: ["fauteuil roulant", "mobilité réduite", "accessibilité", "PMR"], e: circle(9, 16.5, 4.5), p: "M9 12V6.5h4l1.5 5.5h4l1.5 5M13 3.5v.01", cut: false },
+
+  // ——— Réglages
+  { name: "gearshape", cat: "reglages", tags: ["réglages", "paramètres", "préférences", "engrenage", "configuration"], e: gear() },
+  { name: "slider.horizontal.3", cat: "reglages", tags: ["réglages", "filtres", "ajuster", "curseurs"], e: `${circle(9, 7, 2)}${circle(15, 12, 2)}${circle(8, 17, 2)}`, p: "M4 7h16M4 12h16M4 17h16", keep: true },
+  { name: "switch.2", cat: "reglages", tags: ["interrupteurs", "options", "activer", "bascules"], e: `${circle(9, 7, 2.5)}${circle(15, 17, 2.5)}`, p: "M4.5 7h15M4.5 17h15", keep: true },
+  { name: "line.3.horizontal.decrease", cat: "reglages", tags: ["filtrer", "trier", "affiner", "entonnoir"], p: "M4 7h16M7 12h10M10 17h4" },
+  { name: "pin", cat: "reglages", tags: ["épingler", "fixer", "punaise", "garder en haut"], e: "M8 15.75h8l-1-5V6.25l1.5-2.5h-9L9 6.25v4.5z", p: "M12 15.75v4.5", cut: false },
+  { name: "moon", cat: "reglages", tags: ["mode sombre", "nuit", "ne pas déranger", "lune"], p: "M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z", pf: "=" },
+  { name: "paintbrush", cat: "reglages", tags: ["apparence", "thème", "pinceau", "personnaliser", "couleur"], e: "M9.5 12.5a3 3 0 0 1 3 3c0 2.5-3 5-9 5 0-6 2.5-8 6-8z", p: "M12 12.5 20.5 4", cut: false },
+
+  // ——— Statut
+  { name: "info.circle", cat: "statut", tags: ["information", "aide", "détails", "à propos"], e: CIRCLE, p: "M12 11v5.5M12 7.75v.01" },
+  { name: "questionmark.circle", cat: "statut", tags: ["aide", "question", "support", "inconnu"], e: CIRCLE, p: "M9.6 9.6a2.5 2.5 0 1 1 3.8 2.1c-.9.6-1.4 1.2-1.4 2.1M12 17v.01" },
+  { name: "exclamationmark.circle", cat: "statut", tags: ["erreur", "attention", "important", "alerte"], e: CIRCLE, p: "M12 7.5v5M12 16.25v.01" },
+  { name: "exclamationmark.triangle", cat: "statut", tags: ["attention", "avertissement", "erreur", "danger", "warning"], e: "M10.7 4.6a1.5 1.5 0 0 1 2.6 0l7.6 13.2a1.5 1.5 0 0 1-1.3 2.2H5.4a1.5 1.5 0 0 1-1.3-2.2z", p: "M12 9.5v4M12 16.75v.01" },
+  { name: "ellipsis.circle", cat: "statut", tags: ["plus d'options", "menu", "davantage", "en cours"], e: CIRCLE, p: "M8 12h.01M12 12h.01M16 12h.01" },
+  { name: "nosign", cat: "statut", tags: ["interdit", "indisponible", "bloqué", "désactivé"], e: CIRCLE, p: "M5.64 5.64 18.36 18.36", keep: true },
+  { name: "lightbulb", cat: "statut", tags: ["idée", "astuce", "conseil", "inspiration"], e: "M12 3a6 6 0 0 1 3.5 10.9c-.8.6-1.5 1.5-1.5 2.6H10c0-1.1-.7-2-1.5-2.6A6 6 0 0 1 12 3z", p: "M10 19.5h4M10.5 21.5h3", cut: false, fade: "p" },
+  { name: "gauge", cat: "statut", tags: ["jauge", "vitesse", "performance", "compteur", "mesure"], p: "M4.5 17a8 8 0 1 1 15 0M12 17l3-5", f: circle(12, 17, 1.5) },
+  { name: "hourglass.bottomhalf.filled", cat: "statut", tags: ["chargement", "patienter", "en cours", "presque fini"], e: "M8 3.5h8V7a4 4 0 0 1-1.6 3.2L12 12l-2.4-1.8A4 4 0 0 1 8 7z", f: "M8 20.5h8V17a4 4 0 0 0-1.6-3.2L12 12l-2.4 1.8A4 4 0 0 0 8 17z", p: "M6.5 3.5h11M6.5 20.5h11", cut: false },
+
+  // ——— Média
+  { name: "play", cat: "media", tags: ["lecture", "lire", "démarrer", "vidéo"], p: "M6.5 4.5v15l12-7.5z", pf: "=" },
+  { name: "pause", cat: "media", tags: ["pause", "suspendre", "arrêter"], p: "M7 5h3.5v14H7zM13.5 5H17v14h-3.5z", pf: "=" },
+  { name: "stop", cat: "media", tags: ["stop", "arrêter", "fin"], p: rr(5, 5, 14, 14, 2), pf: "=" },
+  { name: "backward", cat: "media", tags: ["reculer", "précédent", "rembobiner", "piste précédente"], p: "M11.5 6 4 12l7.5 6zM20 6l-7.5 6 7.5 6z", pf: "=" },
+  { name: "forward", cat: "media", tags: ["avancer", "suivant", "avance rapide", "piste suivante"], p: "M4 6l7.5 6L4 18zM12.5 6l7.5 6-7.5 6z", pf: "=" },
+  { name: "backward.end", cat: "media", tags: ["début", "piste précédente", "revenir au début"], p: "M6 6v12M18 6l-9 6 9 6z" },
+  { name: "forward.end", cat: "media", tags: ["fin", "piste suivante", "aller à la fin"], p: "M18 6v12M6 6l9 6-9 6z" },
+  { name: "play.rectangle", cat: "media", tags: ["vidéo", "lecteur", "film", "regarder", "youtube"], e: rr(3, 5, 18, 14, 2.5), c: "M10 9v6l5-3z" },
+  { name: "record.circle", cat: "media", tags: ["enregistrer", "rec", "capture", "en direct"], e: CIRCLE, f: circle(12, 12, 4) },
+  { name: "shuffle", cat: "media", tags: ["aléatoire", "mélanger", "lecture aléatoire"], p: "M4 7h2.5a5 5 0 0 1 4 2l3 6a5 5 0 0 0 4 2H20M17.5 14.5 20 17l-2.5 2.5M4 17h2.5a5 5 0 0 0 4-2l.5-1M13.5 10l.5-1a5 5 0 0 1 4-2H20M17.5 4.5 20 7l-2.5 2.5" },
+  { name: "repeat", cat: "media", tags: ["répéter", "boucle", "en boucle", "loop"], p: "M5 11V9.5A2.5 2.5 0 0 1 7.5 7H19M16.5 4.5 19 7l-2.5 2.5M19 13v1.5a2.5 2.5 0 0 1-2.5 2.5H5M7.5 19.5 5 17l2.5-2.5" },
+  { name: "speaker.wave.2", cat: "media", tags: ["son", "volume", "haut-parleur", "audio"], e: SPK, p: "M15.5 9a4.5 4.5 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11", cut: false, fade: "p" },
+  { name: "speaker.slash", cat: "media", tags: ["muet", "son coupé", "silence", "mute"], e: SPK, p: "M15.5 9.5l5 5M20.5 9.5l-5 5", cut: false },
+  { name: "mic", cat: "media", tags: ["micro", "dictée", "enregistrer", "voix"], e: MIC, p: MIC_P, cut: false, fade: "p" },
+  { name: "mic.slash", cat: "media", tags: ["micro coupé", "muet", "silence"], e: MIC, p: `${MIC_P}M4 4l16 16`, keep: true, fade: "e" },
+  { name: "camera", cat: "media", tags: ["appareil photo", "capturer", "prendre une photo"], e: "M3.5 8.5A1.5 1.5 0 0 1 5 7h2.6l1.4-2h6l1.4 2H19a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5z", p: circle(12, 12.5, 3.5) },
+  { name: "photo", cat: "media", tags: ["image", "photo", "galerie", "illustration"], e: "M3.5 6.5A2 2 0 0 1 5.5 4.5h13a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z", c: "M3.5 16.5l4.5-4.5 4 4 3-3 5.5 5.5M16 9v.01" },
+  { name: "music.note", cat: "media", tags: ["musique", "note", "audio", "chanson"], p: "M9 18.5V5l10-2v12.5", f: `${circle(6.5, 18.5, 2.5)}${circle(16.5, 15.5, 2.5)}` },
+  { name: "waveform", cat: "media", tags: ["forme d'onde", "audio", "son", "podcast", "égaliseur"], p: "M4 10v4M8 6v12M12 3v18M16 8v8M20 10v4" },
+  { name: "film", cat: "media", tags: ["film", "cinéma", "vidéo", "pellicule"], e: rr(3, 4, 18, 16, 2), c: "M7 4v16M17 4v16M3 8h4M3 12h4M3 16h4M17 8h4M17 12h4M17 16h4" },
+
+  // ——— Météo
+  { name: "sun.max", cat: "meteo", tags: ["soleil", "mode clair", "luminosité", "jour"], e: circle(12, 12, 4), p: "M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8", cut: false, fade: "p" },
+  { name: "cloud", cat: "meteo", tags: ["nuage", "météo", "icloud", "synchronisation"], e: CLOUD },
+  { name: "cloud.arrow.up", cat: "meteo", tags: ["téléverser", "sauvegarde cloud", "upload", "envoyer vers le cloud"], e: CLOUD, c: "M12 16v-6M9.5 12.5 12 10l2.5 2.5" },
+  { name: "cloud.arrow.down", cat: "meteo", tags: ["télécharger du cloud", "restaurer", "download", "synchroniser"], e: CLOUD, c: "M12 10v6M9.5 13.5 12 16l2.5-2.5" },
+  { name: "cloud.rain", cat: "meteo", tags: ["pluie", "averse", "météo"], e: CLOUD_HI, p: "M8.5 18.5v2.5M12 18.5v2.5M15.5 18.5v2.5", cut: false, fade: "p" },
+  { name: "cloud.bolt", cat: "meteo", tags: ["orage", "éclair", "tempête", "météo"], e: CLOUD_HI, p: "M13 16l-2 3h3l-2 3", cut: false, fade: "p" },
+  { name: "snowflake", cat: "meteo", tags: ["neige", "froid", "flocon", "hiver", "climatisation"], p: "M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9M12 3l-2.5 1.5M12 3l2.5 1.5M12 21l-2.5-1.5M12 21l2.5-1.5" },
+  { name: "wind", cat: "meteo", tags: ["vent", "air", "brise", "ventilation"], p: "M3 8h11a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h7a2.5 2.5 0 1 1-2.5 2.5" },
+  { name: "thermometer", cat: "meteo", tags: ["température", "chaleur", "fièvre", "degrés"], e: "M9.5 14.5V5a2.5 2.5 0 0 1 5 0v9.5a4 4 0 1 1-5 0z", c: "M12 8.5v8.5" },
+  { name: "umbrella", cat: "meteo", tags: ["parapluie", "pluie", "protection", "assurance"], e: "M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9z", p: "M12 12v6.5a2 2 0 0 0 4 0", cut: false, fade: "p" },
+  { name: "drop", cat: "meteo", tags: ["goutte", "eau", "pluie", "humidité", "encre"], p: "M12 3.5s6 6.3 6 10.5a6 6 0 0 1-12 0c0-4.2 6-10.5 6-10.5z", pf: "=" },
+  { name: "flame", cat: "meteo", tags: ["feu", "tendance", "populaire", "chaud", "flamme"], p: "M12 20a6 6 0 0 0 6-6c0-3.5-2.5-5.5-3.5-8.5-1 1.5-1.5 2.5-1.5 4-1-1-1.5-3-1.5-5.5C8.5 6 6 9 6 14a6 6 0 0 0 6 6z", pf: "=" },
+
+  // ——— Formes
+  { name: "circle", cat: "formes", tags: ["cercle", "rond", "point", "statut"], p: CIRCLE, pf: "=" },
+  { name: "square", cat: "formes", tags: ["carré", "case", "arrêt"], p: SQ, pf: "=" },
+  { name: "triangle", cat: "formes", tags: ["triangle", "delta", "avertissement"], p: "M12 4.5 20.5 19H3.5z", pf: "=" },
+  { name: "diamond", cat: "formes", tags: ["losange", "diamant", "joyau"], p: "M12 3l9 9-9 9-9-9z", pf: "=" },
+  { name: "hexagon", cat: "formes", tags: ["hexagone", "polygone", "badge"], p: "M12 3l7.8 4.5v9L12 21l-7.8-4.5v-9z", pf: "=" },
+  { name: "capsule", cat: "formes", tags: ["capsule", "pilule", "bouton", "gélule"], p: rr(3, 7, 18, 10, 5), pf: "=" },
+  { name: "rectangle", cat: "formes", tags: ["rectangle", "cadre", "paysage"], p: rr(3, 5.5, 18, 13, 2.5), pf: "=" },
+  { name: "seal", cat: "formes", tags: ["sceau", "badge", "certifié", "macaron"], p: SEAL, pf: "=" },
+  { name: "circle.lefthalf.filled", cat: "formes", tags: ["contraste", "thème", "moitié", "apparence", "clair sombre"], e: CIRCLE, f: "M12 3a9 9 0 0 0 0 18z" },
+  { name: "circle.grid.3x3", cat: "formes", tags: ["applications", "lanceur", "grille de points", "menu"], e: [5.5, 12, 18.5].flatMap((y) => [5.5, 12, 18.5].map((x) => circle(x, y, 1.75))).join("") },
+  { name: "rectangle.3.group", cat: "formes", tags: ["tableau de bord", "disposition", "dashboard", "mise en page"], e: `${rr(3, 4, 8, 7, 1.5)}${rr(13, 4, 8, 16, 1.5)}${rr(3, 13, 8, 7, 1.5)}` },
+  { name: "rectangle.split.2x1", cat: "formes", tags: ["colonnes", "séparer", "vue divisée", "côte à côte"], e: rr(3, 5, 18, 14, 2.5), c: "M12 5v14" },
+  { name: "square.3.layers.3d", cat: "formes", tags: ["calques", "couches", "empiler", "niveaux"], e: "M4 8.5 12 4l8 4.5-8 4.5z", p: "M4 12.5 12 17l8-4.5M4 16.5 12 21l8-4.5", cut: false, fade: "p" },
+  { name: "square.on.square", cat: "formes", tags: ["superposer", "dupliquer", "copie", "calque"], e: rr(8.5, 8.5, 12, 12, 2), p: "M15.5 8.5V5.5a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3", pf: "M15.5 8.5V5.5a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3v-5a2 2 0 0 1 2-2z", fade: "p" },
+
+  // ——— Manette
+  { name: "gamecontroller", cat: "manette", tags: ["manette", "jeu", "gamepad", "console"], e: "M7 7h10a5 5 0 0 1 5 5.5l-.7 3.6a2.3 2.3 0 0 1-4 1.1L15.6 15H8.4l-1.7 2.2a2.3 2.3 0 0 1-4-1.1L2 12.5A5 5 0 0 1 7 7z", c: "M7.5 11h3M9 9.5v3M15 10.75v.01M17.25 12.5v.01" },
+  { name: "gamecontroller.grips", cat: "manette", tags: ["manette", "xbox", "poignées", "sticks décalés", "gamepad"], e: "M8.5 5.5h7a5 5 0 0 1 4.9 4l1.1 5.8a3 3 0 0 1-5.3 2.2L14.8 15H9.2l-1.4 2.5a3 3 0 0 1-5.3-2.2l1.1-5.8A5 5 0 0 1 8.5 5.5z", c: `${circle(7.5, 9.5, 1.7)}M9.3 13.3h2.4M10.5 12.1v2.4M16.5 7.7v.01M18.3 9.5v.01M14.7 9.5v.01M16.5 11.3v.01${circle(13.8, 13.3, 1.5)}` },
+  { name: "gamecontroller.touchpad", cat: "manette", tags: ["manette", "playstation", "ps5", "dualsense", "pavé tactile", "gamepad"], e: "M8 5.25h8l2.2 2.4a3.5 3.5 0 0 1 2.4 2.7l1.2 6.2a2.6 2.6 0 0 1-4.9 1.3L15.5 15.25h-7l-1.4 2.6a2.6 2.6 0 0 1-4.9-1.3l1.2-6.2a3.5 3.5 0 0 1 2.4-2.7z", c: `${rr(9.5, 6.75, 5, 3, 0.8)}M5.3 10.75h2.4M6.5 9.55v2.4M17.5 9.05v.01M19.2 10.75v.01M15.8 10.75v.01M17.5 12.45v.01${circle(9.5, 13.25, 1.3)}${circle(14.5, 13.25, 1.3)}` },
+  { name: "dpad", cat: "manette", tags: ["croix directionnelle", "d-pad", "directions", "navigation spatiale"], e: DPAD, c: DPAD_C },
+  { name: "dpad.up", cat: "manette", tags: ["d-pad haut", "direction haut", "appuyé"], e: DPAD, c: DPAD_C, f: "M9.5 3.5h5v6h-5z" },
+  { name: "dpad.down", cat: "manette", tags: ["d-pad bas", "direction bas", "appuyé"], e: DPAD, c: DPAD_C, f: "M9.5 14.5h5v6h-5z" },
+  { name: "dpad.left", cat: "manette", tags: ["d-pad gauche", "direction gauche", "appuyé"], e: DPAD, c: DPAD_C, f: "M3.5 9.5h6v5h-6z" },
+  { name: "dpad.right", cat: "manette", tags: ["d-pad droite", "direction droite", "appuyé"], e: DPAD, c: DPAD_C, f: "M14.5 9.5h6v5h-6z" },
+  { name: "a.circle", cat: "manette", tags: ["bouton a", "confirmer", "valider", "manette"], e: CIRCLE, c: "M9.25 15.5l2.75-7 2.75 7M10.3 13h3.4" },
+  { name: "b.circle", cat: "manette", tags: ["bouton b", "retour", "annuler", "manette"], e: CIRCLE, c: "M9.5 8.5h3a1.75 1.75 0 0 1 0 3.5h-3zm0 3.5h3.5a1.75 1.75 0 0 1 0 3.5H9.5z" },
+  { name: "x.circle", cat: "manette", tags: ["bouton x", "action", "manette", "xbox"], e: CIRCLE, c: "M9.25 8.5l5.5 7M14.75 8.5l-5.5 7" },
+  { name: "y.circle", cat: "manette", tags: ["bouton y", "action secondaire", "manette"], e: CIRCLE, c: "M9.5 8.5l2.5 4 2.5-4M12 12.5v3" },
+  { name: "triangle.circle", cat: "manette", tags: ["bouton triangle", "playstation", "manette"], e: CIRCLE, c: "M12 8l4 7H8z" },
+  { name: "square.circle", cat: "manette", tags: ["bouton carré", "playstation", "manette"], e: CIRCLE, c: rr(8.5, 8.5, 7, 7, 1) },
+  { name: "circle.circle", cat: "manette", tags: ["bouton rond", "playstation", "manette"], e: CIRCLE, c: circle(12, 12, 3.75) },
+  { name: "l.joystick", cat: "manette", tags: ["stick gauche", "joystick", "analogique", "manette"], e: CIRCLE, c: txt("L", 10, 9) },
+  { name: "r.joystick", cat: "manette", tags: ["stick droit", "joystick", "analogique", "manette"], e: CIRCLE, c: txt("R", 10, 9) },
+  { name: "l1.rectangle.roundedbottom", cat: "manette", tags: ["L1", "gâchette", "bouton d'épaule", "manette"], e: BTN_B, c: txt("L1", 7.3, 9.25) },
+  { name: "r1.rectangle.roundedbottom", cat: "manette", tags: ["R1", "gâchette", "bouton d'épaule", "manette"], e: BTN_B, c: txt("R1", 7.3, 9.25) },
+  { name: "l2.rectangle.roundedtop", cat: "manette", tags: ["L2", "gâchette", "bouton d'épaule", "manette"], e: BTN_T, c: txt("L2", 7.3, 8.75) },
+  { name: "r2.rectangle.roundedtop", cat: "manette", tags: ["R2", "gâchette", "bouton d'épaule", "manette"], e: BTN_T, c: txt("R2", 7.3, 8.75) },
+  { name: "lb.rectangle.roundedbottom", cat: "manette", tags: ["LB", "bumper", "xbox", "manette"], e: BTN_B, c: txt("LB", 7.3, 9.25) },
+  { name: "rb.rectangle.roundedbottom", cat: "manette", tags: ["RB", "bumper", "xbox", "manette"], e: BTN_B, c: txt("RB", 7.3, 9.25) },
+  { name: "lt.rectangle.roundedtop", cat: "manette", tags: ["LT", "gâchette", "xbox", "manette"], e: BTN_T, c: txt("LT", 7.3, 8.75) },
+  { name: "rt.rectangle.roundedtop", cat: "manette", tags: ["RT", "gâchette", "xbox", "manette"], e: BTN_T, c: txt("RT", 7.3, 8.75) },
+  { name: "zl.rectangle.roundedtop", cat: "manette", tags: ["ZL", "gâchette", "switch", "manette"], e: BTN_T, c: txt("ZL", 7.3, 8.75) },
+  { name: "zr.rectangle.roundedtop", cat: "manette", tags: ["ZR", "gâchette", "switch", "manette"], e: BTN_T, c: txt("ZR", 7.3, 8.75) },
+  { name: "line.3.horizontal.circle", cat: "manette", tags: ["bouton menu", "options", "start", "manette"], e: CIRCLE, c: "M8 9h8M8 12h8M8 15h8" },
+  { name: "house.circle", cat: "manette", tags: ["bouton home", "accueil", "guide", "manette"], e: CIRCLE, c: "M8 11.25 12 7.75l4 3.5v4a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z" },
+  { name: "trophy", cat: "manette", tags: ["trophée", "victoire", "récompense", "classement", "succès", "achievement"], e: "M7.5 3.5h9V9a4.5 4.5 0 0 1-9 0z", p: "M7.5 5.5h-3V7a3 3 0 0 0 3 3M16.5 5.5h3V7a3 3 0 0 1-3 3M12 13.5v3M8.5 20.5h7M9.5 16.5h5v4h-5z", cut: false },
+  { name: "dice", cat: "manette", tags: ["dé", "hasard", "aléatoire", "jeu de société", "chance"], e: rr(3.5, 3.5, 17, 17, 3.5), c: "M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01" },
+  { name: "gamecontroller.split", cat: "manette", tags: ["manette", "switch", "nintendo", "joy-con", "console portable", "écran"], e: rr(2.5, 6.5, 19, 11, 3), c: `${rr(7.5, 8, 9, 8, 1)}${circle(5, 10.25, 1.2)}M5 14v.01M19 9v.01M20.25 10.25v.01M17.75 10.25v.01M19 11.5v.01M19 14.5v.01` },
+
+  // ——— Objets
+  { name: "crown", cat: "objets", tags: ["couronne", "premium", "vip", "roi", "abonnement"], e: "M3.5 17.5 3 7l4.5 3.5L12 4.5l4.5 6L21 7l-.5 10.5a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1z", c: "M4 14.5h16" },
+  { name: "rocket", cat: "objets", tags: ["fusée", "lancer", "démarrage", "déploiement", "startup", "publier"], e: "M12 3c3 2 4.5 6 4.5 10v3.5l-4.5 3-4.5-3V13C7.5 9 9 5 12 3z", c: circle(12, 10, 1.75), p: "M7.5 13.5 4.5 17l3-.5M16.5 13.5l3 3.5-3-.5M12 19.5v2", cut: false },
+  { name: "scope", cat: "objets", tags: ["cible", "objectif", "viser", "précision", "focus"], p: `${circle(12, 12, 8.5)}${circle(12, 12, 4)}M12 2v3M12 19v3M2 12h3M19 12h3` },
+  { name: "wand.and.stars", cat: "objets", tags: ["baguette", "magie", "IA", "retouche automatique", "améliorer", "auto"], p: "M3.5 20.5 14 10M15.5 3.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9zM19 12l.6 1.4L21 14l-1.4.6L19 16l-.6-1.4L17 14l1.4-.6zM6 4l.5 1.2 1.2.5-1.2.5L6 7.4l-.5-1.2-1.2-.5 1.2-.5z" },
+  { name: "cursorarrow", cat: "objets", tags: ["curseur", "pointeur", "souris", "cliquer", "sélectionner"], p: "M5.5 4.5 19 11l-6 1.5-3 5.5z", pf: "=" },
+  { name: "leaf", cat: "objets", tags: ["feuille", "écologie", "nature", "durable", "bio", "vert"], e: "M20 4c-8 0-14 4-15.5 12 3 1.5 6 1.5 8.5 0 4-2.5 6.5-7 7-12z", c: "M5.5 19.5c3-5 6-8.5 10-11.5" },
+  { name: "graduationcap", cat: "objets", tags: ["diplôme", "formation", "apprentissage", "école", "tutoriel", "cours"], e: "M2.5 9.5 12 5l9.5 4.5L12 14z", p: "M6 11.5v5c1.5 1.5 3.5 2.5 6 2.5s4.5-1 6-2.5v-5M21.5 9.5v6", cut: false, fade: "p" },
+  { name: "book", cat: "objets", tags: ["livre", "documentation", "lecture", "guide", "manuel", "docs"], e: "M3.5 5.5A1.5 1.5 0 0 1 5 4h4.5A2.5 2.5 0 0 1 12 6.5v14A2.5 2.5 0 0 0 9.5 18H5a1.5 1.5 0 0 1-1.5-1.5zM20.5 5.5A1.5 1.5 0 0 0 19 4h-4.5A2.5 2.5 0 0 0 12 6.5v14A2.5 2.5 0 0 1 14.5 18H19a1.5 1.5 0 0 0 1.5-1.5z" },
+  { name: "ticket", cat: "objets", tags: ["billet", "ticket", "événement", "entrée", "coupon", "réservation"], e: "M3.5 8A1.5 1.5 0 0 1 5 6.5h14A1.5 1.5 0 0 1 20.5 8v2a2 2 0 0 0 0 4v2a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 16v-2a2 2 0 0 0 0-4z", c: "M9 6.5v11" },
+  { name: "fork.knife", cat: "objets", tags: ["restaurant", "repas", "manger", "cuisine", "couverts"], p: "M6 3.5v6a2 2 0 0 0 4 0v-6M8 9.5v11M17.5 3.5c-2 1.5-3.5 4.5-3.5 8v2h3.5zM17.5 13.5v7" },
+  { name: "mug", cat: "objets", tags: ["café", "tasse", "pause", "boisson", "thé"], e: "M3.5 5h11v8a4 4 0 0 1-4 4H7.5a4 4 0 0 1-4-4z", p: "M14.5 7.5H17a2.5 2.5 0 0 1 0 5h-2.5M5 19h10", cut: false },
+  { name: "cross.case", cat: "objets", tags: ["santé", "médical", "premiers secours", "trousse", "pharmacie", "urgence"], e: rr(3, 7.5, 18, 12.5, 2), c: "M12 11v5M9.5 13.5h5", p: "M8.5 7.5V6a1.5 1.5 0 0 1 1.5-1.5h4A1.5 1.5 0 0 1 15.5 6v1.5", cut: false },
+  { name: "pawprint", cat: "objets", tags: ["animal", "patte", "chien", "chat", "vétérinaire"], e: `M12 11.5c-3 0-5.5 2.5-5.5 5s2 4 5.5 4 5.5-1.5 5.5-4-2.5-5-5.5-5z${circle(5.5, 10, 2)}${circle(18.5, 10, 2)}${circle(9, 5.5, 2)}${circle(15, 5.5, 2)}` },
+  { name: "moon.stars", cat: "objets", tags: ["nuit", "sommeil", "mode nuit", "étoiles", "coucher"], p: "M17 15.5A7 7 0 0 1 8.5 7a7 7 0 1 0 8.5 8.5zM18 4l.7 1.6 1.6.7-1.6.7L18 8.6l-.7-1.6-1.6-.7 1.6-.7zM20.5 10.5l.4 1 1 .4-1 .4-.4 1-.4-1-1-.4 1-.4z", pf: "=" },
+  { name: "equal", cat: "objets", tags: ["égal", "identique", "équivalent", "mathématiques"], p: "M5 9.5h14M5 14.5h14" },
+
+  // ——— Évocations de marques : jamais le logo, toujours l'idée (l'étiquette porte la marque pour la recherche)
+  { name: "face.bubble", cat: "marques", tags: ["discord", "bot", "communauté", "chat vocal", "serveur", "assistant"], e: "M7 3.5h10A4.5 4.5 0 0 1 21.5 8v5a4.5 4.5 0 0 1-4.5 4.5h-5.5L7 20.5V17.5A4.5 4.5 0 0 1 2.5 13V8A4.5 4.5 0 0 1 7 3.5z", c: `${circle(9, 10.5, 1)}${circle(15, 10.5, 1)}` },
+  { name: "cat.circle", cat: "marques", tags: ["github", "chat", "dépôt", "open source", "code source"], e: CIRCLE, c: "M7.5 7.5V15a4.5 4.5 0 0 0 9 0V7.5L14 10h-4zM10.5 13h.01M13.5 13h.01" },
+  { name: "arrow.branch.diamond", cat: "marques", tags: ["git", "versionnage", "branche", "commit", "contrôle de version"], e: "M12 2.5 21.5 12 12 21.5 2.5 12z", c: `${circle(9, 7, 1.25)}${circle(9, 17, 1.25)}${circle(15.5, 11, 1.25)}M9 8.25v7.5M15.5 12.25a4 4 0 0 1-4 4h-1.25` },
+  { name: "fox", cat: "marques", tags: ["gitlab", "firefox", "renard", "navigateur", "animal"], e: "M4 5 8.5 8.5h7L20 5l-1 8.5a7 7 0 0 1-14 0z", c: "M9.5 12h.01M14.5 12h.01M11 15.5l1 1.5 1-1.5" },
+  { name: "bird", cat: "marques", tags: ["twitter", "oiseau", "tweet", "gazouillis", "animal"], e: "M4.5 19c0-5 3-8.5 7-8.5h1V8.5a3 3 0 0 1 6 0v1.2l2.5 1.3-2.5.5V14a5 5 0 0 1-5 5z", c: "M16.5 8.5v.01M8 16.5c2.5 0 4.5-1.5 5.5-4" },
+  { name: "butterfly", cat: "marques", tags: ["bluesky", "papillon", "réseau social", "animal"], e: "M12 9c-1.5-3-4-4.5-6.5-4.5C3 4.5 3 8 4.5 10.5 6 13 9 13.5 12 12zM12 9c1.5-3 4-4.5 6.5-4.5C21 4.5 21 8 19.5 10.5 18 13 15 13.5 12 12zM12 12c-2-1-5.5-.5-6.5 1.5-1 2 .5 5 2.5 5.5 2 .5 3.5-2 4-5zM12 12c2-1 5.5-.5 6.5 1.5 1 2-.5 5-2.5 5.5-2 .5-3.5-2-4-5z", p: "M12 6v13M10 5.5 9 3.5M14 5.5l1-2", keep: true },
+  { name: "penguin", cat: "marques", tags: ["linux", "manchot", "pingouin", "animal", "système"], e: "M12 3c-3.5 0-5.5 3-5.5 7v3c-1.5 1-2.5 3-2.5 5 0 1.5.5 2.5 1.5 3h13c1-.5 1.5-1.5 1.5-3 0-2-1-4-2.5-5v-3c0-4-2-7-5.5-7z", c: "M12 10.5c-2 0-3.5 2-3.5 5v5.5h7V15.5c0-3-1.5-5-3.5-5zM10 7.5h.01M14 7.5h.01", p: "M11 9.5h2l-1 1.5z", cut: false },
+  { name: "robot", cat: "marques", tags: ["android", "bot", "IA", "automate", "assistant"], e: `${rr(4.5, 8.5, 15, 12, 3)}M2.5 13h2v4h-2zM19.5 13h2v4h-2z`, c: "M9 14h.01M15 14h.01M9.5 17.5h5", p: `M12 8.5V6.25${circle(12, 5, 1.25)}`, cut: false },
+  { name: "apple", cat: "marques", tags: ["apple", "pomme", "fruit", "santé", "nutrition"], e: "M12 7.5c2.5-1.5 6 0 6.5 4 .5 3.5-1.5 8-4 9.5-1 .5-1.5.5-2.5 0-1 .5-1.5.5-2.5 0-2.5-1.5-4.5-6-4-9.5.5-4 4-5.5 6.5-4z", p: "M12 7.5c0-2 1-3.5 3-4-.5 2-1.5 3.5-3 4", cut: false },
+  { name: "briefcase", cat: "marques", tags: ["linkedin", "mallette", "travail", "emploi", "professionnel", "portfolio"], e: rr(3, 7.5, 18, 12, 2), c: "M3 12.5h18M10.5 12v2.5h3V12", p: "M8.5 7.5V6a1.5 1.5 0 0 1 1.5-1.5h4A1.5 1.5 0 0 1 15.5 6v1.5", cut: false },
+  { name: "cube.stack", cat: "marques", tags: ["docker", "conteneurs", "pile", "empiler", "infrastructure"], e: `${rr(3, 14.75, 5.5, 4.5, 0.75)}${rr(9.25, 14.75, 5.5, 4.5, 0.75)}${rr(15.5, 14.75, 5.5, 4.5, 0.75)}${rr(6.1, 9.75, 5.5, 4.5, 0.75)}${rr(12.4, 9.75, 5.5, 4.5, 0.75)}${rr(9.25, 4.75, 5.5, 4.5, 0.75)}` },
+  { name: "phone.bubble.left", cat: "marques", tags: ["whatsapp", "appel", "messagerie", "téléphone", "contact"], e: "M12 3.5c4.7 0 8.5 3.4 8.5 7.5s-3.8 7.5-8.5 7.5c-1.3 0-2.5-.2-3.6-.7L4 20l1.4-3.6C4.2 15 3.5 13.1 3.5 11c0-4.1 3.8-7.5 8.5-7.5z", c: "M9 7.5h1.5l.8 2-1 .8a4.5 4.5 0 0 0 3.4 3.4l.8-1 2 .8V15a1 1 0 0 1-1 1A7.5 7.5 0 0 1 8 8.5a1 1 0 0 1 1-1z" },
+  { name: "dot.radiowaves.upright", cat: "marques", tags: ["rss", "flux", "abonnement", "podcast", "fil"], p: "M6.5 6.5A11 11 0 0 1 17.5 17.5M6.5 11a6.5 6.5 0 0 1 6.5 6.5", f: circle(7.75, 16.25, 1.75) },
+  { name: "pen.nib", cat: "marques", tags: ["figma", "plume", "stylo", "design vectoriel", "tracé", "dessin"], e: "M12 3 6 9v6l6 6 6-6V9z", c: `${circle(12, 12, 1.6)}M12 13.6V21` },
+  { name: "music.note.circle", cat: "marques", tags: ["spotify", "musique", "lecture", "playlist", "audio"], e: CIRCLE, c: `M10.5 15V8l5-1v6.5${circle(9.25, 15.25, 1.25)}${circle(14.25, 13.75, 1.25)}` },
+];
+
+export const ICONS: readonly SymbolSource[] = SYMBOLS;
+export const byName: SymbolIndex = Object.fromEntries(SYMBOLS.map((s) => [s.name, s] as const)) as SymbolIndex;

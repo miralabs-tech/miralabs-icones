@@ -1,0 +1,1 @@
+export default {"name":"tray.and.arrow.down","tags":["boîte de réception","recevoir","inbox"],"e":"M4 13h4.5l1.5 2.5h4l1.5-2.5H20v5.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 18.5z","p":"M12 3.5v9M8.5 9l3.5 3.5L15.5 9","cut":false};

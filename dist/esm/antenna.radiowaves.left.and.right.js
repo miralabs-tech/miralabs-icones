@@ -1,0 +1,1 @@
+export default {"name":"antenna.radiowaves.left.and.right","tags":["diffusion","réseau cellulaire","antenne","signal","live"],"p":"M12 12v7.5M6.5 5a7.8 7.8 0 0 0 0 11M17.5 5a7.8 7.8 0 0 1 0 11M9 7.5a4.3 4.3 0 0 0 0 6M15 7.5a4.3 4.3 0 0 1 0 6","f":"M10.4 10.5a1.6 1.6 0 1 0 3.2 0a1.6 1.6 0 1 0 -3.2 0z"};

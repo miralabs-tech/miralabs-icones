@@ -1,0 +1,1 @@
+export default {"name":"rectangle.portrait.and.arrow.left","tags":["connexion","se connecter","entrer","login"],"rtl":true,"p":"M14 6V5a1.5 1.5 0 0 0-1.5-1.5h-7A1.5 1.5 0 0 0 4 5v14a1.5 1.5 0 0 0 1.5 1.5h7A1.5 1.5 0 0 0 14 19v-1M20.5 12h-11M13 8.5 9.5 12l3.5 3.5"};

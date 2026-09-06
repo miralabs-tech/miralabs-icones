@@ -1,0 +1,1 @@
+export default {"name":"square.and.arrow.down","tags":["importer","enregistrer dans","télécharger"],"e":"M8.5 10H6.5A1.5 1.5 0 0 0 5 11.5v8A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5v-8a1.5 1.5 0 0 0-1.5-1.5h-2","p":"M12 3.5V15M8 11l4 4 4-4","keep":true,"fade":"e"};

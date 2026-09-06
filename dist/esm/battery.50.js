@@ -1,0 +1,1 @@
+export default {"name":"battery.50","tags":["batterie moitié","énergie"],"e":"M4.5 7.5h13a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-13a2 2 0 0 1 -2 -2v-5a2 2 0 0 1 2 -2z","p":"M21.5 10.5v3","f":"M5.5 9.5h4.5a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-4.5a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1z","cut":false};

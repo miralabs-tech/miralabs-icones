@@ -1,0 +1,1 @@
+export default {"name":"arrow.branch.diamond","tags":["git","versionnage","branche","commit","contrôle de version"],"e":"M12 2.5 21.5 12 12 21.5 2.5 12z","c":"M7.75 7a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0 -2.5 0zM7.75 17a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0 -2.5 0zM14.25 11a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0 -2.5 0zM9 8.25v7.5M15.5 12.25a4 4 0 0 1-4 4h-1.25"};

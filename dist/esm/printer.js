@@ -1,0 +1,1 @@
+export default {"name":"printer","tags":["imprimer","imprimante"],"e":"M6 17H5a1.5 1.5 0 0 1-1.5-1.5V11A1.5 1.5 0 0 1 5 9.5h14a1.5 1.5 0 0 1 1.5 1.5v4.5A1.5 1.5 0 0 1 19 17h-1","p":"M7 9.5V4h10v5.5M7 14h10v6H7z","cut":false,"fade":"p"};

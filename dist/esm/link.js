@@ -1,0 +1,1 @@
+export default {"name":"link","tags":["lien","url","hyperlien","attacher"],"p":"M10 14a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 0 0-5.66-5.66L11.4 6.9M14 10a4 4 0 0 0-5.66 0l-2.83 2.83a4 4 0 0 0 5.66 5.66l1.43-1.4"};

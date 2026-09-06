@@ -1,0 +1,1 @@
+export default {"name":"laptopcomputer","tags":["ordinateur portable","mac","notebook"],"e":"M5.5 5h13a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1 -1.5 1.5h-13a1.5 1.5 0 0 1 -1.5 -1.5v-8a1.5 1.5 0 0 1 1.5 -1.5z","p":"M2 19h20","cut":false};

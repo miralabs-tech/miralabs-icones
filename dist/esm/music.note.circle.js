@@ -1,0 +1,1 @@
+export default {"name":"music.note.circle","tags":["spotify","musique","lecture","playlist","audio"],"e":"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0z","c":"M10.5 15V8l5-1v6.5M8 15.25a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0 -2.5 0zM13 13.75a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0 -2.5 0z"};

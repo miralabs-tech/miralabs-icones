@@ -1,0 +1,1 @@
+export default {"name":"hand.thumbsdown","tags":["pouce baissé","je n'aime pas","désapprouver","dislike"],"p":"M3 12a1.5 1.5 0 0 0 1.5 1.5H7V4H4.5A1.5 1.5 0 0 0 3 5.5zM7 13.5l3.3 6.2a1.9 1.9 0 0 0 3.6-.9l-.6-4.3h5.2a2 2 0 0 0 2-2.3l-1.2-6.5A2 2 0 0 0 17.3 4H7z","pf":"="};

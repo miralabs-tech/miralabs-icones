@@ -1,0 +1,1 @@
+export default {"name":"creditcard","tags":["carte bancaire","paiement","carte de crédit","payer"],"e":"M5 5h14a2.5 2.5 0 0 1 2.5 2.5v9a2.5 2.5 0 0 1 -2.5 2.5h-14a2.5 2.5 0 0 1 -2.5 -2.5v-9a2.5 2.5 0 0 1 2.5 -2.5z","c":"M2.5 9.5h19M6 15h4"};

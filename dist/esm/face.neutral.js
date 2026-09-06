@@ -1,0 +1,1 @@
+export default {"name":"face.neutral","tags":["neutre","bof","emoji","réaction"],"e":"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0z","c":"M8.35 9.75a0.9 0.9 0 1 0 1.8 0a0.9 0.9 0 1 0 -1.8 0zM13.85 9.75a0.9 0.9 0 1 0 1.8 0a0.9 0.9 0 1 0 -1.8 0zM9 14.5h6"};

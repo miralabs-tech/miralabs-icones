@@ -1,0 +1,1 @@
+export default {"name":"eye","tags":["afficher","visible","aperçu","mot de passe","œil"],"e":"M2.5 12s3.5-6.5 9.5-6.5 9.5 6.5 9.5 6.5-3.5 6.5-9.5 6.5S2.5 12 2.5 12z","p":"M9 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0z"};

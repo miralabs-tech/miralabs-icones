@@ -1,0 +1,1 @@
+export default {"name":"exclamationmark.triangle","tags":["attention","avertissement","erreur","danger","warning"],"e":"M10.7 4.6a1.5 1.5 0 0 1 2.6 0l7.6 13.2a1.5 1.5 0 0 1-1.3 2.2H5.4a1.5 1.5 0 0 1-1.3-2.2z","p":"M12 9.5v4M12 16.75v.01"};

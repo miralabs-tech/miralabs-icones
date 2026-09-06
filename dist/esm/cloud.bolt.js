@@ -1,0 +1,1 @@
+export default {"name":"cloud.bolt","tags":["orage","éclair","tempête","météo"],"e":"M7 16h10.5a4 4 0 0 0 .7-7.94A6 6 0 0 0 6.6 7.4 4.4 4.4 0 0 0 7 16z","p":"M13 16l-2 3h3l-2 3","cut":false,"fade":"p"};

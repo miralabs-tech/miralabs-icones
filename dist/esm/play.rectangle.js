@@ -1,0 +1,1 @@
+export default {"name":"play.rectangle","tags":["vidéo","lecteur","film","regarder","youtube"],"e":"M5.5 5h13a2.5 2.5 0 0 1 2.5 2.5v9a2.5 2.5 0 0 1 -2.5 2.5h-13a2.5 2.5 0 0 1 -2.5 -2.5v-9a2.5 2.5 0 0 1 2.5 -2.5z","c":"M10 9v6l5-3z"};

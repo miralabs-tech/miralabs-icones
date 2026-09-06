@@ -1,0 +1,1 @@
+export default {"name":"iphone","tags":["téléphone","smartphone","mobile","appareil"],"e":"M8.5 2.5h7a2.5 2.5 0 0 1 2.5 2.5v14a2.5 2.5 0 0 1 -2.5 2.5h-7a2.5 2.5 0 0 1 -2.5 -2.5v-14a2.5 2.5 0 0 1 2.5 -2.5z","c":"M10 5.5h4"};

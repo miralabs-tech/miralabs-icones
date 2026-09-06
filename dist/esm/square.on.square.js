@@ -1,0 +1,1 @@
+export default {"name":"square.on.square","tags":["superposer","dupliquer","copie","calque"],"e":"M10.5 8.5h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2z","p":"M15.5 8.5V5.5a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3","pf":"M15.5 8.5V5.5a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3v-5a2 2 0 0 1 2-2z","fade":"p"};

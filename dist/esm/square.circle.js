@@ -1,0 +1,1 @@
+export default {"name":"square.circle","tags":["bouton carré","playstation","manette"],"e":"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0z","c":"M9.5 8.5h5a1 1 0 0 1 1 1v5a1 1 0 0 1 -1 1h-5a1 1 0 0 1 -1 -1v-5a1 1 0 0 1 1 -1z"};

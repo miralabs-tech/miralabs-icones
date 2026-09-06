@@ -1,0 +1,1 @@
+export default {"name":"desktopcomputer","tags":["ordinateur","écran","bureau","moniteur"],"e":"M5 4h14a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2z","p":"M12 16v4M8 20h8","cut":false};

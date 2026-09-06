@@ -1,0 +1,1 @@
+export default {"name":"terminal","tags":["terminal","console","ligne de commande","shell"],"e":"M5 4h14a2.5 2.5 0 0 1 2.5 2.5v11a2.5 2.5 0 0 1 -2.5 2.5h-14a2.5 2.5 0 0 1 -2.5 -2.5v-11a2.5 2.5 0 0 1 2.5 -2.5z","c":"M6.5 9l3 3-3 3M12 15h5"};

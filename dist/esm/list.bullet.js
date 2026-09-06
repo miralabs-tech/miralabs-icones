@@ -1,0 +1,1 @@
+export default {"name":"list.bullet","tags":["liste à puces","puces","énumération"],"rtl":true,"p":"M9 6h11M9 12h11M9 18h11","f":"M3.7 6a1.3 1.3 0 1 0 2.6 0a1.3 1.3 0 1 0 -2.6 0zM3.7 12a1.3 1.3 0 1 0 2.6 0a1.3 1.3 0 1 0 -2.6 0zM3.7 18a1.3 1.3 0 1 0 2.6 0a1.3 1.3 0 1 0 -2.6 0z"};

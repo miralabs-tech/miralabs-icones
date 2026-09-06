@@ -1,0 +1,1 @@
+export default {"name":"person.wave.2","tags":["présentation","bienvenue","saluer","onboarding"],"e":"M6.5 7.5a4 4 0 1 0 8 0a4 4 0 1 0 -8 0zM3 20.5a7.5 7.5 0 0 1 15 0z","p":"M17 8.5a4 4 0 0 1 0 5.5M19.3 6a7.5 7.5 0 0 1 0 10.5","keep":true,"fade":"p"};

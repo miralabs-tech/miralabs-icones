@@ -1,0 +1,1 @@
+export default {"name":"mappin","tags":["épingle","lieu","position","adresse"],"e":"M12 21.5s-6.5-6.5-6.5-11.5a6.5 6.5 0 0 1 13 0c0 5-6.5 11.5-6.5 11.5z","c":"M9.5 10a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0z"};

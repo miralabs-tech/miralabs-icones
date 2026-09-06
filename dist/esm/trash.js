@@ -1,0 +1,1 @@
+export default {"name":"trash","tags":["supprimer","corbeille","effacer","jeter"],"e":"M5.5 8.5h13l-.9 10.6a1.6 1.6 0 0 1-1.6 1.4H8a1.6 1.6 0 0 1-1.6-1.4z","p":"M4 6h16M9.5 6V4.5h5V6","c":"M10 11.5v6M14 11.5v6","cut":false,"fade":"p"};

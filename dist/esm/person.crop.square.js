@@ -1,0 +1,1 @@
+export default {"name":"person.crop.square","tags":["portrait","photo d'identité","avatar carré"],"e":"M6.5 3.5h11a3 3 0 0 1 3 3v11a3 3 0 0 1 -3 3h-11a3 3 0 0 1 -3 -3v-11a3 3 0 0 1 3 -3z","p":"M9 10a3 3 0 1 0 6 0a3 3 0 1 0 -6 0zM6.2 20.5a6.3 6.3 0 0 1 11.6 0"};

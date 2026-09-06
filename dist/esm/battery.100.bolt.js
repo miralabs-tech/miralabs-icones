@@ -1,0 +1,1 @@
+export default {"name":"battery.100.bolt","tags":["en charge","batterie","éclair","secteur"],"e":"M4.5 7.5h13a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-13a2 2 0 0 1 -2 -2v-5a2 2 0 0 1 2 -2z","p":"M21.5 10.5v3","f":"M5.5 9.5h11a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-11a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1z","h":"M12.8 9.7 9.8 12.6h2.3l-.8 1.8 3-3.1h-2.3z","cut":false};

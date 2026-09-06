@@ -1,0 +1,1 @@
+export default {"name":"storefront","tags":["boutique","magasin","commerce","vitrine"],"e":"M4 10v9a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 20 19v-9","p":"M3 6.5 5 3.5h14l2 3M3 6.5v1.5a2.25 2.25 0 0 0 4.5 0 2.25 2.25 0 0 0 4.5 0 2.25 2.25 0 0 0 4.5 0 2.25 2.25 0 0 0 4.5 0V6.5","c":"M10 20.5v-6h4v6","cut":false,"fade":"e"};

@@ -1,0 +1,1 @@
+export default {"name":"banknote","tags":["billet","argent","espèces","cash"],"e":"M4.5 6h15a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-15a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2z","c":"M9 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0zM6 12h1M17 12h1"};

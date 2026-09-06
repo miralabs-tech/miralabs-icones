@@ -1,0 +1,1 @@
+export default {"name":"calendar","tags":["date","agenda","calendrier","événement","planning"],"e":"M3.5 7A2.5 2.5 0 0 1 6 4.5h12A2.5 2.5 0 0 1 20.5 7v11a2.5 2.5 0 0 1-2.5 2.5H6A2.5 2.5 0 0 1 3.5 18z","p":"M8 3v3M16 3v3","c":"M3.5 9.5h17","cut":false};

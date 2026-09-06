@@ -1,0 +1,1 @@
+export default {"name":"folder.badge.plus","tags":["nouveau dossier","ajouter un dossier"],"e":"M3.5 7A1.5 1.5 0 0 1 5 5.5h4.4a1.5 1.5 0 0 1 1.06.44L12 7.5h7a1.5 1.5 0 0 1 1.5 1.5v8.5A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5z","c":"M12 11v6M9 14h6"};

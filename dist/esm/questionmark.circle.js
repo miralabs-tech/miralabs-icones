@@ -1,0 +1,1 @@
+export default {"name":"questionmark.circle","tags":["aide","question","support","inconnu"],"e":"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0z","p":"M9.6 9.6a2.5 2.5 0 1 1 3.8 2.1c-.9.6-1.4 1.2-1.4 2.1M12 17v.01"};

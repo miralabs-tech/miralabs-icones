@@ -1,0 +1,1 @@
+export default {"name":"hand.wave","tags":["saluer","coucou","bonjour","au revoir","main"],"p":"M9 15V6a1.5 1.5 0 0 1 3 0v5M12 11V4.5a1.5 1.5 0 0 1 3 0V11M15 11V6a1.5 1.5 0 0 1 3 0v6M18 12V8.5a1.5 1.5 0 0 1 3 0V15a6 6 0 0 1-6 6h-2a6 6 0 0 1-4.7-2.3l-2.9-3.7a1.5 1.5 0 0 1 2.4-1.9L9 14.8M5.5 5A6 6 0 0 0 4 8.5M3 2.5A9 9 0 0 0 1.5 7"};

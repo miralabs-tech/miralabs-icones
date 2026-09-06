@@ -1,0 +1,31 @@
+# Marques et logos — ce qui n'est pas couvert par la licence MIT
+
+## Ce que contient le jeu
+
+Aucun logo. Tous les symboles de Miralabs Icônes sont des dessins originaux. La collection
+« Évocations de marques » (`marques`) ne contient que des **idées génériques** — un chat, une
+bulle à visage, un renard, un losange de branches… — dont les étiquettes de recherche portent
+le nom d'une marque (`github`, `discord`, `firefox`, `git`…) pour être trouvables. Ce nom est
+un usage descriptif : il désigne le concept que le symbole évoque, il ne reproduit rien qui
+appartienne à la marque et n'implique aucun lien avec elle.
+
+## Si des logos de tiers sont ajoutés un jour
+
+Un logo est une marque déposée, souvent aussi une œuvre protégée. **La licence MIT de ce
+dépôt ne peut pas le licencier** : elle ne porte que sur ce que MiraLabs a créé. Toute
+collection de logos qui rejoindrait ce dépôt suivrait ces règles :
+
+1. Les logos restent la propriété de leurs détenteurs respectifs ; ils ne sont pas couverts
+   par la licence MIT ; leur présence n'implique ni endossement ni affiliation.
+2. Ils ne servent qu'à **désigner** la marque, le produit ou le service auquel ils renvoient
+   (« Se connecter avec… », lien vers un dépôt…), dans le respect de la charte graphique de
+   chaque marque — pas de modification de forme, de proportions ni de couleur au-delà de la
+   version monochrome que la marque autorise.
+3. Ils ne passent **pas** par le système de graisses paramétriques du jeu : forme fixe, pleine.
+4. Source privilégiée : [Simple Icons](https://simpleicons.org) (CC0), importé au build, avec
+   attribution — plutôt que redessinés ici.
+5. **Retrait sur demande.** Un détenteur de marque qui souhaite le retrait ou la modification
+   d'un élément écrit à l'adresse indiquée dans le README du dépôt ; le retrait est fait dans
+   la version suivante, sans discussion.
+
+Ce document décrit une politique, pas un avis juridique.

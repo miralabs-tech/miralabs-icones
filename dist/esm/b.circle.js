@@ -1,0 +1,1 @@
+export default {"name":"b.circle","tags":["bouton b","retour","annuler","manette"],"e":"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0z","c":"M9.5 8.5h3a1.75 1.75 0 0 1 0 3.5h-3zm0 3.5h3.5a1.75 1.75 0 0 1 0 3.5H9.5z"};

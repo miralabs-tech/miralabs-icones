@@ -1,0 +1,1 @@
+export default {"name":"face.bubble","tags":["discord","bot","communauté","chat vocal","serveur","assistant"],"e":"M7 3.5h10A4.5 4.5 0 0 1 21.5 8v5a4.5 4.5 0 0 1-4.5 4.5h-5.5L7 20.5V17.5A4.5 4.5 0 0 1 2.5 13V8A4.5 4.5 0 0 1 7 3.5z","c":"M8 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0zM14 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0z"};

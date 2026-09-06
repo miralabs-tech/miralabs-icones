@@ -1,0 +1,1 @@
+export default {"name":"lb.rectangle.roundedbottom","tags":["LB","bumper","xbox","manette"],"e":"M4 5.5h16v8.5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z","c":"M7.3 9.25V15.25H11.3M12.7 12.25H15.1A1.5 1.5 0 0 0 15.1 9.25H12.7V15.25H15.1A1.5 1.5 0 0 0 15.1 12.25"};

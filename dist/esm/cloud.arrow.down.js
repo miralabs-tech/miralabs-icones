@@ -1,0 +1,1 @@
+export default {"name":"cloud.arrow.down","tags":["télécharger du cloud","restaurer","download","synchroniser"],"e":"M7 18.5h10.5a4 4 0 0 0 .7-7.94A6 6 0 0 0 6.6 9.9 4.4 4.4 0 0 0 7 18.5z","c":"M12 10v6M9.5 13.5 12 16l2.5-2.5"};

@@ -1,0 +1,1 @@
+export default {"name":"wrench","tags":["outil","réparer","réglage","maintenance","clé"],"p":"M14.5 3.5a5.5 5.5 0 0 0-5 7.7L3.5 17.2a1.6 1.6 0 0 0 0 2.3l1 1a1.6 1.6 0 0 0 2.3 0l6-6a5.5 5.5 0 0 0 7.7-5l-3.5 3.5-3-3z","pf":"="};

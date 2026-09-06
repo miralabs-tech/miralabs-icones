@@ -1,0 +1,1 @@
+export default {"name":"delete.left","tags":["retour arrière","backspace","effacer","supprimer"],"rtl":true,"e":"M8.5 5h11A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-11l-6-7z","c":"M11.5 9.5l5 5M16.5 9.5l-5 5"};

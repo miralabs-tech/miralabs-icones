@@ -1,0 +1,1 @@
+export default {"name":"person.2","tags":["groupe","équipe","contacts","partagé"],"e":"M5.5 8a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0zM2.5 19.5a6.5 6.5 0 0 1 13 0z","p":"M15.5 4.6a3.5 3.5 0 0 1 0 6.8M17.5 13.5a6 6 0 0 1 4 6","keep":true,"fade":"p"};

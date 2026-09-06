@@ -1,0 +1,1 @@
+export default {"name":"globe","tags":["monde","langue","international","web","planète","chrome","navigateur"],"e":"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0z","c":"M3 12h18M12 3c-2.5 2.5-3.75 5.5-3.75 9s1.25 6.5 3.75 9c2.5-2.5 3.75-5.5 3.75-9S14.5 5.5 12 3"};

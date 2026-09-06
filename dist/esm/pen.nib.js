@@ -1,0 +1,1 @@
+export default {"name":"pen.nib","tags":["figma","plume","stylo","design vectoriel","tracé","dessin"],"e":"M12 3 6 9v6l6 6 6-6V9z","c":"M10.4 12a1.6 1.6 0 1 0 3.2 0a1.6 1.6 0 1 0 -3.2 0zM12 13.6V21"};

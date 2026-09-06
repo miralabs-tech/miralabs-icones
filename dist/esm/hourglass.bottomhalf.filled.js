@@ -1,0 +1,1 @@
+export default {"name":"hourglass.bottomhalf.filled","tags":["chargement","patienter","en cours","presque fini"],"e":"M8 3.5h8V7a4 4 0 0 1-1.6 3.2L12 12l-2.4-1.8A4 4 0 0 1 8 7z","f":"M8 20.5h8V17a4 4 0 0 0-1.6-3.2L12 12l-2.4 1.8A4 4 0 0 0 8 17z","p":"M6.5 3.5h11M6.5 20.5h11","cut":false};
