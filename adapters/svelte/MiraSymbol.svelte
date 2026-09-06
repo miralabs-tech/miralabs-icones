@@ -1,7 +1,7 @@
 <script lang="ts">
   // @miralabs/ui-svelte — <MiraSymbol/> : renderer commun, sortie {@html}.
-  import { symbolToString } from "@miralabs/icones/render";
-  import type { SymbolData, SymbolOptions } from "@miralabs/icones";
+  import { symbolToString } from "@miralabs-tech/icones/render";
+  import type { SymbolData, SymbolOptions } from "@miralabs-tech/icones";
 
   export let symbol: SymbolData;
   export let weight: SymbolOptions["weight"] = "regular";

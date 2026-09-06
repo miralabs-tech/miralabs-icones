@@ -35,7 +35,7 @@ const pick = <K extends keyof SymbolSource>(s: SymbolSource, keys: readonly K[])
 export function generate(data: DataModule, render: RenderModule, opts: GenerateOptions = {}): GeneratedFile[] {
   const { SYMBOLS, WEIGHTS, CATEGORIES } = data;
   const { symbolTree, treeToString, identifier, symbolOps } = render;
-  const version = opts.version ?? "0.3.0", name = opts.name ?? "@miralabs/icones";
+  const version = opts.version ?? "0.3.0", name = opts.name ?? "@miralabs-tech/icones";
   const shapes = ["outline", "fill"] as const;
   const out: GeneratedFile[] = [];
   const add = (path: string, content: string) => out.push({ path, content });

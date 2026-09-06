@@ -1,4 +1,4 @@
-// @miralabs/icones — représentation intermédiaire (IR) de rendu.
+// @miralabs-tech/icones — représentation intermédiaire (IR) de rendu.
 // Un symbole × une forme → une liste d'opérations de peinture, sans rien de propre au SVG.
 // C'est LE contrat que tout moteur de rendu implémente (web : render.js ; natif : native/mira_symbols.h) :
 //

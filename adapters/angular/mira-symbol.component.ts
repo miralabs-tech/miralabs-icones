@@ -1,7 +1,7 @@
 // @miralabs/ui-angular — <mira-symbol> : composant standalone, renderer commun, DOM construit sans innerHTML (pas de sanitizer à contourner).
 import { Component, ElementRef, Input, OnChanges, inject } from "@angular/core";
-import { symbolToElement } from "@miralabs/icones/render";
-import type { SymbolData, SymbolOptions } from "@miralabs/icones";
+import { symbolToElement } from "@miralabs-tech/icones/render";
+import type { SymbolData, SymbolOptions } from "@miralabs-tech/icones";
 
 @Component({
   selector: "mira-symbol",

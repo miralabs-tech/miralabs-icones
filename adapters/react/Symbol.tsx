@@ -1,7 +1,7 @@
 // @miralabs/ui-react — <Symbol/> : enveloppe fine autour du renderer commun (aucun SVG dupliqué côté React).
 import { createElement, type CSSProperties, type ReactElement } from "react";
-import { symbolTree, SIZE_TOKENS } from "@miralabs/icones/render";
-import type { SymbolData, SymbolOptions } from "@miralabs/icones";
+import { symbolTree, SIZE_TOKENS } from "@miralabs-tech/icones/render";
+import type { SymbolData, SymbolOptions } from "@miralabs-tech/icones";
 
 export interface SymbolProps extends Omit<SymbolOptions, "id" | "pretty" | "className"> {
   symbol: SymbolData;

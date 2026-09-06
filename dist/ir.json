@@ -1,5 +1,5 @@
 {
-  "name": "@miralabs/icones", "version": "0.3.0", "grid": 24,
+  "name": "@miralabs-tech/icones", "version": "0.3.0", "grid": 24,
   "weights": {"thin":1,"light":1.25,"regular":1.5,"medium":1.75,"semibold":2,"bold":2.4},
   "semantics": "op = {layer, kind: fill|stroke, d, w: [k, c], cut: [...]} ; largeur de trait = k*sw + c (<= 0 : rien) ; couverture(op) = couverture(d) * prod(1 - couverture(cut_i)) ; resultat = union ordonnee (a + b - a*b) ; extremites et jointures rondes ; remplissage nonzero ; grille 24.",
   "symbols": {

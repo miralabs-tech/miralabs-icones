@@ -1,14 +1,14 @@
 // Consumer view of the published package: resolved by package name (self-reference through package.json
 // exports), hence only through dist/*.d.ts. Compiled by test/types.test.ts with tsconfig.dts.json.
 
-import type { SymbolData, SymbolOptions } from "@miralabs/icones";
-import { _2g, _function, _return, trash } from "@miralabs/icones";
+import type { SymbolData, SymbolOptions } from "@miralabs-tech/icones";
+import { _2g, _function, _return, trash } from "@miralabs-tech/icones";
 // @ts-expect-error the root is types + one const per symbol; runtime values live at "./ir" and "./render"
-import { symbolOps as rootSymbolOps } from "@miralabs/icones";
-import { identifier, sizeStyle, SIZE_TOKENS, symbolToElement, symbolToString, symbolTree, treeToString } from "@miralabs/icones/render";
-import { SHAPES, symbolOps, WEIGHT_STROKE } from "@miralabs/icones/ir";
-import { byName, circle, SYMBOLS as ALL } from "@miralabs/icones/data";
-import { MiraSymbol } from "@miralabs/icones/mira-symbol";
+import { symbolOps as rootSymbolOps } from "@miralabs-tech/icones";
+import { identifier, sizeStyle, SIZE_TOKENS, symbolToElement, symbolToString, symbolTree, treeToString } from "@miralabs-tech/icones/render";
+import { SHAPES, symbolOps, WEIGHT_STROKE } from "@miralabs-tech/icones/ir";
+import { byName, circle, SYMBOLS as ALL } from "@miralabs-tech/icones/data";
+import { MiraSymbol } from "@miralabs-tech/icones/mira-symbol";
 
 const n: "trash" = trash.name;
 const g: "2g" = _2g.name;

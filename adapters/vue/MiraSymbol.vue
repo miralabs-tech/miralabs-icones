@@ -1,8 +1,8 @@
 <script setup lang="ts">
 // @miralabs/ui-vue — <MiraSymbol/> : rendu par le renderer commun, injecté en SVG statique (aucune réactivité interne nécessaire).
 import { computed } from "vue";
-import { symbolToString } from "@miralabs/icones/render";
-import type { SymbolData, SymbolOptions } from "@miralabs/icones";
+import { symbolToString } from "@miralabs-tech/icones/render";
+import type { SymbolData, SymbolOptions } from "@miralabs-tech/icones";
 
 const props = withDefaults(defineProps<{
   symbol: SymbolData;

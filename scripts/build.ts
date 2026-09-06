@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-// Build de @miralabs/icones.
+// Build de @miralabs-tech/icones.
 //   bun scripts/build.ts            → dist/ (modules transpilés, déclarations, metadata, symbols.json, ir.json, esm, sprites, css police) + native/mira_symbols_data.h
 //   bun scripts/build.ts --static   → + dist/svg/<graisse>/<forme>/<nom>.svg
 //   bun scripts/build.ts --font     → + dist/font/mira-symbols.{ttf,woff2} (héritage ; dépendances optionnelles)
@@ -21,7 +21,7 @@ const root = fileURLToPath(new URL("..", import.meta.url)).replace(/\\/g, "/").r
 const dist = `${root}/dist`;
 const header = `${root}/native/mira_symbols_data.h`;
 const args = new Set(process.argv.slice(2));
-const pkg = (await Bun.file(`${root}/package.json`).json().catch(() => ({ name: "@miralabs/icones", version: "0.3.0" }))) as { name: string; version: string };
+const pkg = (await Bun.file(`${root}/package.json`).json().catch(() => ({ name: "@miralabs-tech/icones", version: "0.3.0" }))) as { name: string; version: string };
 const opts = { version: pkg.version, name: pkg.name, staticSvg: args.has("--static") };
 
 async function run(cmd: string[]): Promise<void> {

@@ -103,8 +103,8 @@ function renderGrid() {
 function snippets(s) {
   const id = identifier(s.name), attrs = `weight="${st.weight}" shape="${st.shape}"${st.tone === "hier" ? ' tone="hier"' : ""}`;
   return {
-    wc: `<script type="module">\n  import { MiraSymbol } from "@miralabs/icones/mira-symbol";\n  import { ${id} } from "@miralabs/icones";\n  MiraSymbol.register(${id});\n<\/script>\n\n<mira-symbol name="${s.name}" ${attrs} size="md" label="…"></mira-symbol>`,
-    react: `import { Symbol } from "@miralabs-ui/react/symbol";\nimport { ${id} } from "@miralabs/icones";\n\n<Symbol symbol={${id}} ${attrs} size="md" label="…" />`,
+    wc: `<script type="module">\n  import { MiraSymbol } from "@miralabs-tech/icones/mira-symbol";\n  import { ${id} } from "@miralabs-tech/icones";\n  MiraSymbol.register(${id});\n<\/script>\n\n<mira-symbol name="${s.name}" ${attrs} size="md" label="…"></mira-symbol>`,
+    react: `import { Symbol } from "@miralabs-ui/react/symbol";\nimport { ${id} } from "@miralabs-tech/icones";\n\n<Symbol symbol={${id}} ${attrs} size="md" label="…" />`,
     sprite: `<svg style="inline-size:var(--mira-icon-size-md);block-size:var(--mira-icon-size-md)" aria-hidden="true">\n  <use href="/icones/sprite/${st.weight}-${st.shape}.svg#${s.name}"/>\n</svg>`,
     svg: symbolToString(s, { weight: st.weight, shape: st.shape, tone: st.tone, size: "24px", pretty: true, id: "m" }),
     c: `int id = mira_symbol_find("${s.name}");\nunsigned char cov[24 * 24];\nmira_symbol_raster(id, MIRA_${st.weight.toUpperCase()}, MIRA_${st.shape.toUpperCase()}, 24, cov, 24);`,

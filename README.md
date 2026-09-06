@@ -73,8 +73,8 @@ L'arbre `svg/` et les binaires de police ne sont **ni versionnés ni exportés p
 ## Consommer
 
 ```js
-import { trash, magnifyingglass } from "@miralabs/icones";           // données tree-shakées
-import { symbolToString } from "@miralabs/icones/render";
+import { trash, magnifyingglass } from "@miralabs-tech/icones";           // données tree-shakées
+import { symbolToString } from "@miralabs-tech/icones/render";
 el.innerHTML = symbolToString(trash, { weight: "semibold", shape: "fill", size: "md", label: "Supprimer" });
 ```
 
@@ -85,7 +85,7 @@ el.innerHTML = symbolToString(trash, { weight: "semibold", shape: "fill", size: 
 
 Natif (C, ou n'importe quel langage par FFI) : voir [`native/README.md`](native/README.md).
 
-Dans **miralabs-ui**, le paquet est une dépendance versionnée (`"@miralabs/icones": "github:miralabs-tech/miralabs-icones#v0.3.0"` — `dist/` est committé) ; seul `packages/react/src/components/symbol/` y vit, à partir de `adapters/react/Symbol.tsx`.
+Dans **miralabs-ui**, le paquet est une dépendance versionnée (`"@miralabs-tech/icones": "github:miralabs-tech/miralabs-icones#v0.3.0"` — `dist/` est committé) ; seul `packages/react/src/components/symbol/` y vit, à partir de `adapters/react/Symbol.tsx`.
 
 ## Artefacts de release
 

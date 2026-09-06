@@ -1,4 +1,4 @@
-// @miralabs/icones — renderer web. IR (ir.js) → arbre SVG → chaîne ou DOM. Zéro dépendance.
+// @miralabs-tech/icones — renderer web. IR (ir.js) → arbre SVG → chaîne ou DOM. Zéro dépendance.
 // Le même arbre sert l'explorateur, le web component, les adaptateurs et le build :
 // ce que l'on voit dans l'explorateur est exactement ce qui est livré.
 

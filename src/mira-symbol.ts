@@ -2,8 +2,8 @@
 // Ne charge aucun symbole par lui-même : enregistrez ceux que l'app utilise (tree-shaking),
 // ou importez `mira-symbol.all.js` pour tout le jeu.
 //
-//   import { MiraSymbol } from "@miralabs/icones/mira-symbol";
-//   import { magnifyingglass, trash } from "@miralabs/icones";
+//   import { MiraSymbol } from "@miralabs-tech/icones/mira-symbol";
+//   import { magnifyingglass, trash } from "@miralabs-tech/icones";
 //   MiraSymbol.register(magnifyingglass, trash);
 //   <mira-symbol name="trash" weight="regular" shape="outline" size="md" label="Supprimer"></mira-symbol>
 //
