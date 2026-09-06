@@ -13,14 +13,14 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: "1.4.0"
       - run: bun install --frozen-lockfile
 
-      # dist/ est committé et consommé tel quel (dépendance github:, GitHub Pages) : sans ces deux
-      # étapes, rien n'empêche un dist/ périmé d'être taggé puis installé par les consommateurs.
+      # dist/ est committé et publié tel quel (paquet npm, dépendance github:, GitHub Pages) : sans
+      # ces deux étapes, rien n'empêche un dist/ périmé d'être taggé puis installé par les consommateurs.
       - name: dist/ correspond aux sources
         run: |
           bun run codegen:check

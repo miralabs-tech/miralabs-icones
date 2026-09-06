@@ -72,6 +72,10 @@ L'arbre `svg/` et les binaires de police ne sont **ni versionnés ni exportés p
 
 ## Consommer
 
+```sh
+bun add @miralabs-tech/icones
+```
+
 ```js
 import { trash, magnifyingglass } from "@miralabs-tech/icones";           // données tree-shakées
 import { symbolToString } from "@miralabs-tech/icones/render";
@@ -85,11 +89,11 @@ el.innerHTML = symbolToString(trash, { weight: "semibold", shape: "fill", size: 
 
 Natif (C, ou n'importe quel langage par FFI) : voir [`native/README.md`](native/README.md).
 
-Dans **miralabs-ui**, le paquet est une dépendance versionnée (`"@miralabs-tech/icones": "github:miralabs-tech/miralabs-icones#v0.3.0"` — `dist/` est committé) ; seul `packages/react/src/components/symbol/` y vit, à partir de `adapters/react/Symbol.tsx`.
+Dans **miralabs-ui**, le paquet est une dépendance npm versionnée (`"@miralabs-tech/icones": "^0.3.0"`) ; seul `packages/react/src/components/symbol/` y vit, à partir de `adapters/react/Symbol.tsx`. La forme `github:miralabs-tech/miralabs-icones#v0.3.0` reste valable puisque `dist/` est committé, mais n'a plus de raison d'être depuis la publication sur npm.
 
 ## Artefacts de release
 
-`dist/` étant committé, une dépendance `github:` suffit pour le JS, les types, les sprites et les JSON. Deux sorties du build en sont volontairement exclues — 4308 fichiers pour l'une, du binaire pour l'autre — donc elles ne sont pas des sous-chemins du paquet : [`.github/workflows/release.yml`](.github/workflows/release.yml) les attache à chaque tag `v*`.
+Le paquet npm — et, à défaut, une dépendance `github:`, `dist/` étant committé — porte le JS, les types, les sprites et les JSON. Deux sorties du build en sont volontairement exclues — 4308 fichiers pour l'une, du binaire pour l'autre — donc elles ne sont pas des sous-chemins du paquet : [`.github/workflows/release.yml`](.github/workflows/release.yml) les attache à chaque tag `v*`.
 
 | Archive | Contenu |
 | --- | --- |
