@@ -359,7 +359,24 @@ export type SymbolName =
   | "phone.bubble.left"
   | "dot.radiowaves.upright"
   | "pen.nib"
-  | "music.note.circle";
+  | "music.note.circle"
+  | "figure.stand"
+  | "hair"
+  | "helmet"
+  | "tshirt"
+  | "jacket"
+  | "gloves"
+  | "pants"
+  | "shoe"
+  | "underwear"
+  | "eyeglasses"
+  | "earring"
+  | "necklace"
+  | "bracelet"
+  | "anklet"
+  | "ring"
+  | "vest"
+  | "parachute";
 
 export type SymbolCollection =
   | "navigation"
@@ -381,6 +398,7 @@ export type SymbolCollection =
   | "media"
   | "meteo"
   | "objets"
+  | "vetements"
   | "formes"
   | "manette"
   | "marques";

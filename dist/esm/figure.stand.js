@@ -1,0 +1,1 @@
+export default {"name":"figure.stand","tags":["corps","silhouette","debout","personnage","morphologie"],"p":"M9.75 4.75a2.25 2.25 0 1 0 4.5 0a2.25 2.25 0 1 0 -4.5 0zM12 9v6M12 15l-3.25 6M12 15l3.25 6M6.5 13.5 12 10.5l5.5 3"};

@@ -1,0 +1,1 @@
+export default {"name":"anklet","tags":["chevillère","cheville","bracelet de cheville","bijou","accessoire"],"p":"M11 3v10.5L6.5 16.5a2.2 2.2 0 0 0 1.2 4H16.5a1.5 1.5 0 0 0 1.5-1.5V3","f":"M11 10h7v2.5h-7z"};

@@ -1,6 +1,6 @@
 {
   "name": "@miralabs-tech/icones",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "grid": 24,
   "strokeRegular": 1.5,
   "weights": [
@@ -163,6 +163,12 @@
       "label": "Objets",
       "glyph": "book",
       "count": 15
+    },
+    {
+      "id": "vetements",
+      "label": "Vêtements & accessoires",
+      "glyph": "tshirt",
+      "count": 17
     },
     {
       "id": "formes",
@@ -6554,6 +6560,325 @@
       ],
       "fill": true,
       "codepoint": "U+E166"
+    },
+    {
+      "name": "figure.stand",
+      "id": "figureStand",
+      "collection": "vetements",
+      "tags": [
+        "corps",
+        "silhouette",
+        "debout",
+        "personnage",
+        "morphologie"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E167"
+    },
+    {
+      "name": "hair",
+      "id": "hair",
+      "collection": "vetements",
+      "tags": [
+        "cheveux",
+        "coiffure",
+        "mèche",
+        "coupe",
+        "personnage"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E168"
+    },
+    {
+      "name": "helmet",
+      "id": "helmet",
+      "collection": "vetements",
+      "tags": [
+        "casque",
+        "chapeau",
+        "couvre-chef",
+        "tête",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E169"
+    },
+    {
+      "name": "tshirt",
+      "id": "tshirt",
+      "collection": "vetements",
+      "tags": [
+        "t-shirt",
+        "haut",
+        "maillot",
+        "vêtement",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E16A"
+    },
+    {
+      "name": "jacket",
+      "id": "jacket",
+      "collection": "vetements",
+      "tags": [
+        "veste",
+        "pull",
+        "manteau",
+        "torse",
+        "par-dessus",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E16B"
+    },
+    {
+      "name": "gloves",
+      "id": "gloves",
+      "collection": "vetements",
+      "tags": [
+        "gants",
+        "manchettes",
+        "mains",
+        "bras",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E16C"
+    },
+    {
+      "name": "pants",
+      "id": "pants",
+      "collection": "vetements",
+      "tags": [
+        "pantalon",
+        "pantacourt",
+        "jambes",
+        "bas",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E16D"
+    },
+    {
+      "name": "shoe",
+      "id": "shoe",
+      "collection": "vetements",
+      "tags": [
+        "chaussures",
+        "basket",
+        "pieds",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E16E"
+    },
+    {
+      "name": "underwear",
+      "id": "underwear",
+      "collection": "vetements",
+      "tags": [
+        "sous-vêtements",
+        "slip",
+        "culotte",
+        "caleçon",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E16F"
+    },
+    {
+      "name": "eyeglasses",
+      "id": "eyeglasses",
+      "collection": "vetements",
+      "tags": [
+        "lunettes",
+        "vue",
+        "accessoire",
+        "yeux"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E170"
+    },
+    {
+      "name": "earring",
+      "id": "earring",
+      "collection": "vetements",
+      "tags": [
+        "boucle d'oreille",
+        "oreille",
+        "créole",
+        "bijou",
+        "accessoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E171"
+    },
+    {
+      "name": "necklace",
+      "id": "necklace",
+      "collection": "vetements",
+      "tags": [
+        "collier",
+        "cou",
+        "foulard",
+        "pendentif",
+        "bijou",
+        "accessoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E172"
+    },
+    {
+      "name": "bracelet",
+      "id": "bracelet",
+      "collection": "vetements",
+      "tags": [
+        "bracelet",
+        "poignet",
+        "montre",
+        "bijou",
+        "accessoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E173"
+    },
+    {
+      "name": "anklet",
+      "id": "anklet",
+      "collection": "vetements",
+      "tags": [
+        "chevillère",
+        "cheville",
+        "bracelet de cheville",
+        "bijou",
+        "accessoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "f"
+      ],
+      "fill": false,
+      "codepoint": "U+E174"
+    },
+    {
+      "name": "ring",
+      "id": "ring",
+      "collection": "vetements",
+      "tags": [
+        "bague",
+        "doigts",
+        "alliance",
+        "bijou",
+        "accessoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E175"
+    },
+    {
+      "name": "vest",
+      "id": "vest",
+      "collection": "vetements",
+      "tags": [
+        "gilet",
+        "gilet pare-balles",
+        "protection",
+        "torse",
+        "accessoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E176"
+    },
+    {
+      "name": "parachute",
+      "id": "parachute",
+      "collection": "vetements",
+      "tags": [
+        "parachute",
+        "saut",
+        "chute",
+        "accessoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E177"
     }
   ]
 }

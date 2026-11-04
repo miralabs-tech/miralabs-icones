@@ -69,6 +69,10 @@ const LOCK = "M6.5 10.5h11A1.5 1.5 0 0 1 19 12v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1
 const CAL = "M3.5 7A2.5 2.5 0 0 1 6 4.5h12A2.5 2.5 0 0 1 20.5 7v11a2.5 2.5 0 0 1-2.5 2.5H6A2.5 2.5 0 0 1 3.5 18z";
 const EYES = `${circle(9.25, 9.75, 0.9)}${circle(14.75, 9.75, 0.9)}`;
 const CHECK = "M8.5 12l2.5 2.5 4.5-5";
+const BEADS = Array.from({ length: 8 }, (_, i) => {
+  const a = i * Math.PI / 4 - Math.PI / 2;
+  return circle(R(12 + Math.cos(a) * 7.75), R(12 + Math.sin(a) * 7.75), 1.6);
+}).join("");
 export const WEIGHTS = [
   { id: "thin", label: "Fin", sw: 1, font: 200 },
   { id: "light", label: "Léger", sw: 1.25, font: 300 },
@@ -97,6 +101,7 @@ export const CATEGORIES = [
   { id: "media", label: "Média", glyph: "play" },
   { id: "meteo", label: "Météo", glyph: "sun.max" },
   { id: "objets", label: "Objets", glyph: "book" },
+  { id: "vetements", label: "Vêtements & accessoires", glyph: "tshirt" },
   { id: "formes", label: "Formes", glyph: "circle" },
   { id: "manette", label: "Manette", glyph: "gamecontroller" },
   { id: "marques", label: "Évocations de marques", glyph: "cat.circle" }
@@ -460,7 +465,24 @@ export const SYMBOLS = [
   { name: "phone.bubble.left", cat: "marques", tags: ["whatsapp", "appel", "messagerie", "téléphone", "contact"], e: "M12 3.5c4.7 0 8.5 3.4 8.5 7.5s-3.8 7.5-8.5 7.5c-1.3 0-2.5-.2-3.6-.7L4 20l1.4-3.6C4.2 15 3.5 13.1 3.5 11c0-4.1 3.8-7.5 8.5-7.5z", c: "M9 7.5h1.5l.8 2-1 .8a4.5 4.5 0 0 0 3.4 3.4l.8-1 2 .8V15a1 1 0 0 1-1 1A7.5 7.5 0 0 1 8 8.5a1 1 0 0 1 1-1z" },
   { name: "dot.radiowaves.upright", cat: "marques", tags: ["rss", "flux", "abonnement", "podcast", "fil"], p: "M6.5 6.5A11 11 0 0 1 17.5 17.5M6.5 11a6.5 6.5 0 0 1 6.5 6.5", f: circle(7.75, 16.25, 1.75) },
   { name: "pen.nib", cat: "marques", tags: ["figma", "plume", "stylo", "design vectoriel", "tracé", "dessin"], e: "M12 3 6 9v6l6 6 6-6V9z", c: `${circle(12, 12, 1.6)}M12 13.6V21` },
-  { name: "music.note.circle", cat: "marques", tags: ["spotify", "musique", "lecture", "playlist", "audio"], e: CIRCLE, c: `M10.5 15V8l5-1v6.5${circle(9.25, 15.25, 1.25)}${circle(14.25, 13.75, 1.25)}` }
+  { name: "music.note.circle", cat: "marques", tags: ["spotify", "musique", "lecture", "playlist", "audio"], e: CIRCLE, c: `M10.5 15V8l5-1v6.5${circle(9.25, 15.25, 1.25)}${circle(14.25, 13.75, 1.25)}` },
+  { name: "figure.stand", cat: "vetements", tags: ["corps", "silhouette", "debout", "personnage", "morphologie"], p: `${circle(12, 4.75, 2.25)}M12 9v6M12 15l-3.25 6M12 15l3.25 6M6.5 13.5 12 10.5l5.5 3` },
+  { name: "hair", cat: "vetements", tags: ["cheveux", "coiffure", "mèche", "coupe", "personnage"], e: "M12 3.5c-4.4 0-7 3.2-7 7.5v8.5h2.5V12c2.5 0 5-1 6.5-3 1 1.5 2 2.5 3.5 3v7.5H19V11c0-4.3-2.6-7.5-7-7.5z", p: "M7.5 12v1.5a4.5 4.5 0 0 0 9 0V12", cut: false },
+  { name: "helmet", cat: "vetements", tags: ["casque", "chapeau", "couvre-chef", "tête", "tenue"], e: "M4.5 16.5v-2a7.5 7.5 0 0 1 15 0v2z", c: "M12 7v4.5", p: "M2.5 16.5h19", cut: false },
+  { name: "tshirt", cat: "vetements", tags: ["t-shirt", "haut", "maillot", "vêtement", "tenue"], e: "M9 4 4 6.5l-1.5 4 3 1.5 1-2V20h11V10l1 2 3-1.5-1.5-4L15 4c-.5 1.5-1.5 2.5-3 2.5S9.5 5.5 9 4z" },
+  { name: "jacket", cat: "vetements", tags: ["veste", "pull", "manteau", "torse", "par-dessus", "tenue"], e: "M9 3.5 4.5 5.5 3 9.5V20h18V9.5l-1.5-4L15 3.5l-3 4z", c: "M12 7.5V20M6.5 12v8M17.5 12v8" },
+  { name: "gloves", cat: "vetements", tags: ["gants", "manchettes", "mains", "bras", "tenue"], e: "M8.5 20.5V13L6 10.5a1.5 1.5 0 0 1 2.1-2.1L9 9.3V6a1.5 1.5 0 0 1 3 0V4.5a1.5 1.5 0 0 1 3 0V6a1.5 1.5 0 0 1 3 0v8a6 6 0 0 1-1.5 4v2.5z", c: "M8.5 17.5h8M12 6v4M15 6v4" },
+  { name: "pants", cat: "vetements", tags: ["pantalon", "pantacourt", "jambes", "bas", "tenue"], e: "M6 3.5h12l1 17h-4.5L12 10l-2.5 10.5H5z", c: "M6.2 7h11.6" },
+  { name: "shoe", cat: "vetements", tags: ["chaussures", "basket", "pieds", "tenue"], e: "M3.5 8h4L9 10.5h2.5l7.5 3a3 3 0 0 1 2 2.8V17H3.5z", c: "M3.5 14.5h16.5M11.5 10.5l-1 2M14.5 11.7l-1 2" },
+  { name: "underwear", cat: "vetements", tags: ["sous-vêtements", "slip", "culotte", "caleçon", "tenue"], e: "M3.5 6h17v2.5c-4 1-6.5 4.5-7 9.5h-3c-.5-5-3-8.5-7-9.5z", c: "M3.5 8.5h17" },
+  { name: "eyeglasses", cat: "vetements", tags: ["lunettes", "vue", "accessoire", "yeux"], e: `${circle(7, 12.5, 3.5)}${circle(17, 12.5, 3.5)}`, p: "M10.5 12.5a1.5 1.5 0 0 1 3 0M3.5 12.5 2.5 9M20.5 12.5l1-3.5", cut: false },
+  { name: "earring", cat: "vetements", tags: ["boucle d'oreille", "oreille", "créole", "bijou", "accessoire"], p: `M7 6.5a2.5 2.5 0 0 1 5 0V9${circle(12, 14.5, 5.5)}` },
+  { name: "necklace", cat: "vetements", tags: ["collier", "cou", "foulard", "pendentif", "bijou", "accessoire"], e: "M12 15l2.25 2.75L12 21l-2.25-3.25z", p: "M5 3.5c0 7 3 11.5 7 11.5s7-4.5 7-11.5", cut: false },
+  { name: "bracelet", cat: "vetements", tags: ["bracelet", "poignet", "montre", "bijou", "accessoire"], e: BEADS },
+  { name: "anklet", cat: "vetements", tags: ["chevillère", "cheville", "bracelet de cheville", "bijou", "accessoire"], p: "M11 3v10.5L6.5 16.5a2.2 2.2 0 0 0 1.2 4H16.5a1.5 1.5 0 0 0 1.5-1.5V3", f: "M11 10h7v2.5h-7z" },
+  { name: "ring", cat: "vetements", tags: ["bague", "doigts", "alliance", "bijou", "accessoire"], e: "M10 3.5h4l2 2.5-4 3.5-4-3.5z", p: circle(12, 15, 5.5), cut: false },
+  { name: "vest", cat: "vetements", tags: ["gilet", "gilet pare-balles", "protection", "torse", "accessoire"], e: "M7 3.5h2.5c.5 2.5 1.2 4 2.5 4s2-1.5 2.5-4H17c0 3 1 5.5 2.5 6.5v10.5h-15V10C6 9 7 6.5 7 3.5z", c: "M12 7.5v13M4.5 14.5h15" },
+  { name: "parachute", cat: "vetements", tags: ["parachute", "saut", "chute", "accessoire"], e: `M3 11a9 9 0 0 1 18 0c-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0z${rr(10, 18, 4, 3, 1)}`, p: "M3 11l7 7M21 11l-7 7M12 11v7", cut: false }
 ];
 export const ICONS = SYMBOLS;
 export const byName = Object.fromEntries(SYMBOLS.map((s) => [s.name, s]));

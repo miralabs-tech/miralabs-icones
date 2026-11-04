@@ -1,6 +1,6 @@
 {
   "name": "@miralabs-tech/icones",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Miralabs Icônes — symboles dessinés à la main sur grille 24, source en couches ; six graisses et la forme Pleine sont dérivées au rendu. Web (SVG) ou natif (masque de couverture).",
   "license": "MIT",
   "repository": "github:miralabs-tech/miralabs-icones",

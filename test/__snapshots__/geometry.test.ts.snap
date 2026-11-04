@@ -4307,3 +4307,207 @@ exports[`geometrie music.note.circle 1`] = `
   "y1": 86,
 }
 `;
+
+exports[`geometrie figure.stand 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 1216,
+  "x0": 23,
+  "x1": 72,
+  "y0": 7,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie hair 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 2100,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie helmet 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 1267,
+  "x0": 7,
+  "x1": 88,
+  "y0": 25,
+  "y1": 68,
+}
+`;
+
+exports[`geometrie tshirt 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1690,
+  "x0": 7,
+  "x1": 88,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie jacket 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 2322,
+  "x0": 9,
+  "x1": 86,
+  "y0": 11,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie pants 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2216,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie shoe 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0.5,
+  "n": 1635,
+  "x0": 11,
+  "x1": 86,
+  "y0": 29,
+  "y1": 70,
+}
+`;
+
+exports[`geometrie underwear 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1568,
+  "x0": 11,
+  "x1": 84,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie eyeglasses 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 1350,
+  "x0": 7,
+  "x1": 88,
+  "y0": 33,
+  "y1": 66,
+}
+`;
+
+exports[`geometrie earring 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1173,
+  "x0": 23,
+  "x1": 72,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie necklace 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 1169,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie bracelet 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2048,
+  "x0": 7,
+  "x1": 88,
+  "y0": 7,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie ring 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1391,
+  "x0": 23,
+  "x1": 72,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie vest 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2195,
+  "x0": 15,
+  "x1": 80,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie parachute 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 2124,
+  "x0": 9,
+  "x1": 86,
+  "y0": 5,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie gloves 1`] = `
+{
+  "cx": -0.12,
+  "cy": -0.25,
+  "n": 1780,
+  "x0": 20,
+  "x1": 74,
+  "y0": 9,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie anklet 1`] = `
+{
+  "cx": -0.25,
+  "cy": -0.25,
+  "n": 1450,
+  "x0": 19,
+  "x1": 74,
+  "y0": 9,
+  "y1": 84,
+}
+`;

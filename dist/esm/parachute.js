@@ -1,0 +1,1 @@
+export default {"name":"parachute","tags":["parachute","saut","chute","accessoire"],"e":"M3 11a9 9 0 0 1 18 0c-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0zM11 18h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1z","p":"M3 11l7 7M21 11l-7 7M12 11v7","cut":false};

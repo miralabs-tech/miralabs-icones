@@ -1,0 +1,1 @@
+export default {"name":"hair","tags":["cheveux","coiffure","mèche","coupe","personnage"],"e":"M12 3.5c-4.4 0-7 3.2-7 7.5v8.5h2.5V12c2.5 0 5-1 6.5-3 1 1.5 2 2.5 3.5 3v7.5H19V11c0-4.3-2.6-7.5-7-7.5z","p":"M7.5 12v1.5a4.5 4.5 0 0 0 9 0V12","cut":false};
