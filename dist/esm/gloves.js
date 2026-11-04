@@ -1,0 +1,1 @@
+export default {"name":"gloves","tags":["gants","manchettes","mains","bras","tenue"],"e":"M8.5 20.5V13L6 10.5a1.5 1.5 0 0 1 2.1-2.1L9 9.3V6a1.5 1.5 0 0 1 3 0V4.5a1.5 1.5 0 0 1 3 0V6a1.5 1.5 0 0 1 3 0v8a6 6 0 0 1-1.5 4v2.5z","c":"M8.5 17.5h8M12 6v4M15 6v4"};

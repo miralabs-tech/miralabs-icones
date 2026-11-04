@@ -1,0 +1,1 @@
+export default {"name":"necklace","tags":["collier","cou","foulard","pendentif","bijou","accessoire"],"e":"M12 15l2.25 2.75L12 21l-2.25-3.25z","p":"M5 3.5c0 7 3 11.5 7 11.5s7-4.5 7-11.5","cut":false};

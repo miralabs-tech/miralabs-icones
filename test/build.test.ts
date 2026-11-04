@@ -14,8 +14,8 @@ describe("generate() — déterminisme et forme", () => {
     expect(again).toEqual(files);
   });
 
-  it("378 fichiers", () => {
-    expect(files.length).toBe(378);
+  it("395 fichiers", () => {
+    expect(files.length).toBe(395);
   });
 
   it("chaque fichier généré == le fichier commité sous dist/, octet pour octet", async () => {

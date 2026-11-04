@@ -1,0 +1,1 @@
+export default {"name":"vest","tags":["gilet","gilet pare-balles","protection","torse","accessoire"],"e":"M7 3.5h2.5c.5 2.5 1.2 4 2.5 4s2-1.5 2.5-4H17c0 3 1 5.5 2.5 6.5v10.5h-15V10C6 9 7 6.5 7 3.5z","c":"M12 7.5v13M4.5 14.5h15"};

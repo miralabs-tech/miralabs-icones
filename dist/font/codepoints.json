@@ -357,5 +357,22 @@
   "phone.bubble.left": "U+E163",
   "dot.radiowaves.upright": "U+E164",
   "pen.nib": "U+E165",
-  "music.note.circle": "U+E166"
+  "music.note.circle": "U+E166",
+  "figure.stand": "U+E167",
+  "hair": "U+E168",
+  "helmet": "U+E169",
+  "tshirt": "U+E16A",
+  "jacket": "U+E16B",
+  "gloves": "U+E16C",
+  "pants": "U+E16D",
+  "shoe": "U+E16E",
+  "underwear": "U+E16F",
+  "eyeglasses": "U+E170",
+  "earring": "U+E171",
+  "necklace": "U+E172",
+  "bracelet": "U+E173",
+  "anklet": "U+E174",
+  "ring": "U+E175",
+  "vest": "U+E176",
+  "parachute": "U+E177"
 }

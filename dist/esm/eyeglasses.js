@@ -1,0 +1,1 @@
+export default {"name":"eyeglasses","tags":["lunettes","vue","accessoire","yeux"],"e":"M3.5 12.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0zM13.5 12.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0z","p":"M10.5 12.5a1.5 1.5 0 0 1 3 0M3.5 12.5 2.5 9M20.5 12.5l1-3.5","cut":false};
