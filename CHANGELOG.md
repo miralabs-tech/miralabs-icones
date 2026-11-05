@@ -4,6 +4,10 @@ All notable changes to `@miralabs-tech/icones`. The format follows [Keep a Chang
 
 ## [Unreleased]
 
+### Removed
+
+- The `docs` script (`bun x serve`, an undeclared download that duplicated `bun run dev`).
+
 ### Fixed
 
 - `package.json`: `repository` is now an object, as npm expects (it was auto-corrected at publish time).
