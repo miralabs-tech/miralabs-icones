@@ -427,7 +427,16 @@ export type SymbolName =
   | "bottle"
   | "can"
   | "jerrycan"
-  | "binoculars";
+  | "binoculars"
+  | "bicycle"
+  | "motorcycle"
+  | "sailboat"
+  | "helicopter"
+  | "truck.box"
+  | "square.and.pencil"
+  | "checklist"
+  | "clock.arrow.circlepath"
+  | "paintpalette";
 
 export type SymbolCollection =
   | "navigation"

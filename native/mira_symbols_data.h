@@ -2,7 +2,7 @@
 #ifndef MIRA_SYMBOLS_DATA_H
 #define MIRA_SYMBOLS_DATA_H
 
-#define MIRA_SYMBOL_COUNT 427
+#define MIRA_SYMBOL_COUNT 436
 #define MIRA_GRID 24
 static const float MIRA_WEIGHT_STROKE[6] = { 1.0f, 1.25f, 1.5f, 1.75f, 2.0f, 2.4f };
 
@@ -1476,6 +1476,36 @@ static const MiraOp mira_ops_f_425[] = { { 0, 0.0f, 0.0f, "M6 6.5h8l4 4V19a1.5 1
 static const char *const mira_tags_426[] = { "jumelles", "observer", "rep\303\251rer", "explorer", "vue" };
 static const MiraOp mira_ops_o_426[] = { { 1, 1.0f, 0.0f, "M3 15a4 4 0 1 0 8 0a4 4 0 1 0 -8 0zM13 15a4 4 0 1 0 8 0a4 4 0 1 0 -8 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 11.5v-5a1.5 1.5 0 0 1 3 0v5M16 11.5v-5a1.5 1.5 0 0 1 3 0v5M10.5 13.5h3", 0, 0 } };
 static const MiraOp mira_ops_f_426[] = { { 0, 0.0f, 0.0f, "M3 15a4 4 0 1 0 8 0a4 4 0 1 0 -8 0zM13 15a4 4 0 1 0 8 0a4 4 0 1 0 -8 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 11.5v-5a1.5 1.5 0 0 1 3 0v5M16 11.5v-5a1.5 1.5 0 0 1 3 0v5M10.5 13.5h3", 0, 0 } };
+static const char *const mira_tags_427[] = { "v\303\251lo", "bicyclette", "cyclisme", "trajet", "transport" };
+static const MiraOp mira_ops_o_427[] = { { 1, 1.0f, 0.0f, "M2.5 14.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0zM14.5 14.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0zM6 14.5 9 8l2 6.5H6M9 8h7l-5 6.5M16 8l2 6.5M7.5 7h3M16 8l-.5-2h2", 0, 0 } };
+static const MiraOp mira_ops_f_427[] = { { 1, 1.0f, 0.0f, "M2.5 14.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0zM14.5 14.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0zM6 14.5 9 8l2 6.5H6M9 8h7l-5 6.5M16 8l2 6.5M7.5 7h3M16 8l-.5-2h2", 0, 0 } };
+static const char *const mira_tags_428[] = { "moto", "motocyclette", "deux-roues", "trajet", "transport" };
+static const MiraOp mira_ops_o_428[] = { { 1, 1.0f, 0.0f, "M6.5 9h5.5l1.5-1.5h3.5l1 2.5-3 5H10l-1.5-4h-2z", 0, 0 }, { 1, 1.0f, 0.0f, "M2.25 15a3.25 3.25 0 1 0 6.5 0a3.25 3.25 0 1 0 -6.5 0zM15.25 15a3.25 3.25 0 1 0 6.5 0a3.25 3.25 0 1 0 -6.5 0zM5.5 15l3-4M18.5 15 16.5 7.5M15 6h3", 0, 0 } };
+static const MiraOp mira_ops_f_428[] = { { 0, 0.0f, 0.0f, "M6.5 9h5.5l1.5-1.5h3.5l1 2.5-3 5H10l-1.5-4h-2z", 0, 0 }, { 1, 1.0f, 0.0f, "M2.25 15a3.25 3.25 0 1 0 6.5 0a3.25 3.25 0 1 0 -6.5 0zM15.25 15a3.25 3.25 0 1 0 6.5 0a3.25 3.25 0 1 0 -6.5 0zM5.5 15l3-4M18.5 15 16.5 7.5M15 6h3", 0, 0 } };
+static const char *const mira_tags_429[] = { "bateau", "voilier", "mer", "navigation", "transport" };
+static const MiraOp mira_ops_o_429[] = { { 1, 1.0f, 0.0f, "M3 16.5h18l-2.5 4h-13zM11.25 4.5v10H5zM12.75 7v7.5H18z", 0, 0 }, { 1, 1.0f, 0.0f, "M12 3.5v13", 0, 0 } };
+static const MiraOp mira_ops_f_429[] = { { 0, 0.0f, 0.0f, "M3 16.5h18l-2.5 4h-13zM11.25 4.5v10H5zM12.75 7v7.5H18z", 0, 0 }, { 1, 1.0f, 0.0f, "M12 3.5v13", 0, 0 } };
+static const char *const mira_tags_430[] = { "h\303\251licopt\303\250re", "h\303\251lico", "vol", "secours", "transport" };
+static const MiraOp mira_ops_o_430[] = { { 1, 1.0f, 0.0f, "M9.75 8.25h6.5a4.5 4.5 0 0 1 4.5 4.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-7.5a2 2 0 0 1-2-2z", 0, 0 }, { 1, 1.0f, 0.0f, "M16.25 8.25v3.5h4.5", 0, 0 }, { 1, 1.0f, 0.0f, "M9.75 10.75h-6l-.5-2M5.75 5.25h14M12.75 5.25v3M10.75 18.75h9M12.75 15.75v3M17.75 15.75v3", 0, 0 } };
+static const MiraOp mira_cut_430_f0[] = { { 1, 1.0f, 0.0f, "M16.25 8.25v3.5h4.5", 0, 0 } };
+static const MiraOp mira_ops_f_430[] = { { 0, 0.0f, 0.0f, "M9.75 8.25h6.5a4.5 4.5 0 0 1 4.5 4.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-7.5a2 2 0 0 1-2-2z", mira_cut_430_f0, 1 }, { 1, 1.0f, 0.0f, "M9.75 10.75h-6l-.5-2M5.75 5.25h14M12.75 5.25v3M10.75 18.75h9M12.75 15.75v3M17.75 15.75v3", 0, 0 } };
+static const char *const mira_tags_431[] = { "camion", "livraison", "fourgon", "transport", "logistique" };
+static const MiraOp mira_ops_o_431[] = { { 1, 1.0f, 0.0f, "M4 6h9a1.5 1.5 0 0 1 1.5 1.5v7a1.5 1.5 0 0 1 -1.5 1.5h-9a1.5 1.5 0 0 1 -1.5 -1.5v-7a1.5 1.5 0 0 1 1.5 -1.5zM14.5 9H18l3 3.5V16h-6.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M15.5 10.5h2l1.5 2h-3.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 17.5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0zM15 17.5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0z", 0, 0 } };
+static const MiraOp mira_cut_431_f0[] = { { 1, 1.0f, 0.0f, "M15.5 10.5h2l1.5 2h-3.5z", 0, 0 } };
+static const MiraOp mira_ops_f_431[] = { { 0, 0.0f, 0.0f, "M4 6h9a1.5 1.5 0 0 1 1.5 1.5v7a1.5 1.5 0 0 1 -1.5 1.5h-9a1.5 1.5 0 0 1 -1.5 -1.5v-7a1.5 1.5 0 0 1 1.5 -1.5zM14.5 9H18l3 3.5V16h-6.5z", mira_cut_431_f0, 1 }, { 1, 1.0f, 0.0f, "M5 17.5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0zM15 17.5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0z", 0, 0 } };
+static const char *const mira_tags_432[] = { "r\303\251diger", "modifier", "nouveau message", "\303\251diter", "composer" };
+static const MiraOp mira_ops_o_432[] = { { 1, 1.0f, 0.0f, "M11 4.5H6A1.5 1.5 0 0 0 4.5 6v12A1.5 1.5 0 0 0 6 19.5h12a1.5 1.5 0 0 0 1.5-1.5v-5M17.5 3.5l3 3L12 15l-3.5.5L9 12z", 0, 0 } };
+static const MiraOp mira_ops_f_432[] = { { 1, 1.0f, 0.0f, "M11 4.5H6A1.5 1.5 0 0 0 4.5 6v12A1.5 1.5 0 0 0 6 19.5h12a1.5 1.5 0 0 0 1.5-1.5v-5M17.5 3.5l3 3L12 15l-3.5.5L9 12z", 0, 0 } };
+static const char *const mira_tags_433[] = { "liste de t\303\242ches", "\303\240 faire", "todo", "cocher", "t\303\242ches" };
+static const MiraOp mira_ops_o_433[] = { { 1, 1.0f, 0.0f, "M11 6h9M11 12h9M11 18h9M3.5 6 5 7.5 7.5 5M3.5 12 5 13.5 7.5 11M3.5 18 5 19.5 7.5 17", 0, 0 } };
+static const MiraOp mira_ops_f_433[] = { { 1, 1.0f, 0.0f, "M11 6h9M11 12h9M11 18h9M3.5 6 5 7.5 7.5 5M3.5 12 5 13.5 7.5 11M3.5 18 5 19.5 7.5 17", 0, 0 } };
+static const char *const mira_tags_434[] = { "historique", "r\303\251cents", "restaurer", "versions", "annuler" };
+static const MiraOp mira_ops_o_434[] = { { 1, 1.0f, 0.0f, "M4 12a8 8 0 1 0 2.4-5.7L4 8.5M4 4v4.5h4.5M12 8v4l3 2", 0, 0 } };
+static const MiraOp mira_ops_f_434[] = { { 1, 1.0f, 0.0f, "M4 12a8 8 0 1 0 2.4-5.7L4 8.5M4 4v4.5h4.5M12 8v4l3 2", 0, 0 } };
+static const char *const mira_tags_435[] = { "palette", "couleurs", "th\303\250me", "peinture", "design" };
+static const MiraOp mira_ops_o_435[] = { { 1, 1.0f, 0.0f, "M12 3.5a8.5 8.5 0 0 0 0 17c1.4 0 2-1 2-2 0-1.5-1.5-2-1.5-3.5 0-1 .8-1.5 2-1.5h2.5a3.5 3.5 0 0 0 3.5-3.5c0-3.8-3.8-6.5-8.5-6.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M6.9 10.5a1.1 1.1 0 1 0 2.2 0a1.1 1.1 0 1 0 -2.2 0zM9.9 7a1.1 1.1 0 1 0 2.2 0a1.1 1.1 0 1 0 -2.2 0zM14.4 7.5a1.1 1.1 0 1 0 2.2 0a1.1 1.1 0 1 0 -2.2 0zM6.4 15a1.1 1.1 0 1 0 2.2 0a1.1 1.1 0 1 0 -2.2 0z", 0, 0 } };
+static const MiraOp mira_cut_435_f0[] = { { 1, 1.0f, 0.0f, "M6.9 10.5a1.1 1.1 0 1 0 2.2 0a1.1 1.1 0 1 0 -2.2 0zM9.9 7a1.1 1.1 0 1 0 2.2 0a1.1 1.1 0 1 0 -2.2 0zM14.4 7.5a1.1 1.1 0 1 0 2.2 0a1.1 1.1 0 1 0 -2.2 0zM6.4 15a1.1 1.1 0 1 0 2.2 0a1.1 1.1 0 1 0 -2.2 0z", 0, 0 } };
+static const MiraOp mira_ops_f_435[] = { { 0, 0.0f, 0.0f, "M12 3.5a8.5 8.5 0 0 0 0 17c1.4 0 2-1 2-2 0-1.5-1.5-2-1.5-3.5 0-1 .8-1.5 2-1.5h2.5a3.5 3.5 0 0 0 3.5-3.5c0-3.8-3.8-6.5-8.5-6.5z", mira_cut_435_f0, 1 } };
 
 static const MiraSymbolRec MIRA_SYMBOLS[MIRA_SYMBOL_COUNT] = {
   { { "chevron.left", "navigation", mira_tags_0, 4, 1 }, mira_ops_o_0, 1, mira_ops_f_0, 1 },
@@ -1905,6 +1935,15 @@ static const MiraSymbolRec MIRA_SYMBOLS[MIRA_SYMBOL_COUNT] = {
   { { "can", "survie", mira_tags_424, 5, 0 }, mira_ops_o_424, 3, mira_ops_f_424, 2 },
   { { "jerrycan", "survie", mira_tags_425, 5, 0 }, mira_ops_o_425, 3, mira_ops_f_425, 2 },
   { { "binoculars", "survie", mira_tags_426, 5, 0 }, mira_ops_o_426, 2, mira_ops_f_426, 2 },
+  { { "bicycle", "cartes", mira_tags_427, 5, 0 }, mira_ops_o_427, 1, mira_ops_f_427, 1 },
+  { { "motorcycle", "cartes", mira_tags_428, 5, 0 }, mira_ops_o_428, 2, mira_ops_f_428, 2 },
+  { { "sailboat", "cartes", mira_tags_429, 5, 0 }, mira_ops_o_429, 2, mira_ops_f_429, 2 },
+  { { "helicopter", "cartes", mira_tags_430, 5, 0 }, mira_ops_o_430, 3, mira_ops_f_430, 2 },
+  { { "truck.box", "cartes", mira_tags_431, 5, 0 }, mira_ops_o_431, 3, mira_ops_f_431, 2 },
+  { { "square.and.pencil", "actions", mira_tags_432, 5, 0 }, mira_ops_o_432, 1, mira_ops_f_432, 1 },
+  { { "checklist", "texte", mira_tags_433, 5, 1 }, mira_ops_o_433, 1, mira_ops_f_433, 1 },
+  { { "clock.arrow.circlepath", "temps", mira_tags_434, 5, 0 }, mira_ops_o_434, 1, mira_ops_f_434, 1 },
+  { { "paintpalette", "reglages", mira_tags_435, 5, 0 }, mira_ops_o_435, 2, mira_ops_f_435, 1 },
 };
 
 #endif /* MIRA_SYMBOLS_DATA_H */

@@ -1,0 +1,1 @@
+export default {"name":"square.and.pencil","tags":["rédiger","modifier","nouveau message","éditer","composer"],"p":"M11 4.5H6A1.5 1.5 0 0 0 4.5 6v12A1.5 1.5 0 0 0 6 19.5h12a1.5 1.5 0 0 0 1.5-1.5v-5M17.5 3.5l3 3L12 15l-3.5.5L9 12z"};

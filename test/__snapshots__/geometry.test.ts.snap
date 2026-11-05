@@ -5123,3 +5123,111 @@ exports[`geometrie binoculars 1`] = `
   "y1": 78,
 }
 `;
+
+exports[`geometrie truck.box 1`] = `
+{
+  "cx": -0.25,
+  "cy": 0.75,
+  "n": 2079,
+  "x0": 7,
+  "x1": 86,
+  "y0": 21,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie square.and.pencil 1`] = `
+{
+  "cx": 0.5,
+  "cy": -0.5,
+  "n": 1929,
+  "x0": 15,
+  "x1": 84,
+  "y0": 11,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie checklist 1`] = `
+{
+  "cx": -0.25,
+  "cy": 0.25,
+  "n": 1266,
+  "x0": 11,
+  "x1": 82,
+  "y0": 17,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie clock.arrow.circlepath 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1694,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie paintpalette 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2188,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie bicycle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2166,
+  "x0": 7,
+  "x1": 88,
+  "y0": 21,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie motorcycle 1`] = `
+{
+  "cx": 0,
+  "cy": 0.13,
+  "n": 2014,
+  "x0": 6,
+  "x1": 89,
+  "y0": 21,
+  "y1": 75,
+}
+`;
+
+exports[`geometrie sailboat 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2238,
+  "x0": 9,
+  "x1": 86,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie helicopter 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1899,
+  "x0": 10,
+  "x1": 85,
+  "y0": 18,
+  "y1": 77,
+}
+`;
