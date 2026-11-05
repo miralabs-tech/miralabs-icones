@@ -1,0 +1,1 @@
+export default {"name":"jerrycan","tags":["jerrican","essence","carburant","bidon","véhicule"],"e":"M6 6.5h8l4 4V19a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 5 19V7.5a1 1 0 0 1 1-1z","c":"M8 11h7v6.5H8z","p":"M7.5 6.5V4H12v2.5M16 8.5 18.5 6 20 7.5","cut":false};

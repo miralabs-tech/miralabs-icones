@@ -1,0 +1,1 @@
+export default {"name":"bottle","tags":["bouteille","eau","soif","boisson","gourde"],"e":"M10 3.5h4V6l1.5 2a3 3 0 0 1 .5 1.7V19a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 8 19V9.7a3 3 0 0 1 .5-1.7L10 6z","c":"M8 12h8M8 16h8"};

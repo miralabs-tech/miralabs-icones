@@ -411,5 +411,19 @@
   "bat": "U+E199",
   "grenade": "U+E19A",
   "ammo": "U+E19B",
-  "crosshair": "U+E19C"
+  "crosshair": "U+E19C",
+  "skull": "U+E19D",
+  "sword": "U+E19E",
+  "axe": "U+E19F",
+  "pickaxe": "U+E1A0",
+  "tent": "U+E1A1",
+  "campfire": "U+E1A2",
+  "flashlight": "U+E1A3",
+  "pill": "U+E1A4",
+  "syringe": "U+E1A5",
+  "bandage": "U+E1A6",
+  "bottle": "U+E1A7",
+  "can": "U+E1A8",
+  "jerrycan": "U+E1A9",
+  "binoculars": "U+E1AA"
 }

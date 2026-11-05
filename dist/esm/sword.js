@@ -1,0 +1,1 @@
+export default {"name":"sword","tags":["épée","lame","corps à corps","combat","arme"],"e":"M20.5 3.5v3L10.5 16.5l-3-3L17.5 3.5z","p":"M6 12l6 6M9 15l-3.5 3.5","f":"M3.5 19.25a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0 -2.5 0z","cut":false};

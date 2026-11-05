@@ -413,3 +413,17 @@
 .mira-symbol-grenade::before { content: "\E19A"; }
 .mira-symbol-ammo::before { content: "\E19B"; }
 .mira-symbol-crosshair::before { content: "\E19C"; }
+.mira-symbol-skull::before { content: "\E19D"; }
+.mira-symbol-sword::before { content: "\E19E"; }
+.mira-symbol-axe::before { content: "\E19F"; }
+.mira-symbol-pickaxe::before { content: "\E1A0"; }
+.mira-symbol-tent::before { content: "\E1A1"; }
+.mira-symbol-campfire::before { content: "\E1A2"; }
+.mira-symbol-flashlight::before { content: "\E1A3"; }
+.mira-symbol-pill::before { content: "\E1A4"; }
+.mira-symbol-syringe::before { content: "\E1A5"; }
+.mira-symbol-bandage::before { content: "\E1A6"; }
+.mira-symbol-bottle::before { content: "\E1A7"; }
+.mira-symbol-can::before { content: "\E1A8"; }
+.mira-symbol-jerrycan::before { content: "\E1A9"; }
+.mira-symbol-binoculars::before { content: "\E1AA"; }

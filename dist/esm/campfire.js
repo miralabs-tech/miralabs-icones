@@ -1,0 +1,1 @@
+export default {"name":"campfire","tags":["feu de camp","bûches","chaleur","cuisson","camp"],"e":"M12 3.5c3 2.5 5 5 5 8a5 5 0 0 1-10 0c0-1.5.7-2.8 1.8-3.8.2 1.3.9 2.3 2 2.8C10.5 8 11 5.5 12 3.5z","p":"M5 20.5l14-3.5M19 20.5 5 17","cut":false};

@@ -103,6 +103,7 @@ export const CATEGORIES = [
   { id: "objets", label: "Objets", glyph: "book" },
   { id: "vetements", label: "Vêtements & accessoires", glyph: "tshirt" },
   { id: "armes", label: "Armes", glyph: "pistol" },
+  { id: "survie", label: "Survie", glyph: "tent" },
   { id: "formes", label: "Formes", glyph: "circle" },
   { id: "manette", label: "Manette", glyph: "gamecontroller" },
   { id: "marques", label: "Évocations de marques", glyph: "cat.circle" }
@@ -520,7 +521,21 @@ export const SYMBOLS = [
   { name: "bat", cat: "armes", tags: ["batte", "baseball", "corps à corps", "arme"], e: `M17 4.6a2 2 0 0 1 2.4 2.4L8.5 17.5l-2-2z${circle(5.5, 18.5, 1.25)}` },
   { name: "grenade", cat: "armes", tags: ["grenade", "explosif", "lancer", "arme"], e: `${circle(12, 14.5, 5.5)}M10.5 7h3v2h-3z`, c: "M6.5 14.5h11", p: `M13.5 7.5l3 3${circle(8.75, 6.25, 1.5)}`, cut: false },
   { name: "ammo", cat: "armes", tags: ["munitions", "balles", "cartouches", "chargeur", "arme"], e: "M5 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9H5zM10.5 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9h-3zM16 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9h-3z", c: "M5 10h3M10.5 10h3M16 10h3M5 16.5h3M10.5 16.5h3M16 16.5h3" },
-  { name: "crosshair", cat: "armes", tags: ["viseur", "réticule", "cible", "visée", "arme"], p: `${circle(12, 12, 7)}M12 2.5v5M12 16.5v5M2.5 12h5M16.5 12h5`, f: circle(12, 12, 1) }
+  { name: "crosshair", cat: "armes", tags: ["viseur", "réticule", "cible", "visée", "arme"], p: `${circle(12, 12, 7)}M12 2.5v5M12 16.5v5M2.5 12h5M16.5 12h5`, f: circle(12, 12, 1) },
+  { name: "skull", cat: "survie", tags: ["crâne", "mort", "danger", "poison", "game over"], e: "M12 3.5a7.5 7.5 0 0 0-7.5 7.5c0 2.5 1.2 4.6 3 5.9V19a1.5 1.5 0 0 0 1.5 1.5h6a1.5 1.5 0 0 0 1.5-1.5v-2.1c1.8-1.3 3-3.4 3-5.9A7.5 7.5 0 0 0 12 3.5z", c: `${circle(9, 11.5, 1.75)}${circle(15, 11.5, 1.75)}M10.5 17.5v3M13.5 17.5v3` },
+  { name: "sword", cat: "survie", tags: ["épée", "lame", "corps à corps", "combat", "arme"], e: "M20.5 3.5v3L10.5 16.5l-3-3L17.5 3.5z", p: "M6 12l6 6M9 15l-3.5 3.5", f: circle(4.75, 19.25, 1.25), cut: false },
+  { name: "axe", cat: "survie", tags: ["hache", "bois", "couper", "outil", "arme"], e: "M13 4.5h3.5v6H13c-1.5 0-3 .8-4.5 2.5C7.5 11.5 7 9.8 7 8s.5-3.5 1.5-5C10 4.2 11.5 4.5 13 4.5z", p: "M15 10.5V21", cut: false },
+  { name: "pickaxe", cat: "survie", tags: ["pioche", "miner", "minerai", "creuser", "outil"], e: "M3.5 8.5c5-5 12-5 17 0-5-2.5-12-2.5-17 0z", p: "M12 5.5v14", cut: false },
+  { name: "tent", cat: "survie", tags: ["tente", "camp", "abri", "refuge", "bivouac"], e: "M12 5 3 20.5h18z", c: "M12 13l-3 7.5h6z", p: "M12 5 10.5 3M12 5l1.5-2", cut: false },
+  { name: "campfire", cat: "survie", tags: ["feu de camp", "bûches", "chaleur", "cuisson", "camp"], e: "M12 3.5c3 2.5 5 5 5 8a5 5 0 0 1-10 0c0-1.5.7-2.8 1.8-3.8.2 1.3.9 2.3 2 2.8C10.5 8 11 5.5 12 3.5z", p: "M5 20.5l14-3.5M19 20.5 5 17", cut: false },
+  { name: "flashlight", cat: "survie", tags: ["lampe torche", "lampe", "lumière", "éclairage", "nuit"], e: `M4 7.5l6 2v5l-6 2z${rr(10, 9.5, 10, 5, 1.5)}`, c: "M14 12h2" },
+  { name: "pill", cat: "survie", tags: ["pilule", "gélule", "médicament", "soin", "santé"], e: "M5.6 18.4a3.5 3.5 0 0 1 0-5l7.8-7.8a3.5 3.5 0 0 1 5 5l-7.8 7.8a3.5 3.5 0 0 1-5 0z", c: "M9.5 9.5l5 5" },
+  { name: "syringe", cat: "survie", tags: ["seringue", "piqûre", "adrénaline", "soin", "santé"], e: "M13.5 6.5l4 4-8 8h-4v-4z", c: "M10.5 11.5l1.5 1.5M8.5 13.5l1.5 1.5", p: "M5.5 18.5 3 21M17.5 6.5 20 4M18.5 3 21 5.5", cut: false },
+  { name: "bandage", cat: "survie", tags: ["pansement", "bandage", "blessure", "soin", "santé"], e: "M4.9 15.5a3 3 0 0 1 0-4.2l6.4-6.4a3 3 0 0 1 4.2 0l3.6 3.6a3 3 0 0 1 0 4.2l-6.4 6.4a3 3 0 0 1-4.2 0z", c: "M9.5 12 12 9.5l2.5 2.5-2.5 2.5zM7 11v.01M17 13v.01" },
+  { name: "bottle", cat: "survie", tags: ["bouteille", "eau", "soif", "boisson", "gourde"], e: "M10 3.5h4V6l1.5 2a3 3 0 0 1 .5 1.7V19a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 8 19V9.7a3 3 0 0 1 .5-1.7L10 6z", c: "M8 12h8M8 16h8" },
+  { name: "can", cat: "survie", tags: ["conserve", "boîte", "nourriture", "faim", "ration"], e: "M5 8c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v9c0 1.4-3.1 2.5-7 2.5S5 18.4 5 17z", c: "M5 12.5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5M10.5 8h3", p: "M5 8c0-1.4 3.1-2.5 7-2.5s7 1.1 7 2.5", cut: false },
+  { name: "jerrycan", cat: "survie", tags: ["jerrican", "essence", "carburant", "bidon", "véhicule"], e: "M6 6.5h8l4 4V19a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 5 19V7.5a1 1 0 0 1 1-1z", c: "M8 11h7v6.5H8z", p: "M7.5 6.5V4H12v2.5M16 8.5 18.5 6 20 7.5", cut: false },
+  { name: "binoculars", cat: "survie", tags: ["jumelles", "observer", "repérer", "explorer", "vue"], e: `${circle(7, 15, 4)}${circle(17, 15, 4)}`, p: "M5 11.5v-5a1.5 1.5 0 0 1 3 0v5M16 11.5v-5a1.5 1.5 0 0 1 3 0v5M10.5 13.5h3", cut: false }
 ];
 export const ICONS = SYMBOLS;
 export const byName = Object.fromEntries(SYMBOLS.map((s) => [s.name, s]));

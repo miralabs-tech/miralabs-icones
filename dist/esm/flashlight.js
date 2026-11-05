@@ -1,0 +1,1 @@
+export default {"name":"flashlight","tags":["lampe torche","lampe","lumière","éclairage","nuit"],"e":"M4 7.5l6 2v5l-6 2zM11.5 9.5h7a1.5 1.5 0 0 1 1.5 1.5v2a1.5 1.5 0 0 1 -1.5 1.5h-7a1.5 1.5 0 0 1 -1.5 -1.5v-2a1.5 1.5 0 0 1 1.5 -1.5z","c":"M14 12h2"};
