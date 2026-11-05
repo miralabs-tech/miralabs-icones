@@ -1,0 +1,1 @@
+export default {"name":"helmet.motocross","tags":["casque motocross","cross","enduro","mentonnière","tenue"],"e":"M3.5 12a8 8 0 0 1 15-3.9V11h-6v3H20l-2.5 5H7a3.5 3.5 0 0 1-3.5-3.5z","p":"M13 4.5l8.5 3","cut":false};

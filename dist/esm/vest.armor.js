@@ -1,0 +1,1 @@
+export default {"name":"vest.armor","tags":["gilet pare-balles","kevlar","porte-plaques","protection","accessoire"],"e":"M7 3.5h3V7h4V3.5h3v4l2.5 2v11h-15v-11L7 7.5z","c":"M4.5 12.5h15M8 15.5h8M8 18h8"};

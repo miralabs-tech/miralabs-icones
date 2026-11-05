@@ -4511,3 +4511,171 @@ exports[`geometrie anklet 1`] = `
   "y1": 84,
 }
 `;
+
+exports[`geometrie hat 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 1600,
+  "x0": 7,
+  "x1": 88,
+  "y0": 27,
+  "y1": 72,
+}
+`;
+
+exports[`geometrie cap 1`] = `
+{
+  "cx": 0.5,
+  "cy": 0.25,
+  "n": 1315,
+  "x0": 11,
+  "x1": 88,
+  "y0": 25,
+  "y1": 72,
+}
+`;
+
+exports[`geometrie beanie 1`] = `
+{
+  "cx": 0,
+  "cy": -0.12,
+  "n": 1991,
+  "x0": 13,
+  "x1": 82,
+  "y0": 10,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie helmet.motorcycle 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 1993,
+  "x0": 11,
+  "x1": 84,
+  "y0": 11,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie helmet.motocross 1`] = `
+{
+  "cx": 0.5,
+  "cy": -0.5,
+  "n": 1765,
+  "x0": 11,
+  "x1": 88,
+  "y0": 13,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie vest.armor 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2420,
+  "x0": 15,
+  "x1": 80,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie boot 1`] = `
+{
+  "cx": 0.25,
+  "cy": -0.25,
+  "n": 1901,
+  "x0": 17,
+  "x1": 80,
+  "y0": 11,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie shoe.heel 1`] = `
+{
+  "cx": -0.25,
+  "cy": 0,
+  "n": 1459,
+  "x0": 11,
+  "x1": 82,
+  "y0": 19,
+  "y1": 76,
+}
+`;
+
+exports[`geometrie shorts 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1728,
+  "x0": 15,
+  "x1": 80,
+  "y0": 23,
+  "y1": 72,
+}
+`;
+
+exports[`geometrie skirt 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2104,
+  "x0": 13,
+  "x1": 82,
+  "y0": 17,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie hoodie 1`] = `
+{
+  "cx": 0,
+  "cy": -0.5,
+  "n": 2318,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie shirt 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 2324,
+  "x0": 9,
+  "x1": 86,
+  "y0": 11,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie sunglasses 1`] = `
+{
+  "cx": 0,
+  "cy": -0.37,
+  "n": 1568,
+  "x0": 7,
+  "x1": 88,
+  "y0": 33,
+  "y1": 59,
+}
+`;
+
+exports[`geometrie goggles 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1200,
+  "x0": 5,
+  "x1": 90,
+  "y0": 29,
+  "y1": 66,
+}
+`;

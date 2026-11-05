@@ -538,6 +538,20 @@ export const SYMBOLS: readonly SymbolSource[] = [
   { name: "ring", cat: "vetements", tags: ["bague", "doigts", "alliance", "bijou", "accessoire"], e: "M10 3.5h4l2 2.5-4 3.5-4-3.5z", p: circle(12, 15, 5.5), cut: false },
   { name: "vest", cat: "vetements", tags: ["gilet", "gilet pare-balles", "protection", "torse", "accessoire"], e: "M7 3.5h2.5c.5 2.5 1.2 4 2.5 4s2-1.5 2.5-4H17c0 3 1 5.5 2.5 6.5v10.5h-15V10C6 9 7 6.5 7 3.5z", c: "M12 7.5v13M4.5 14.5h15" },
   { name: "parachute", cat: "vetements", tags: ["parachute", "saut", "chute", "accessoire"], e: `M3 11a9 9 0 0 1 18 0c-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0z${rr(10, 18, 4, 3, 1)}`, p: "M3 11l7 7M21 11l-7 7M12 11v7", cut: false },
+  { name: "hat", cat: "vetements", tags: ["chapeau", "feutre", "borsalino", "couvre-chef", "tenue"], e: "M7 15V9.5a2 2 0 0 1 2-2h1.2L12 9l1.8-1.5H15a2 2 0 0 1 2 2V15z", c: "M7 12.5h10", p: "M2.5 15.5c2 1.5 5.5 2 9.5 2s7.5-.5 9.5-2", cut: false },
+  { name: "cap", cat: "vetements", tags: ["casquette", "visière", "couvre-chef", "tenue"], e: "M3.5 15.5V14a7 7 0 0 1 14 0v1.5z", c: "M10.5 7c1.5 2.5 2 5.5 2 8.5", p: "M3.5 15.5h11c3 0 5.5.5 7 2", cut: false },
+  { name: "beanie", cat: "vetements", tags: ["bonnet", "pompon", "hiver", "couvre-chef", "tenue"], e: `M5 16v-3a7 7 0 0 1 14 0v3z${rr(4, 16, 16, 4.5, 1.5)}`, c: "M8 17v2.5M12 17v2.5M16 17v2.5", f: circle(12, 4.25, 1.75) },
+  { name: "helmet.motorcycle", cat: "vetements", tags: ["casque moto", "casque intégral", "visière", "motard", "tenue"], e: "M12 3.5a8.5 8.5 0 0 0-8.5 8.5v4.5a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3V13A9.5 9.5 0 0 0 12 3.5z", c: "M11 9.5h8.5V13H11a1.75 1.75 0 0 1 0-3.5z" },
+  { name: "helmet.motocross", cat: "vetements", tags: ["casque motocross", "cross", "enduro", "mentonnière", "tenue"], e: "M3.5 12a8 8 0 0 1 15-3.9V11h-6v3H20l-2.5 5H7a3.5 3.5 0 0 1-3.5-3.5z", p: "M13 4.5l8.5 3", cut: false },
+  { name: "vest.armor", cat: "vetements", tags: ["gilet pare-balles", "kevlar", "porte-plaques", "protection", "accessoire"], e: "M7 3.5h3V7h4V3.5h3v4l2.5 2v11h-15v-11L7 7.5z", c: "M4.5 12.5h15M8 15.5h8M8 18h8" },
+  { name: "boot", cat: "vetements", tags: ["botte", "bottine", "rangers", "chaussures", "tenue"], e: "M5 3.5h7.5V13l5.5 1.8a2.5 2.5 0 0 1 1.5 2.3V20H5z", c: "M5 17h14.5M5 6.5h7.5" },
+  { name: "shoe.heel", cat: "vetements", tags: ["talon", "escarpin", "talons hauts", "chaussures", "tenue"], e: "M3.5 15.5c0-1.2 1-2 2.5-2.3l4.5-1L17.5 6a1.5 1.5 0 0 1 2.2.2l.3.5V10l-1.5 1.5v7h-1.5l-1-6.5C13 13 11 17 6 17.5a2.5 2.5 0 0 1-2.5-2z" },
+  { name: "shorts", cat: "vetements", tags: ["short", "bermuda", "bas", "jambes", "tenue"], e: "M5.5 6.5h13l1 11h-6L12 12.5l-1.5 5h-6z", c: "M5.7 9h12.6" },
+  { name: "skirt", cat: "vetements", tags: ["jupe", "plissée", "bas", "tenue"], e: "M7.5 5h9l3.5 14h-16z", c: "M7.4 8h9.2M10 8l-1 11M14 8l1 11" },
+  { name: "hoodie", cat: "vetements", tags: ["sweat à capuche", "hoodie", "capuche", "pull", "tenue"], e: "M8.5 6C8.5 4 10 3 12 3s3.5 1 3.5 3l4 1.5L21 11v9H3v-9l1.5-3.5z", c: "M6.5 12v8M17.5 12v8M9.5 6.5c.5 1.5 1.5 2 2.5 2s2-.5 2.5-2M10.5 9v3M13.5 9v3" },
+  { name: "shirt", cat: "vetements", tags: ["chemise", "col", "boutons", "haut", "tenue"], e: "M9 3.5 4.5 5.5 3 9.5V20h18V9.5l-1.5-4L15 3.5z", c: "M9 3.5 10.5 7.5 12 5.5l1.5 2L15 3.5M12 9v.01M12 12.5v.01M12 16v.01M6.5 12v8M17.5 12v8" },
+  { name: "sunglasses", cat: "vetements", tags: ["lunettes de soleil", "solaires", "lunettes", "accessoire"], f: "M3.5 9h7v2.5a3.5 3.5 0 0 1-7 0zM13.5 9h7v2.5a3.5 3.5 0 0 1-7 0z", p: "M2.5 9h19M10.5 10h3" },
+  { name: "goggles", cat: "vetements", tags: ["masque", "masque de motocross", "lunettes de ski", "protection", "accessoire"], e: "M7.5 8h9a4 4 0 0 1 0 8h-1.5l-1.5-1.5h-3L9 16H7.5a4 4 0 0 1 0-8z", p: "M3.5 12H2M20.5 12H22", cut: false },
 
 ];
 

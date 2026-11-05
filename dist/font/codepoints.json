@@ -374,5 +374,19 @@
   "anklet": "U+E174",
   "ring": "U+E175",
   "vest": "U+E176",
-  "parachute": "U+E177"
+  "parachute": "U+E177",
+  "hat": "U+E178",
+  "cap": "U+E179",
+  "beanie": "U+E17A",
+  "helmet.motorcycle": "U+E17B",
+  "helmet.motocross": "U+E17C",
+  "vest.armor": "U+E17D",
+  "boot": "U+E17E",
+  "shoe.heel": "U+E17F",
+  "shorts": "U+E180",
+  "skirt": "U+E181",
+  "hoodie": "U+E182",
+  "shirt": "U+E183",
+  "sunglasses": "U+E184",
+  "goggles": "U+E185"
 }

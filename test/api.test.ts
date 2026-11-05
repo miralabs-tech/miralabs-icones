@@ -43,7 +43,7 @@ describe("exports package.json", () => {
 });
 
 describe("exports — noms exportés", () => {
-  it(". -> les 376 identifiants", async () => {
+  it(". -> les 390 identifiants", async () => {
     const mod = await import("../dist/esm/index.js");
     const expected = SYMBOLS.map((s) => identifier(s.name)).sort();
     expect(Object.keys(mod).sort()).toEqual(expected);
@@ -80,13 +80,13 @@ describe("exports — noms exportés", () => {
 });
 
 describe("invariants du jeu de données", () => {
-  it("376 noms uniques", () => {
-    expect(new Set(SYMBOLS.map((s) => s.name)).size).toBe(376);
-    expect(SYMBOLS.length).toBe(376);
+  it("390 noms uniques", () => {
+    expect(new Set(SYMBOLS.map((s) => s.name)).size).toBe(390);
+    expect(SYMBOLS.length).toBe(390);
   });
 
-  it("376 identifiants uniques", () => {
-    expect(new Set(SYMBOLS.map((s) => identifier(s.name))).size).toBe(376);
+  it("390 identifiants uniques", () => {
+    expect(new Set(SYMBOLS.map((s) => identifier(s.name))).size).toBe(390);
   });
 
   it("WEIGHT_STROKE exact", async () => {

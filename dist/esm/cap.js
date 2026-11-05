@@ -1,0 +1,1 @@
+export default {"name":"cap","tags":["casquette","visière","couvre-chef","tenue"],"e":"M3.5 15.5V14a7 7 0 0 1 14 0v1.5z","c":"M10.5 7c1.5 2.5 2 5.5 2 8.5","p":"M3.5 15.5h11c3 0 5.5.5 7 2","cut":false};

@@ -1,0 +1,1 @@
+export default {"name":"hoodie","tags":["sweat à capuche","hoodie","capuche","pull","tenue"],"e":"M8.5 6C8.5 4 10 3 12 3s3.5 1 3.5 3l4 1.5L21 11v9H3v-9l1.5-3.5z","c":"M6.5 12v8M17.5 12v8M9.5 6.5c.5 1.5 1.5 2 2.5 2s2-.5 2.5-2M10.5 9v3M13.5 9v3"};
