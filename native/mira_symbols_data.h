@@ -2,7 +2,7 @@
 #ifndef MIRA_SYMBOLS_DATA_H
 #define MIRA_SYMBOLS_DATA_H
 
-#define MIRA_SYMBOL_COUNT 390
+#define MIRA_SYMBOL_COUNT 395
 #define MIRA_GRID 24
 static const float MIRA_WEIGHT_STROKE[6] = { 1.0f, 1.25f, 1.5f, 1.75f, 2.0f, 2.4f };
 
@@ -1348,6 +1348,26 @@ static const MiraOp mira_ops_f_388[] = { { 0, 0.0f, 0.0f, "M3.5 9h7v2.5a3.5 3.5 
 static const char *const mira_tags_389[] = { "masque", "masque de motocross", "lunettes de ski", "protection", "accessoire" };
 static const MiraOp mira_ops_o_389[] = { { 1, 1.0f, 0.0f, "M7.5 8h9a4 4 0 0 1 0 8h-1.5l-1.5-1.5h-3L9 16H7.5a4 4 0 0 1 0-8z", 0, 0 }, { 1, 1.0f, 0.0f, "M3.5 12H2M20.5 12H22", 0, 0 } };
 static const MiraOp mira_ops_f_389[] = { { 0, 0.0f, 0.0f, "M7.5 8h9a4 4 0 0 1 0 8h-1.5l-1.5-1.5h-3L9 16H7.5a4 4 0 0 1 0-8z", 0, 0 }, { 1, 1.0f, 0.0f, "M3.5 12H2M20.5 12H22", 0, 0 } };
+static const char *const mira_tags_390[] = { "masque", "cagoule", "visage", "braquage", "tenue" };
+static const MiraOp mira_ops_o_390[] = { { 1, 1.0f, 0.0f, "M12 3a7.5 7.5 0 0 0-7.5 7.5V15c0 3.6 3.4 6 7.5 6s7.5-2.4 7.5-6v-4.5A7.5 7.5 0 0 0 12 3z", 0, 0 }, { 1, 1.0f, 0.0f, "M8.75 9h6.5a1.75 1.75 0 0 1 1.75 1.75v0a1.75 1.75 0 0 1 -1.75 1.75h-6.5a1.75 1.75 0 0 1 -1.75 -1.75v0a1.75 1.75 0 0 1 1.75 -1.75zM10.5 16.5h3", 0, 0 } };
+static const MiraOp mira_cut_390_f0[] = { { 1, 1.0f, 0.0f, "M8.75 9h6.5a1.75 1.75 0 0 1 1.75 1.75v0a1.75 1.75 0 0 1 -1.75 1.75h-6.5a1.75 1.75 0 0 1 -1.75 -1.75v0a1.75 1.75 0 0 1 1.75 -1.75zM10.5 16.5h3", 0, 0 } };
+static const MiraOp mira_ops_f_390[] = { { 0, 0.0f, 0.0f, "M12 3a7.5 7.5 0 0 0-7.5 7.5V15c0 3.6 3.4 6 7.5 6s7.5-2.4 7.5-6v-4.5A7.5 7.5 0 0 0 12 3z", mira_cut_390_f0, 1 } };
+static const char *const mira_tags_391[] = { "sac \303\240 dos", "sac", "bagage", "randonn\303\251e", "accessoire" };
+static const MiraOp mira_ops_o_391[] = { { 1, 1.0f, 0.0f, "M8 6.5h8a3 3 0 0 1 3 3v8.5a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3v-8.5a3 3 0 0 1 3 -3z", 0, 0 }, { 1, 1.0f, 0.0f, "M9 14h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-2.5a1 1 0 0 1 1 -1zM5 11h14", 0, 0 }, { 1, 1.0f, 0.0f, "M9.5 6.5V5a1.5 1.5 0 0 1 1.5-1.5h2A1.5 1.5 0 0 1 14.5 5v1.5", 0, 0 } };
+static const MiraOp mira_cut_391_f0[] = { { 1, 1.0f, 0.0f, "M9 14h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-2.5a1 1 0 0 1 1 -1zM5 11h14", 0, 0 } };
+static const MiraOp mira_ops_f_391[] = { { 0, 0.0f, 0.0f, "M8 6.5h8a3 3 0 0 1 3 3v8.5a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3v-8.5a3 3 0 0 1 3 -3z", mira_cut_391_f0, 1 }, { 1, 1.0f, 0.0f, "M9.5 6.5V5a1.5 1.5 0 0 1 1.5-1.5h2A1.5 1.5 0 0 1 14.5 5v1.5", 0, 0 } };
+static const char *const mira_tags_392[] = { "barbe", "moustache", "pilosit\303\251", "visage", "personnage" };
+static const MiraOp mira_ops_o_392[] = { { 1, 1.0f, 0.0f, "M5 10.5v3a7 7 0 0 0 14 0v-3c-.8 1.8-2 3-3.5 3.5-1.3-.7-2.5-1-3.5-1s-2.2.3-3.5 1C7 13.5 5.8 12.3 5 10.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M10.5 16.5h3", 0, 0 }, { 1, 1.0f, 0.0f, "M5 10.5a7 7 0 0 1 14 0M9.5 9.5v.01M14.5 9.5v.01", 0, 0 } };
+static const MiraOp mira_cut_392_f0[] = { { 1, 1.0f, 0.0f, "M10.5 16.5h3", 0, 0 } };
+static const MiraOp mira_ops_f_392[] = { { 0, 0.0f, 0.0f, "M5 10.5v3a7 7 0 0 0 14 0v-3c-.8 1.8-2 3-3.5 3.5-1.3-.7-2.5-1-3.5-1s-2.2.3-3.5 1C7 13.5 5.8 12.3 5 10.5z", mira_cut_392_f0, 1 }, { 1, 1.0f, 0.0f, "M5 10.5a7 7 0 0 1 14 0M9.5 9.5v.01M14.5 9.5v.01", 0, 0 } };
+static const char *const mira_tags_393[] = { "tatouage", "tattoo", "encre", "c\305\223ur", "personnage" };
+static const MiraOp mira_ops_o_393[] = { { 1, 1.0f, 0.0f, "M12 19.5s-7.5-4.5-7.5-10a4 4 0 0 1 7.5-2 4 4 0 0 1 7.5 2c0 5.5-7.5 10-7.5 10z", 0, 0 }, { 1, 1.0f, 0.0f, "M4.5 11h15v3h-15z", 0, 0 }, { 1, 1.0f, 0.0f, "M4.5 11H2l1 1.5-1 1.5h2.5M19.5 11H22l-1 1.5 1 1.5h-2.5", 0, 0 } };
+static const MiraOp mira_cut_393_f0[] = { { 1, 1.0f, 0.0f, "M4.5 11h15v3h-15z", 0, 0 } };
+static const MiraOp mira_ops_f_393[] = { { 0, 0.0f, 0.0f, "M12 19.5s-7.5-4.5-7.5-10a4 4 0 0 1 7.5-2 4 4 0 0 1 7.5 2c0 5.5-7.5 10-7.5 10z", mira_cut_393_f0, 1 }, { 1, 1.0f, 0.0f, "M4.5 11H2l1 1.5-1 1.5h2.5M19.5 11H22l-1 1.5 1 1.5h-2.5", 0, 0 } };
+static const char *const mira_tags_394[] = { "robe", "jupe", "soir\303\251e", "tenue" };
+static const MiraOp mira_ops_o_394[] = { { 1, 1.0f, 0.0f, "M9.5 3.5c.8 1 1.6 1.5 2.5 1.5s1.7-.5 2.5-1.5L15 6.5 14.5 9 20 20.5H4L9.5 9 9 6.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M9.5 9h5", 0, 0 } };
+static const MiraOp mira_cut_394_f0[] = { { 1, 1.0f, 0.0f, "M9.5 9h5", 0, 0 } };
+static const MiraOp mira_ops_f_394[] = { { 0, 0.0f, 0.0f, "M9.5 3.5c.8 1 1.6 1.5 2.5 1.5s1.7-.5 2.5-1.5L15 6.5 14.5 9 20 20.5H4L9.5 9 9 6.5z", mira_cut_394_f0, 1 } };
 
 static const MiraSymbolRec MIRA_SYMBOLS[MIRA_SYMBOL_COUNT] = {
   { { "chevron.left", "navigation", mira_tags_0, 4, 1 }, mira_ops_o_0, 1, mira_ops_f_0, 1 },
@@ -1740,6 +1760,11 @@ static const MiraSymbolRec MIRA_SYMBOLS[MIRA_SYMBOL_COUNT] = {
   { { "shirt", "vetements", mira_tags_387, 5, 0 }, mira_ops_o_387, 2, mira_ops_f_387, 1 },
   { { "sunglasses", "vetements", mira_tags_388, 4, 0 }, mira_ops_o_388, 2, mira_ops_f_388, 2 },
   { { "goggles", "vetements", mira_tags_389, 5, 0 }, mira_ops_o_389, 2, mira_ops_f_389, 2 },
+  { { "mask", "vetements", mira_tags_390, 5, 0 }, mira_ops_o_390, 2, mira_ops_f_390, 1 },
+  { { "backpack", "vetements", mira_tags_391, 5, 0 }, mira_ops_o_391, 3, mira_ops_f_391, 2 },
+  { { "beard", "vetements", mira_tags_392, 5, 0 }, mira_ops_o_392, 3, mira_ops_f_392, 2 },
+  { { "tattoo", "vetements", mira_tags_393, 5, 0 }, mira_ops_o_393, 3, mira_ops_f_393, 2 },
+  { { "dress", "vetements", mira_tags_394, 4, 0 }, mira_ops_o_394, 2, mira_ops_f_394, 1 },
 };
 
 #endif /* MIRA_SYMBOLS_DATA_H */

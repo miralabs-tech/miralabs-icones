@@ -168,7 +168,7 @@
       "id": "vetements",
       "label": "Vêtements & accessoires",
       "glyph": "tshirt",
-      "count": 31
+      "count": 36
     },
     {
       "id": "formes",
@@ -7141,6 +7141,103 @@
       ],
       "fill": true,
       "codepoint": "U+E185"
+    },
+    {
+      "name": "mask",
+      "id": "mask",
+      "collection": "vetements",
+      "tags": [
+        "masque",
+        "cagoule",
+        "visage",
+        "braquage",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E186"
+    },
+    {
+      "name": "backpack",
+      "id": "backpack",
+      "collection": "vetements",
+      "tags": [
+        "sac à dos",
+        "sac",
+        "bagage",
+        "randonnée",
+        "accessoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E187"
+    },
+    {
+      "name": "beard",
+      "id": "beard",
+      "collection": "vetements",
+      "tags": [
+        "barbe",
+        "moustache",
+        "pilosité",
+        "visage",
+        "personnage"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E188"
+    },
+    {
+      "name": "tattoo",
+      "id": "tattoo",
+      "collection": "vetements",
+      "tags": [
+        "tatouage",
+        "tattoo",
+        "encre",
+        "cœur",
+        "personnage"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E189"
+    },
+    {
+      "name": "dress",
+      "id": "dress",
+      "collection": "vetements",
+      "tags": [
+        "robe",
+        "jupe",
+        "soirée",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E18A"
     }
   ]
 }

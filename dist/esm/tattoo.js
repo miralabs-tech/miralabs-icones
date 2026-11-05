@@ -1,0 +1,1 @@
+export default {"name":"tattoo","tags":["tatouage","tattoo","encre","cœur","personnage"],"e":"M12 19.5s-7.5-4.5-7.5-10a4 4 0 0 1 7.5-2 4 4 0 0 1 7.5 2c0 5.5-7.5 10-7.5 10z","c":"M4.5 11h15v3h-15z","p":"M4.5 11H2l1 1.5-1 1.5h2.5M19.5 11H22l-1 1.5 1 1.5h-2.5","cut":false};

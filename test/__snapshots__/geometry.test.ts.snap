@@ -4679,3 +4679,63 @@ exports[`geometrie goggles 1`] = `
   "y1": 66,
 }
 `;
+
+exports[`geometrie mask 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2109,
+  "x0": 15,
+  "x1": 80,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie backpack 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 2370,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie beard 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1869,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie dress 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1564,
+  "x0": 13,
+  "x1": 82,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie tattoo 1`] = `
+{
+  "cx": 0,
+  "cy": 0.38,
+  "n": 2211,
+  "x0": 5,
+  "x1": 90,
+  "y0": 18,
+  "y1": 80,
+}
+`;

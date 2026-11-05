@@ -392,3 +392,8 @@ export declare const hoodie: SymbolData & { name: "hoodie" };
 export declare const shirt: SymbolData & { name: "shirt" };
 export declare const sunglasses: SymbolData & { name: "sunglasses" };
 export declare const goggles: SymbolData & { name: "goggles" };
+export declare const mask: SymbolData & { name: "mask" };
+export declare const backpack: SymbolData & { name: "backpack" };
+export declare const beard: SymbolData & { name: "beard" };
+export declare const tattoo: SymbolData & { name: "tattoo" };
+export declare const dress: SymbolData & { name: "dress" };

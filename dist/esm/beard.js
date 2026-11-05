@@ -1,0 +1,1 @@
+export default {"name":"beard","tags":["barbe","moustache","pilosité","visage","personnage"],"e":"M5 10.5v3a7 7 0 0 0 14 0v-3c-.8 1.8-2 3-3.5 3.5-1.3-.7-2.5-1-3.5-1s-2.2.3-3.5 1C7 13.5 5.8 12.3 5 10.5z","c":"M10.5 16.5h3","p":"M5 10.5a7 7 0 0 1 14 0M9.5 9.5v.01M14.5 9.5v.01","cut":false};
