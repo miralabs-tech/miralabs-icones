@@ -1,0 +1,1 @@
+export default {"name":"shoe.heel","tags":["talon","escarpin","talons hauts","chaussures","tenue"],"e":"M3.5 15.5c0-1.2 1-2 2.5-2.3l4.5-1L17.5 6a1.5 1.5 0 0 1 2.2.2l.3.5V10l-1.5 1.5v7h-1.5l-1-6.5C13 13 11 17 6 17.5a2.5 2.5 0 0 1-2.5-2z"};

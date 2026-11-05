@@ -1,0 +1,1 @@
+export default {"name":"shirt","tags":["chemise","col","boutons","haut","tenue"],"e":"M9 3.5 4.5 5.5 3 9.5V20h18V9.5l-1.5-4L15 3.5z","c":"M9 3.5 10.5 7.5 12 5.5l1.5 2L15 3.5M12 9v.01M12 12.5v.01M12 16v.01M6.5 12v8M17.5 12v8"};

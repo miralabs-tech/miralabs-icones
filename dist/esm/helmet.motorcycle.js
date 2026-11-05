@@ -1,0 +1,1 @@
+export default {"name":"helmet.motorcycle","tags":["casque moto","casque intégral","visière","motard","tenue"],"e":"M12 3.5a8.5 8.5 0 0 0-8.5 8.5v4.5a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3V13A9.5 9.5 0 0 0 12 3.5z","c":"M11 9.5h8.5V13H11a1.75 1.75 0 0 1 0-3.5z"};

@@ -1,0 +1,1 @@
+export default {"name":"goggles","tags":["masque","masque de motocross","lunettes de ski","protection","accessoire"],"e":"M7.5 8h9a4 4 0 0 1 0 8h-1.5l-1.5-1.5h-3L9 16H7.5a4 4 0 0 1 0-8z","p":"M3.5 12H2M20.5 12H22","cut":false};

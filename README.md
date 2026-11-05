@@ -1,6 +1,6 @@
 # Miralabs Icônes
 
-Jeu de symboles de MiraLabs. **376 symboles, 23 collections**, tous dessinés à la main sur une grille 24 × 24 (trait 1,5 en Régulier, extrémités et jointures rondes). Les noms suivent la convention SF (`objet.modificateur`) ; aucun tracé n'est repris d'un jeu existant, aucun logo (voir [LICENSE-BRANDS](LICENSE-BRANDS)).
+Jeu de symboles de MiraLabs. **390 symboles, 23 collections**, tous dessinés à la main sur une grille 24 × 24 (trait 1,5 en Régulier, extrémités et jointures rondes). Les noms suivent la convention SF (`objet.modificateur`) ; aucun tracé n'est repris d'un jeu existant, aucun logo (voir [LICENSE-BRANDS](LICENSE-BRANDS)).
 
 Explorateur : `docs/index.html` — en ligne via GitHub Pages (Settings → Pages → branche `main`, dossier `/` racine) à `https://miralabs-tech.github.io/miralabs-icones/docs/`, ou en local avec `bun run docs`.
 
@@ -51,7 +51,7 @@ dist/                     ← généré par `bun run build`, committé pour êtr
 - `esm/<nom>.js` + `esm/index.js` — un module par symbole (`squareAndArrowUp`, `_5g`) : tree-shaking natif.
 - `sprite/<graisse>-<forme>.svg` — 12 sprites `<symbol>` pour `<use>`, zéro JS.
 - `font/codepoints.json` + `font/mira-symbols.css` ; `--font` produit les `.ttf`/`.woff2` (héritage : les glyphes sont des traits, la conversion en contours est dérivée et non réversible ; via `oslllo-svg-fixer svgicons2svgfont svg2ttf ttf2woff2`).
-- `--static` → `svg/<graisse>/<forme>/<nom>.svg`, 12 × 376 fichiers.
+- `--static` → `svg/<graisse>/<forme>/<nom>.svg`, 12 × 390 fichiers.
 - `native/mira_symbols_data.h` — l'IR en tableaux C.
 
 L'arbre `svg/` et les binaires de police ne sont **ni versionnés ni exportés par le paquet** : ce sont des [artefacts de release](#artefacts-de-release).
@@ -97,7 +97,7 @@ Le paquet npm — et, à défaut, une dépendance `github:`, `dist/` étant comm
 
 | Archive | Contenu |
 | --- | --- |
-| `mira-icones-svg-<version>.zip` | `svg/<graisse>/<forme>/<nom>.svg` — 12 × 376 fichiers |
+| `mira-icones-svg-<version>.zip` | `svg/<graisse>/<forme>/<nom>.svg` — 12 × 390 fichiers |
 | `mira-icones-font-<version>.zip` | `mira-symbols.ttf`, `mira-symbols.woff2`, `mira-symbols.css`, `codepoints.json` |
 | `mira-icones-sprite-<version>.zip` | les 12 sprites `<use>` (aussi dans le paquet, via `./sprite/*`) |
 | `mira-icones-metadata-<version>.zip` | `metadata.json`, `symbols.json`, `ir.json` |

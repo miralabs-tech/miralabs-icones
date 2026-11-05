@@ -168,7 +168,7 @@
       "id": "vetements",
       "label": "Vêtements & accessoires",
       "glyph": "tshirt",
-      "count": 17
+      "count": 31
     },
     {
       "id": "formes",
@@ -6879,6 +6879,271 @@
       ],
       "fill": true,
       "codepoint": "U+E177"
+    },
+    {
+      "name": "hat",
+      "id": "hat",
+      "collection": "vetements",
+      "tags": [
+        "chapeau",
+        "feutre",
+        "borsalino",
+        "couvre-chef",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E178"
+    },
+    {
+      "name": "cap",
+      "id": "cap",
+      "collection": "vetements",
+      "tags": [
+        "casquette",
+        "visière",
+        "couvre-chef",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E179"
+    },
+    {
+      "name": "beanie",
+      "id": "beanie",
+      "collection": "vetements",
+      "tags": [
+        "bonnet",
+        "pompon",
+        "hiver",
+        "couvre-chef",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E17A"
+    },
+    {
+      "name": "helmet.motorcycle",
+      "id": "helmetMotorcycle",
+      "collection": "vetements",
+      "tags": [
+        "casque moto",
+        "casque intégral",
+        "visière",
+        "motard",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E17B"
+    },
+    {
+      "name": "helmet.motocross",
+      "id": "helmetMotocross",
+      "collection": "vetements",
+      "tags": [
+        "casque motocross",
+        "cross",
+        "enduro",
+        "mentonnière",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E17C"
+    },
+    {
+      "name": "vest.armor",
+      "id": "vestArmor",
+      "collection": "vetements",
+      "tags": [
+        "gilet pare-balles",
+        "kevlar",
+        "porte-plaques",
+        "protection",
+        "accessoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E17D"
+    },
+    {
+      "name": "boot",
+      "id": "boot",
+      "collection": "vetements",
+      "tags": [
+        "botte",
+        "bottine",
+        "rangers",
+        "chaussures",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E17E"
+    },
+    {
+      "name": "shoe.heel",
+      "id": "shoeHeel",
+      "collection": "vetements",
+      "tags": [
+        "talon",
+        "escarpin",
+        "talons hauts",
+        "chaussures",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E17F"
+    },
+    {
+      "name": "shorts",
+      "id": "shorts",
+      "collection": "vetements",
+      "tags": [
+        "short",
+        "bermuda",
+        "bas",
+        "jambes",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E180"
+    },
+    {
+      "name": "skirt",
+      "id": "skirt",
+      "collection": "vetements",
+      "tags": [
+        "jupe",
+        "plissée",
+        "bas",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E181"
+    },
+    {
+      "name": "hoodie",
+      "id": "hoodie",
+      "collection": "vetements",
+      "tags": [
+        "sweat à capuche",
+        "hoodie",
+        "capuche",
+        "pull",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E182"
+    },
+    {
+      "name": "shirt",
+      "id": "shirt",
+      "collection": "vetements",
+      "tags": [
+        "chemise",
+        "col",
+        "boutons",
+        "haut",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E183"
+    },
+    {
+      "name": "sunglasses",
+      "id": "sunglasses",
+      "collection": "vetements",
+      "tags": [
+        "lunettes de soleil",
+        "solaires",
+        "lunettes",
+        "accessoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "f"
+      ],
+      "fill": false,
+      "codepoint": "U+E184"
+    },
+    {
+      "name": "goggles",
+      "id": "goggles",
+      "collection": "vetements",
+      "tags": [
+        "masque",
+        "masque de motocross",
+        "lunettes de ski",
+        "protection",
+        "accessoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E185"
     }
   ]
 }

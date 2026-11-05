@@ -376,7 +376,21 @@ export type SymbolName =
   | "anklet"
   | "ring"
   | "vest"
-  | "parachute";
+  | "parachute"
+  | "hat"
+  | "cap"
+  | "beanie"
+  | "helmet.motorcycle"
+  | "helmet.motocross"
+  | "vest.armor"
+  | "boot"
+  | "shoe.heel"
+  | "shorts"
+  | "skirt"
+  | "hoodie"
+  | "shirt"
+  | "sunglasses"
+  | "goggles";
 
 export type SymbolCollection =
   | "navigation"

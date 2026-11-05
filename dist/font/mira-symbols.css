@@ -376,3 +376,17 @@
 .mira-symbol-ring::before { content: "\E175"; }
 .mira-symbol-vest::before { content: "\E176"; }
 .mira-symbol-parachute::before { content: "\E177"; }
+.mira-symbol-hat::before { content: "\E178"; }
+.mira-symbol-cap::before { content: "\E179"; }
+.mira-symbol-beanie::before { content: "\E17A"; }
+.mira-symbol-helmet-motorcycle::before { content: "\E17B"; }
+.mira-symbol-helmet-motocross::before { content: "\E17C"; }
+.mira-symbol-vest-armor::before { content: "\E17D"; }
+.mira-symbol-boot::before { content: "\E17E"; }
+.mira-symbol-shoe-heel::before { content: "\E17F"; }
+.mira-symbol-shorts::before { content: "\E180"; }
+.mira-symbol-skirt::before { content: "\E181"; }
+.mira-symbol-hoodie::before { content: "\E182"; }
+.mira-symbol-shirt::before { content: "\E183"; }
+.mira-symbol-sunglasses::before { content: "\E184"; }
+.mira-symbol-goggles::before { content: "\E185"; }
