@@ -1,0 +1,1 @@
+export default {"name":"binoculars","tags":["jumelles","observer","repérer","explorer","vue"],"e":"M3 15a4 4 0 1 0 8 0a4 4 0 1 0 -8 0zM13 15a4 4 0 1 0 8 0a4 4 0 1 0 -8 0z","p":"M5 11.5v-5a1.5 1.5 0 0 1 3 0v5M16 11.5v-5a1.5 1.5 0 0 1 3 0v5M10.5 13.5h3","cut":false};

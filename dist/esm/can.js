@@ -1,0 +1,1 @@
+export default {"name":"can","tags":["conserve","boîte","nourriture","faim","ration"],"e":"M5 8c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v9c0 1.4-3.1 2.5-7 2.5S5 18.4 5 17z","c":"M5 12.5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5M10.5 8h3","p":"M5 8c0-1.4 3.1-2.5 7-2.5s7 1.1 7 2.5","cut":false};

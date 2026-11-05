@@ -1,0 +1,1 @@
+export default {"name":"syringe","tags":["seringue","piqûre","adrénaline","soin","santé"],"e":"M13.5 6.5l4 4-8 8h-4v-4z","c":"M10.5 11.5l1.5 1.5M8.5 13.5l1.5 1.5","p":"M5.5 18.5 3 21M17.5 6.5 20 4M18.5 3 21 5.5","cut":false};

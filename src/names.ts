@@ -413,7 +413,21 @@ export type SymbolName =
   | "bat"
   | "grenade"
   | "ammo"
-  | "crosshair";
+  | "crosshair"
+  | "skull"
+  | "sword"
+  | "axe"
+  | "pickaxe"
+  | "tent"
+  | "campfire"
+  | "flashlight"
+  | "pill"
+  | "syringe"
+  | "bandage"
+  | "bottle"
+  | "can"
+  | "jerrycan"
+  | "binoculars";
 
 export type SymbolCollection =
   | "navigation"
@@ -437,6 +451,7 @@ export type SymbolCollection =
   | "objets"
   | "vetements"
   | "armes"
+  | "survie"
   | "formes"
   | "manette"
   | "marques";

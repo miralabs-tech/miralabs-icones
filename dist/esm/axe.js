@@ -1,0 +1,1 @@
+export default {"name":"axe","tags":["hache","bois","couper","outil","arme"],"e":"M13 4.5h3.5v6H13c-1.5 0-3 .8-4.5 2.5C7.5 11.5 7 9.8 7 8s.5-3.5 1.5-5C10 4.2 11.5 4.5 13 4.5z","p":"M15 10.5V21","cut":false};

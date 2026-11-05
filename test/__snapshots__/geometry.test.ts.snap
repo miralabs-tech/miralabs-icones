@@ -4955,3 +4955,171 @@ exports[`geometrie launcher.rpg 1`] = `
   "y1": 64,
 }
 `;
+
+exports[`geometrie skull 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 2067,
+  "x0": 15,
+  "x1": 80,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie sword 1`] = `
+{
+  "cx": 0.38,
+  "cy": -0.37,
+  "n": 1260,
+  "x0": 14,
+  "x1": 84,
+  "y0": 11,
+  "y1": 81,
+}
+`;
+
+exports[`geometrie axe 1`] = `
+{
+  "cx": -0.25,
+  "cy": 0,
+  "n": 1101,
+  "x0": 25,
+  "x1": 68,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie pickaxe 1`] = `
+{
+  "cx": 0,
+  "cy": 0.13,
+  "n": 1170,
+  "x0": 11,
+  "x1": 84,
+  "y0": 16,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie tent 1`] = `
+{
+  "cx": 0,
+  "cy": -0.25,
+  "n": 1852,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie campfire 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1799,
+  "x0": 17,
+  "x1": 78,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie flashlight 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1292,
+  "x0": 13,
+  "x1": 82,
+  "y0": 27,
+  "y1": 68,
+}
+`;
+
+exports[`geometrie pill 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1294,
+  "x0": 15,
+  "x1": 80,
+  "y0": 15,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie syringe 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1369,
+  "x0": 9,
+  "x1": 86,
+  "y0": 9,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie bandage 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1654,
+  "x0": 13,
+  "x1": 82,
+  "y0": 13,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie bottle 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1444,
+  "x0": 29,
+  "x1": 66,
+  "y0": 11,
+  "y1": 84,
+}
+`;
+
+exports[`geometrie can 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 2064,
+  "x0": 17,
+  "x1": 78,
+  "y0": 19,
+  "y1": 80,
+}
+`;
+
+exports[`geometrie jerrycan 1`] = `
+{
+  "cx": 0.38,
+  "cy": 0.5,
+  "n": 2212,
+  "x0": 16,
+  "x1": 82,
+  "y0": 13,
+  "y1": 86,
+}
+`;
+
+exports[`geometrie binoculars 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1988,
+  "x0": 9,
+  "x1": 86,
+  "y0": 17,
+  "y1": 78,
+}
+`;

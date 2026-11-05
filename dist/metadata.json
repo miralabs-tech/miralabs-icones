@@ -177,6 +177,12 @@
       "count": 18
     },
     {
+      "id": "survie",
+      "label": "Survie",
+      "glyph": "tent",
+      "count": 14
+    },
+    {
       "id": "formes",
       "label": "Formes",
       "glyph": "circle",
@@ -7581,6 +7587,277 @@
       ],
       "fill": false,
       "codepoint": "U+E19C"
+    },
+    {
+      "name": "skull",
+      "id": "skull",
+      "collection": "survie",
+      "tags": [
+        "crâne",
+        "mort",
+        "danger",
+        "poison",
+        "game over"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E19D"
+    },
+    {
+      "name": "sword",
+      "id": "sword",
+      "collection": "survie",
+      "tags": [
+        "épée",
+        "lame",
+        "corps à corps",
+        "combat",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E19E"
+    },
+    {
+      "name": "axe",
+      "id": "axe",
+      "collection": "survie",
+      "tags": [
+        "hache",
+        "bois",
+        "couper",
+        "outil",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E19F"
+    },
+    {
+      "name": "pickaxe",
+      "id": "pickaxe",
+      "collection": "survie",
+      "tags": [
+        "pioche",
+        "miner",
+        "minerai",
+        "creuser",
+        "outil"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E1A0"
+    },
+    {
+      "name": "tent",
+      "id": "tent",
+      "collection": "survie",
+      "tags": [
+        "tente",
+        "camp",
+        "abri",
+        "refuge",
+        "bivouac"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E1A1"
+    },
+    {
+      "name": "campfire",
+      "id": "campfire",
+      "collection": "survie",
+      "tags": [
+        "feu de camp",
+        "bûches",
+        "chaleur",
+        "cuisson",
+        "camp"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E1A2"
+    },
+    {
+      "name": "flashlight",
+      "id": "flashlight",
+      "collection": "survie",
+      "tags": [
+        "lampe torche",
+        "lampe",
+        "lumière",
+        "éclairage",
+        "nuit"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E1A3"
+    },
+    {
+      "name": "pill",
+      "id": "pill",
+      "collection": "survie",
+      "tags": [
+        "pilule",
+        "gélule",
+        "médicament",
+        "soin",
+        "santé"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E1A4"
+    },
+    {
+      "name": "syringe",
+      "id": "syringe",
+      "collection": "survie",
+      "tags": [
+        "seringue",
+        "piqûre",
+        "adrénaline",
+        "soin",
+        "santé"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E1A5"
+    },
+    {
+      "name": "bandage",
+      "id": "bandage",
+      "collection": "survie",
+      "tags": [
+        "pansement",
+        "bandage",
+        "blessure",
+        "soin",
+        "santé"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E1A6"
+    },
+    {
+      "name": "bottle",
+      "id": "bottle",
+      "collection": "survie",
+      "tags": [
+        "bouteille",
+        "eau",
+        "soif",
+        "boisson",
+        "gourde"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E1A7"
+    },
+    {
+      "name": "can",
+      "id": "can",
+      "collection": "survie",
+      "tags": [
+        "conserve",
+        "boîte",
+        "nourriture",
+        "faim",
+        "ration"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E1A8"
+    },
+    {
+      "name": "jerrycan",
+      "id": "jerrycan",
+      "collection": "survie",
+      "tags": [
+        "jerrican",
+        "essence",
+        "carburant",
+        "bidon",
+        "véhicule"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E1A9"
+    },
+    {
+      "name": "binoculars",
+      "id": "binoculars",
+      "collection": "survie",
+      "tags": [
+        "jumelles",
+        "observer",
+        "repérer",
+        "explorer",
+        "vue"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E1AA"
     }
   ]
 }

@@ -2,7 +2,7 @@
 #ifndef MIRA_SYMBOLS_DATA_H
 #define MIRA_SYMBOLS_DATA_H
 
-#define MIRA_SYMBOL_COUNT 413
+#define MIRA_SYMBOL_COUNT 427
 #define MIRA_GRID 24
 static const float MIRA_WEIGHT_STROKE[6] = { 1.0f, 1.25f, 1.5f, 1.75f, 2.0f, 2.4f };
 
@@ -1425,6 +1425,57 @@ static const MiraOp mira_ops_f_411[] = { { 0, 0.0f, 0.0f, "M5 10c0-1.8.5-3.3 1.5
 static const char *const mira_tags_412[] = { "viseur", "r\303\251ticule", "cible", "vis\303\251e", "arme" };
 static const MiraOp mira_ops_o_412[] = { { 0, 0.0f, 0.0f, "M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 12a7 7 0 1 0 14 0a7 7 0 1 0 -14 0zM12 2.5v5M12 16.5v5M2.5 12h5M16.5 12h5", 0, 0 } };
 static const MiraOp mira_ops_f_412[] = { { 0, 0.0f, 0.0f, "M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 12a7 7 0 1 0 14 0a7 7 0 1 0 -14 0zM12 2.5v5M12 16.5v5M2.5 12h5M16.5 12h5", 0, 0 } };
+static const char *const mira_tags_413[] = { "cr\303\242ne", "mort", "danger", "poison", "game over" };
+static const MiraOp mira_ops_o_413[] = { { 1, 1.0f, 0.0f, "M12 3.5a7.5 7.5 0 0 0-7.5 7.5c0 2.5 1.2 4.6 3 5.9V19a1.5 1.5 0 0 0 1.5 1.5h6a1.5 1.5 0 0 0 1.5-1.5v-2.1c1.8-1.3 3-3.4 3-5.9A7.5 7.5 0 0 0 12 3.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M7.25 11.5a1.75 1.75 0 1 0 3.5 0a1.75 1.75 0 1 0 -3.5 0zM13.25 11.5a1.75 1.75 0 1 0 3.5 0a1.75 1.75 0 1 0 -3.5 0zM10.5 17.5v3M13.5 17.5v3", 0, 0 } };
+static const MiraOp mira_cut_413_f0[] = { { 1, 1.0f, 0.0f, "M7.25 11.5a1.75 1.75 0 1 0 3.5 0a1.75 1.75 0 1 0 -3.5 0zM13.25 11.5a1.75 1.75 0 1 0 3.5 0a1.75 1.75 0 1 0 -3.5 0zM10.5 17.5v3M13.5 17.5v3", 0, 0 } };
+static const MiraOp mira_ops_f_413[] = { { 0, 0.0f, 0.0f, "M12 3.5a7.5 7.5 0 0 0-7.5 7.5c0 2.5 1.2 4.6 3 5.9V19a1.5 1.5 0 0 0 1.5 1.5h6a1.5 1.5 0 0 0 1.5-1.5v-2.1c1.8-1.3 3-3.4 3-5.9A7.5 7.5 0 0 0 12 3.5z", mira_cut_413_f0, 1 } };
+static const char *const mira_tags_414[] = { "\303\251p\303\251e", "lame", "corps \303\240 corps", "combat", "arme" };
+static const MiraOp mira_ops_o_414[] = { { 1, 1.0f, 0.0f, "M20.5 3.5v3L10.5 16.5l-3-3L17.5 3.5z", 0, 0 }, { 0, 0.0f, 0.0f, "M3.5 19.25a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0 -2.5 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M6 12l6 6M9 15l-3.5 3.5", 0, 0 } };
+static const MiraOp mira_ops_f_414[] = { { 0, 0.0f, 0.0f, "M20.5 3.5v3L10.5 16.5l-3-3L17.5 3.5z", 0, 0 }, { 0, 0.0f, 0.0f, "M3.5 19.25a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0 -2.5 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M6 12l6 6M9 15l-3.5 3.5", 0, 0 } };
+static const char *const mira_tags_415[] = { "hache", "bois", "couper", "outil", "arme" };
+static const MiraOp mira_ops_o_415[] = { { 1, 1.0f, 0.0f, "M13 4.5h3.5v6H13c-1.5 0-3 .8-4.5 2.5C7.5 11.5 7 9.8 7 8s.5-3.5 1.5-5C10 4.2 11.5 4.5 13 4.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M15 10.5V21", 0, 0 } };
+static const MiraOp mira_ops_f_415[] = { { 0, 0.0f, 0.0f, "M13 4.5h3.5v6H13c-1.5 0-3 .8-4.5 2.5C7.5 11.5 7 9.8 7 8s.5-3.5 1.5-5C10 4.2 11.5 4.5 13 4.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M15 10.5V21", 0, 0 } };
+static const char *const mira_tags_416[] = { "pioche", "miner", "minerai", "creuser", "outil" };
+static const MiraOp mira_ops_o_416[] = { { 1, 1.0f, 0.0f, "M3.5 8.5c5-5 12-5 17 0-5-2.5-12-2.5-17 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M12 5.5v14", 0, 0 } };
+static const MiraOp mira_ops_f_416[] = { { 0, 0.0f, 0.0f, "M3.5 8.5c5-5 12-5 17 0-5-2.5-12-2.5-17 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M12 5.5v14", 0, 0 } };
+static const char *const mira_tags_417[] = { "tente", "camp", "abri", "refuge", "bivouac" };
+static const MiraOp mira_ops_o_417[] = { { 1, 1.0f, 0.0f, "M12 5 3 20.5h18z", 0, 0 }, { 1, 1.0f, 0.0f, "M12 13l-3 7.5h6z", 0, 0 }, { 1, 1.0f, 0.0f, "M12 5 10.5 3M12 5l1.5-2", 0, 0 } };
+static const MiraOp mira_cut_417_f0[] = { { 1, 1.0f, 0.0f, "M12 13l-3 7.5h6z", 0, 0 } };
+static const MiraOp mira_ops_f_417[] = { { 0, 0.0f, 0.0f, "M12 5 3 20.5h18z", mira_cut_417_f0, 1 }, { 1, 1.0f, 0.0f, "M12 5 10.5 3M12 5l1.5-2", 0, 0 } };
+static const char *const mira_tags_418[] = { "feu de camp", "b\303\273ches", "chaleur", "cuisson", "camp" };
+static const MiraOp mira_ops_o_418[] = { { 1, 1.0f, 0.0f, "M12 3.5c3 2.5 5 5 5 8a5 5 0 0 1-10 0c0-1.5.7-2.8 1.8-3.8.2 1.3.9 2.3 2 2.8C10.5 8 11 5.5 12 3.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 20.5l14-3.5M19 20.5 5 17", 0, 0 } };
+static const MiraOp mira_ops_f_418[] = { { 0, 0.0f, 0.0f, "M12 3.5c3 2.5 5 5 5 8a5 5 0 0 1-10 0c0-1.5.7-2.8 1.8-3.8.2 1.3.9 2.3 2 2.8C10.5 8 11 5.5 12 3.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 20.5l14-3.5M19 20.5 5 17", 0, 0 } };
+static const char *const mira_tags_419[] = { "lampe torche", "lampe", "lumi\303\250re", "\303\251clairage", "nuit" };
+static const MiraOp mira_ops_o_419[] = { { 1, 1.0f, 0.0f, "M4 7.5l6 2v5l-6 2zM11.5 9.5h7a1.5 1.5 0 0 1 1.5 1.5v2a1.5 1.5 0 0 1 -1.5 1.5h-7a1.5 1.5 0 0 1 -1.5 -1.5v-2a1.5 1.5 0 0 1 1.5 -1.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M14 12h2", 0, 0 } };
+static const MiraOp mira_cut_419_f0[] = { { 1, 1.0f, 0.0f, "M14 12h2", 0, 0 } };
+static const MiraOp mira_ops_f_419[] = { { 0, 0.0f, 0.0f, "M4 7.5l6 2v5l-6 2zM11.5 9.5h7a1.5 1.5 0 0 1 1.5 1.5v2a1.5 1.5 0 0 1 -1.5 1.5h-7a1.5 1.5 0 0 1 -1.5 -1.5v-2a1.5 1.5 0 0 1 1.5 -1.5z", mira_cut_419_f0, 1 } };
+static const char *const mira_tags_420[] = { "pilule", "g\303\251lule", "m\303\251dicament", "soin", "sant\303\251" };
+static const MiraOp mira_ops_o_420[] = { { 1, 1.0f, 0.0f, "M5.6 18.4a3.5 3.5 0 0 1 0-5l7.8-7.8a3.5 3.5 0 0 1 5 5l-7.8 7.8a3.5 3.5 0 0 1-5 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M9.5 9.5l5 5", 0, 0 } };
+static const MiraOp mira_cut_420_f0[] = { { 1, 1.0f, 0.0f, "M9.5 9.5l5 5", 0, 0 } };
+static const MiraOp mira_ops_f_420[] = { { 0, 0.0f, 0.0f, "M5.6 18.4a3.5 3.5 0 0 1 0-5l7.8-7.8a3.5 3.5 0 0 1 5 5l-7.8 7.8a3.5 3.5 0 0 1-5 0z", mira_cut_420_f0, 1 } };
+static const char *const mira_tags_421[] = { "seringue", "piq\303\273re", "adr\303\251naline", "soin", "sant\303\251" };
+static const MiraOp mira_ops_o_421[] = { { 1, 1.0f, 0.0f, "M13.5 6.5l4 4-8 8h-4v-4z", 0, 0 }, { 1, 1.0f, 0.0f, "M10.5 11.5l1.5 1.5M8.5 13.5l1.5 1.5", 0, 0 }, { 1, 1.0f, 0.0f, "M5.5 18.5 3 21M17.5 6.5 20 4M18.5 3 21 5.5", 0, 0 } };
+static const MiraOp mira_cut_421_f0[] = { { 1, 1.0f, 0.0f, "M10.5 11.5l1.5 1.5M8.5 13.5l1.5 1.5", 0, 0 } };
+static const MiraOp mira_ops_f_421[] = { { 0, 0.0f, 0.0f, "M13.5 6.5l4 4-8 8h-4v-4z", mira_cut_421_f0, 1 }, { 1, 1.0f, 0.0f, "M5.5 18.5 3 21M17.5 6.5 20 4M18.5 3 21 5.5", 0, 0 } };
+static const char *const mira_tags_422[] = { "pansement", "bandage", "blessure", "soin", "sant\303\251" };
+static const MiraOp mira_ops_o_422[] = { { 1, 1.0f, 0.0f, "M4.9 15.5a3 3 0 0 1 0-4.2l6.4-6.4a3 3 0 0 1 4.2 0l3.6 3.6a3 3 0 0 1 0 4.2l-6.4 6.4a3 3 0 0 1-4.2 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M9.5 12 12 9.5l2.5 2.5-2.5 2.5zM7 11v.01M17 13v.01", 0, 0 } };
+static const MiraOp mira_cut_422_f0[] = { { 1, 1.0f, 0.0f, "M9.5 12 12 9.5l2.5 2.5-2.5 2.5zM7 11v.01M17 13v.01", 0, 0 } };
+static const MiraOp mira_ops_f_422[] = { { 0, 0.0f, 0.0f, "M4.9 15.5a3 3 0 0 1 0-4.2l6.4-6.4a3 3 0 0 1 4.2 0l3.6 3.6a3 3 0 0 1 0 4.2l-6.4 6.4a3 3 0 0 1-4.2 0z", mira_cut_422_f0, 1 } };
+static const char *const mira_tags_423[] = { "bouteille", "eau", "soif", "boisson", "gourde" };
+static const MiraOp mira_ops_o_423[] = { { 1, 1.0f, 0.0f, "M10 3.5h4V6l1.5 2a3 3 0 0 1 .5 1.7V19a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 8 19V9.7a3 3 0 0 1 .5-1.7L10 6z", 0, 0 }, { 1, 1.0f, 0.0f, "M8 12h8M8 16h8", 0, 0 } };
+static const MiraOp mira_cut_423_f0[] = { { 1, 1.0f, 0.0f, "M8 12h8M8 16h8", 0, 0 } };
+static const MiraOp mira_ops_f_423[] = { { 0, 0.0f, 0.0f, "M10 3.5h4V6l1.5 2a3 3 0 0 1 .5 1.7V19a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 8 19V9.7a3 3 0 0 1 .5-1.7L10 6z", mira_cut_423_f0, 1 } };
+static const char *const mira_tags_424[] = { "conserve", "bo\303\256te", "nourriture", "faim", "ration" };
+static const MiraOp mira_ops_o_424[] = { { 1, 1.0f, 0.0f, "M5 8c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v9c0 1.4-3.1 2.5-7 2.5S5 18.4 5 17z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 12.5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5M10.5 8h3", 0, 0 }, { 1, 1.0f, 0.0f, "M5 8c0-1.4 3.1-2.5 7-2.5s7 1.1 7 2.5", 0, 0 } };
+static const MiraOp mira_cut_424_f0[] = { { 1, 1.0f, 0.0f, "M5 12.5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5M10.5 8h3", 0, 0 } };
+static const MiraOp mira_ops_f_424[] = { { 0, 0.0f, 0.0f, "M5 8c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v9c0 1.4-3.1 2.5-7 2.5S5 18.4 5 17z", mira_cut_424_f0, 1 }, { 1, 1.0f, 0.0f, "M5 8c0-1.4 3.1-2.5 7-2.5s7 1.1 7 2.5", 0, 0 } };
+static const char *const mira_tags_425[] = { "jerrican", "essence", "carburant", "bidon", "v\303\251hicule" };
+static const MiraOp mira_ops_o_425[] = { { 1, 1.0f, 0.0f, "M6 6.5h8l4 4V19a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 5 19V7.5a1 1 0 0 1 1-1z", 0, 0 }, { 1, 1.0f, 0.0f, "M8 11h7v6.5H8z", 0, 0 }, { 1, 1.0f, 0.0f, "M7.5 6.5V4H12v2.5M16 8.5 18.5 6 20 7.5", 0, 0 } };
+static const MiraOp mira_cut_425_f0[] = { { 1, 1.0f, 0.0f, "M8 11h7v6.5H8z", 0, 0 } };
+static const MiraOp mira_ops_f_425[] = { { 0, 0.0f, 0.0f, "M6 6.5h8l4 4V19a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 5 19V7.5a1 1 0 0 1 1-1z", mira_cut_425_f0, 1 }, { 1, 1.0f, 0.0f, "M7.5 6.5V4H12v2.5M16 8.5 18.5 6 20 7.5", 0, 0 } };
+static const char *const mira_tags_426[] = { "jumelles", "observer", "rep\303\251rer", "explorer", "vue" };
+static const MiraOp mira_ops_o_426[] = { { 1, 1.0f, 0.0f, "M3 15a4 4 0 1 0 8 0a4 4 0 1 0 -8 0zM13 15a4 4 0 1 0 8 0a4 4 0 1 0 -8 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 11.5v-5a1.5 1.5 0 0 1 3 0v5M16 11.5v-5a1.5 1.5 0 0 1 3 0v5M10.5 13.5h3", 0, 0 } };
+static const MiraOp mira_ops_f_426[] = { { 0, 0.0f, 0.0f, "M3 15a4 4 0 1 0 8 0a4 4 0 1 0 -8 0zM13 15a4 4 0 1 0 8 0a4 4 0 1 0 -8 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 11.5v-5a1.5 1.5 0 0 1 3 0v5M16 11.5v-5a1.5 1.5 0 0 1 3 0v5M10.5 13.5h3", 0, 0 } };
 
 static const MiraSymbolRec MIRA_SYMBOLS[MIRA_SYMBOL_COUNT] = {
   { { "chevron.left", "navigation", mira_tags_0, 4, 1 }, mira_ops_o_0, 1, mira_ops_f_0, 1 },
@@ -1840,6 +1891,20 @@ static const MiraSymbolRec MIRA_SYMBOLS[MIRA_SYMBOL_COUNT] = {
   { { "grenade", "armes", mira_tags_410, 4, 0 }, mira_ops_o_410, 3, mira_ops_f_410, 2 },
   { { "ammo", "armes", mira_tags_411, 5, 0 }, mira_ops_o_411, 2, mira_ops_f_411, 1 },
   { { "crosshair", "armes", mira_tags_412, 5, 0 }, mira_ops_o_412, 2, mira_ops_f_412, 2 },
+  { { "skull", "survie", mira_tags_413, 5, 0 }, mira_ops_o_413, 2, mira_ops_f_413, 1 },
+  { { "sword", "survie", mira_tags_414, 5, 0 }, mira_ops_o_414, 3, mira_ops_f_414, 3 },
+  { { "axe", "survie", mira_tags_415, 5, 0 }, mira_ops_o_415, 2, mira_ops_f_415, 2 },
+  { { "pickaxe", "survie", mira_tags_416, 5, 0 }, mira_ops_o_416, 2, mira_ops_f_416, 2 },
+  { { "tent", "survie", mira_tags_417, 5, 0 }, mira_ops_o_417, 3, mira_ops_f_417, 2 },
+  { { "campfire", "survie", mira_tags_418, 5, 0 }, mira_ops_o_418, 2, mira_ops_f_418, 2 },
+  { { "flashlight", "survie", mira_tags_419, 5, 0 }, mira_ops_o_419, 2, mira_ops_f_419, 1 },
+  { { "pill", "survie", mira_tags_420, 5, 0 }, mira_ops_o_420, 2, mira_ops_f_420, 1 },
+  { { "syringe", "survie", mira_tags_421, 5, 0 }, mira_ops_o_421, 3, mira_ops_f_421, 2 },
+  { { "bandage", "survie", mira_tags_422, 5, 0 }, mira_ops_o_422, 2, mira_ops_f_422, 1 },
+  { { "bottle", "survie", mira_tags_423, 5, 0 }, mira_ops_o_423, 2, mira_ops_f_423, 1 },
+  { { "can", "survie", mira_tags_424, 5, 0 }, mira_ops_o_424, 3, mira_ops_f_424, 2 },
+  { { "jerrycan", "survie", mira_tags_425, 5, 0 }, mira_ops_o_425, 3, mira_ops_f_425, 2 },
+  { { "binoculars", "survie", mira_tags_426, 5, 0 }, mira_ops_o_426, 2, mira_ops_f_426, 2 },
 };
 
 #endif /* MIRA_SYMBOLS_DATA_H */

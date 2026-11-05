@@ -1,0 +1,1 @@
+export default {"name":"bandage","tags":["pansement","bandage","blessure","soin","santé"],"e":"M4.9 15.5a3 3 0 0 1 0-4.2l6.4-6.4a3 3 0 0 1 4.2 0l3.6 3.6a3 3 0 0 1 0 4.2l-6.4 6.4a3 3 0 0 1-4.2 0z","c":"M9.5 12 12 9.5l2.5 2.5-2.5 2.5zM7 11v.01M17 13v.01"};
