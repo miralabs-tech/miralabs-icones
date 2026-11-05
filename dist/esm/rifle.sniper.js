@@ -1,0 +1,1 @@
+export default {"name":"rifle.sniper","tags":["sniper","remington 700","r700","fusil de précision","arme"],"e":"M2 10 7 9.5h11.5V11H10.5L9 13.5H7L2.5 14.5z","p":"M18.5 10.25h4M12.5 11l.8 1.8","f":"M12.75 13.2a0.75 0.75 0 1 0 1.5 0a0.75 0.75 0 1 0 -1.5 0z","cut":false};

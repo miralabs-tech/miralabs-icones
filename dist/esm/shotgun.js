@@ -1,0 +1,1 @@
+export default {"name":"shotgun","tags":["fusil à pompe","pompe","shotgun","arme"],"e":"M2 11 7 10h4.5v2.5H7l-4.5 2zM14.5 11.25h2.5a1 1 0 0 1 1 1v0a1 1 0 0 1 -1 1h-2.5a1 1 0 0 1 -1 -1v0a1 1 0 0 1 1 -1z","p":"M11.5 10.6h11M11.5 12h2M18 12h1","cut":false};

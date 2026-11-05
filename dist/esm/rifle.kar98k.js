@@ -1,0 +1,1 @@
+export default {"name":"rifle.kar98k","tags":["kar98k","mauser","fusil à verrou","arme"],"e":"M2 11.25 6.5 10h14v1.5h-10l-2 1.25h-2l-4 2.25z","p":"M20.5 10.75h2M11 11.5l.8 2M9 12.75a1.25 1.25 0 0 0 2.5 0","f":"M11.25 14a0.75 0.75 0 1 0 1.5 0a0.75 0.75 0 1 0 -1.5 0z","cut":false};

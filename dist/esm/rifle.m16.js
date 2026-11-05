@@ -1,0 +1,1 @@
+export default {"name":"rifle.m16","tags":["m16","fusil d'assaut","poignée de transport","arme"],"e":"M2 10 8 9.75h10.5v2H14l.3 4.5h-2l-.3-4.5h-1l-.8 3.5H8.4l.7-3.5H8L2 13.5z","p":"M9 9.75V8.5h4.5v1.25M17 9.75l.3-1.25M18.5 10.75h4","cut":false};

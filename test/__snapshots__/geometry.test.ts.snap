@@ -4739,3 +4739,219 @@ exports[`geometrie tattoo 1`] = `
   "y1": 80,
 }
 `;
+
+exports[`geometrie pistol 1`] = `
+{
+  "cx": -0.25,
+  "cy": 0.5,
+  "n": 1399,
+  "x0": 13,
+  "x1": 80,
+  "y0": 27,
+  "y1": 72,
+}
+`;
+
+exports[`geometrie pistol.m1911 1`] = `
+{
+  "cx": -0.5,
+  "cy": 0.25,
+  "n": 1531,
+  "x0": 7,
+  "x1": 84,
+  "y0": 23,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie pistol.magnum 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0.25,
+  "n": 1792,
+  "x0": 11,
+  "x1": 86,
+  "y0": 23,
+  "y1": 74,
+}
+`;
+
+exports[`geometrie rifle.m4a1 1`] = `
+{
+  "cx": 0,
+  "cy": 0.63,
+  "n": 1458,
+  "x0": 5,
+  "x1": 90,
+  "y0": 32,
+  "y1": 68,
+}
+`;
+
+exports[`geometrie rifle.m16 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0.38,
+  "n": 1611,
+  "x0": 5,
+  "x1": 92,
+  "y0": 31,
+  "y1": 67,
+}
+`;
+
+exports[`geometrie rifle.kar98k 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0.5,
+  "n": 1229,
+  "x0": 5,
+  "x1": 92,
+  "y0": 37,
+  "y1": 62,
+}
+`;
+
+exports[`geometrie shotgun 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0.25,
+  "n": 1166,
+  "x0": 5,
+  "x1": 92,
+  "y0": 37,
+  "y1": 60,
+}
+`;
+
+exports[`geometrie smg 1`] = `
+{
+  "cx": -0.5,
+  "cy": 0.75,
+  "n": 1441,
+  "x0": 7,
+  "x1": 84,
+  "y0": 31,
+  "y1": 70,
+}
+`;
+
+exports[`geometrie knife 1`] = `
+{
+  "cx": 0.5,
+  "cy": 0,
+  "n": 1075,
+  "x0": 9,
+  "x1": 90,
+  "y0": 35,
+  "y1": 60,
+}
+`;
+
+exports[`geometrie bat 1`] = `
+{
+  "cx": -0.12,
+  "cy": 0.13,
+  "n": 1199,
+  "x0": 14,
+  "x1": 80,
+  "y0": 15,
+  "y1": 81,
+}
+`;
+
+exports[`geometrie grenade 1`] = `
+{
+  "cx": 0,
+  "cy": 0.38,
+  "n": 1522,
+  "x0": 23,
+  "x1": 72,
+  "y0": 16,
+  "y1": 82,
+}
+`;
+
+exports[`geometrie ammo 1`] = `
+{
+  "cx": 0,
+  "cy": 0.25,
+  "n": 2466,
+  "x0": 17,
+  "x1": 78,
+  "y0": 19,
+  "y1": 78,
+}
+`;
+
+exports[`geometrie crosshair 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1680,
+  "x0": 7,
+  "x1": 88,
+  "y0": 7,
+  "y1": 88,
+}
+`;
+
+exports[`geometrie revolver 1`] = `
+{
+  "cx": 0,
+  "cy": 0,
+  "n": 1444,
+  "x0": 11,
+  "x1": 84,
+  "y0": 25,
+  "y1": 70,
+}
+`;
+
+exports[`geometrie rifle.ak47 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0.13,
+  "n": 1703,
+  "x0": 5,
+  "x1": 92,
+  "y0": 28,
+  "y1": 68,
+}
+`;
+
+exports[`geometrie rifle.sniper 1`] = `
+{
+  "cx": 0.25,
+  "cy": 0,
+  "n": 1156,
+  "x0": 5,
+  "x1": 92,
+  "y0": 35,
+  "y1": 60,
+}
+`;
+
+exports[`geometrie smg.drum 1`] = `
+{
+  "cx": 0,
+  "cy": 0.13,
+  "n": 1633,
+  "x0": 5,
+  "x1": 90,
+  "y0": 31,
+  "y1": 65,
+}
+`;
+
+exports[`geometrie launcher.rpg 1`] = `
+{
+  "cx": 0,
+  "cy": 0.5,
+  "n": 1380,
+  "x0": 7,
+  "x1": 88,
+  "y0": 35,
+  "y1": 64,
+}
+`;

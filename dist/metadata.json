@@ -171,6 +171,12 @@
       "count": 36
     },
     {
+      "id": "armes",
+      "label": "Armes",
+      "glyph": "pistol",
+      "count": 18
+    },
+    {
       "id": "formes",
       "label": "Formes",
       "glyph": "circle",
@@ -7238,6 +7244,343 @@
       ],
       "fill": true,
       "codepoint": "U+E18A"
+    },
+    {
+      "name": "pistol",
+      "id": "pistol",
+      "collection": "armes",
+      "tags": [
+        "pistolet",
+        "arme de poing",
+        "glock",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E18B"
+    },
+    {
+      "name": "pistol.m1911",
+      "id": "pistolM1911",
+      "collection": "armes",
+      "tags": [
+        "m1911",
+        "colt 1911",
+        "pistolet",
+        "arme de poing",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E18C"
+    },
+    {
+      "name": "pistol.magnum",
+      "id": "pistolMagnum",
+      "collection": "armes",
+      "tags": [
+        "desert eagle",
+        "magnum",
+        "pistolet",
+        "arme de poing",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E18D"
+    },
+    {
+      "name": "revolver",
+      "id": "revolver",
+      "collection": "armes",
+      "tags": [
+        "revolver",
+        "colt anaconda",
+        "barillet",
+        "arme de poing",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E18E"
+    },
+    {
+      "name": "rifle.ak47",
+      "id": "rifleAk47",
+      "collection": "armes",
+      "tags": [
+        "ak47",
+        "kalachnikov",
+        "fusil d'assaut",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E18F"
+    },
+    {
+      "name": "rifle.m4a1",
+      "id": "rifleM4a1",
+      "collection": "armes",
+      "tags": [
+        "m4a1",
+        "m4",
+        "carabine",
+        "fusil d'assaut",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E190"
+    },
+    {
+      "name": "rifle.m16",
+      "id": "rifleM16",
+      "collection": "armes",
+      "tags": [
+        "m16",
+        "fusil d'assaut",
+        "poignée de transport",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E191"
+    },
+    {
+      "name": "rifle.kar98k",
+      "id": "rifleKar98k",
+      "collection": "armes",
+      "tags": [
+        "kar98k",
+        "mauser",
+        "fusil à verrou",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E192"
+    },
+    {
+      "name": "rifle.sniper",
+      "id": "rifleSniper",
+      "collection": "armes",
+      "tags": [
+        "sniper",
+        "remington 700",
+        "r700",
+        "fusil de précision",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E193"
+    },
+    {
+      "name": "shotgun",
+      "id": "shotgun",
+      "collection": "armes",
+      "tags": [
+        "fusil à pompe",
+        "pompe",
+        "shotgun",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E194"
+    },
+    {
+      "name": "smg",
+      "id": "smg",
+      "collection": "armes",
+      "tags": [
+        "pistolet-mitrailleur",
+        "smg",
+        "uzi",
+        "mp5",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E195"
+    },
+    {
+      "name": "smg.drum",
+      "id": "smgDrum",
+      "collection": "armes",
+      "tags": [
+        "thompson",
+        "tommy gun",
+        "chargeur camembert",
+        "pistolet-mitrailleur",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E196"
+    },
+    {
+      "name": "launcher.rpg",
+      "id": "launcherRpg",
+      "collection": "armes",
+      "tags": [
+        "rpg",
+        "lance-roquettes",
+        "bazooka",
+        "roquette",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E197"
+    },
+    {
+      "name": "knife",
+      "id": "knife",
+      "collection": "armes",
+      "tags": [
+        "couteau",
+        "lame",
+        "poignard",
+        "corps à corps",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E198"
+    },
+    {
+      "name": "bat",
+      "id": "bat",
+      "collection": "armes",
+      "tags": [
+        "batte",
+        "baseball",
+        "corps à corps",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E199"
+    },
+    {
+      "name": "grenade",
+      "id": "grenade",
+      "collection": "armes",
+      "tags": [
+        "grenade",
+        "explosif",
+        "lancer",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E19A"
+    },
+    {
+      "name": "ammo",
+      "id": "ammo",
+      "collection": "armes",
+      "tags": [
+        "munitions",
+        "balles",
+        "cartouches",
+        "chargeur",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E19B"
+    },
+    {
+      "name": "crosshair",
+      "id": "crosshair",
+      "collection": "armes",
+      "tags": [
+        "viseur",
+        "réticule",
+        "cible",
+        "visée",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "f"
+      ],
+      "fill": false,
+      "codepoint": "U+E19C"
     }
   ]
 }

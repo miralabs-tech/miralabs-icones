@@ -43,7 +43,7 @@ describe("exports package.json", () => {
 });
 
 describe("exports — noms exportés", () => {
-  it(". -> les 395 identifiants", async () => {
+  it(". -> les 413 identifiants", async () => {
     const mod = await import("../dist/esm/index.js");
     const expected = SYMBOLS.map((s) => identifier(s.name)).sort();
     expect(Object.keys(mod).sort()).toEqual(expected);
@@ -80,13 +80,13 @@ describe("exports — noms exportés", () => {
 });
 
 describe("invariants du jeu de données", () => {
-  it("395 noms uniques", () => {
-    expect(new Set(SYMBOLS.map((s) => s.name)).size).toBe(395);
-    expect(SYMBOLS.length).toBe(395);
+  it("413 noms uniques", () => {
+    expect(new Set(SYMBOLS.map((s) => s.name)).size).toBe(413);
+    expect(SYMBOLS.length).toBe(413);
   });
 
-  it("395 identifiants uniques", () => {
-    expect(new Set(SYMBOLS.map((s) => identifier(s.name))).size).toBe(395);
+  it("413 identifiants uniques", () => {
+    expect(new Set(SYMBOLS.map((s) => identifier(s.name))).size).toBe(413);
   });
 
   it("WEIGHT_STROKE exact", async () => {
@@ -94,8 +94,8 @@ describe("invariants du jeu de données", () => {
     expect(WEIGHT_STROKE).toEqual({ thin: 1, light: 1.25, regular: 1.5, medium: 1.75, semibold: 2, bold: 2.4 });
   });
 
-  it("23 catégories", () => {
-    expect(CATEGORIES.length).toBe(23);
+  it("24 catégories", () => {
+    expect(CATEGORIES.length).toBe(24);
   });
 
   it("WEIGHTS a 6 entrées cohérentes avec WEIGHT_STROKE", async () => {

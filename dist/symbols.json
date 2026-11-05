@@ -171,6 +171,12 @@
       "count": 36
     },
     {
+      "id": "armes",
+      "label": "Armes",
+      "glyph": "pistol",
+      "count": 18
+    },
+    {
       "id": "formes",
       "label": "Formes",
       "glyph": "circle",
@@ -8865,6 +8871,431 @@
       "paths": {
         "e": "M9.5 3.5c.8 1 1.6 1.5 2.5 1.5s1.7-.5 2.5-1.5L15 6.5 14.5 9 20 20.5H4L9.5 9 9 6.5z",
         "c": "M9.5 9h5"
+      }
+    },
+    {
+      "name": "pistol",
+      "id": "pistol",
+      "collection": "armes",
+      "tags": [
+        "pistolet",
+        "arme de poing",
+        "glock",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E18B",
+      "paths": {
+        "p": "M10.5 10v1.5a1.5 1.5 0 0 0 1.5 1.5h1.5V10",
+        "e": "M4 7.5h15.5V10H10l-1 7.5H6.5l1-7.5H4z"
+      },
+      "cut": false
+    },
+    {
+      "name": "pistol.m1911",
+      "id": "pistolM1911",
+      "collection": "armes",
+      "tags": [
+        "m1911",
+        "colt 1911",
+        "pistolet",
+        "arme de poing",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E18C",
+      "paths": {
+        "p": "M11 10v1.5a1.5 1.5 0 0 0 1.5 1.5H14V10M3.5 7.5l-1-1",
+        "e": "M3.5 7.5h17V10H10.5l-1 8H7l1-8H3.5z"
+      },
+      "cut": false
+    },
+    {
+      "name": "pistol.magnum",
+      "id": "pistolMagnum",
+      "collection": "armes",
+      "tags": [
+        "desert eagle",
+        "magnum",
+        "pistolet",
+        "arme de poing",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E18D",
+      "paths": {
+        "p": "M11 10v1.5a1.5 1.5 0 0 0 1.5 1.5H14V10",
+        "e": "M3.5 6.5H20l1 1V10H10.5l-1 8H7l1-8H3.5z",
+        "c": "M11 8.25h8.5"
+      },
+      "cut": false
+    },
+    {
+      "name": "revolver",
+      "id": "revolver",
+      "collection": "armes",
+      "tags": [
+        "revolver",
+        "colt anaconda",
+        "barillet",
+        "arme de poing",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E18E",
+      "paths": {
+        "p": "M7.5 11.5v1a1.5 1.5 0 0 0 1.5 1.5h1v-2.5M5 8.5 4 7",
+        "e": "M8.75 7.5h2.5a1.25 1.25 0 0 1 1.25 1.25v1.5a1.25 1.25 0 0 1 -1.25 1.25h-2.5a1.25 1.25 0 0 1 -1.25 -1.25v-1.5a1.25 1.25 0 0 1 1.25 -1.25zM12.5 8h8v2.5h-8zM7.5 8.5H5L3.5 10l1 1.5-1 5.5h2.2L7.5 11.5z"
+      },
+      "cut": false
+    },
+    {
+      "name": "rifle.ak47",
+      "id": "rifleAk47",
+      "collection": "armes",
+      "tags": [
+        "ak47",
+        "kalachnikov",
+        "fusil d'assaut",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E18F",
+      "paths": {
+        "p": "M19.5 9.65h3M14.5 7.75h6v1",
+        "e": "M2 9.25 7 8.75h12.5v1.75H14c.2 1.8.8 3.5 1.8 5l-1.8 1c-1.1-1.6-1.7-3.6-2-6H11l-.7 3.5H8.6l.6-3.5H7l-4.5 2.5z"
+      },
+      "cut": false
+    },
+    {
+      "name": "rifle.m4a1",
+      "id": "rifleM4a1",
+      "collection": "armes",
+      "tags": [
+        "m4a1",
+        "m4",
+        "carabine",
+        "fusil d'assaut",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E190",
+      "paths": {
+        "p": "M18.5 11H22M17 10V8.75",
+        "e": "M2 10h3l1 .75h2V10h10.5v2H14l.35 4.5h-2L12 12h-1l-.8 3.5H8.4l.7-3.5H6l-1 1H2z"
+      },
+      "cut": false
+    },
+    {
+      "name": "rifle.m16",
+      "id": "rifleM16",
+      "collection": "armes",
+      "tags": [
+        "m16",
+        "fusil d'assaut",
+        "poignée de transport",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E191",
+      "paths": {
+        "p": "M9 9.75V8.5h4.5v1.25M17 9.75l.3-1.25M18.5 10.75h4",
+        "e": "M2 10 8 9.75h10.5v2H14l.3 4.5h-2l-.3-4.5h-1l-.8 3.5H8.4l.7-3.5H8L2 13.5z"
+      },
+      "cut": false
+    },
+    {
+      "name": "rifle.kar98k",
+      "id": "rifleKar98k",
+      "collection": "armes",
+      "tags": [
+        "kar98k",
+        "mauser",
+        "fusil à verrou",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E192",
+      "paths": {
+        "p": "M20.5 10.75h2M11 11.5l.8 2M9 12.75a1.25 1.25 0 0 0 2.5 0",
+        "e": "M2 11.25 6.5 10h14v1.5h-10l-2 1.25h-2l-4 2.25z",
+        "f": "M11.25 14a0.75 0.75 0 1 0 1.5 0a0.75 0.75 0 1 0 -1.5 0z"
+      },
+      "cut": false
+    },
+    {
+      "name": "rifle.sniper",
+      "id": "rifleSniper",
+      "collection": "armes",
+      "tags": [
+        "sniper",
+        "remington 700",
+        "r700",
+        "fusil de précision",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "f"
+      ],
+      "fill": true,
+      "codepoint": "U+E193",
+      "paths": {
+        "p": "M18.5 10.25h4M12.5 11l.8 1.8",
+        "e": "M2 10 7 9.5h11.5V11H10.5L9 13.5H7L2.5 14.5z",
+        "f": "M12.75 13.2a0.75 0.75 0 1 0 1.5 0a0.75 0.75 0 1 0 -1.5 0z"
+      },
+      "cut": false
+    },
+    {
+      "name": "shotgun",
+      "id": "shotgun",
+      "collection": "armes",
+      "tags": [
+        "fusil à pompe",
+        "pompe",
+        "shotgun",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E194",
+      "paths": {
+        "p": "M11.5 10.6h11M11.5 12h2M18 12h1",
+        "e": "M2 11 7 10h4.5v2.5H7l-4.5 2zM14.5 11.25h2.5a1 1 0 0 1 1 1v0a1 1 0 0 1 -1 1h-2.5a1 1 0 0 1 -1 -1v0a1 1 0 0 1 1 -1z"
+      },
+      "cut": false
+    },
+    {
+      "name": "smg",
+      "id": "smg",
+      "collection": "armes",
+      "tags": [
+        "pistolet-mitrailleur",
+        "smg",
+        "uzi",
+        "mp5",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E195",
+      "paths": {
+        "p": "M17.5 9.75h3M5 9.5H2.5v3",
+        "e": "M5 8.5h12.5V11H14l.5 6h-1.8l-.5-6H8.6l-.7 4H6.1l.7-4H5z"
+      },
+      "cut": false
+    },
+    {
+      "name": "smg.drum",
+      "id": "smgDrum",
+      "collection": "armes",
+      "tags": [
+        "thompson",
+        "tommy gun",
+        "chargeur camembert",
+        "pistolet-mitrailleur",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E196",
+      "paths": {
+        "p": "M15 9.5h7M19.25 8.5v2M20.75 8.5v2",
+        "e": "M2 9.25 6.5 8.5H15v2.25H9.5l-.7 3.5H7l.6-3.5h-1l-4 2zM9.25 13.25a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM16.5 9.5H18l-.3 3.5h-1.5z"
+      },
+      "cut": false
+    },
+    {
+      "name": "launcher.rpg",
+      "id": "launcherRpg",
+      "collection": "armes",
+      "tags": [
+        "rpg",
+        "lance-roquettes",
+        "bazooka",
+        "roquette",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E197",
+      "paths": {
+        "e": "M5 11h9a1 1 0 0 1 1 1v0a1 1 0 0 1 -1 1h-9a1 1 0 0 1 -1 -1v0a1 1 0 0 1 1 -1zM15 12l2-2.5h2l2.5 2.5-2.5 2.5h-2zM4 11 2.5 10v4L4 13zM7 13h1.3l-.4 2.5H6.6zM10.5 13h1.3l-.4 2.5h-1.3z"
+      }
+    },
+    {
+      "name": "knife",
+      "id": "knife",
+      "collection": "armes",
+      "tags": [
+        "couteau",
+        "lame",
+        "poignard",
+        "corps à corps",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E198",
+      "paths": {
+        "p": "M10 9.5v5",
+        "e": "M10.5 11h9c1.2 0 2 .4 2.5 1-3 .8-7 1.25-11.5 1.25zM4.13 11h3.75a1.125 1.125 0 0 1 1.125 1.125v0a1.125 1.125 0 0 1 -1.125 1.125h-3.75a1.125 1.125 0 0 1 -1.125 -1.125v0a1.125 1.125 0 0 1 1.125 -1.125z"
+      },
+      "cut": false
+    },
+    {
+      "name": "bat",
+      "id": "bat",
+      "collection": "armes",
+      "tags": [
+        "batte",
+        "baseball",
+        "corps à corps",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E199",
+      "paths": {
+        "e": "M17 4.6a2 2 0 0 1 2.4 2.4L8.5 17.5l-2-2zM4.25 18.5a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0 -2.5 0z"
+      }
+    },
+    {
+      "name": "grenade",
+      "id": "grenade",
+      "collection": "armes",
+      "tags": [
+        "grenade",
+        "explosif",
+        "lancer",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E19A",
+      "paths": {
+        "p": "M13.5 7.5l3 3M7.25 6.25a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0z",
+        "e": "M6.5 14.5a5.5 5.5 0 1 0 11 0a5.5 5.5 0 1 0 -11 0zM10.5 7h3v2h-3z",
+        "c": "M6.5 14.5h11"
+      },
+      "cut": false
+    },
+    {
+      "name": "ammo",
+      "id": "ammo",
+      "collection": "armes",
+      "tags": [
+        "munitions",
+        "balles",
+        "cartouches",
+        "chargeur",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E19B",
+      "paths": {
+        "e": "M5 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9H5zM10.5 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9h-3zM16 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9h-3z",
+        "c": "M5 10h3M10.5 10h3M16 10h3M5 16.5h3M10.5 16.5h3M16 16.5h3"
+      }
+    },
+    {
+      "name": "crosshair",
+      "id": "crosshair",
+      "collection": "armes",
+      "tags": [
+        "viseur",
+        "réticule",
+        "cible",
+        "visée",
+        "arme"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "f"
+      ],
+      "fill": false,
+      "codepoint": "U+E19C",
+      "paths": {
+        "p": "M5 12a7 7 0 1 0 14 0a7 7 0 1 0 -14 0zM12 2.5v5M12 16.5v5M2.5 12h5M16.5 12h5",
+        "f": "M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0z"
       }
     }
   ]

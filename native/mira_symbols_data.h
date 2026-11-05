@@ -2,7 +2,7 @@
 #ifndef MIRA_SYMBOLS_DATA_H
 #define MIRA_SYMBOLS_DATA_H
 
-#define MIRA_SYMBOL_COUNT 395
+#define MIRA_SYMBOL_COUNT 413
 #define MIRA_GRID 24
 static const float MIRA_WEIGHT_STROKE[6] = { 1.0f, 1.25f, 1.5f, 1.75f, 2.0f, 2.4f };
 
@@ -1368,6 +1368,63 @@ static const char *const mira_tags_394[] = { "robe", "jupe", "soir\303\251e", "t
 static const MiraOp mira_ops_o_394[] = { { 1, 1.0f, 0.0f, "M9.5 3.5c.8 1 1.6 1.5 2.5 1.5s1.7-.5 2.5-1.5L15 6.5 14.5 9 20 20.5H4L9.5 9 9 6.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M9.5 9h5", 0, 0 } };
 static const MiraOp mira_cut_394_f0[] = { { 1, 1.0f, 0.0f, "M9.5 9h5", 0, 0 } };
 static const MiraOp mira_ops_f_394[] = { { 0, 0.0f, 0.0f, "M9.5 3.5c.8 1 1.6 1.5 2.5 1.5s1.7-.5 2.5-1.5L15 6.5 14.5 9 20 20.5H4L9.5 9 9 6.5z", mira_cut_394_f0, 1 } };
+static const char *const mira_tags_395[] = { "pistolet", "arme de poing", "glock", "arme" };
+static const MiraOp mira_ops_o_395[] = { { 1, 1.0f, 0.0f, "M4 7.5h15.5V10H10l-1 7.5H6.5l1-7.5H4z", 0, 0 }, { 1, 1.0f, 0.0f, "M10.5 10v1.5a1.5 1.5 0 0 0 1.5 1.5h1.5V10", 0, 0 } };
+static const MiraOp mira_ops_f_395[] = { { 0, 0.0f, 0.0f, "M4 7.5h15.5V10H10l-1 7.5H6.5l1-7.5H4z", 0, 0 }, { 1, 1.0f, 0.0f, "M10.5 10v1.5a1.5 1.5 0 0 0 1.5 1.5h1.5V10", 0, 0 } };
+static const char *const mira_tags_396[] = { "m1911", "colt 1911", "pistolet", "arme de poing", "arme" };
+static const MiraOp mira_ops_o_396[] = { { 1, 1.0f, 0.0f, "M3.5 7.5h17V10H10.5l-1 8H7l1-8H3.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M11 10v1.5a1.5 1.5 0 0 0 1.5 1.5H14V10M3.5 7.5l-1-1", 0, 0 } };
+static const MiraOp mira_ops_f_396[] = { { 0, 0.0f, 0.0f, "M3.5 7.5h17V10H10.5l-1 8H7l1-8H3.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M11 10v1.5a1.5 1.5 0 0 0 1.5 1.5H14V10M3.5 7.5l-1-1", 0, 0 } };
+static const char *const mira_tags_397[] = { "desert eagle", "magnum", "pistolet", "arme de poing", "arme" };
+static const MiraOp mira_ops_o_397[] = { { 1, 1.0f, 0.0f, "M3.5 6.5H20l1 1V10H10.5l-1 8H7l1-8H3.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M11 8.25h8.5", 0, 0 }, { 1, 1.0f, 0.0f, "M11 10v1.5a1.5 1.5 0 0 0 1.5 1.5H14V10", 0, 0 } };
+static const MiraOp mira_cut_397_f0[] = { { 1, 1.0f, 0.0f, "M11 8.25h8.5", 0, 0 } };
+static const MiraOp mira_ops_f_397[] = { { 0, 0.0f, 0.0f, "M3.5 6.5H20l1 1V10H10.5l-1 8H7l1-8H3.5z", mira_cut_397_f0, 1 }, { 1, 1.0f, 0.0f, "M11 10v1.5a1.5 1.5 0 0 0 1.5 1.5H14V10", 0, 0 } };
+static const char *const mira_tags_398[] = { "revolver", "colt anaconda", "barillet", "arme de poing", "arme" };
+static const MiraOp mira_ops_o_398[] = { { 1, 1.0f, 0.0f, "M8.75 7.5h2.5a1.25 1.25 0 0 1 1.25 1.25v1.5a1.25 1.25 0 0 1 -1.25 1.25h-2.5a1.25 1.25 0 0 1 -1.25 -1.25v-1.5a1.25 1.25 0 0 1 1.25 -1.25zM12.5 8h8v2.5h-8zM7.5 8.5H5L3.5 10l1 1.5-1 5.5h2.2L7.5 11.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M7.5 11.5v1a1.5 1.5 0 0 0 1.5 1.5h1v-2.5M5 8.5 4 7", 0, 0 } };
+static const MiraOp mira_ops_f_398[] = { { 0, 0.0f, 0.0f, "M8.75 7.5h2.5a1.25 1.25 0 0 1 1.25 1.25v1.5a1.25 1.25 0 0 1 -1.25 1.25h-2.5a1.25 1.25 0 0 1 -1.25 -1.25v-1.5a1.25 1.25 0 0 1 1.25 -1.25zM12.5 8h8v2.5h-8zM7.5 8.5H5L3.5 10l1 1.5-1 5.5h2.2L7.5 11.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M7.5 11.5v1a1.5 1.5 0 0 0 1.5 1.5h1v-2.5M5 8.5 4 7", 0, 0 } };
+static const char *const mira_tags_399[] = { "ak47", "kalachnikov", "fusil d'assaut", "arme" };
+static const MiraOp mira_ops_o_399[] = { { 1, 1.0f, 0.0f, "M2 9.25 7 8.75h12.5v1.75H14c.2 1.8.8 3.5 1.8 5l-1.8 1c-1.1-1.6-1.7-3.6-2-6H11l-.7 3.5H8.6l.6-3.5H7l-4.5 2.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M19.5 9.65h3M14.5 7.75h6v1", 0, 0 } };
+static const MiraOp mira_ops_f_399[] = { { 0, 0.0f, 0.0f, "M2 9.25 7 8.75h12.5v1.75H14c.2 1.8.8 3.5 1.8 5l-1.8 1c-1.1-1.6-1.7-3.6-2-6H11l-.7 3.5H8.6l.6-3.5H7l-4.5 2.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M19.5 9.65h3M14.5 7.75h6v1", 0, 0 } };
+static const char *const mira_tags_400[] = { "m4a1", "m4", "carabine", "fusil d'assaut", "arme" };
+static const MiraOp mira_ops_o_400[] = { { 1, 1.0f, 0.0f, "M2 10h3l1 .75h2V10h10.5v2H14l.35 4.5h-2L12 12h-1l-.8 3.5H8.4l.7-3.5H6l-1 1H2z", 0, 0 }, { 1, 1.0f, 0.0f, "M18.5 11H22M17 10V8.75", 0, 0 } };
+static const MiraOp mira_ops_f_400[] = { { 0, 0.0f, 0.0f, "M2 10h3l1 .75h2V10h10.5v2H14l.35 4.5h-2L12 12h-1l-.8 3.5H8.4l.7-3.5H6l-1 1H2z", 0, 0 }, { 1, 1.0f, 0.0f, "M18.5 11H22M17 10V8.75", 0, 0 } };
+static const char *const mira_tags_401[] = { "m16", "fusil d'assaut", "poign\303\251e de transport", "arme" };
+static const MiraOp mira_ops_o_401[] = { { 1, 1.0f, 0.0f, "M2 10 8 9.75h10.5v2H14l.3 4.5h-2l-.3-4.5h-1l-.8 3.5H8.4l.7-3.5H8L2 13.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M9 9.75V8.5h4.5v1.25M17 9.75l.3-1.25M18.5 10.75h4", 0, 0 } };
+static const MiraOp mira_ops_f_401[] = { { 0, 0.0f, 0.0f, "M2 10 8 9.75h10.5v2H14l.3 4.5h-2l-.3-4.5h-1l-.8 3.5H8.4l.7-3.5H8L2 13.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M9 9.75V8.5h4.5v1.25M17 9.75l.3-1.25M18.5 10.75h4", 0, 0 } };
+static const char *const mira_tags_402[] = { "kar98k", "mauser", "fusil \303\240 verrou", "arme" };
+static const MiraOp mira_ops_o_402[] = { { 1, 1.0f, 0.0f, "M2 11.25 6.5 10h14v1.5h-10l-2 1.25h-2l-4 2.25z", 0, 0 }, { 0, 0.0f, 0.0f, "M11.25 14a0.75 0.75 0 1 0 1.5 0a0.75 0.75 0 1 0 -1.5 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M20.5 10.75h2M11 11.5l.8 2M9 12.75a1.25 1.25 0 0 0 2.5 0", 0, 0 } };
+static const MiraOp mira_ops_f_402[] = { { 0, 0.0f, 0.0f, "M2 11.25 6.5 10h14v1.5h-10l-2 1.25h-2l-4 2.25z", 0, 0 }, { 0, 0.0f, 0.0f, "M11.25 14a0.75 0.75 0 1 0 1.5 0a0.75 0.75 0 1 0 -1.5 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M20.5 10.75h2M11 11.5l.8 2M9 12.75a1.25 1.25 0 0 0 2.5 0", 0, 0 } };
+static const char *const mira_tags_403[] = { "sniper", "remington 700", "r700", "fusil de pr\303\251cision", "arme" };
+static const MiraOp mira_ops_o_403[] = { { 1, 1.0f, 0.0f, "M2 10 7 9.5h11.5V11H10.5L9 13.5H7L2.5 14.5z", 0, 0 }, { 0, 0.0f, 0.0f, "M12.75 13.2a0.75 0.75 0 1 0 1.5 0a0.75 0.75 0 1 0 -1.5 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M18.5 10.25h4M12.5 11l.8 1.8", 0, 0 } };
+static const MiraOp mira_ops_f_403[] = { { 0, 0.0f, 0.0f, "M2 10 7 9.5h11.5V11H10.5L9 13.5H7L2.5 14.5z", 0, 0 }, { 0, 0.0f, 0.0f, "M12.75 13.2a0.75 0.75 0 1 0 1.5 0a0.75 0.75 0 1 0 -1.5 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M18.5 10.25h4M12.5 11l.8 1.8", 0, 0 } };
+static const char *const mira_tags_404[] = { "fusil \303\240 pompe", "pompe", "shotgun", "arme" };
+static const MiraOp mira_ops_o_404[] = { { 1, 1.0f, 0.0f, "M2 11 7 10h4.5v2.5H7l-4.5 2zM14.5 11.25h2.5a1 1 0 0 1 1 1v0a1 1 0 0 1 -1 1h-2.5a1 1 0 0 1 -1 -1v0a1 1 0 0 1 1 -1z", 0, 0 }, { 1, 1.0f, 0.0f, "M11.5 10.6h11M11.5 12h2M18 12h1", 0, 0 } };
+static const MiraOp mira_ops_f_404[] = { { 0, 0.0f, 0.0f, "M2 11 7 10h4.5v2.5H7l-4.5 2zM14.5 11.25h2.5a1 1 0 0 1 1 1v0a1 1 0 0 1 -1 1h-2.5a1 1 0 0 1 -1 -1v0a1 1 0 0 1 1 -1z", 0, 0 }, { 1, 1.0f, 0.0f, "M11.5 10.6h11M11.5 12h2M18 12h1", 0, 0 } };
+static const char *const mira_tags_405[] = { "pistolet-mitrailleur", "smg", "uzi", "mp5", "arme" };
+static const MiraOp mira_ops_o_405[] = { { 1, 1.0f, 0.0f, "M5 8.5h12.5V11H14l.5 6h-1.8l-.5-6H8.6l-.7 4H6.1l.7-4H5z", 0, 0 }, { 1, 1.0f, 0.0f, "M17.5 9.75h3M5 9.5H2.5v3", 0, 0 } };
+static const MiraOp mira_ops_f_405[] = { { 0, 0.0f, 0.0f, "M5 8.5h12.5V11H14l.5 6h-1.8l-.5-6H8.6l-.7 4H6.1l.7-4H5z", 0, 0 }, { 1, 1.0f, 0.0f, "M17.5 9.75h3M5 9.5H2.5v3", 0, 0 } };
+static const char *const mira_tags_406[] = { "thompson", "tommy gun", "chargeur camembert", "pistolet-mitrailleur", "arme" };
+static const MiraOp mira_ops_o_406[] = { { 1, 1.0f, 0.0f, "M2 9.25 6.5 8.5H15v2.25H9.5l-.7 3.5H7l.6-3.5h-1l-4 2zM9.25 13.25a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM16.5 9.5H18l-.3 3.5h-1.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M15 9.5h7M19.25 8.5v2M20.75 8.5v2", 0, 0 } };
+static const MiraOp mira_ops_f_406[] = { { 0, 0.0f, 0.0f, "M2 9.25 6.5 8.5H15v2.25H9.5l-.7 3.5H7l.6-3.5h-1l-4 2zM9.25 13.25a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM16.5 9.5H18l-.3 3.5h-1.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M15 9.5h7M19.25 8.5v2M20.75 8.5v2", 0, 0 } };
+static const char *const mira_tags_407[] = { "rpg", "lance-roquettes", "bazooka", "roquette", "arme" };
+static const MiraOp mira_ops_o_407[] = { { 1, 1.0f, 0.0f, "M5 11h9a1 1 0 0 1 1 1v0a1 1 0 0 1 -1 1h-9a1 1 0 0 1 -1 -1v0a1 1 0 0 1 1 -1zM15 12l2-2.5h2l2.5 2.5-2.5 2.5h-2zM4 11 2.5 10v4L4 13zM7 13h1.3l-.4 2.5H6.6zM10.5 13h1.3l-.4 2.5h-1.3z", 0, 0 } };
+static const MiraOp mira_ops_f_407[] = { { 0, 0.0f, 0.0f, "M5 11h9a1 1 0 0 1 1 1v0a1 1 0 0 1 -1 1h-9a1 1 0 0 1 -1 -1v0a1 1 0 0 1 1 -1zM15 12l2-2.5h2l2.5 2.5-2.5 2.5h-2zM4 11 2.5 10v4L4 13zM7 13h1.3l-.4 2.5H6.6zM10.5 13h1.3l-.4 2.5h-1.3z", 0, 0 } };
+static const char *const mira_tags_408[] = { "couteau", "lame", "poignard", "corps \303\240 corps", "arme" };
+static const MiraOp mira_ops_o_408[] = { { 1, 1.0f, 0.0f, "M10.5 11h9c1.2 0 2 .4 2.5 1-3 .8-7 1.25-11.5 1.25zM4.13 11h3.75a1.125 1.125 0 0 1 1.125 1.125v0a1.125 1.125 0 0 1 -1.125 1.125h-3.75a1.125 1.125 0 0 1 -1.125 -1.125v0a1.125 1.125 0 0 1 1.125 -1.125z", 0, 0 }, { 1, 1.0f, 0.0f, "M10 9.5v5", 0, 0 } };
+static const MiraOp mira_ops_f_408[] = { { 0, 0.0f, 0.0f, "M10.5 11h9c1.2 0 2 .4 2.5 1-3 .8-7 1.25-11.5 1.25zM4.13 11h3.75a1.125 1.125 0 0 1 1.125 1.125v0a1.125 1.125 0 0 1 -1.125 1.125h-3.75a1.125 1.125 0 0 1 -1.125 -1.125v0a1.125 1.125 0 0 1 1.125 -1.125z", 0, 0 }, { 1, 1.0f, 0.0f, "M10 9.5v5", 0, 0 } };
+static const char *const mira_tags_409[] = { "batte", "baseball", "corps \303\240 corps", "arme" };
+static const MiraOp mira_ops_o_409[] = { { 1, 1.0f, 0.0f, "M17 4.6a2 2 0 0 1 2.4 2.4L8.5 17.5l-2-2zM4.25 18.5a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0 -2.5 0z", 0, 0 } };
+static const MiraOp mira_ops_f_409[] = { { 0, 0.0f, 0.0f, "M17 4.6a2 2 0 0 1 2.4 2.4L8.5 17.5l-2-2zM4.25 18.5a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0 -2.5 0z", 0, 0 } };
+static const char *const mira_tags_410[] = { "grenade", "explosif", "lancer", "arme" };
+static const MiraOp mira_ops_o_410[] = { { 1, 1.0f, 0.0f, "M6.5 14.5a5.5 5.5 0 1 0 11 0a5.5 5.5 0 1 0 -11 0zM10.5 7h3v2h-3z", 0, 0 }, { 1, 1.0f, 0.0f, "M6.5 14.5h11", 0, 0 }, { 1, 1.0f, 0.0f, "M13.5 7.5l3 3M7.25 6.25a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0z", 0, 0 } };
+static const MiraOp mira_cut_410_f0[] = { { 1, 1.0f, 0.0f, "M6.5 14.5h11", 0, 0 } };
+static const MiraOp mira_ops_f_410[] = { { 0, 0.0f, 0.0f, "M6.5 14.5a5.5 5.5 0 1 0 11 0a5.5 5.5 0 1 0 -11 0zM10.5 7h3v2h-3z", mira_cut_410_f0, 1 }, { 1, 1.0f, 0.0f, "M13.5 7.5l3 3M7.25 6.25a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0z", 0, 0 } };
+static const char *const mira_tags_411[] = { "munitions", "balles", "cartouches", "chargeur", "arme" };
+static const MiraOp mira_ops_o_411[] = { { 1, 1.0f, 0.0f, "M5 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9H5zM10.5 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9h-3zM16 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9h-3z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 10h3M10.5 10h3M16 10h3M5 16.5h3M10.5 16.5h3M16 16.5h3", 0, 0 } };
+static const MiraOp mira_cut_411_f0[] = { { 1, 1.0f, 0.0f, "M5 10h3M10.5 10h3M16 10h3M5 16.5h3M10.5 16.5h3M16 16.5h3", 0, 0 } };
+static const MiraOp mira_ops_f_411[] = { { 0, 0.0f, 0.0f, "M5 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9H5zM10.5 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9h-3zM16 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9h-3z", mira_cut_411_f0, 1 } };
+static const char *const mira_tags_412[] = { "viseur", "r\303\251ticule", "cible", "vis\303\251e", "arme" };
+static const MiraOp mira_ops_o_412[] = { { 0, 0.0f, 0.0f, "M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 12a7 7 0 1 0 14 0a7 7 0 1 0 -14 0zM12 2.5v5M12 16.5v5M2.5 12h5M16.5 12h5", 0, 0 } };
+static const MiraOp mira_ops_f_412[] = { { 0, 0.0f, 0.0f, "M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0z", 0, 0 }, { 1, 1.0f, 0.0f, "M5 12a7 7 0 1 0 14 0a7 7 0 1 0 -14 0zM12 2.5v5M12 16.5v5M2.5 12h5M16.5 12h5", 0, 0 } };
 
 static const MiraSymbolRec MIRA_SYMBOLS[MIRA_SYMBOL_COUNT] = {
   { { "chevron.left", "navigation", mira_tags_0, 4, 1 }, mira_ops_o_0, 1, mira_ops_f_0, 1 },
@@ -1765,6 +1822,24 @@ static const MiraSymbolRec MIRA_SYMBOLS[MIRA_SYMBOL_COUNT] = {
   { { "beard", "vetements", mira_tags_392, 5, 0 }, mira_ops_o_392, 3, mira_ops_f_392, 2 },
   { { "tattoo", "vetements", mira_tags_393, 5, 0 }, mira_ops_o_393, 3, mira_ops_f_393, 2 },
   { { "dress", "vetements", mira_tags_394, 4, 0 }, mira_ops_o_394, 2, mira_ops_f_394, 1 },
+  { { "pistol", "armes", mira_tags_395, 4, 0 }, mira_ops_o_395, 2, mira_ops_f_395, 2 },
+  { { "pistol.m1911", "armes", mira_tags_396, 5, 0 }, mira_ops_o_396, 2, mira_ops_f_396, 2 },
+  { { "pistol.magnum", "armes", mira_tags_397, 5, 0 }, mira_ops_o_397, 3, mira_ops_f_397, 2 },
+  { { "revolver", "armes", mira_tags_398, 5, 0 }, mira_ops_o_398, 2, mira_ops_f_398, 2 },
+  { { "rifle.ak47", "armes", mira_tags_399, 4, 0 }, mira_ops_o_399, 2, mira_ops_f_399, 2 },
+  { { "rifle.m4a1", "armes", mira_tags_400, 5, 0 }, mira_ops_o_400, 2, mira_ops_f_400, 2 },
+  { { "rifle.m16", "armes", mira_tags_401, 4, 0 }, mira_ops_o_401, 2, mira_ops_f_401, 2 },
+  { { "rifle.kar98k", "armes", mira_tags_402, 4, 0 }, mira_ops_o_402, 3, mira_ops_f_402, 3 },
+  { { "rifle.sniper", "armes", mira_tags_403, 5, 0 }, mira_ops_o_403, 3, mira_ops_f_403, 3 },
+  { { "shotgun", "armes", mira_tags_404, 4, 0 }, mira_ops_o_404, 2, mira_ops_f_404, 2 },
+  { { "smg", "armes", mira_tags_405, 5, 0 }, mira_ops_o_405, 2, mira_ops_f_405, 2 },
+  { { "smg.drum", "armes", mira_tags_406, 5, 0 }, mira_ops_o_406, 2, mira_ops_f_406, 2 },
+  { { "launcher.rpg", "armes", mira_tags_407, 5, 0 }, mira_ops_o_407, 1, mira_ops_f_407, 1 },
+  { { "knife", "armes", mira_tags_408, 5, 0 }, mira_ops_o_408, 2, mira_ops_f_408, 2 },
+  { { "bat", "armes", mira_tags_409, 4, 0 }, mira_ops_o_409, 1, mira_ops_f_409, 1 },
+  { { "grenade", "armes", mira_tags_410, 4, 0 }, mira_ops_o_410, 3, mira_ops_f_410, 2 },
+  { { "ammo", "armes", mira_tags_411, 5, 0 }, mira_ops_o_411, 2, mira_ops_f_411, 1 },
+  { { "crosshair", "armes", mira_tags_412, 5, 0 }, mira_ops_o_412, 2, mira_ops_f_412, 2 },
 };
 
 #endif /* MIRA_SYMBOLS_DATA_H */

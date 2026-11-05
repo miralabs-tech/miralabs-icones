@@ -1,0 +1,1 @@
+export default {"name":"pistol.magnum","tags":["desert eagle","magnum","pistolet","arme de poing","arme"],"e":"M3.5 6.5H20l1 1V10H10.5l-1 8H7l1-8H3.5z","c":"M11 8.25h8.5","p":"M11 10v1.5a1.5 1.5 0 0 0 1.5 1.5H14V10","cut":false};
