@@ -1,1 +1,1 @@
-export default {"name":"hat","tags":["chapeau","feutre","borsalino","couvre-chef","tenue"],"e":"M7 15V9.5a2 2 0 0 1 2-2h1.2L12 9l1.8-1.5H15a2 2 0 0 1 2 2V15z","c":"M7 12.5h10","p":"M2.5 15.5c2 1.5 5.5 2 9.5 2s7.5-.5 9.5-2","cut":false};
+export default {"name":"hat","tags":["chapeau","feutre","borsalino","couvre-chef","tenue"],"e":"M7.5 15l1-6.5A1.5 1.5 0 0 1 10 7.2h4a1.5 1.5 0 0 1 1.5 1.3l1 6.5zM3.75 15h16.5a1.25 1.25 0 0 1 1.25 1.25v0a1.25 1.25 0 0 1 -1.25 1.25h-16.5a1.25 1.25 0 0 1 -1.25 -1.25v0a1.25 1.25 0 0 1 1.25 -1.25z","c":"M7.9 12.5h8.2"};
