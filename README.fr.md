@@ -13,7 +13,7 @@
 
 📖 [English](./README.md) · Français
 
-[Explorateur](https://miralabs-tech.github.io/miralabs-icones/docs/) · [Démarrage](#-démarrage) · [Collections](#-collections) · [Natif](./native/README.md) · [Contribuer](./CONTRIBUTING.md)
+[Explorateur](https://miralabs-tech.github.io/miralabs-icones/docs/) · [Démarrage](#-démarrage) · [Collections](#-collections) · [Natif](./native/README.md) · [Changelog](./CHANGELOG.md) · [Contribuer](./CONTRIBUTING.md)
 
 <p align="center"><img src="docs/preview.png" alt="Un échantillon des symboles Miralabs Icônes, en contour et en plein" width="100%"></p>
 

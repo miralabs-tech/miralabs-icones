@@ -13,7 +13,7 @@
 
 📖 English · [Français](./README.fr.md)
 
-[Explorer](https://miralabs-tech.github.io/miralabs-icones/docs/) · [Quickstart](#-quickstart) · [Collections](#-collections) · [Native](./native/README.md) · [Contributing](./CONTRIBUTING.md)
+[Explorer](https://miralabs-tech.github.io/miralabs-icones/docs/) · [Quickstart](#-quickstart) · [Collections](#-collections) · [Native](./native/README.md) · [Changelog](./CHANGELOG.md) · [Contributing](./CONTRIBUTING.md)
 
 <p align="center"><img src="docs/preview.png" alt="A sample of Miralabs Icônes symbols, outline and fill" width="100%"></p>
 
