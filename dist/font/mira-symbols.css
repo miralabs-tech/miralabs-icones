@@ -427,3 +427,12 @@
 .mira-symbol-can::before { content: "\E1A8"; }
 .mira-symbol-jerrycan::before { content: "\E1A9"; }
 .mira-symbol-binoculars::before { content: "\E1AA"; }
+.mira-symbol-bicycle::before { content: "\E1AB"; }
+.mira-symbol-motorcycle::before { content: "\E1AC"; }
+.mira-symbol-sailboat::before { content: "\E1AD"; }
+.mira-symbol-helicopter::before { content: "\E1AE"; }
+.mira-symbol-truck-box::before { content: "\E1AF"; }
+.mira-symbol-square-and-pencil::before { content: "\E1B0"; }
+.mira-symbol-checklist::before { content: "\E1B1"; }
+.mira-symbol-clock-arrow-circlepath::before { content: "\E1B2"; }
+.mira-symbol-paintpalette::before { content: "\E1B3"; }

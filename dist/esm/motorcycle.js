@@ -1,0 +1,1 @@
+export default {"name":"motorcycle","tags":["moto","motocyclette","deux-roues","trajet","transport"],"e":"M6.5 9h5.5l1.5-1.5h3.5l1 2.5-3 5H10l-1.5-4h-2z","p":"M2.25 15a3.25 3.25 0 1 0 6.5 0a3.25 3.25 0 1 0 -6.5 0zM15.25 15a3.25 3.25 0 1 0 6.5 0a3.25 3.25 0 1 0 -6.5 0zM5.5 15l3-4M18.5 15 16.5 7.5M15 6h3","cut":false};

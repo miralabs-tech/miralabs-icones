@@ -1,0 +1,1 @@
+export default {"name":"truck.box","tags":["camion","livraison","fourgon","transport","logistique"],"e":"M4 6h9a1.5 1.5 0 0 1 1.5 1.5v7a1.5 1.5 0 0 1 -1.5 1.5h-9a1.5 1.5 0 0 1 -1.5 -1.5v-7a1.5 1.5 0 0 1 1.5 -1.5zM14.5 9H18l3 3.5V16h-6.5z","c":"M15.5 10.5h2l1.5 2h-3.5z","p":"M5 17.5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0zM15 17.5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0z","cut":false};

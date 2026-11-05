@@ -1,0 +1,1 @@
+export default {"name":"helicopter","tags":["hélicoptère","hélico","vol","secours","transport"],"e":"M9.75 8.25h6.5a4.5 4.5 0 0 1 4.5 4.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-7.5a2 2 0 0 1-2-2z","c":"M16.25 8.25v3.5h4.5","p":"M9.75 10.75h-6l-.5-2M5.75 5.25h14M12.75 5.25v3M10.75 18.75h9M12.75 15.75v3M17.75 15.75v3","cut":false};

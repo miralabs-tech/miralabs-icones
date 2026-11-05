@@ -425,5 +425,14 @@
   "bottle": "U+E1A7",
   "can": "U+E1A8",
   "jerrycan": "U+E1A9",
-  "binoculars": "U+E1AA"
+  "binoculars": "U+E1AA",
+  "bicycle": "U+E1AB",
+  "motorcycle": "U+E1AC",
+  "sailboat": "U+E1AD",
+  "helicopter": "U+E1AE",
+  "truck.box": "U+E1AF",
+  "square.and.pencil": "U+E1B0",
+  "checklist": "U+E1B1",
+  "clock.arrow.circlepath": "U+E1B2",
+  "paintpalette": "U+E1B3"
 }

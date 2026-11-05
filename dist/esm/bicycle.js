@@ -1,0 +1,1 @@
+export default {"name":"bicycle","tags":["vélo","bicyclette","cyclisme","trajet","transport"],"p":"M2.5 14.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0zM14.5 14.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0zM6 14.5 9 8l2 6.5H6M9 8h7l-5 6.5M16 8l2 6.5M7.5 7h3M16 8l-.5-2h2"};

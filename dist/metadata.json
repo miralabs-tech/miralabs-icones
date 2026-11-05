@@ -66,13 +66,13 @@
       "id": "actions",
       "label": "Actions",
       "glyph": "plus",
-      "count": 24
+      "count": 25
     },
     {
       "id": "texte",
       "label": "Texte & mise en page",
       "glyph": "textformat",
-      "count": 19
+      "count": 20
     },
     {
       "id": "fichiers",
@@ -114,13 +114,13 @@
       "id": "cartes",
       "label": "Cartes & lieux",
       "glyph": "mappin",
-      "count": 12
+      "count": 17
     },
     {
       "id": "temps",
       "label": "Temps & agenda",
       "glyph": "clock",
-      "count": 7
+      "count": 8
     },
     {
       "id": "dev",
@@ -138,7 +138,7 @@
       "id": "reglages",
       "label": "Réglages",
       "glyph": "gearshape",
-      "count": 7
+      "count": 8
     },
     {
       "id": "statut",
@@ -7858,6 +7858,175 @@
       ],
       "fill": true,
       "codepoint": "U+E1AA"
+    },
+    {
+      "name": "bicycle",
+      "id": "bicycle",
+      "collection": "cartes",
+      "tags": [
+        "vélo",
+        "bicyclette",
+        "cyclisme",
+        "trajet",
+        "transport"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E1AB"
+    },
+    {
+      "name": "motorcycle",
+      "id": "motorcycle",
+      "collection": "cartes",
+      "tags": [
+        "moto",
+        "motocyclette",
+        "deux-roues",
+        "trajet",
+        "transport"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E1AC"
+    },
+    {
+      "name": "sailboat",
+      "id": "sailboat",
+      "collection": "cartes",
+      "tags": [
+        "bateau",
+        "voilier",
+        "mer",
+        "navigation",
+        "transport"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e"
+      ],
+      "fill": true,
+      "codepoint": "U+E1AD"
+    },
+    {
+      "name": "helicopter",
+      "id": "helicopter",
+      "collection": "cartes",
+      "tags": [
+        "hélicoptère",
+        "hélico",
+        "vol",
+        "secours",
+        "transport"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E1AE"
+    },
+    {
+      "name": "truck.box",
+      "id": "truckBox",
+      "collection": "cartes",
+      "tags": [
+        "camion",
+        "livraison",
+        "fourgon",
+        "transport",
+        "logistique"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E1AF"
+    },
+    {
+      "name": "square.and.pencil",
+      "id": "squareAndPencil",
+      "collection": "actions",
+      "tags": [
+        "rédiger",
+        "modifier",
+        "nouveau message",
+        "éditer",
+        "composer"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E1B0"
+    },
+    {
+      "name": "checklist",
+      "id": "checklist",
+      "collection": "texte",
+      "tags": [
+        "liste de tâches",
+        "à faire",
+        "todo",
+        "cocher",
+        "tâches"
+      ],
+      "rtl": true,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E1B1"
+    },
+    {
+      "name": "clock.arrow.circlepath",
+      "id": "clockArrowCirclepath",
+      "collection": "temps",
+      "tags": [
+        "historique",
+        "récents",
+        "restaurer",
+        "versions",
+        "annuler"
+      ],
+      "rtl": false,
+      "layers": [
+        "p"
+      ],
+      "fill": false,
+      "codepoint": "U+E1B2"
+    },
+    {
+      "name": "paintpalette",
+      "id": "paintpalette",
+      "collection": "reglages",
+      "tags": [
+        "palette",
+        "couleurs",
+        "thème",
+        "peinture",
+        "design"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E1B3"
     }
   ]
 }
