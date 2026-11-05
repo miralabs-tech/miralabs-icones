@@ -83,7 +83,7 @@ CI runs `bun test`, both typechecks, `codegen:check` and `build:check`; run them
 
 ## 🚢 Releasing
 
-1. Bump `version` in `package.json` on `main` (through a pull request), with `dist/` rebuilt.
+1. Bump `version` in `package.json` and move the `[Unreleased]` entries of `CHANGELOG.md` under the new version, on `main` (through a pull request), with `dist/` rebuilt.
 2. Actions → **Release** → Run workflow, with the same version (without the `v`).
 3. The workflow replays the gates, publishes to npm through trusted publishing (no token, provenance attested), then creates the `v<version>` tag and the GitHub release with the four archives.
 
