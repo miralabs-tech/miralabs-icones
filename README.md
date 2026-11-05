@@ -119,7 +119,7 @@ Search by name or by French tag in the [explorer](https://miralabs-tech.github.i
 
 ## 📥 Release artifacts
 
-Each `v*` tag attaches what the npm package leaves out ([release.yml](./.github/workflows/release.yml)):
+Each release attaches what the npm package leaves out ([release.yml](./.github/workflows/release.yml)):
 
 | Archive | Content |
 | --- | --- |

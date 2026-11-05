@@ -119,7 +119,7 @@ Recherche par nom ou par étiquette française dans l'[explorateur](https://mira
 
 ## 📥 Artefacts de release
 
-Chaque tag `v*` attache ce que le paquet npm laisse de côté ([release.yml](./.github/workflows/release.yml)) :
+Chaque release attache ce que le paquet npm laisse de côté ([release.yml](./.github/workflows/release.yml)) :
 
 | Archive | Contenu |
 | --- | --- |

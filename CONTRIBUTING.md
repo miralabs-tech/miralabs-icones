@@ -80,3 +80,11 @@ The `svg/` tree and font binaries are neither committed nor exported by the pack
 | `bun run dev` | explorer with rebuild on change and live reload (`--port`, `--static`) |
 
 CI runs `bun test`, both typechecks, `codegen:check` and `build:check`; run them before opening a pull request.
+
+## 🚢 Releasing
+
+1. Bump `version` in `package.json` on `main` (through a pull request), with `dist/` rebuilt.
+2. Actions → **Release** → Run workflow, with the same version (without the `v`).
+3. The workflow replays the gates, publishes to npm through trusted publishing (no token, provenance attested), then creates the `v<version>` tag and the GitHub release with the four archives.
+
+The npm trusted publisher is bound to `.github/workflows/release.yml` and the `npm` environment: renaming either breaks the publish until npmjs.com is updated.
