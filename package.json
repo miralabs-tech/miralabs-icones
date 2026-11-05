@@ -33,8 +33,7 @@
     "typecheck:dist": "bun x tsc -p tsconfig.dts.json --noEmit",
     "test": "bun test",
     "test:browser": "bun x vitest run -c vitest.config.ts",
-    "dev": "bun scripts/dev.ts",
-    "docs": "bun x serve . -l 4173"
+    "dev": "bun scripts/dev.ts"
   },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",
