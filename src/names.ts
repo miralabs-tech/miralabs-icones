@@ -395,7 +395,25 @@ export type SymbolName =
   | "backpack"
   | "beard"
   | "tattoo"
-  | "dress";
+  | "dress"
+  | "pistol"
+  | "pistol.m1911"
+  | "pistol.magnum"
+  | "revolver"
+  | "rifle.ak47"
+  | "rifle.m4a1"
+  | "rifle.m16"
+  | "rifle.kar98k"
+  | "rifle.sniper"
+  | "shotgun"
+  | "smg"
+  | "smg.drum"
+  | "launcher.rpg"
+  | "knife"
+  | "bat"
+  | "grenade"
+  | "ammo"
+  | "crosshair";
 
 export type SymbolCollection =
   | "navigation"
@@ -418,6 +436,7 @@ export type SymbolCollection =
   | "meteo"
   | "objets"
   | "vetements"
+  | "armes"
   | "formes"
   | "manette"
   | "marques";

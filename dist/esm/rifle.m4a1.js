@@ -1,0 +1,1 @@
+export default {"name":"rifle.m4a1","tags":["m4a1","m4","carabine","fusil d'assaut","arme"],"e":"M2 10h3l1 .75h2V10h10.5v2H14l.35 4.5h-2L12 12h-1l-.8 3.5H8.4l.7-3.5H6l-1 1H2z","p":"M18.5 11H22M17 10V8.75","cut":false};

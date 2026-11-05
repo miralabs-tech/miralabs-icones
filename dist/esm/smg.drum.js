@@ -1,0 +1,1 @@
+export default {"name":"smg.drum","tags":["thompson","tommy gun","chargeur camembert","pistolet-mitrailleur","arme"],"e":"M2 9.25 6.5 8.5H15v2.25H9.5l-.7 3.5H7l.6-3.5h-1l-4 2zM9.25 13.25a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0zM16.5 9.5H18l-.3 3.5h-1.5z","p":"M15 9.5h7M19.25 8.5v2M20.75 8.5v2","cut":false};

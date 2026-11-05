@@ -1,0 +1,1 @@
+export default {"name":"pistol.m1911","tags":["m1911","colt 1911","pistolet","arme de poing","arme"],"e":"M3.5 7.5h17V10H10.5l-1 8H7l1-8H3.5z","p":"M11 10v1.5a1.5 1.5 0 0 0 1.5 1.5H14V10M3.5 7.5l-1-1","cut":false};

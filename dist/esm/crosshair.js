@@ -1,0 +1,1 @@
+export default {"name":"crosshair","tags":["viseur","réticule","cible","visée","arme"],"p":"M5 12a7 7 0 1 0 14 0a7 7 0 1 0 -14 0zM12 2.5v5M12 16.5v5M2.5 12h5M16.5 12h5","f":"M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0z"};

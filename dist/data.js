@@ -102,6 +102,7 @@ export const CATEGORIES = [
   { id: "meteo", label: "Météo", glyph: "sun.max" },
   { id: "objets", label: "Objets", glyph: "book" },
   { id: "vetements", label: "Vêtements & accessoires", glyph: "tshirt" },
+  { id: "armes", label: "Armes", glyph: "pistol" },
   { id: "formes", label: "Formes", glyph: "circle" },
   { id: "manette", label: "Manette", glyph: "gamecontroller" },
   { id: "marques", label: "Évocations de marques", glyph: "cat.circle" }
@@ -501,7 +502,25 @@ export const SYMBOLS = [
   { name: "backpack", cat: "vetements", tags: ["sac à dos", "sac", "bagage", "randonnée", "accessoire"], e: rr(5, 6.5, 14, 14.5, 3), c: `${rr(8, 14, 8, 4.5, 1)}M5 11h14`, p: "M9.5 6.5V5a1.5 1.5 0 0 1 1.5-1.5h2A1.5 1.5 0 0 1 14.5 5v1.5", cut: false },
   { name: "beard", cat: "vetements", tags: ["barbe", "moustache", "pilosité", "visage", "personnage"], e: "M5 10.5v3a7 7 0 0 0 14 0v-3c-.8 1.8-2 3-3.5 3.5-1.3-.7-2.5-1-3.5-1s-2.2.3-3.5 1C7 13.5 5.8 12.3 5 10.5z", c: "M10.5 16.5h3", p: "M5 10.5a7 7 0 0 1 14 0M9.5 9.5v.01M14.5 9.5v.01", cut: false },
   { name: "tattoo", cat: "vetements", tags: ["tatouage", "tattoo", "encre", "cœur", "personnage"], e: "M12 19.5s-7.5-4.5-7.5-10a4 4 0 0 1 7.5-2 4 4 0 0 1 7.5 2c0 5.5-7.5 10-7.5 10z", c: "M4.5 11h15v3h-15z", p: "M4.5 11H2l1 1.5-1 1.5h2.5M19.5 11H22l-1 1.5 1 1.5h-2.5", cut: false },
-  { name: "dress", cat: "vetements", tags: ["robe", "jupe", "soirée", "tenue"], e: "M9.5 3.5c.8 1 1.6 1.5 2.5 1.5s1.7-.5 2.5-1.5L15 6.5 14.5 9 20 20.5H4L9.5 9 9 6.5z", c: "M9.5 9h5" }
+  { name: "dress", cat: "vetements", tags: ["robe", "jupe", "soirée", "tenue"], e: "M9.5 3.5c.8 1 1.6 1.5 2.5 1.5s1.7-.5 2.5-1.5L15 6.5 14.5 9 20 20.5H4L9.5 9 9 6.5z", c: "M9.5 9h5" },
+  { name: "pistol", cat: "armes", tags: ["pistolet", "arme de poing", "glock", "arme"], e: "M4 7.5h15.5V10H10l-1 7.5H6.5l1-7.5H4z", p: "M10.5 10v1.5a1.5 1.5 0 0 0 1.5 1.5h1.5V10", cut: false },
+  { name: "pistol.m1911", cat: "armes", tags: ["m1911", "colt 1911", "pistolet", "arme de poing", "arme"], e: "M3.5 7.5h17V10H10.5l-1 8H7l1-8H3.5z", p: "M11 10v1.5a1.5 1.5 0 0 0 1.5 1.5H14V10M3.5 7.5l-1-1", cut: false },
+  { name: "pistol.magnum", cat: "armes", tags: ["desert eagle", "magnum", "pistolet", "arme de poing", "arme"], e: "M3.5 6.5H20l1 1V10H10.5l-1 8H7l1-8H3.5z", c: "M11 8.25h8.5", p: "M11 10v1.5a1.5 1.5 0 0 0 1.5 1.5H14V10", cut: false },
+  { name: "revolver", cat: "armes", tags: ["revolver", "colt anaconda", "barillet", "arme de poing", "arme"], e: `${rr(7.5, 7.5, 5, 4, 1.25)}M12.5 8h8v2.5h-8zM7.5 8.5H5L3.5 10l1 1.5-1 5.5h2.2L7.5 11.5z`, p: "M7.5 11.5v1a1.5 1.5 0 0 0 1.5 1.5h1v-2.5M5 8.5 4 7", cut: false },
+  { name: "rifle.ak47", cat: "armes", tags: ["ak47", "kalachnikov", "fusil d'assaut", "arme"], e: "M2 9.25 7 8.75h12.5v1.75H14c.2 1.8.8 3.5 1.8 5l-1.8 1c-1.1-1.6-1.7-3.6-2-6H11l-.7 3.5H8.6l.6-3.5H7l-4.5 2.5z", p: "M19.5 9.65h3M14.5 7.75h6v1", cut: false },
+  { name: "rifle.m4a1", cat: "armes", tags: ["m4a1", "m4", "carabine", "fusil d'assaut", "arme"], e: "M2 10h3l1 .75h2V10h10.5v2H14l.35 4.5h-2L12 12h-1l-.8 3.5H8.4l.7-3.5H6l-1 1H2z", p: "M18.5 11H22M17 10V8.75", cut: false },
+  { name: "rifle.m16", cat: "armes", tags: ["m16", "fusil d'assaut", "poignée de transport", "arme"], e: "M2 10 8 9.75h10.5v2H14l.3 4.5h-2l-.3-4.5h-1l-.8 3.5H8.4l.7-3.5H8L2 13.5z", p: "M9 9.75V8.5h4.5v1.25M17 9.75l.3-1.25M18.5 10.75h4", cut: false },
+  { name: "rifle.kar98k", cat: "armes", tags: ["kar98k", "mauser", "fusil à verrou", "arme"], e: "M2 11.25 6.5 10h14v1.5h-10l-2 1.25h-2l-4 2.25z", p: "M20.5 10.75h2M11 11.5l.8 2M9 12.75a1.25 1.25 0 0 0 2.5 0", f: circle(12, 14, 0.75), cut: false },
+  { name: "rifle.sniper", cat: "armes", tags: ["sniper", "remington 700", "r700", "fusil de précision", "arme"], e: "M2 10 7 9.5h11.5V11H10.5L9 13.5H7L2.5 14.5z", p: "M18.5 10.25h4M12.5 11l.8 1.8", f: circle(13.5, 13.2, 0.75), cut: false },
+  { name: "shotgun", cat: "armes", tags: ["fusil à pompe", "pompe", "shotgun", "arme"], e: `M2 11 7 10h4.5v2.5H7l-4.5 2z${rr(13.5, 11.25, 4.5, 2, 1)}`, p: "M11.5 10.6h11M11.5 12h2M18 12h1", cut: false },
+  { name: "smg", cat: "armes", tags: ["pistolet-mitrailleur", "smg", "uzi", "mp5", "arme"], e: "M5 8.5h12.5V11H14l.5 6h-1.8l-.5-6H8.6l-.7 4H6.1l.7-4H5z", p: "M17.5 9.75h3M5 9.5H2.5v3", cut: false },
+  { name: "smg.drum", cat: "armes", tags: ["thompson", "tommy gun", "chargeur camembert", "pistolet-mitrailleur", "arme"], e: `M2 9.25 6.5 8.5H15v2.25H9.5l-.7 3.5H7l.6-3.5h-1l-4 2z${circle(11.75, 13.25, 2.5)}M16.5 9.5H18l-.3 3.5h-1.5z`, p: "M15 9.5h7M19.25 8.5v2M20.75 8.5v2", cut: false },
+  { name: "launcher.rpg", cat: "armes", tags: ["rpg", "lance-roquettes", "bazooka", "roquette", "arme"], e: `${rr(4, 11, 11, 2, 1)}M15 12l2-2.5h2l2.5 2.5-2.5 2.5h-2zM4 11 2.5 10v4L4 13zM7 13h1.3l-.4 2.5H6.6zM10.5 13h1.3l-.4 2.5h-1.3z` },
+  { name: "knife", cat: "armes", tags: ["couteau", "lame", "poignard", "corps à corps", "arme"], e: `M10.5 11h9c1.2 0 2 .4 2.5 1-3 .8-7 1.25-11.5 1.25z${rr(3, 11, 6, 2.25, 1.125)}`, p: "M10 9.5v5", cut: false },
+  { name: "bat", cat: "armes", tags: ["batte", "baseball", "corps à corps", "arme"], e: `M17 4.6a2 2 0 0 1 2.4 2.4L8.5 17.5l-2-2z${circle(5.5, 18.5, 1.25)}` },
+  { name: "grenade", cat: "armes", tags: ["grenade", "explosif", "lancer", "arme"], e: `${circle(12, 14.5, 5.5)}M10.5 7h3v2h-3z`, c: "M6.5 14.5h11", p: `M13.5 7.5l3 3${circle(8.75, 6.25, 1.5)}`, cut: false },
+  { name: "ammo", cat: "armes", tags: ["munitions", "balles", "cartouches", "chargeur", "arme"], e: "M5 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9H5zM10.5 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9h-3zM16 10c0-1.8.5-3.3 1.5-4.5 1 1.2 1.5 2.7 1.5 4.5v9h-3z", c: "M5 10h3M10.5 10h3M16 10h3M5 16.5h3M10.5 16.5h3M16 16.5h3" },
+  { name: "crosshair", cat: "armes", tags: ["viseur", "réticule", "cible", "visée", "arme"], p: `${circle(12, 12, 7)}M12 2.5v5M12 16.5v5M2.5 12h5M16.5 12h5`, f: circle(12, 12, 1) }
 ];
 export const ICONS = SYMBOLS;
 export const byName = Object.fromEntries(SYMBOLS.map((s) => [s.name, s]));

@@ -1,0 +1,1 @@
+export default {"name":"rifle.ak47","tags":["ak47","kalachnikov","fusil d'assaut","arme"],"e":"M2 9.25 7 8.75h12.5v1.75H14c.2 1.8.8 3.5 1.8 5l-1.8 1c-1.1-1.6-1.7-3.6-2-6H11l-.7 3.5H8.6l.6-3.5H7l-4.5 2.5z","p":"M19.5 9.65h3M14.5 7.75h6v1","cut":false};

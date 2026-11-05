@@ -1,0 +1,1 @@
+export default {"name":"launcher.rpg","tags":["rpg","lance-roquettes","bazooka","roquette","arme"],"e":"M5 11h9a1 1 0 0 1 1 1v0a1 1 0 0 1 -1 1h-9a1 1 0 0 1 -1 -1v0a1 1 0 0 1 1 -1zM15 12l2-2.5h2l2.5 2.5-2.5 2.5h-2zM4 11 2.5 10v4L4 13zM7 13h1.3l-.4 2.5H6.6zM10.5 13h1.3l-.4 2.5h-1.3z"};

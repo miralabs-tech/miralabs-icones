@@ -1,0 +1,1 @@
+export default {"name":"revolver","tags":["revolver","colt anaconda","barillet","arme de poing","arme"],"e":"M8.75 7.5h2.5a1.25 1.25 0 0 1 1.25 1.25v1.5a1.25 1.25 0 0 1 -1.25 1.25h-2.5a1.25 1.25 0 0 1 -1.25 -1.25v-1.5a1.25 1.25 0 0 1 1.25 -1.25zM12.5 8h8v2.5h-8zM7.5 8.5H5L3.5 10l1 1.5-1 5.5h2.2L7.5 11.5z","p":"M7.5 11.5v1a1.5 1.5 0 0 0 1.5 1.5h1v-2.5M5 8.5 4 7","cut":false};

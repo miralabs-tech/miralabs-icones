@@ -1,0 +1,1 @@
+export default {"name":"grenade","tags":["grenade","explosif","lancer","arme"],"e":"M6.5 14.5a5.5 5.5 0 1 0 11 0a5.5 5.5 0 1 0 -11 0zM10.5 7h3v2h-3z","c":"M6.5 14.5h11","p":"M13.5 7.5l3 3M7.25 6.25a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0z","cut":false};
