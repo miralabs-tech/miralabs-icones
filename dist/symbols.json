@@ -168,7 +168,7 @@
       "id": "vetements",
       "label": "Vêtements & accessoires",
       "glyph": "tshirt",
-      "count": 31
+      "count": 36
     },
     {
       "id": "formes",
@@ -8743,6 +8743,129 @@
         "e": "M7.5 8h9a4 4 0 0 1 0 8h-1.5l-1.5-1.5h-3L9 16H7.5a4 4 0 0 1 0-8z"
       },
       "cut": false
+    },
+    {
+      "name": "mask",
+      "id": "mask",
+      "collection": "vetements",
+      "tags": [
+        "masque",
+        "cagoule",
+        "visage",
+        "braquage",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E186",
+      "paths": {
+        "e": "M12 3a7.5 7.5 0 0 0-7.5 7.5V15c0 3.6 3.4 6 7.5 6s7.5-2.4 7.5-6v-4.5A7.5 7.5 0 0 0 12 3z",
+        "c": "M8.75 9h6.5a1.75 1.75 0 0 1 1.75 1.75v0a1.75 1.75 0 0 1 -1.75 1.75h-6.5a1.75 1.75 0 0 1 -1.75 -1.75v0a1.75 1.75 0 0 1 1.75 -1.75zM10.5 16.5h3"
+      }
+    },
+    {
+      "name": "backpack",
+      "id": "backpack",
+      "collection": "vetements",
+      "tags": [
+        "sac à dos",
+        "sac",
+        "bagage",
+        "randonnée",
+        "accessoire"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E187",
+      "paths": {
+        "p": "M9.5 6.5V5a1.5 1.5 0 0 1 1.5-1.5h2A1.5 1.5 0 0 1 14.5 5v1.5",
+        "e": "M8 6.5h8a3 3 0 0 1 3 3v8.5a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3v-8.5a3 3 0 0 1 3 -3z",
+        "c": "M9 14h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-2.5a1 1 0 0 1 1 -1zM5 11h14"
+      },
+      "cut": false
+    },
+    {
+      "name": "beard",
+      "id": "beard",
+      "collection": "vetements",
+      "tags": [
+        "barbe",
+        "moustache",
+        "pilosité",
+        "visage",
+        "personnage"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E188",
+      "paths": {
+        "p": "M5 10.5a7 7 0 0 1 14 0M9.5 9.5v.01M14.5 9.5v.01",
+        "e": "M5 10.5v3a7 7 0 0 0 14 0v-3c-.8 1.8-2 3-3.5 3.5-1.3-.7-2.5-1-3.5-1s-2.2.3-3.5 1C7 13.5 5.8 12.3 5 10.5z",
+        "c": "M10.5 16.5h3"
+      },
+      "cut": false
+    },
+    {
+      "name": "tattoo",
+      "id": "tattoo",
+      "collection": "vetements",
+      "tags": [
+        "tatouage",
+        "tattoo",
+        "encre",
+        "cœur",
+        "personnage"
+      ],
+      "rtl": false,
+      "layers": [
+        "p",
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E189",
+      "paths": {
+        "p": "M4.5 11H2l1 1.5-1 1.5h2.5M19.5 11H22l-1 1.5 1 1.5h-2.5",
+        "e": "M12 19.5s-7.5-4.5-7.5-10a4 4 0 0 1 7.5-2 4 4 0 0 1 7.5 2c0 5.5-7.5 10-7.5 10z",
+        "c": "M4.5 11h15v3h-15z"
+      },
+      "cut": false
+    },
+    {
+      "name": "dress",
+      "id": "dress",
+      "collection": "vetements",
+      "tags": [
+        "robe",
+        "jupe",
+        "soirée",
+        "tenue"
+      ],
+      "rtl": false,
+      "layers": [
+        "e",
+        "c"
+      ],
+      "fill": true,
+      "codepoint": "U+E18A",
+      "paths": {
+        "e": "M9.5 3.5c.8 1 1.6 1.5 2.5 1.5s1.7-.5 2.5-1.5L15 6.5 14.5 9 20 20.5H4L9.5 9 9 6.5z",
+        "c": "M9.5 9h5"
+      }
     }
   ]
 }

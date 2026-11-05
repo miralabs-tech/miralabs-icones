@@ -388,5 +388,10 @@
   "hoodie": "U+E182",
   "shirt": "U+E183",
   "sunglasses": "U+E184",
-  "goggles": "U+E185"
+  "goggles": "U+E185",
+  "mask": "U+E186",
+  "backpack": "U+E187",
+  "beard": "U+E188",
+  "tattoo": "U+E189",
+  "dress": "U+E18A"
 }

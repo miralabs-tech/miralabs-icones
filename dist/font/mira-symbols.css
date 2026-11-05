@@ -390,3 +390,8 @@
 .mira-symbol-shirt::before { content: "\E183"; }
 .mira-symbol-sunglasses::before { content: "\E184"; }
 .mira-symbol-goggles::before { content: "\E185"; }
+.mira-symbol-mask::before { content: "\E186"; }
+.mira-symbol-backpack::before { content: "\E187"; }
+.mira-symbol-beard::before { content: "\E188"; }
+.mira-symbol-tattoo::before { content: "\E189"; }
+.mira-symbol-dress::before { content: "\E18A"; }

@@ -496,7 +496,12 @@ export const SYMBOLS = [
   { name: "hoodie", cat: "vetements", tags: ["sweat à capuche", "hoodie", "capuche", "pull", "tenue"], e: "M8.5 6C8.5 4 10 3 12 3s3.5 1 3.5 3l4 1.5L21 11v9H3v-9l1.5-3.5z", c: "M6.5 12v8M17.5 12v8M9.5 6.5c.5 1.5 1.5 2 2.5 2s2-.5 2.5-2M10.5 9v3M13.5 9v3" },
   { name: "shirt", cat: "vetements", tags: ["chemise", "col", "boutons", "haut", "tenue"], e: "M9 3.5 4.5 5.5 3 9.5V20h18V9.5l-1.5-4L15 3.5z", c: "M9 3.5 10.5 7.5 12 5.5l1.5 2L15 3.5M12 9v.01M12 12.5v.01M12 16v.01M6.5 12v8M17.5 12v8" },
   { name: "sunglasses", cat: "vetements", tags: ["lunettes de soleil", "solaires", "lunettes", "accessoire"], f: "M3.5 9h7v2.5a3.5 3.5 0 0 1-7 0zM13.5 9h7v2.5a3.5 3.5 0 0 1-7 0z", p: "M2.5 9h19M10.5 10h3" },
-  { name: "goggles", cat: "vetements", tags: ["masque", "masque de motocross", "lunettes de ski", "protection", "accessoire"], e: "M7.5 8h9a4 4 0 0 1 0 8h-1.5l-1.5-1.5h-3L9 16H7.5a4 4 0 0 1 0-8z", p: "M3.5 12H2M20.5 12H22", cut: false }
+  { name: "goggles", cat: "vetements", tags: ["masque", "masque de motocross", "lunettes de ski", "protection", "accessoire"], e: "M7.5 8h9a4 4 0 0 1 0 8h-1.5l-1.5-1.5h-3L9 16H7.5a4 4 0 0 1 0-8z", p: "M3.5 12H2M20.5 12H22", cut: false },
+  { name: "mask", cat: "vetements", tags: ["masque", "cagoule", "visage", "braquage", "tenue"], e: "M12 3a7.5 7.5 0 0 0-7.5 7.5V15c0 3.6 3.4 6 7.5 6s7.5-2.4 7.5-6v-4.5A7.5 7.5 0 0 0 12 3z", c: `${rr(7, 9, 10, 3.5, 1.75)}M10.5 16.5h3` },
+  { name: "backpack", cat: "vetements", tags: ["sac à dos", "sac", "bagage", "randonnée", "accessoire"], e: rr(5, 6.5, 14, 14.5, 3), c: `${rr(8, 14, 8, 4.5, 1)}M5 11h14`, p: "M9.5 6.5V5a1.5 1.5 0 0 1 1.5-1.5h2A1.5 1.5 0 0 1 14.5 5v1.5", cut: false },
+  { name: "beard", cat: "vetements", tags: ["barbe", "moustache", "pilosité", "visage", "personnage"], e: "M5 10.5v3a7 7 0 0 0 14 0v-3c-.8 1.8-2 3-3.5 3.5-1.3-.7-2.5-1-3.5-1s-2.2.3-3.5 1C7 13.5 5.8 12.3 5 10.5z", c: "M10.5 16.5h3", p: "M5 10.5a7 7 0 0 1 14 0M9.5 9.5v.01M14.5 9.5v.01", cut: false },
+  { name: "tattoo", cat: "vetements", tags: ["tatouage", "tattoo", "encre", "cœur", "personnage"], e: "M12 19.5s-7.5-4.5-7.5-10a4 4 0 0 1 7.5-2 4 4 0 0 1 7.5 2c0 5.5-7.5 10-7.5 10z", c: "M4.5 11h15v3h-15z", p: "M4.5 11H2l1 1.5-1 1.5h2.5M19.5 11H22l-1 1.5 1 1.5h-2.5", cut: false },
+  { name: "dress", cat: "vetements", tags: ["robe", "jupe", "soirée", "tenue"], e: "M9.5 3.5c.8 1 1.6 1.5 2.5 1.5s1.7-.5 2.5-1.5L15 6.5 14.5 9 20 20.5H4L9.5 9 9 6.5z", c: "M9.5 9h5" }
 ];
 export const ICONS = SYMBOLS;
 export const byName = Object.fromEntries(SYMBOLS.map((s) => [s.name, s]));

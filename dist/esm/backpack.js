@@ -1,0 +1,1 @@
+export default {"name":"backpack","tags":["sac à dos","sac","bagage","randonnée","accessoire"],"e":"M8 6.5h8a3 3 0 0 1 3 3v8.5a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3v-8.5a3 3 0 0 1 3 -3z","c":"M9 14h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-2.5a1 1 0 0 1 1 -1zM5 11h14","p":"M9.5 6.5V5a1.5 1.5 0 0 1 1.5-1.5h2A1.5 1.5 0 0 1 14.5 5v1.5","cut":false};

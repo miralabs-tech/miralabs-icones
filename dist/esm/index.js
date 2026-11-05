@@ -388,3 +388,8 @@ export { default as hoodie } from "./hoodie.js";
 export { default as shirt } from "./shirt.js";
 export { default as sunglasses } from "./sunglasses.js";
 export { default as goggles } from "./goggles.js";
+export { default as mask } from "./mask.js";
+export { default as backpack } from "./backpack.js";
+export { default as beard } from "./beard.js";
+export { default as tattoo } from "./tattoo.js";
+export { default as dress } from "./dress.js";

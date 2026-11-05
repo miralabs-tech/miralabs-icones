@@ -390,7 +390,12 @@ export type SymbolName =
   | "hoodie"
   | "shirt"
   | "sunglasses"
-  | "goggles";
+  | "goggles"
+  | "mask"
+  | "backpack"
+  | "beard"
+  | "tattoo"
+  | "dress";
 
 export type SymbolCollection =
   | "navigation"
