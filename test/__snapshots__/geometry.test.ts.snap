@@ -4368,6 +4368,18 @@ exports[`geometrie jacket 1`] = `
 }
 `;
 
+exports[`geometrie gloves 1`] = `
+{
+  "cx": -0.12,
+  "cy": -0.25,
+  "n": 1780,
+  "x0": 20,
+  "x1": 74,
+  "y0": 9,
+  "y1": 84,
+}
+`;
+
 exports[`geometrie pants 1`] = `
 {
   "cx": 0,
@@ -4452,6 +4464,18 @@ exports[`geometrie bracelet 1`] = `
 }
 `;
 
+exports[`geometrie anklet 1`] = `
+{
+  "cx": -0.25,
+  "cy": -0.25,
+  "n": 1450,
+  "x0": 19,
+  "x1": 74,
+  "y0": 9,
+  "y1": 84,
+}
+`;
+
 exports[`geometrie ring 1`] = `
 {
   "cx": 0,
@@ -4488,38 +4512,14 @@ exports[`geometrie parachute 1`] = `
 }
 `;
 
-exports[`geometrie gloves 1`] = `
-{
-  "cx": -0.12,
-  "cy": -0.25,
-  "n": 1780,
-  "x0": 20,
-  "x1": 74,
-  "y0": 9,
-  "y1": 84,
-}
-`;
-
-exports[`geometrie anklet 1`] = `
-{
-  "cx": -0.25,
-  "cy": -0.25,
-  "n": 1450,
-  "x0": 19,
-  "x1": 74,
-  "y0": 9,
-  "y1": 84,
-}
-`;
-
 exports[`geometrie hat 1`] = `
 {
   "cx": 0,
-  "cy": 0.5,
-  "n": 1600,
+  "cy": 0.25,
+  "n": 1690,
   "x0": 7,
   "x1": 88,
-  "y0": 27,
+  "y0": 25,
   "y1": 72,
 }
 `;
@@ -4527,12 +4527,12 @@ exports[`geometrie hat 1`] = `
 exports[`geometrie cap 1`] = `
 {
   "cx": 0.5,
-  "cy": 0.25,
-  "n": 1315,
+  "cy": -0.25,
+  "n": 1420,
   "x0": 11,
   "x1": 88,
   "y0": 25,
-  "y1": 72,
+  "y1": 68,
 }
 `;
 
@@ -4551,24 +4551,24 @@ exports[`geometrie beanie 1`] = `
 exports[`geometrie helmet.motorcycle 1`] = `
 {
   "cx": 0,
-  "cy": -0.5,
-  "n": 1993,
-  "x0": 11,
-  "x1": 84,
-  "y0": 11,
-  "y1": 80,
+  "cy": 0,
+  "n": 2416,
+  "x0": 13,
+  "x1": 82,
+  "y0": 9,
+  "y1": 86,
 }
 `;
 
 exports[`geometrie helmet.motocross 1`] = `
 {
-  "cx": 0.5,
-  "cy": -0.5,
-  "n": 1765,
-  "x0": 11,
-  "x1": 88,
+  "cx": 0,
+  "cy": 0.25,
+  "n": 2386,
+  "x0": 9,
+  "x1": 86,
   "y0": 13,
-  "y1": 78,
+  "y1": 84,
 }
 `;
 

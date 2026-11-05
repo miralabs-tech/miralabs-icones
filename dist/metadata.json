@@ -6893,7 +6893,6 @@
       ],
       "rtl": false,
       "layers": [
-        "p",
         "e",
         "c"
       ],
@@ -6912,7 +6911,6 @@
       ],
       "rtl": false,
       "layers": [
-        "p",
         "e",
         "c"
       ],
@@ -6972,7 +6970,8 @@
       "rtl": false,
       "layers": [
         "p",
-        "e"
+        "e",
+        "c"
       ],
       "fill": true,
       "codepoint": "U+E17C"

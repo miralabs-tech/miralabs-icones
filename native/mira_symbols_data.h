@@ -1298,24 +1298,25 @@ static const char *const mira_tags_375[] = { "parachute", "saut", "chute", "acce
 static const MiraOp mira_ops_o_375[] = { { 1, 1.0f, 0.0f, "M3 11a9 9 0 0 1 18 0c-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0zM11 18h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1z", 0, 0 }, { 1, 1.0f, 0.0f, "M3 11l7 7M21 11l-7 7M12 11v7", 0, 0 } };
 static const MiraOp mira_ops_f_375[] = { { 0, 0.0f, 0.0f, "M3 11a9 9 0 0 1 18 0c-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0-1.5-1-3-1-4.5 0zM11 18h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1z", 0, 0 }, { 1, 1.0f, 0.0f, "M3 11l7 7M21 11l-7 7M12 11v7", 0, 0 } };
 static const char *const mira_tags_376[] = { "chapeau", "feutre", "borsalino", "couvre-chef", "tenue" };
-static const MiraOp mira_ops_o_376[] = { { 1, 1.0f, 0.0f, "M7 15V9.5a2 2 0 0 1 2-2h1.2L12 9l1.8-1.5H15a2 2 0 0 1 2 2V15z", 0, 0 }, { 1, 1.0f, 0.0f, "M7 12.5h10", 0, 0 }, { 1, 1.0f, 0.0f, "M2.5 15.5c2 1.5 5.5 2 9.5 2s7.5-.5 9.5-2", 0, 0 } };
-static const MiraOp mira_cut_376_f0[] = { { 1, 1.0f, 0.0f, "M7 12.5h10", 0, 0 } };
-static const MiraOp mira_ops_f_376[] = { { 0, 0.0f, 0.0f, "M7 15V9.5a2 2 0 0 1 2-2h1.2L12 9l1.8-1.5H15a2 2 0 0 1 2 2V15z", mira_cut_376_f0, 1 }, { 1, 1.0f, 0.0f, "M2.5 15.5c2 1.5 5.5 2 9.5 2s7.5-.5 9.5-2", 0, 0 } };
+static const MiraOp mira_ops_o_376[] = { { 1, 1.0f, 0.0f, "M7.5 15l1-6.5A1.5 1.5 0 0 1 10 7.2h4a1.5 1.5 0 0 1 1.5 1.3l1 6.5zM3.75 15h16.5a1.25 1.25 0 0 1 1.25 1.25v0a1.25 1.25 0 0 1 -1.25 1.25h-16.5a1.25 1.25 0 0 1 -1.25 -1.25v0a1.25 1.25 0 0 1 1.25 -1.25z", 0, 0 }, { 1, 1.0f, 0.0f, "M7.9 12.5h8.2", 0, 0 } };
+static const MiraOp mira_cut_376_f0[] = { { 1, 1.0f, 0.0f, "M7.9 12.5h8.2", 0, 0 } };
+static const MiraOp mira_ops_f_376[] = { { 0, 0.0f, 0.0f, "M7.5 15l1-6.5A1.5 1.5 0 0 1 10 7.2h4a1.5 1.5 0 0 1 1.5 1.3l1 6.5zM3.75 15h16.5a1.25 1.25 0 0 1 1.25 1.25v0a1.25 1.25 0 0 1 -1.25 1.25h-16.5a1.25 1.25 0 0 1 -1.25 -1.25v0a1.25 1.25 0 0 1 1.25 -1.25z", mira_cut_376_f0, 1 } };
 static const char *const mira_tags_377[] = { "casquette", "visi\303\250re", "couvre-chef", "tenue" };
-static const MiraOp mira_ops_o_377[] = { { 1, 1.0f, 0.0f, "M3.5 15.5V14a7 7 0 0 1 14 0v1.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M10.5 7c1.5 2.5 2 5.5 2 8.5", 0, 0 }, { 1, 1.0f, 0.0f, "M3.5 15.5h11c3 0 5.5.5 7 2", 0, 0 } };
-static const MiraOp mira_cut_377_f0[] = { { 1, 1.0f, 0.0f, "M10.5 7c1.5 2.5 2 5.5 2 8.5", 0, 0 } };
-static const MiraOp mira_ops_f_377[] = { { 0, 0.0f, 0.0f, "M3.5 15.5V14a7 7 0 0 1 14 0v1.5z", mira_cut_377_f0, 1 }, { 1, 1.0f, 0.0f, "M3.5 15.5h11c3 0 5.5.5 7 2", 0, 0 } };
+static const MiraOp mira_ops_o_377[] = { { 1, 1.0f, 0.0f, "M3.5 16.5V14a7 7 0 0 1 14 0v.5H20a1.5 1.5 0 0 1 1.5 1.5v.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M10.5 7c1.2 2 1.8 4.5 2 7.5", 0, 0 } };
+static const MiraOp mira_cut_377_f0[] = { { 1, 1.0f, 0.0f, "M10.5 7c1.2 2 1.8 4.5 2 7.5", 0, 0 } };
+static const MiraOp mira_ops_f_377[] = { { 0, 0.0f, 0.0f, "M3.5 16.5V14a7 7 0 0 1 14 0v.5H20a1.5 1.5 0 0 1 1.5 1.5v.5z", mira_cut_377_f0, 1 } };
 static const char *const mira_tags_378[] = { "bonnet", "pompon", "hiver", "couvre-chef", "tenue" };
 static const MiraOp mira_ops_o_378[] = { { 1, 1.0f, 0.0f, "M5 16v-3a7 7 0 0 1 14 0v3zM5.5 16h13a1.5 1.5 0 0 1 1.5 1.5v1.5a1.5 1.5 0 0 1 -1.5 1.5h-13a1.5 1.5 0 0 1 -1.5 -1.5v-1.5a1.5 1.5 0 0 1 1.5 -1.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M8 17v2.5M12 17v2.5M16 17v2.5", 0, 0 }, { 0, 0.0f, 0.0f, "M10.25 4.25a1.75 1.75 0 1 0 3.5 0a1.75 1.75 0 1 0 -3.5 0z", 0, 0 } };
 static const MiraOp mira_cut_378_f0[] = { { 1, 1.0f, 0.0f, "M8 17v2.5M12 17v2.5M16 17v2.5", 0, 0 } };
 static const MiraOp mira_ops_f_378[] = { { 0, 0.0f, 0.0f, "M5 16v-3a7 7 0 0 1 14 0v3zM5.5 16h13a1.5 1.5 0 0 1 1.5 1.5v1.5a1.5 1.5 0 0 1 -1.5 1.5h-13a1.5 1.5 0 0 1 -1.5 -1.5v-1.5a1.5 1.5 0 0 1 1.5 -1.5z", mira_cut_378_f0, 1 }, { 0, 0.0f, 0.0f, "M10.25 4.25a1.75 1.75 0 1 0 3.5 0a1.75 1.75 0 1 0 -3.5 0z", 0, 0 } };
 static const char *const mira_tags_379[] = { "casque moto", "casque int\303\251gral", "visi\303\250re", "motard", "tenue" };
-static const MiraOp mira_ops_o_379[] = { { 1, 1.0f, 0.0f, "M12 3.5a8.5 8.5 0 0 0-8.5 8.5v4.5a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3V13A9.5 9.5 0 0 0 12 3.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M11 9.5h8.5V13H11a1.75 1.75 0 0 1 0-3.5z", 0, 0 } };
-static const MiraOp mira_cut_379_f0[] = { { 1, 1.0f, 0.0f, "M11 9.5h8.5V13H11a1.75 1.75 0 0 1 0-3.5z", 0, 0 } };
-static const MiraOp mira_ops_f_379[] = { { 0, 0.0f, 0.0f, "M12 3.5a8.5 8.5 0 0 0-8.5 8.5v4.5a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3V13A9.5 9.5 0 0 0 12 3.5z", mira_cut_379_f0, 1 } };
+static const MiraOp mira_ops_o_379[] = { { 1, 1.0f, 0.0f, "M12 3a8 8 0 0 0-8 8v5.5a4 4 0 0 0 2.5 3.7L9 21h6l2.5-.8a4 4 0 0 0 2.5-3.7V11a8 8 0 0 0-8-8z", 0, 0 }, { 1, 1.0f, 0.0f, "M6.5 9.5h11a1 1 0 0 1 1 1V13a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 13v-2.5a1 1 0 0 1 1-1zM10 18h4", 0, 0 } };
+static const MiraOp mira_cut_379_f0[] = { { 1, 1.0f, 0.0f, "M6.5 9.5h11a1 1 0 0 1 1 1V13a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 13v-2.5a1 1 0 0 1 1-1zM10 18h4", 0, 0 } };
+static const MiraOp mira_ops_f_379[] = { { 0, 0.0f, 0.0f, "M12 3a8 8 0 0 0-8 8v5.5a4 4 0 0 0 2.5 3.7L9 21h6l2.5-.8a4 4 0 0 0 2.5-3.7V11a8 8 0 0 0-8-8z", mira_cut_379_f0, 1 } };
 static const char *const mira_tags_380[] = { "casque motocross", "cross", "enduro", "mentonni\303\250re", "tenue" };
-static const MiraOp mira_ops_o_380[] = { { 1, 1.0f, 0.0f, "M3.5 12a8 8 0 0 1 15-3.9V11h-6v3H20l-2.5 5H7a3.5 3.5 0 0 1-3.5-3.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M13 4.5l8.5 3", 0, 0 } };
-static const MiraOp mira_ops_f_380[] = { { 0, 0.0f, 0.0f, "M3.5 12a8 8 0 0 1 15-3.9V11h-6v3H20l-2.5 5H7a3.5 3.5 0 0 1-3.5-3.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M13 4.5l8.5 3", 0, 0 } };
+static const MiraOp mira_ops_o_380[] = { { 1, 1.0f, 0.0f, "M12 4a7.5 7.5 0 0 0-7.5 7.5v3l3 4.5L12 20.5l4.5-1.5 3-4.5v-3A7.5 7.5 0 0 0 12 4z", 0, 0 }, { 1, 1.0f, 0.0f, "M8 9.5h8a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v0a2 2 0 0 1 2 -2zM10.5 17l1.5 1 1.5-1", 0, 0 }, { 1, 1.0f, 0.0f, "M3 7.5c3-2 6-3 9-3s6 1 9 3", 0, 0 } };
+static const MiraOp mira_cut_380_f0[] = { { 1, 1.0f, 0.0f, "M8 9.5h8a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v0a2 2 0 0 1 2 -2zM10.5 17l1.5 1 1.5-1", 0, 0 } };
+static const MiraOp mira_ops_f_380[] = { { 0, 0.0f, 0.0f, "M12 4a7.5 7.5 0 0 0-7.5 7.5v3l3 4.5L12 20.5l4.5-1.5 3-4.5v-3A7.5 7.5 0 0 0 12 4z", mira_cut_380_f0, 1 }, { 1, 1.0f, 0.0f, "M3 7.5c3-2 6-3 9-3s6 1 9 3", 0, 0 } };
 static const char *const mira_tags_381[] = { "gilet pare-balles", "kevlar", "porte-plaques", "protection", "accessoire" };
 static const MiraOp mira_ops_o_381[] = { { 1, 1.0f, 0.0f, "M7 3.5h3V7h4V3.5h3v4l2.5 2v11h-15v-11L7 7.5z", 0, 0 }, { 1, 1.0f, 0.0f, "M4.5 12.5h15M8 15.5h8M8 18h8", 0, 0 } };
 static const MiraOp mira_cut_381_f0[] = { { 1, 1.0f, 0.0f, "M4.5 12.5h15M8 15.5h8M8 18h8", 0, 0 } };
@@ -1727,11 +1728,11 @@ static const MiraSymbolRec MIRA_SYMBOLS[MIRA_SYMBOL_COUNT] = {
   { { "ring", "vetements", mira_tags_373, 5, 0 }, mira_ops_o_373, 2, mira_ops_f_373, 2 },
   { { "vest", "vetements", mira_tags_374, 5, 0 }, mira_ops_o_374, 2, mira_ops_f_374, 1 },
   { { "parachute", "vetements", mira_tags_375, 4, 0 }, mira_ops_o_375, 2, mira_ops_f_375, 2 },
-  { { "hat", "vetements", mira_tags_376, 5, 0 }, mira_ops_o_376, 3, mira_ops_f_376, 2 },
-  { { "cap", "vetements", mira_tags_377, 4, 0 }, mira_ops_o_377, 3, mira_ops_f_377, 2 },
+  { { "hat", "vetements", mira_tags_376, 5, 0 }, mira_ops_o_376, 2, mira_ops_f_376, 1 },
+  { { "cap", "vetements", mira_tags_377, 4, 0 }, mira_ops_o_377, 2, mira_ops_f_377, 1 },
   { { "beanie", "vetements", mira_tags_378, 5, 0 }, mira_ops_o_378, 3, mira_ops_f_378, 2 },
   { { "helmet.motorcycle", "vetements", mira_tags_379, 5, 0 }, mira_ops_o_379, 2, mira_ops_f_379, 1 },
-  { { "helmet.motocross", "vetements", mira_tags_380, 5, 0 }, mira_ops_o_380, 2, mira_ops_f_380, 2 },
+  { { "helmet.motocross", "vetements", mira_tags_380, 5, 0 }, mira_ops_o_380, 3, mira_ops_f_380, 2 },
   { { "vest.armor", "vetements", mira_tags_381, 5, 0 }, mira_ops_o_381, 2, mira_ops_f_381, 1 },
   { { "boot", "vetements", mira_tags_382, 5, 0 }, mira_ops_o_382, 2, mira_ops_f_382, 1 },
   { { "shoe.heel", "vetements", mira_tags_383, 5, 0 }, mira_ops_o_383, 1, mira_ops_f_383, 1 },
